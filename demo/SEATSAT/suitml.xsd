@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="suiml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="general"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="state"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="general">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="agent"/>
+      </xs:sequence>
+      <xs:attribute name="name" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="agent">
+    <xs:complexType>
+      <xs:attribute name="name" use="required" type="xs:string"/>
+      <xs:attribute name="type" use="required" type="xs:string"/>
+      <xs:attribute name="datatype" use="optional" type="xs:string"/>
+      <xs:attribute name="host" use="optional" type="xs:string"/>
+      <xs:attribute name="port" use="optional" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="state">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="onentry"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="onexit"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="label"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="button"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="brk"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" ref="space"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="name" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="button">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="command"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="shell"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="script"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="statetransition"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="log"/>
+      </xs:sequence>
+      <xs:attribute name="label" use="required" type="xs:string"/>
+      <xs:attribute name="color" use="optional" type="xs:string"/>
+      <xs:attribute name="bg_color" use="optional" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="label">
+    <xs:complexType>
+      <xs:attribute name="text" use="required" type="xs:string"/>
+      <xs:attribute name="color" use="optional" type="xs:string"/>
+      <xs:attribute name="bg_color" use="optional" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="brk">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="comment" use="optional" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="space">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="length" use="optional" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="onentry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="command"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="log"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="onexit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="command"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="log"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="command">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="host" use="required" type="xs:string"/>
+          <xs:attribute name="encode" use="optional" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="shell">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="host" use="optional" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="script">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="host" use="optional" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="statetransition">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:NCName">
+          <xs:attribute name="func" use="optional" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="log">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rtc:RtcProfile rtc:version="0.2" rtc:id="RTC:AIST:Category:Flip:1.0.0" xmlns:rtcExt="http://www.openrtp.org/namespaces/rtc_ext" xmlns:rtcDoc="http://www.openrtp.org/namespaces/rtc_doc" xmlns:rtc="http://www.openrtp.org/namespaces/rtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <rtc:BasicInfo xsi:type="rtcExt:basic_info_ext" rtcExt:saveProject="Flip" rtc:updateDate="2011-01-11T10:58:27.500+09:00" rtc:creationDate="2010-11-23T13:11:53.140+09:00" rtc:abstract="OpenCVライブラリのうち，cvFlip()関数を用いて画像の反転を行うコンポーネント" rtc:version="1.0.0" rtc:vendor="AIST" rtc:maxInstances="1" rtc:executionType="PeriodicExecutionContext" rtc:executionRate="0.0" rtc:description="Flip image component" rtc:category="Category" rtc:componentKind="DataFlowComponent" rtc:activityType="PERIODIC" rtc:componentType="STATIC" rtc:name="Flip">
+        <rtcDoc:Doc rtcDoc:reference="" rtcDoc:license="Copyright (C) 2006-2011&lt;BR&gt;&lt;br/&gt;    Noriaki Ando&lt;BR&gt;&lt;br/&gt;    RT-Synthesis Research Group,&lt;BR&gt;&lt;br/&gt;    Intelligent Systems Research Institute,&lt;BR&gt;&lt;br/&gt;    National Institute of&lt;BR&gt;&lt;br/&gt;        Advanced Industrial Science and Technology (AIST), Japan&lt;BR&gt;&lt;br/&gt;    All rights reserved." rtcDoc:creator="Noriaki Ando&lt;BR&gt;&lt;br/&gt;RT-Synthesis Research Group,&lt;BR&gt;&lt;br/&gt;Intelligent Systems Research Institute,&lt;BR&gt;&lt;br/&gt;National Institute of&lt;BR&gt;&lt;br/&gt;    Advanced Industrial Science and Technology (AIST), Japan" rtcDoc:algorithm="cvFlip関数は、2次元配列を垂直、水平、または両軸で反転します。&lt;BR&gt;&lt;br/&gt; void cvFlip(IplImage* src, IplImage* dst=NULL, int flip_mode=0);&lt;BR&gt;&lt;br/&gt; #define cvMirror cvFlip&lt;BR&gt;&lt;br/&gt;&lt;BR&gt;  &lt;br/&gt; src       入力配列&lt;BR&gt;&lt;br/&gt; dst       出力配列。もしdst=NULLであれば、srcが上書きされます。&lt;BR&gt;&lt;br/&gt; flip_mode 配列の反転方法の指定内容:&lt;BR&gt;&lt;br/&gt; 　flip_mode = 0: X軸周りでの反転(上下反転)&lt;BR&gt;&lt;br/&gt; 　flip_mode &gt; 0: Y軸周りでの反転(左右反転)&lt;BR&gt;&lt;br/&gt; 　flip_mode &lt; 0: 両軸周りでの反転(上下左右反転)" rtcDoc:inout="作成するRTCの入出力仕様は以下のとおりです。&lt;BR&gt;&lt;br/&gt;•InPort:キャプチャされた画像データ(CameraImage)&lt;BR&gt;&lt;br/&gt;•OutPort反転した画像データ(CameraImage)&lt;BR&gt;&lt;br/&gt;※ CameraImage型は、OpenRTM-aistのInterfaceDataTypes.idlにて定義されているデータ型です。" rtcDoc:description="InPortからの入力画像を反転しOutPortから出力するコンポーネント。&lt;BR&gt;&lt;br/&gt;反転の対象軸は、RTCのコンフィギュレーション機能を使用してflipModeという名前のパラメータで指定します。&lt;BR&gt;&lt;br/&gt;flipModeは、反転したい方向に応じて下記のように指定してください。&lt;BR&gt;&lt;br/&gt;•上下反転したい場合、0&lt;BR&gt;&lt;br/&gt;•左右反転したい場合、1&lt;BR&gt;&lt;br/&gt;•上下左右反転したい場合、-1"/>
+        <rtcExt:VersionUpLogs></rtcExt:VersionUpLogs>
+    </rtc:BasicInfo>
+    <rtc:Actions>
+        <rtc:OnInitialize xsi:type="rtcDoc:action_status_doc" rtc:implemented="true">
+            <rtcDoc:Doc rtcDoc:postCondition="コンポーネントの初期化処理が正常に完了している" rtcDoc:preCondition="なし" rtcDoc:description="コンポーネント自身の各種初期化処理"/>
+        </rtc:OnInitialize>
+        <rtc:OnFinalize xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnStartup xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnShutdown xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnActivated xsi:type="rtcDoc:action_status_doc" rtc:implemented="true">
+            <rtcDoc:Doc rtcDoc:postCondition="なし" rtcDoc:preCondition="なし" rtcDoc:description="ログファイルへの出力ストリームのオープン"/>
+        </rtc:OnActivated>
+        <rtc:OnDeactivated xsi:type="rtcDoc:action_status_doc" rtc:implemented="true">
+            <rtcDoc:Doc rtcDoc:postCondition="なし" rtcDoc:preCondition="なし" rtcDoc:description="ログファイルの出力ストリームのクローズ"/>
+        </rtc:OnDeactivated>
+        <rtc:OnAborting xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnError xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnReset xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnExecute xsi:type="rtcDoc:action_status_doc" rtc:implemented="true">
+            <rtcDoc:Doc rtcDoc:postCondition="なし" rtcDoc:preCondition="なし" rtcDoc:description="ログファイルに出力"/>
+        </rtc:OnExecute>
+        <rtc:OnStateUpdate xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnRateChanged xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnAction xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+        <rtc:OnModeChanged xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+    </rtc:Actions>
+    <rtc:DataPorts xsi:type="rtcExt:dataport_ext" rtcExt:position="LEFT" rtcExt:variableName="result" rtc:unit="" rtc:subscriptionType="" rtc:dataflowType="" rtc:interfaceType="" rtc:idlFile="" rtc:type="RTC::TimeString" rtc:name="result" rtc:portType="DataInPort">
+      <rtcDoc:Doc rtcDoc:operation="随時" rtcDoc:occerrence="任意" rtcDoc:unit="なし" rtcDoc:semantics="認識結果テキスト" rtcDoc:number="任意" rtcDoc:type="RTC::TimeSTring" rtcDoc:description="入力テキスト"/>
+    </rtc:DataPorts> 
+    <rtc:Language xsi:type="rtcExt:language_ext" rtc:kind="C++"/>
+</rtc:RtcProfile>

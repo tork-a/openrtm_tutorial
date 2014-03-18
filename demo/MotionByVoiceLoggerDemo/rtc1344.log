@@ -1,0 +1,548 @@
+2014-03-17 11:08:38,885 manager INFO 1.1.0
+2014-03-17 11:08:38,891 manager INFO Copyright (C) 2003-2010
+2014-03-17 11:08:38,891 manager INFO   Noriaki Ando
+2014-03-17 11:08:38,891 manager INFO   Intelligent Systems Research Institute, AIST
+2014-03-17 11:08:38,892 manager INFO Manager starting.
+2014-03-17 11:08:38,892 manager INFO Starting local logging.
+2014-03-17 11:08:38,905 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2014-03-17 11:08:40,920 ManagerServant INFO Master manager not found
+2014-03-17 11:08:40,921 manager ERROR Traceback (most recent call last):
+  File "OpenRTM_aist\Manager.pyc", line 1751, in initManagerServant
+IOError: [Errno 2] No such file or directory: '/var/log/rtcmanager.ref'
+
+2014-03-17 11:08:41,085 SEAT0 INFO SEAT (Speech Event Action Transfer) version 2.00
+2014-03-17 11:08:41,085 SEAT0 INFO Copyright (C) 2009-2010 Yosuke Matsusaka and Isao Hara
+2014-03-17 11:08:41,091 SEAT0 INFO load script file: ..\\MotionByVoiceDemo\\motion_cnoid.seatml
+2014-03-17 11:08:41,092 SEAT0 INFO create inport: speechin
+2014-03-17 11:08:41,096 SEAT0 INFO create outport: command
+2014-03-17 11:08:41,101 SEAT0 INFO register both_down:default:右 あげて
+2014-03-17 11:08:41,102 SEAT0 INFO register both_down:default:右 さげない
+2014-03-17 11:08:41,102 SEAT0 INFO register both_down:default:左 あげて
+2014-03-17 11:08:41,104 SEAT0 INFO register both_down:default:左 さげない
+2014-03-17 11:08:41,104 SEAT0 INFO register both_down:default:右 さげて
+2014-03-17 11:08:41,105 SEAT0 INFO register both_down:default:右 あげない
+2014-03-17 11:08:41,105 SEAT0 INFO register both_down:default:左 さげて
+2014-03-17 11:08:41,105 SEAT0 INFO register both_down:default:左 あげない
+2014-03-17 11:08:41,105 SEAT0 INFO register both_down:default:さいせい よろしく
+2014-03-17 11:08:41,107 SEAT0 INFO register both_up:default:右 さげて
+2014-03-17 11:08:41,107 SEAT0 INFO register both_up:default:右 あげない
+2014-03-17 11:08:41,108 SEAT0 INFO register both_up:default:左 さげて
+2014-03-17 11:08:41,108 SEAT0 INFO register both_up:default:左 あげない
+2014-03-17 11:08:41,108 SEAT0 INFO register both_up:default:右 あげて
+2014-03-17 11:08:41,108 SEAT0 INFO register both_up:default:右 さげない
+2014-03-17 11:08:41,108 SEAT0 INFO register both_up:default:左 あげて
+2014-03-17 11:08:41,108 SEAT0 INFO register both_up:default:左 さげない
+2014-03-17 11:08:41,109 SEAT0 INFO register left_up:default:左 さげて
+2014-03-17 11:08:41,111 SEAT0 INFO register left_up:default:左 あげない
+2014-03-17 11:08:41,111 SEAT0 INFO register left_up:default:右 あげて
+2014-03-17 11:08:41,111 SEAT0 INFO register left_up:default:右 さげない
+2014-03-17 11:08:41,111 SEAT0 INFO register left_up:default:左 あげて
+2014-03-17 11:08:41,111 SEAT0 INFO register left_up:default:左 さげない
+2014-03-17 11:08:41,112 SEAT0 INFO register left_up:default:右 さげて
+2014-03-17 11:08:41,112 SEAT0 INFO register left_up:default:右 あげない
+2014-03-17 11:08:41,114 SEAT0 INFO register right_up:default:左 あげて
+2014-03-17 11:08:41,114 SEAT0 INFO register right_up:default:左 さげない
+2014-03-17 11:08:41,115 SEAT0 INFO register right_up:default:右 さげて
+2014-03-17 11:08:41,115 SEAT0 INFO register right_up:default:右 あげない
+2014-03-17 11:08:41,115 SEAT0 INFO register right_up:default:左 さげて
+2014-03-17 11:08:41,115 SEAT0 INFO register right_up:default:左 あげない
+2014-03-17 11:08:41,115 SEAT0 INFO register right_up:default:右 あげて
+2014-03-17 11:08:41,117 SEAT0 INFO register right_up:default:右 さげない
+2014-03-17 11:08:41,117 SEAT0 INFO current state both_down
+2014-03-17 11:08:41,117 SEAT0 INFO loaded successfully
+2014-03-17 11:08:53,622 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2173.298096" rank="1" score="0.5425" text="右 あげて"><word score="0.550" text="右"/><word score="0.535" text="あげて"/></data><data likelihood="-2175.787354" rank="2" score="0.476" text="さいせい あげて"><word score="0.417" text="さいせい"/><word score="0.535" text="あげて"/></data><data likelihood="-2178.257324" rank="3" score="0.3515" text="右 あげない"><word score="0.431" text="右"/><word score="0.272" text="あげない"/></data><data likelihood="-2178.390137" rank="4" score="0.3995" text="さいせい あげない"><word score="0.527" text="さいせい"/><word score="0.272" text="あげない"/></data><data likelihood="-2183.405273" rank="5" score="0.5575" text="右 さげて"><word score="0.990" text="右"/><word score="0.125" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:08:53,628 SEAT0 INFO #1: 右 あげて (0.542500)
+2014-03-17 11:08:53,628 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:08:53,628 SEAT0 INFO sending command rightup1 (to command)
+2014-03-17 11:08:53,630 SEAT0 INFO state transition from both_down to right_up
+2014-03-17 11:08:55,973 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2699.668945" rank="1" score="0.9965" text="右 さげて"><word score="0.998" text="右"/><word score="0.995" text="さげて"/></data><data likelihood="-2754.761230" rank="2" score="0.4985" text="左 さげて"><word score="0.002" text="左"/><word score="0.995" text="さげて"/></data><data likelihood="-2755.807617" rank="3" score="0.5" text="右 さげない"><word score="0.998" text="右"/><word score="0.002" text="さげない"/></data><data likelihood="-2774.725098" rank="4" score="0.498" text="さいせい さげて"><word score="0.001" text="さいせい"/><word score="0.995" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:08:55,977 SEAT0 INFO #1: 右 さげて (0.996500)
+2014-03-17 11:08:55,977 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:08:55,977 SEAT0 INFO sending command rightdown1 (to command)
+2014-03-17 11:08:55,979 SEAT0 INFO state transition from right_up to both_down
+2014-03-17 11:08:58,855 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-3693.354004" rank="1" score="1.0" text="さいせい よろしく"><word score="1.000" text="さいせい"/><word score="1.000" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:08:58,858 SEAT0 INFO #1: さいせい よろしく (1.000000)
+2014-03-17 11:08:58,858 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:08:58,858 SEAT0 INFO sending command SampleMotion1 (to command)
+2014-03-17 11:09:28,369 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1885.672119" rank="1" score="0.8405" text="右 あげない"><word score="0.937" text="右"/><word score="0.744" text="あげない"/></data><data likelihood="-1897.150146" rank="2" score="0.517" text="右 さげない"><word score="0.935" text="右"/><word score="0.099" text="さげない"/></data><data likelihood="-1901.198730" rank="3" score="0.531" text="右 あげて"><word score="0.937" text="右"/><word score="0.125" text="あげて"/></data><data likelihood="-1912.676758" rank="4" score="0.477" text="右 さげて"><word score="0.937" text="右"/><word score="0.017" text="さげて"/></data><data likelihood="-1913.173706" rank="5" score="0.3885" text="さいせい あげない"><word score="0.033" text="さいせい"/><word score="0.744" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:09:28,375 SEAT0 INFO #1: 右 あげない (0.840500)
+2014-03-17 11:09:28,375 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:09:28,375 SEAT0 INFO sending command none (to command)
+2014-03-17 11:09:31,121 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1751.159424" rank="1" score="0.7575" text="右 よろしく"><word score="0.933" text="右"/><word score="0.582" text="よろしく"/></data><data likelihood="-1761.128906" rank="2" score="0.4835" text="右 さげない"><word score="0.819" text="右"/><word score="0.148" text="さげない"/></data><data likelihood="-1768.460205" rank="3" score="0.4565" text="右 あげて"><word score="0.843" text="右"/><word score="0.070" text="あげて"/></data><data likelihood="-1768.474854" rank="4" score="0.4415" text="右 さげて"><word score="0.819" text="右"/><word score="0.064" text="さげて"/></data><data likelihood="-1772.377930" rank="5" score="0.3155" text="さいせい よろしく"><word score="0.049" text="さいせい"/><word score="0.582" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:09:31,127 SEAT0 INFO #1: 右 よろしく (0.757500)
+2014-03-17 11:09:31,128 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:09:31,128 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:09:31,128 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:31,128 SEAT0 INFO #2: 右 さげない (0.483500)
+2014-03-17 11:09:31,128 SEAT0 INFO looking up...speechin: 右 さげない
+2014-03-17 11:09:31,130 SEAT0 INFO sending command rightup1 (to command)
+2014-03-17 11:09:31,131 SEAT0 INFO state transition from both_down to right_up
+2014-03-17 11:09:42,703 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-3378.235107" rank="1" score="0.657" text="左 よろしく"><word score="0.819" text="左"/><word score="0.495" text="よろしく"/></data><data likelihood="-3382.993164" rank="2" score="0.6085" text="左 さげて"><word score="0.937" text="左"/><word score="0.280" text="さげて"/></data><data likelihood="-3389.025146" rank="3" score="0.3375" text="さいせい よろしく"><word score="0.180" text="さいせい"/><word score="0.495" text="よろしく"/></data><data likelihood="-3390.068848" rank="4" score="0.529" text="左 さげない"><word score="0.934" text="左"/><word score="0.124" text="さげない"/></data><data likelihood="-3398.683594" rank="5" score="0.336" text="左 あげて"><word score="0.602" text="左"/><word score="0.070" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:09:42,707 SEAT0 INFO #1: 左 よろしく (0.657000)
+2014-03-17 11:09:42,707 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:09:42,709 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:09:42,709 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:42,709 SEAT0 INFO #2: 左 さげて (0.608500)
+2014-03-17 11:09:42,710 SEAT0 INFO looking up...speechin: 左 さげて
+2014-03-17 11:09:42,710 SEAT0 INFO sending command none (to command)
+2014-03-17 11:09:44,053 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-3141.074219" rank="1" score="0.8" text="左 よろしく"><word score="0.614" text="左"/><word score="0.986" text="よろしく"/></data><data likelihood="-3150.367188" rank="2" score="0.6345" text="右 よろしく"><word score="0.283" text="右"/><word score="0.986" text="よろしく"/></data><data likelihood="-3156.817383" rank="3" score="0.5445" text="さいせい よろしく"><word score="0.103" text="さいせい"/><word score="0.986" text="よろしく"/></data><data likelihood="-3219.775391" rank="4" score="0.0325" text="さいせい さげない"><word score="0.062" text="さいせい"/><word score="0.003" text="さげない"/></data><data likelihood="-3219.832520" rank="5" score="0.0325" text="さいせい さげて"><word score="0.062" text="さいせい"/><word score="0.003" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:09:44,059 SEAT0 INFO #1: 左 よろしく (0.800000)
+2014-03-17 11:09:44,059 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:09:44,059 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:09:44,059 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:44,059 SEAT0 INFO #2: 右 よろしく (0.634500)
+2014-03-17 11:09:44,059 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:09:44,061 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:09:44,061 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:44,061 SEAT0 INFO #3: さいせい よろしく (0.544500)
+2014-03-17 11:09:44,062 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:09:44,062 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:09:44,062 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:44,062 SEAT0 INFO #4: さいせい さげない (0.032500)
+2014-03-17 11:09:44,062 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:09:44,062 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:09:44,063 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:44,063 SEAT0 INFO #5: さいせい さげて (0.032500)
+2014-03-17 11:09:44,063 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:09:44,065 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:09:44,065 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:44,065 SEAT0 INFO no command found
+2014-03-17 11:09:47,114 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2525.658936" rank="1" score="0.8725" text="左 あげて"><word score="0.863" text="左"/><word score="0.882" text="あげて"/></data><data likelihood="-2545.818115" rank="2" score="0.441" text="左 さげて"><word score="0.775" text="左"/><word score="0.107" text="さげて"/></data><data likelihood="-2547.128662" rank="3" score="0.4835" text="右 あげて"><word score="0.085" text="右"/><word score="0.882" text="あげて"/></data><data likelihood="-2547.279541" rank="4" score="0.467" text="さいせい あげて"><word score="0.052" text="さいせい"/><word score="0.882" text="あげて"/></data><data likelihood="-2560.509521" rank="5" score="0.112" text="右 さげて"><word score="0.117" text="右"/><word score="0.107" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:09:47,118 SEAT0 INFO #1: 左 あげて (0.872500)
+2014-03-17 11:09:47,118 SEAT0 INFO looking up...speechin: 左 あげて
+2014-03-17 11:09:47,118 SEAT0 INFO sending command leftup2 (to command)
+2014-03-17 11:09:47,121 SEAT0 INFO state transition from right_up to both_up
+2014-03-17 11:09:51,545 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-4169.366211" rank="1" score="0.7005" text="さいせい あげない"><word score="0.983" text="さいせい"/><word score="0.418" text="あげない"/></data><data likelihood="-4172.530273" rank="2" score="0.629" text="さいせい よろしく"><word score="0.926" text="さいせい"/><word score="0.332" text="よろしく"/></data><data likelihood="-4181.576172" rank="3" score="0.5415" text="さいせい あげて"><word score="0.980" text="さいせい"/><word score="0.103" text="あげて"/></data><data likelihood="-4185.433594" rank="4" score="0.539" text="さいせい さげない"><word score="0.959" text="さいせい"/><word score="0.119" text="さげない"/></data><data likelihood="-4196.848633" rank="5" score="0.196" text="右 よろしく"><word score="0.060" text="右"/><word score="0.332" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:09:51,549 SEAT0 INFO #1: さいせい あげない (0.700500)
+2014-03-17 11:09:51,549 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:09:51,549 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:09:51,549 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:51,549 SEAT0 INFO #2: さいせい よろしく (0.629000)
+2014-03-17 11:09:51,551 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:09:51,551 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:09:51,551 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:51,552 SEAT0 INFO #3: さいせい あげて (0.541500)
+2014-03-17 11:09:51,552 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:09:51,552 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:09:51,552 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:51,552 SEAT0 INFO #4: さいせい さげない (0.539000)
+2014-03-17 11:09:51,552 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:09:51,552 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:09:51,553 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:51,553 SEAT0 INFO #5: 右 よろしく (0.196000)
+2014-03-17 11:09:51,553 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:09:51,555 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:09:51,555 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:51,555 SEAT0 INFO no command found
+2014-03-17 11:09:53,529 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-4499.858887" rank="1" score="0.4785" text="さいせい さげない"><word score="0.336" text="さいせい"/><word score="0.621" text="さげない"/></data><data likelihood="-4501.181641" rank="2" score="0.588" text="左 さげない"><word score="0.555" text="左"/><word score="0.621" text="さげない"/></data><data likelihood="-4508.771973" rank="3" score="0.3645" text="右 さげない"><word score="0.108" text="右"/><word score="0.621" text="さげない"/></data><data likelihood="-4514.253418" rank="4" score="0.2905" text="さいせい あげない"><word score="0.371" text="さいせい"/><word score="0.210" text="あげない"/></data><data likelihood="-4515.210449" rank="5" score="0.221" text="さいせい さげて"><word score="0.336" text="さいせい"/><word score="0.106" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:09:53,535 SEAT0 INFO #1: さいせい さげない (0.478500)
+2014-03-17 11:09:53,535 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:09:53,536 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:09:53,536 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:09:53,536 SEAT0 INFO #2: 左 さげない (0.588000)
+2014-03-17 11:09:53,536 SEAT0 INFO looking up...speechin: 左 さげない
+2014-03-17 11:09:53,536 SEAT0 INFO sending command none (to command)
+2014-03-17 11:09:54,614 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2025.126953" rank="1" score="0.653" text="右 あげない"><word score="0.524" text="右"/><word score="0.782" text="あげない"/></data><data likelihood="-2038.428955" rank="2" score="0.6195" text="左 あげない"><word score="0.457" text="左"/><word score="0.782" text="あげない"/></data><data likelihood="-2039.250977" rank="3" score="0.2965" text="右 あげて"><word score="0.439" text="右"/><word score="0.154" text="あげて"/></data><data likelihood="-2049.963623" rank="4" score="0.3565" text="右 さげない"><word score="0.664" text="右"/><word score="0.049" text="さげない"/></data><data likelihood="-2050.663330" rank="5" score="0.3465" text="左 あげて"><word score="0.539" text="左"/><word score="0.154" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:09:54,618 SEAT0 INFO #1: 右 あげない (0.653000)
+2014-03-17 11:09:54,618 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:09:54,618 SEAT0 INFO sending command rightdown2 (to command)
+2014-03-17 11:09:54,619 SEAT0 INFO state transition from both_up to left_up
+2014-03-17 11:10:02,229 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1950.339966" rank="1" score="0.6795" text="右 あげて"><word score="0.815" text="右"/><word score="0.544" text="あげて"/></data><data likelihood="-1955.906372" rank="2" score="0.5385" text="右 よろしく"><word score="0.957" text="右"/><word score="0.120" text="よろしく"/></data><data likelihood="-1960.965576" rank="3" score="0.3195" text="さいせい あげて"><word score="0.095" text="さいせい"/><word score="0.544" text="あげて"/></data><data likelihood="-1961.702148" rank="4" score="0.317" text="左 あげて"><word score="0.090" text="左"/><word score="0.544" text="あげて"/></data><data likelihood="-1967.357788" rank="5" score="0.177" text="左 さげない"><word score="0.218" text="左"/><word score="0.136" text="さげない"/></data></listenText> (speechin)
+2014-03-17 11:10:02,233 SEAT0 INFO #1: 右 あげて (0.679500)
+2014-03-17 11:10:02,233 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:10:02,234 SEAT0 INFO sending command rightup2 (to command)
+2014-03-17 11:10:02,234 SEAT0 INFO state transition from left_up to both_up
+2014-03-17 11:10:03,822 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2823.179443" rank="1" score="0.855" text="右 あげて"><word score="0.952" text="右"/><word score="0.758" text="あげて"/></data><data likelihood="-2828.024902" rank="2" score="0.603" text="右 さげて"><word score="0.974" text="右"/><word score="0.232" text="さげて"/></data><data likelihood="-2851.910889" rank="3" score="0.3925" text="さいせい あげて"><word score="0.027" text="さいせい"/><word score="0.758" text="あげて"/></data><data likelihood="-2855.842285" rank="4" score="0.3895" text="左 あげて"><word score="0.021" text="左"/><word score="0.758" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:10:03,826 SEAT0 INFO #1: 右 あげて (0.855000)
+2014-03-17 11:10:03,826 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:10:03,826 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:06,315 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1982.637939" rank="1" score="0.911" text="右 あげて"><word score="0.996" text="右"/><word score="0.826" text="あげて"/></data><data likelihood="-2001.445557" rank="2" score="0.5475" text="右 さげて"><word score="0.995" text="右"/><word score="0.100" text="さげて"/></data><data likelihood="-2004.753174" rank="3" score="0.531" text="右 あげない"><word score="0.997" text="右"/><word score="0.065" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:10:06,319 SEAT0 INFO #1: 右 あげて (0.911000)
+2014-03-17 11:10:06,319 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:10:06,321 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:07,926 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2047.587158" rank="1" score="0.6495" text="右 さげない"><word score="0.912" text="右"/><word score="0.387" text="さげない"/></data><data likelihood="-2051.095947" rank="2" score="0.5785" text="右 あげない"><word score="0.831" text="右"/><word score="0.326" text="あげない"/></data><data likelihood="-2055.552979" rank="3" score="0.5335" text="右 さげて"><word score="0.912" text="右"/><word score="0.155" text="さげて"/></data><data likelihood="-2059.061523" rank="4" score="0.4805" text="右 あげて"><word score="0.831" text="右"/><word score="0.130" text="あげて"/></data><data likelihood="-2065.736328" rank="5" score="0.2325" text="左 あげない"><word score="0.139" text="左"/><word score="0.326" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:10:07,930 SEAT0 INFO #1: 右 さげない (0.649500)
+2014-03-17 11:10:07,930 SEAT0 INFO looking up...speechin: 右 さげない
+2014-03-17 11:10:07,930 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:09,762 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2121.894287" rank="1" score="0.681" text="右 あげない"><word score="0.835" text="右"/><word score="0.527" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:10:09,763 SEAT0 INFO #1: 右 あげない (0.681000)
+2014-03-17 11:10:09,765 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:10:09,765 SEAT0 INFO sending command rightdown2 (to command)
+2014-03-17 11:10:09,766 SEAT0 INFO state transition from both_up to left_up
+2014-03-17 11:10:13,424 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1970.115601" rank="1" score="0.6375" text="右 あげない"><word score="0.876" text="右"/><word score="0.399" text="あげない"/></data><data likelihood="-1971.741455" rank="2" score="0.597" text="右 さげない"><word score="0.956" text="右"/><word score="0.238" text="さげない"/></data><data likelihood="-1978.084717" rank="3" score="0.507" text="右 さげて"><word score="0.900" text="右"/><word score="0.114" text="さげて"/></data><data likelihood="-1978.172485" rank="4" score="0.4485" text="右 あげて"><word score="0.739" text="右"/><word score="0.158" text="あげて"/></data><data likelihood="-1981.048462" rank="5" score="0.4835" text="右 よろしく"><word score="0.876" text="右"/><word score="0.091" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:10:13,430 SEAT0 INFO #1: 右 あげない (0.637500)
+2014-03-17 11:10:13,430 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:10:13,430 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:23,857 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1874.658081" rank="1" score="0.6035" text="右 あげて"><word score="0.630" text="右"/><word score="0.577" text="あげて"/></data><data likelihood="-1881.071411" rank="2" score="0.4525" text="左 あげて"><word score="0.328" text="左"/><word score="0.577" text="あげて"/></data><data likelihood="-1883.234375" rank="3" score="0.431" text="左 あげない"><word score="0.658" text="左"/><word score="0.204" text="あげない"/></data><data likelihood="-1885.265381" rank="4" score="0.3155" text="右 さげて"><word score="0.511" text="右"/><word score="0.120" text="さげて"/></data><data likelihood="-1890.169312" rank="5" score="0.2935" text="左 さげて"><word score="0.467" text="左"/><word score="0.120" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:10:23,861 SEAT0 INFO #1: 右 あげて (0.603500)
+2014-03-17 11:10:23,861 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:10:23,861 SEAT0 INFO sending command rightup2 (to command)
+2014-03-17 11:10:23,861 SEAT0 INFO state transition from left_up to both_up
+2014-03-17 11:10:24,494 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2062.986572" rank="1" score="0.704" text="右 あげない"><word score="0.858" text="右"/><word score="0.550" text="あげない"/></data><data likelihood="-2063.523438" rank="2" score="0.6595" text="右 さげない"><word score="0.949" text="右"/><word score="0.370" text="さげない"/></data><data likelihood="-2072.551025" rank="3" score="0.321" text="左 あげない"><word score="0.092" text="左"/><word score="0.550" text="あげない"/></data><data likelihood="-2084.702393" rank="4" score="0.3" text="さいせい あげない"><word score="0.050" text="さいせい"/><word score="0.550" text="あげない"/></data><data likelihood="-2085.711426" rank="5" score="0.448" text="右 さげて"><word score="0.867" text="右"/><word score="0.029" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:10:24,500 SEAT0 INFO #1: 右 あげない (0.704000)
+2014-03-17 11:10:24,500 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:10:24,500 SEAT0 INFO sending command rightdown2 (to command)
+2014-03-17 11:10:24,500 SEAT0 INFO state transition from both_up to left_up
+2014-03-17 11:10:30,066 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2079.084473" rank="1" score="0.485" text="左 あげて"><word score="0.580" text="左"/><word score="0.390" text="あげて"/></data><data likelihood="-2080.963867" rank="2" score="0.454" text="左 あげない"><word score="0.594" text="左"/><word score="0.314" text="あげない"/></data><data likelihood="-2081.934814" rank="3" score="0.3585" text="右 あげて"><word score="0.327" text="右"/><word score="0.390" text="あげて"/></data><data likelihood="-2084.930420" rank="4" score="0.31" text="右 さげて"><word score="0.498" text="右"/><word score="0.122" text="さげて"/></data><data likelihood="-2086.608887" rank="5" score="0.283" text="左 さげて"><word score="0.444" text="左"/><word score="0.122" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:10:30,071 SEAT0 INFO #1: 左 あげて (0.485000)
+2014-03-17 11:10:30,072 SEAT0 INFO looking up...speechin: 左 あげて
+2014-03-17 11:10:30,072 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:30,773 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2084.441406" rank="1" score="0.4645" text="さいせい あげて"><word score="0.379" text="さいせい"/><word score="0.550" text="あげて"/></data><data likelihood="-2089.709961" rank="2" score="0.5055" text="右 あげて"><word score="0.461" text="右"/><word score="0.550" text="あげて"/></data><data likelihood="-2093.082520" rank="3" score="0.4225" text="右 さげて"><word score="0.639" text="右"/><word score="0.206" text="さげて"/></data><data likelihood="-2094.668213" rank="4" score="0.4845" text="右 よろしく"><word score="0.782" text="右"/><word score="0.187" text="よろしく"/></data><data likelihood="-2099.695557" rank="5" score="0.355" text="左 あげて"><word score="0.160" text="左"/><word score="0.550" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:10:30,776 SEAT0 INFO #1: さいせい あげて (0.464500)
+2014-03-17 11:10:30,778 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:10:30,778 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:10:30,779 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:10:30,779 SEAT0 INFO #2: 右 あげて (0.505500)
+2014-03-17 11:10:30,779 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:10:30,779 SEAT0 INFO sending command rightup2 (to command)
+2014-03-17 11:10:30,779 SEAT0 INFO state transition from left_up to both_up
+2014-03-17 11:10:31,805 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2027.590698" rank="1" score="0.893" text="右 あげて"><word score="0.978" text="右"/><word score="0.808" text="あげて"/></data><data likelihood="-2041.225830" rank="2" score="0.4895" text="右 さげて"><word score="0.869" text="右"/><word score="0.110" text="さげて"/></data><data likelihood="-2049.713623" rank="3" score="0.517" text="右 あげない"><word score="0.971" text="右"/><word score="0.063" text="あげない"/></data><data likelihood="-2062.374023" rank="4" score="0.087" text="左 さげて"><word score="0.064" text="左"/><word score="0.110" text="さげて"/></data><data likelihood="-2063.348633" rank="5" score="0.439" text="右 さげない"><word score="0.869" text="右"/><word score="0.009" text="さげない"/></data></listenText> (speechin)
+2014-03-17 11:10:31,811 SEAT0 INFO #1: 右 あげて (0.893000)
+2014-03-17 11:10:31,811 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:10:31,811 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:35,710 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-9115.320313" rank="1" score="0.6435" text="さいせい あげて"><word score="0.744" text="さいせい"/><word score="0.543" text="あげて"/></data><data likelihood="-9138.016602" rank="2" score="0.3755" text="さいせい よろしく"><word score="0.714" text="さいせい"/><word score="0.037" text="よろしく"/></data><data likelihood="-9144.952148" rank="3" score="0.5765" text="さいせい さげて"><word score="0.749" text="さいせい"/><word score="0.404" text="さげて"/></data><data likelihood="-9147.867188" rank="4" score="0.382" text="左 あげて"><word score="0.221" text="左"/><word score="0.543" text="あげて"/></data><data likelihood="-9151.001953" rank="5" score="0.3135" text="左 さげて"><word score="0.223" text="左"/><word score="0.404" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:10:35,713 SEAT0 INFO #1: さいせい あげて (0.643500)
+2014-03-17 11:10:35,714 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:10:35,714 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:10:35,714 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:10:35,716 SEAT0 INFO #2: さいせい よろしく (0.375500)
+2014-03-17 11:10:35,716 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:10:35,716 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:10:35,717 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:10:35,717 SEAT0 INFO #3: さいせい さげて (0.576500)
+2014-03-17 11:10:35,717 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:10:35,717 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:10:35,717 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:10:35,717 SEAT0 INFO #4: 左 あげて (0.382000)
+2014-03-17 11:10:35,719 SEAT0 INFO looking up...speechin: 左 あげて
+2014-03-17 11:10:35,719 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:36,536 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2075.952881" rank="1" score="0.536" text="右 さげない"><word score="0.818" text="右"/><word score="0.254" text="さげない"/></data><data likelihood="-2079.512695" rank="2" score="0.49" text="左 さげて"><word score="0.805" text="左"/><word score="0.175" text="さげて"/></data><data likelihood="-2081.363770" rank="3" score="0.513" text="右 あげない"><word score="0.698" text="右"/><word score="0.328" text="あげない"/></data><data likelihood="-2082.737061" rank="4" score="0.5355" text="左 あげて"><word score="0.854" text="左"/><word score="0.217" text="あげて"/></data><data likelihood="-2084.995361" rank="5" score="0.2805" text="左 あげない"><word score="0.233" text="左"/><word score="0.328" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:10:36,542 SEAT0 INFO #1: 右 さげない (0.536000)
+2014-03-17 11:10:36,542 SEAT0 INFO looking up...speechin: 右 さげない
+2014-03-17 11:10:36,542 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:37,036 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1697.434326" rank="1" score="0.6415" text="左 あげない"><word score="0.713" text="左"/><word score="0.570" text="あげない"/></data><data likelihood="-1699.649658" rank="2" score="0.5175" text="左 さげない"><word score="0.733" text="左"/><word score="0.302" text="さげない"/></data><data likelihood="-1707.802002" rank="3" score="0.3375" text="さいせい あげない"><word score="0.105" text="さいせい"/><word score="0.570" text="あげない"/></data><data likelihood="-1708.166626" rank="4" score="0.2805" text="右 さげない"><word score="0.259" text="右"/><word score="0.302" text="さげない"/></data><data likelihood="-1709.671753" rank="5" score="0.376" text="右 あげない"><word score="0.182" text="右"/><word score="0.570" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:10:37,042 SEAT0 INFO #1: 左 あげない (0.641500)
+2014-03-17 11:10:37,042 SEAT0 INFO looking up...speechin: 左 あげない
+2014-03-17 11:10:37,042 SEAT0 INFO sending command leftdown2 (to command)
+2014-03-17 11:10:37,043 SEAT0 INFO state transition from both_up to right_up
+2014-03-17 11:10:38,311 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1808.225464" rank="1" score="0.4215" text="さいせい あげて"><word score="0.472" text="さいせい"/><word score="0.371" text="あげて"/></data><data likelihood="-1808.731934" rank="2" score="0.542" text="右 さげて"><word score="0.616" text="右"/><word score="0.468" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:10:38,313 SEAT0 INFO #1: さいせい あげて (0.421500)
+2014-03-17 11:10:38,313 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:10:38,315 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:10:38,315 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:10:38,315 SEAT0 INFO #2: 右 さげて (0.542000)
+2014-03-17 11:10:38,315 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:10:38,315 SEAT0 INFO sending command rightdown1 (to command)
+2014-03-17 11:10:38,315 SEAT0 INFO state transition from right_up to both_down
+2014-03-17 11:10:42,150 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2126.256836" rank="1" score="0.979" text="右 よろしく"><word score="0.973" text="右"/><word score="0.985" text="よろしく"/></data><data likelihood="-2156.395752" rank="2" score="0.5045" text="左 よろしく"><word score="0.024" text="左"/><word score="0.985" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:10:42,153 SEAT0 INFO #1: 右 よろしく (0.979000)
+2014-03-17 11:10:42,153 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:10:42,153 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:10:42,154 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:10:42,154 SEAT0 INFO #2: 左 よろしく (0.504500)
+2014-03-17 11:10:42,154 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:10:42,154 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:10:42,154 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:10:42,154 SEAT0 INFO no command found
+2014-03-17 11:10:44,017 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-4489.113281" rank="1" score="0.8495" text="左 さげない"><word score="0.969" text="左"/><word score="0.730" text="さげない"/></data><data likelihood="-4497.778320" rank="2" score="0.605" text="左 あげない"><word score="0.947" text="左"/><word score="0.263" text="あげない"/></data><data likelihood="-4531.753906" rank="3" score="0.3775" text="右 さげない"><word score="0.025" text="右"/><word score="0.730" text="さげない"/></data><data likelihood="-4532.833984" rank="4" score="0.148" text="右 あげない"><word score="0.033" text="右"/><word score="0.263" text="あげない"/></data><data likelihood="-4535.759277" rank="5" score="0.3685" text="さいせい さげない"><word score="0.007" text="さいせい"/><word score="0.730" text="さげない"/></data></listenText> (speechin)
+2014-03-17 11:10:44,022 SEAT0 INFO #1: 左 さげない (0.849500)
+2014-03-17 11:10:44,023 SEAT0 INFO looking up...speechin: 左 さげない
+2014-03-17 11:10:44,023 SEAT0 INFO sending command leftup1 (to command)
+2014-03-17 11:10:44,023 SEAT0 INFO state transition from both_down to left_up
+2014-03-17 11:10:55,220 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2068.833008" rank="1" score="0.704" text="右 あげない"><word score="0.760" text="右"/><word score="0.648" text="あげない"/></data><data likelihood="-2076.155029" rank="2" score="0.4305" text="左 あげない"><word score="0.213" text="左"/><word score="0.648" text="あげない"/></data><data likelihood="-2078.250244" rank="3" score="0.5315" text="右 さげない"><word score="0.963" text="右"/><word score="0.100" text="さげない"/></data><data likelihood="-2078.831787" rank="4" score="0.4465" text="右 あげて"><word score="0.688" text="右"/><word score="0.205" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:10:55,223 SEAT0 INFO #1: 右 あげない (0.704000)
+2014-03-17 11:10:55,224 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:10:55,224 SEAT0 INFO sending command none (to command)
+2014-03-17 11:10:59,960 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2016.459839" rank="1" score="0.747" text="右 あげて"><word score="0.816" text="右"/><word score="0.678" text="あげて"/></data><data likelihood="-2027.007935" rank="2" score="0.577" text="右 さげて"><word score="0.933" text="右"/><word score="0.221" text="さげて"/></data><data likelihood="-2034.655884" rank="3" score="0.3745" text="さいせい あげて"><word score="0.071" text="さいせい"/><word score="0.678" text="あげて"/></data><data likelihood="-2035.193115" rank="4" score="0.3955" text="左 あげて"><word score="0.113" text="左"/><word score="0.678" text="あげて"/></data><data likelihood="-2035.861572" rank="5" score="0.42" text="右 あげない"><word score="0.767" text="右"/><word score="0.073" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:10:59,964 SEAT0 INFO #1: 右 あげて (0.747000)
+2014-03-17 11:10:59,966 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:10:59,966 SEAT0 INFO sending command rightup2 (to command)
+2014-03-17 11:10:59,967 SEAT0 INFO state transition from left_up to both_up
+2014-03-17 11:11:02,714 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-6661.336426" rank="1" score="0.494" text="さいせい あげて"><word score="0.680" text="さいせい"/><word score="0.308" text="あげて"/></data><data likelihood="-6662.050781" rank="2" score="0.66" text="さいせい よろしく"><word score="0.925" text="さいせい"/><word score="0.395" text="よろしく"/></data><data likelihood="-6669.089355" rank="3" score="0.2675" text="さいせい あげない"><word score="0.434" text="さいせい"/><word score="0.101" text="あげない"/></data><data likelihood="-6670.727539" rank="4" score="0.4145" text="さいせい さげて"><word score="0.669" text="さいせい"/><word score="0.160" text="さげて"/></data><data likelihood="-6678.284668" rank="5" score="0.223" text="右 さげて"><word score="0.286" text="右"/><word score="0.160" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:11:02,719 SEAT0 INFO #1: さいせい あげて (0.494000)
+2014-03-17 11:11:02,720 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:02,720 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:02,720 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:02,720 SEAT0 INFO #2: さいせい よろしく (0.660000)
+2014-03-17 11:11:02,720 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:11:02,720 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:11:02,721 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:02,721 SEAT0 INFO #3: さいせい あげない (0.267500)
+2014-03-17 11:11:02,723 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:11:02,723 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:11:02,723 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:02,723 SEAT0 INFO #4: さいせい さげて (0.414500)
+2014-03-17 11:11:02,723 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:02,723 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:02,724 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:02,724 SEAT0 INFO #5: 右 さげて (0.223000)
+2014-03-17 11:11:02,724 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:11:02,726 SEAT0 INFO sending command rightdown2 (to command)
+2014-03-17 11:11:02,726 SEAT0 INFO state transition from both_up to left_up
+2014-03-17 11:11:05,910 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-4992.921387" rank="1" score="0.658" text="左 さげない"><word score="0.855" text="左"/><word score="0.461" text="さげない"/></data><data likelihood="-5001.079102" rank="2" score="0.39" text="さいせい あげない"><word score="0.600" text="さいせい"/><word score="0.180" text="あげない"/></data><data likelihood="-5003.681641" rank="3" score="0.32" text="左 さげて"><word score="0.506" text="左"/><word score="0.134" text="さげて"/></data><data likelihood="-5005.004883" rank="4" score="0.4605" text="さいせい あげて"><word score="0.802" text="さいせい"/><word score="0.119" text="あげて"/></data><data likelihood="-5008.376953" rank="5" score="0.5245" text="さいせい よろしく"><word score="0.943" text="さいせい"/><word score="0.106" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:11:05,914 SEAT0 INFO #1: 左 さげない (0.658000)
+2014-03-17 11:11:05,914 SEAT0 INFO looking up...speechin: 左 さげない
+2014-03-17 11:11:05,915 SEAT0 INFO sending command none (to command)
+2014-03-17 11:11:07,000 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2478.167236" rank="1" score="0.7975" text="右 あげて"><word score="0.803" text="右"/><word score="0.792" text="あげて"/></data><data likelihood="-2496.159912" rank="2" score="0.405" text="右 さげて"><word score="0.651" text="右"/><word score="0.159" text="さげて"/></data><data likelihood="-2496.577148" rank="3" score="0.4465" text="左 あげて"><word score="0.101" text="左"/><word score="0.792" text="あげて"/></data><data likelihood="-2496.839844" rank="4" score="0.444" text="さいせい あげて"><word score="0.096" text="さいせい"/><word score="0.792" text="あげて"/></data><data likelihood="-2510.024414" rank="5" score="0.1355" text="左 さげて"><word score="0.112" text="左"/><word score="0.159" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:11:07,005 SEAT0 INFO #1: 右 あげて (0.797500)
+2014-03-17 11:11:07,006 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:11:07,006 SEAT0 INFO sending command rightup2 (to command)
+2014-03-17 11:11:07,006 SEAT0 INFO state transition from left_up to both_up
+2014-03-17 11:11:08,019 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1921.129761" rank="1" score="0.49" text="左 さげて"><word score="0.482" text="左"/><word score="0.498" text="さげて"/></data><data likelihood="-1926.978516" rank="2" score="0.401" text="右 さげて"><word score="0.304" text="右"/><word score="0.498" text="さげて"/></data><data likelihood="-1927.362793" rank="3" score="0.3565" text="さいせい さげて"><word score="0.215" text="さいせい"/><word score="0.498" text="さげて"/></data><data likelihood="-1928.751343" rank="4" score="0.365" text="左 さげない"><word score="0.523" text="左"/><word score="0.207" text="さげない"/></data><data likelihood="-1930.665283" rank="5" score="0.3665" text="さいせい あげない"><word score="0.619" text="さいせい"/><word score="0.114" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:11:08,028 SEAT0 INFO #1: 左 さげて (0.490000)
+2014-03-17 11:11:08,029 SEAT0 INFO looking up...speechin: 左 さげて
+2014-03-17 11:11:08,029 SEAT0 INFO sending command leftdown2 (to command)
+2014-03-17 11:11:08,030 SEAT0 INFO state transition from both_up to right_up
+2014-03-17 11:11:10,571 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1925.884033" rank="1" score="0.701" text="右 さげて"><word score="0.990" text="右"/><word score="0.412" text="さげて"/></data><data likelihood="-1933.453369" rank="2" score="0.706" text="右 あげて"><word score="0.929" text="右"/><word score="0.483" text="あげて"/></data><data likelihood="-1945.974609" rank="3" score="0.514" text="右 さげない"><word score="0.987" text="右"/><word score="0.041" text="さげない"/></data><data likelihood="-1946.296753" rank="4" score="0.272" text="さいせい あげて"><word score="0.061" text="さいせい"/><word score="0.483" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:11:10,575 SEAT0 INFO #1: 右 さげて (0.701000)
+2014-03-17 11:11:10,575 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:11:10,575 SEAT0 INFO sending command rightdown1 (to command)
+2014-03-17 11:11:10,575 SEAT0 INFO state transition from right_up to both_down
+2014-03-17 11:11:11,289 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1578.350952" rank="1" score="0.7155" text="さいせい あげて"><word score="0.822" text="さいせい"/><word score="0.609" text="あげて"/></data><data likelihood="-1587.562866" rank="2" score="0.3785" text="さいせい あげない"><word score="0.554" text="さいせい"/><word score="0.203" text="あげない"/></data><data likelihood="-1592.476807" rank="3" score="0.465" text="さいせい さげて"><word score="0.762" text="さいせい"/><word score="0.168" text="さげて"/></data><data likelihood="-1592.636963" rank="4" score="0.3475" text="右 あげて"><word score="0.086" text="右"/><word score="0.609" text="あげて"/></data><data likelihood="-1595.779541" rank="5" score="0.3505" text="左 あげて"><word score="0.092" text="左"/><word score="0.609" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:11:11,292 SEAT0 INFO #1: さいせい あげて (0.715500)
+2014-03-17 11:11:11,292 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:11,293 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:11,293 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:11,293 SEAT0 INFO #2: さいせい あげない (0.378500)
+2014-03-17 11:11:11,295 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:11:11,295 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:11:11,295 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:11,296 SEAT0 INFO #3: さいせい さげて (0.465000)
+2014-03-17 11:11:11,296 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:11,296 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:11,296 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:11,298 SEAT0 INFO #4: 右 あげて (0.347500)
+2014-03-17 11:11:11,298 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:11:11,298 SEAT0 INFO sending command rightup1 (to command)
+2014-03-17 11:11:11,299 SEAT0 INFO state transition from both_down to right_up
+2014-03-17 11:11:15,443 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1621.215088" rank="1" score="0.7295" text="右 あげて"><word score="0.841" text="右"/><word score="0.618" text="あげて"/></data><data likelihood="-1633.221680" rank="2" score="0.5415" text="右 あげない"><word score="0.928" text="右"/><word score="0.155" text="あげない"/></data><data likelihood="-1633.383789" rank="3" score="0.4975" text="右 さげて"><word score="0.832" text="右"/><word score="0.163" text="さげて"/></data><data likelihood="-1637.671143" rank="4" score="0.3645" text="左 あげて"><word score="0.111" text="左"/><word score="0.618" text="あげて"/></data><data likelihood="-1645.149536" rank="5" score="0.333" text="さいせい あげて"><word score="0.048" text="さいせい"/><word score="0.618" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:11:15,447 SEAT0 INFO #1: 右 あげて (0.729500)
+2014-03-17 11:11:15,447 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:11:15,447 SEAT0 INFO sending command none (to command)
+2014-03-17 11:11:19,532 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-3799.962158" rank="1" score="0.6485" text="さいせい あげて"><word score="0.799" text="さいせい"/><word score="0.498" text="あげて"/></data><data likelihood="-3806.372314" rank="2" score="0.3825" text="さいせい さげて"><word score="0.470" text="さいせい"/><word score="0.295" text="さげて"/></data><data likelihood="-3809.500732" rank="3" score="0.288" text="左 さげて"><word score="0.281" text="左"/><word score="0.295" text="さげて"/></data><data likelihood="-3810.266602" rank="4" score="0.272" text="右 さげて"><word score="0.249" text="右"/><word score="0.295" text="さげて"/></data><data likelihood="-3811.651367" rank="5" score="0.4645" text="さいせい あげない"><word score="0.799" text="さいせい"/><word score="0.130" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:11:19,538 SEAT0 INFO #1: さいせい あげて (0.648500)
+2014-03-17 11:11:19,538 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:19,538 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:19,539 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:19,539 SEAT0 INFO #2: さいせい さげて (0.382500)
+2014-03-17 11:11:19,539 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:19,539 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:19,539 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:19,539 SEAT0 INFO #3: 左 さげて (0.288000)
+2014-03-17 11:11:19,539 SEAT0 INFO looking up...speechin: 左 さげて
+2014-03-17 11:11:19,540 SEAT0 INFO sending command none (to command)
+2014-03-17 11:11:20,309 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1968.812622" rank="1" score="0.744" text="右 よろしく"><word score="0.915" text="右"/><word score="0.573" text="よろしく"/></data><data likelihood="-1975.205566" rank="2" score="0.4715" text="左 あげて"><word score="0.698" text="左"/><word score="0.245" text="あげて"/></data><data likelihood="-1979.272095" rank="3" score="0.2255" text="右 あげて"><word score="0.206" text="右"/><word score="0.245" text="あげて"/></data><data likelihood="-1981.922485" rank="4" score="0.3025" text="左 さげて"><word score="0.518" text="左"/><word score="0.087" text="さげて"/></data><data likelihood="-1986.123535" rank="5" score="0.384" text="左 あげない"><word score="0.698" text="左"/><word score="0.070" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:11:20,312 SEAT0 INFO #1: 右 よろしく (0.744000)
+2014-03-17 11:11:20,313 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:11:20,313 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:11:20,313 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:20,315 SEAT0 INFO #2: 左 あげて (0.471500)
+2014-03-17 11:11:20,315 SEAT0 INFO looking up...speechin: 左 あげて
+2014-03-17 11:11:20,315 SEAT0 INFO sending command leftup2 (to command)
+2014-03-17 11:11:20,315 SEAT0 INFO state transition from right_up to both_up
+2014-03-17 11:11:21,519 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1950.509033" rank="1" score="0.806" text="右 よろしく"><word score="0.929" text="右"/><word score="0.683" text="よろしく"/></data><data likelihood="-1968.719116" rank="2" score="0.481" text="右 あげない"><word score="0.859" text="右"/><word score="0.103" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:11:21,520 SEAT0 INFO #1: 右 よろしく (0.806000)
+2014-03-17 11:11:21,522 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:11:21,522 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:11:21,522 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:21,523 SEAT0 INFO #2: 右 あげない (0.481000)
+2014-03-17 11:11:21,523 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:11:21,523 SEAT0 INFO sending command rightdown2 (to command)
+2014-03-17 11:11:21,523 SEAT0 INFO state transition from both_up to left_up
+2014-03-17 11:11:22,618 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2019.500610" rank="1" score="0.585" text="右 あげて"><word score="0.729" text="右"/><word score="0.441" text="あげて"/></data><data likelihood="-2020.988037" rank="2" score="0.55" text="右 あげない"><word score="0.728" text="右"/><word score="0.372" text="あげない"/></data><data likelihood="-2031.008911" rank="3" score="0.2995" text="さいせい あげて"><word score="0.158" text="さいせい"/><word score="0.441" text="あげて"/></data><data likelihood="-2031.496338" rank="4" score="0.345" text="右 さげて"><word score="0.589" text="右"/><word score="0.101" text="さげて"/></data><data likelihood="-2032.496460" rank="5" score="0.2845" text="さいせい あげない"><word score="0.197" text="さいせい"/><word score="0.372" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:11:22,621 SEAT0 INFO #1: 右 あげて (0.585000)
+2014-03-17 11:11:22,621 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:11:22,622 SEAT0 INFO sending command rightup2 (to command)
+2014-03-17 11:11:22,624 SEAT0 INFO state transition from left_up to both_up
+2014-03-17 11:11:23,687 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2298.529053" rank="1" score="0.9775" text="右 よろしく"><word score="0.973" text="右"/><word score="0.982" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:11:23,690 SEAT0 INFO #1: 右 よろしく (0.977500)
+2014-03-17 11:11:23,690 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:11:23,691 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:11:23,691 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:23,691 SEAT0 INFO no command found
+2014-03-17 11:11:24,464 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2570.688232" rank="1" score="0.81" text="さいせい よろしく"><word score="0.990" text="さいせい"/><word score="0.630" text="よろしく"/></data><data likelihood="-2584.562256" rank="2" score="0.4895" text="左 あげない"><word score="0.780" text="左"/><word score="0.199" text="あげない"/></data><data likelihood="-2588.447998" rank="3" score="0.354" text="さいせい あげて"><word score="0.642" text="さいせい"/><word score="0.066" text="あげて"/></data><data likelihood="-2588.737549" rank="4" score="0.3135" text="右 さげない"><word score="0.536" text="右"/><word score="0.091" text="さげない"/></data><data likelihood="-2588.974121" rank="5" score="0.2495" text="左 さげない"><word score="0.408" text="左"/><word score="0.091" text="さげない"/></data></listenText> (speechin)
+2014-03-17 11:11:24,469 SEAT0 INFO #1: さいせい よろしく (0.810000)
+2014-03-17 11:11:24,470 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:11:24,470 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:11:24,470 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:24,470 SEAT0 INFO #2: 左 あげない (0.489500)
+2014-03-17 11:11:24,470 SEAT0 INFO looking up...speechin: 左 あげない
+2014-03-17 11:11:24,470 SEAT0 INFO sending command leftdown2 (to command)
+2014-03-17 11:11:24,471 SEAT0 INFO state transition from both_up to right_up
+2014-03-17 11:11:30,496 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-10368.500000" rank="1" score="0.521" text="左 さげて"><word score="0.795" text="左"/><word score="0.247" text="さげて"/></data><data likelihood="-10376.232422" rank="2" score="0.2" text="右 さげて"><word score="0.153" text="右"/><word score="0.247" text="さげて"/></data><data likelihood="-10385.049805" rank="3" score="0.3625" text="左 さげない"><word score="0.107" text="左"/><word score="0.618" text="さげない"/></data><data likelihood="-10387.235352" rank="4" score="0.343" text="さいせい あげない"><word score="0.638" text="さいせい"/><word score="0.048" text="あげない"/></data><data likelihood="-10390.886719" rank="5" score="0.745" text="さいせい さげない"><word score="0.872" text="さいせい"/><word score="0.618" text="さげない"/></data></listenText> (speechin)
+2014-03-17 11:11:30,500 SEAT0 INFO #1: 左 さげて (0.521000)
+2014-03-17 11:11:30,500 SEAT0 INFO looking up...speechin: 左 さげて
+2014-03-17 11:11:30,500 SEAT0 INFO sending command none (to command)
+2014-03-17 11:11:32,085 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-3163.240479" rank="1" score="0.456" text="右 さげて"><word score="0.617" text="右"/><word score="0.295" text="さげて"/></data><data likelihood="-3164.363037" rank="2" score="0.434" text="右 あげて"><word score="0.368" text="右"/><word score="0.500" text="あげて"/></data><data likelihood="-3166.023926" rank="3" score="0.4525" text="さいせい あげて"><word score="0.405" text="さいせい"/><word score="0.500" text="あげて"/></data><data likelihood="-3169.232666" rank="4" score="0.3635" text="左 あげて"><word score="0.227" text="左"/><word score="0.500" text="あげて"/></data><data likelihood="-3170.831299" rank="5" score="0.2775" text="左 さげて"><word score="0.260" text="左"/><word score="0.295" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:11:32,088 SEAT0 INFO #1: 右 さげて (0.456000)
+2014-03-17 11:11:32,088 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:11:32,089 SEAT0 INFO sending command rightdown1 (to command)
+2014-03-17 11:11:32,091 SEAT0 INFO state transition from right_up to both_down
+2014-03-17 11:11:33,358 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1955.537476" rank="1" score="0.545" text="さいせい あげて"><word score="0.836" text="さいせい"/><word score="0.254" text="あげて"/></data><data likelihood="-1960.953857" rank="2" score="0.567" text="さいせい あげない"><word score="0.989" text="さいせい"/><word score="0.145" text="あげない"/></data><data likelihood="-1964.786743" rank="3" score="0.6585" text="さいせい さげて"><word score="0.971" text="さいせい"/><word score="0.346" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:11:33,362 SEAT0 INFO #1: さいせい あげて (0.545000)
+2014-03-17 11:11:33,362 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:33,362 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:33,364 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:33,364 SEAT0 INFO #2: さいせい あげない (0.567000)
+2014-03-17 11:11:33,364 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:11:33,365 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:11:33,365 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:33,365 SEAT0 INFO #3: さいせい さげて (0.658500)
+2014-03-17 11:11:33,365 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:33,365 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:33,365 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:33,365 SEAT0 INFO no command found
+2014-03-17 11:11:34,065 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2049.152832" rank="1" score="0.622" text="さいせい あげて"><word score="0.720" text="さいせい"/><word score="0.524" text="あげて"/></data><data likelihood="-2056.085938" rank="2" score="0.292" text="右 さげて"><word score="0.352" text="右"/><word score="0.232" text="さげて"/></data><data likelihood="-2056.879639" rank="3" score="0.356" text="左 あげて"><word score="0.188" text="左"/><word score="0.524" text="あげて"/></data><data likelihood="-2059.792969" rank="4" score="0.356" text="さいせい さげて"><word score="0.480" text="さいせい"/><word score="0.232" text="さげて"/></data><data likelihood="-2063.049316" rank="5" score="0.3525" text="さいせい よろしく"><word score="0.598" text="さいせい"/><word score="0.107" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:11:34,071 SEAT0 INFO #1: さいせい あげて (0.622000)
+2014-03-17 11:11:34,071 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:34,072 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:11:34,072 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:34,072 SEAT0 INFO #2: 右 さげて (0.292000)
+2014-03-17 11:11:34,072 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:11:34,072 SEAT0 INFO sending command none (to command)
+2014-03-17 11:11:36,888 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-5360.576172" rank="1" score="0.6765" text="さいせい さげて"><word score="0.671" text="さいせい"/><word score="0.682" text="さげて"/></data><data likelihood="-5362.812012" rank="2" score="0.5015" text="左 さげて"><word score="0.321" text="左"/><word score="0.682" text="さげて"/></data><data likelihood="-5374.270508" rank="3" score="0.5565" text="左 あげて"><word score="0.819" text="左"/><word score="0.294" text="あげて"/></data><data likelihood="-5376.449219" rank="4" score="0.2365" text="さいせい あげて"><word score="0.179" text="さいせい"/><word score="0.294" text="あげて"/></data><data likelihood="-5395.084473" rank="5" score="0.3455" text="右 さげて"><word score="0.009" text="右"/><word score="0.682" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:11:36,894 SEAT0 INFO #1: さいせい さげて (0.676500)
+2014-03-17 11:11:36,894 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:36,894 SEAT0 INFO looking up...speechin: さいせい さげて
+2014-03-17 11:11:36,894 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:36,895 SEAT0 INFO #2: 左 さげて (0.501500)
+2014-03-17 11:11:36,895 SEAT0 INFO looking up...speechin: 左 さげて
+2014-03-17 11:11:36,895 SEAT0 INFO sending command none (to command)
+2014-03-17 11:11:38,815 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-5050.482910" rank="1" score="0.4155" text="右 あげて"><word score="0.432" text="右"/><word score="0.399" text="あげて"/></data><data likelihood="-5055.243164" rank="2" score="0.3665" text="右 よろしく"><word score="0.488" text="右"/><word score="0.245" text="よろしく"/></data><data likelihood="-5058.257324" rank="3" score="0.316" text="さいせい よろしく"><word score="0.387" text="さいせい"/><word score="0.245" text="よろしく"/></data><data likelihood="-5059.306641" rank="4" score="0.4025" text="さいせい あげて"><word score="0.406" text="さいせい"/><word score="0.399" text="あげて"/></data><data likelihood="-5061.181641" rank="5" score="0.325" text="右 さげて"><word score="0.464" text="右"/><word score="0.186" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:11:38,821 SEAT0 INFO #1: 右 あげて (0.415500)
+2014-03-17 11:11:38,821 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:11:38,822 SEAT0 INFO sending command rightup1 (to command)
+2014-03-17 11:11:38,822 SEAT0 INFO state transition from both_down to right_up
+2014-03-17 11:11:42,651 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-7140.584961" rank="1" score="0.8755" text="左 よろしく"><word score="0.760" text="左"/><word score="0.991" text="よろしく"/></data><data likelihood="-7151.989258" rank="2" score="0.5845" text="右 よろしく"><word score="0.178" text="右"/><word score="0.991" text="よろしく"/></data><data likelihood="-7162.106934" rank="3" score="0.527" text="さいせい よろしく"><word score="0.063" text="さいせい"/><word score="0.991" text="よろしく"/></data><data likelihood="-7186.976074" rank="4" score="0.435" text="左 さげない"><word score="0.866" text="左"/><word score="0.004" text="さげない"/></data><data likelihood="-7189.864258" rank="5" score="0.4345" text="左 さげて"><word score="0.866" text="左"/><word score="0.003" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:11:42,657 SEAT0 INFO #1: 左 よろしく (0.875500)
+2014-03-17 11:11:42,657 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:11:42,657 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:11:42,657 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:42,657 SEAT0 INFO #2: 右 よろしく (0.584500)
+2014-03-17 11:11:42,658 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:11:42,658 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:11:42,658 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:42,660 SEAT0 INFO #3: さいせい よろしく (0.527000)
+2014-03-17 11:11:42,660 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:11:42,660 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:11:42,661 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:42,661 SEAT0 INFO #4: 左 さげない (0.435000)
+2014-03-17 11:11:42,661 SEAT0 INFO looking up...speechin: 左 さげない
+2014-03-17 11:11:42,661 SEAT0 INFO sending command leftup2 (to command)
+2014-03-17 11:11:42,661 SEAT0 INFO state transition from right_up to both_up
+2014-03-17 11:11:54,036 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-8123.227051" rank="1" score="0.576" text="右 さげて"><word score="0.250" text="右"/><word score="0.902" text="さげて"/></data><data likelihood="-8127.184082" rank="2" score="0.8215" text="さいせい さげて"><word score="0.741" text="さいせい"/><word score="0.902" text="さげて"/></data><data likelihood="-8131.637207" rank="3" score="0.221" text="左 あげて"><word score="0.390" text="左"/><word score="0.052" text="あげて"/></data><data likelihood="-8136.681152" rank="4" score="0.223" text="さいせい あげて"><word score="0.394" text="さいせい"/><word score="0.052" text="あげて"/></data><data likelihood="-8141.806152" rank="5" score="0.456" text="左 さげて"><word score="0.010" text="左"/><word score="0.902" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:11:54,039 SEAT0 INFO #1: 右 さげて (0.576000)
+2014-03-17 11:11:54,040 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:11:54,040 SEAT0 INFO sending command rightdown2 (to command)
+2014-03-17 11:11:54,042 SEAT0 INFO state transition from both_up to left_up
+2014-03-17 11:11:55,249 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2638.835205" rank="1" score="0.6265" text="右 あげない"><word score="0.717" text="右"/><word score="0.536" text="あげない"/></data><data likelihood="-2642.649658" rank="2" score="0.6265" text="右 あげて"><word score="0.907" text="右"/><word score="0.346" text="あげて"/></data><data likelihood="-2649.771484" rank="3" score="0.3" text="右 さげない"><word score="0.529" text="右"/><word score="0.071" text="さげない"/></data><data likelihood="-2650.083984" rank="4" score="0.346" text="さいせい あげない"><word score="0.156" text="さいせい"/><word score="0.536" text="あげない"/></data><data likelihood="-2650.747803" rank="5" score="0.3315" text="左 あげない"><word score="0.127" text="左"/><word score="0.536" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:11:55,253 SEAT0 INFO #1: 右 あげない (0.626500)
+2014-03-17 11:11:55,253 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:11:55,253 SEAT0 INFO sending command none (to command)
+2014-03-17 11:11:58,130 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-5800.150879" rank="1" score="0.83" text="さいせい よろしく"><word score="1.000" text="さいせい"/><word score="0.660" text="よろしく"/></data><data likelihood="-5808.832031" rank="2" score="0.6325" text="さいせい さげない"><word score="1.000" text="さいせい"/><word score="0.265" text="さげない"/></data><data likelihood="-5827.515625" rank="3" score="0.534" text="さいせい あげない"><word score="1.000" text="さいせい"/><word score="0.068" text="あげない"/></data><data likelihood="-5892.540039" rank="4" score="0.33" text="左 よろしく"><word score="0.000" text="左"/><word score="0.660" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:11:58,134 SEAT0 INFO #1: さいせい よろしく (0.830000)
+2014-03-17 11:11:58,134 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:11:58,134 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:11:58,134 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:58,135 SEAT0 INFO #2: さいせい さげない (0.632500)
+2014-03-17 11:11:58,135 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:11:58,135 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:11:58,137 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:58,137 SEAT0 INFO #3: さいせい あげない (0.534000)
+2014-03-17 11:11:58,137 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:11:58,138 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:11:58,138 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:58,138 SEAT0 INFO #4: 左 よろしく (0.330000)
+2014-03-17 11:11:58,138 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:11:58,138 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:11:58,138 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:11:58,138 SEAT0 INFO no command found
+2014-03-17 11:12:00,375 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-4436.842773" rank="1" score="0.555" text="右 よろしく"><word score="0.809" text="右"/><word score="0.301" text="よろしく"/></data><data likelihood="-4441.292969" rank="2" score="0.6015" text="右 さげて"><word score="0.905" text="右"/><word score="0.298" text="さげて"/></data><data likelihood="-4441.795410" rank="3" score="0.639" text="右 あげて"><word score="0.884" text="右"/><word score="0.394" text="あげて"/></data><data likelihood="-4449.897949" rank="4" score="0.2455" text="左 よろしく"><word score="0.190" text="左"/><word score="0.301" text="よろしく"/></data><data likelihood="-4459.660156" rank="5" score="0.1955" text="左 さげて"><word score="0.093" text="左"/><word score="0.298" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:12:00,380 SEAT0 INFO #1: 右 よろしく (0.555000)
+2014-03-17 11:12:00,380 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:12:00,380 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:12:00,381 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:12:00,381 SEAT0 INFO #2: 右 さげて (0.601500)
+2014-03-17 11:12:00,381 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:12:00,381 SEAT0 INFO sending command none (to command)
+2014-03-17 11:12:04,526 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-4783.325684" rank="1" score="0.5335" text="右 あげて"><word score="0.549" text="右"/><word score="0.518" text="あげて"/></data><data likelihood="-4784.068848" rank="2" score="0.5385" text="右 さげて"><word score="0.608" text="右"/><word score="0.469" text="さげて"/></data><data likelihood="-4789.171875" rank="3" score="0.445" text="左 あげて"><word score="0.372" text="左"/><word score="0.518" text="あげて"/></data><data likelihood="-4796.477051" rank="4" score="0.3855" text="左 さげて"><word score="0.302" text="左"/><word score="0.469" text="さげて"/></data><data likelihood="-4806.241699" rank="5" score="0.2985" text="さいせい あげて"><word score="0.079" text="さいせい"/><word score="0.518" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:12:04,529 SEAT0 INFO #1: 右 あげて (0.533500)
+2014-03-17 11:12:04,530 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:12:04,530 SEAT0 INFO sending command rightup2 (to command)
+2014-03-17 11:12:04,532 SEAT0 INFO state transition from left_up to both_up
+2014-03-17 11:12:08,232 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1863.767456" rank="1" score="0.4715" text="右 さげない"><word score="0.433" text="右"/><word score="0.510" text="さげない"/></data></listenText> (speechin)
+2014-03-17 11:12:08,234 SEAT0 INFO #1: 右 さげない (0.471500)
+2014-03-17 11:12:08,236 SEAT0 INFO looking up...speechin: 右 さげない
+2014-03-17 11:12:08,236 SEAT0 INFO sending command none (to command)
+2014-03-17 11:12:21,173 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2718.648438" rank="1" score="0.6535" text="右 あげて"><word score="0.816" text="右"/><word score="0.491" text="あげて"/></data><data likelihood="-2725.127441" rank="2" score="0.442" text="右 あげない"><word score="0.651" text="右"/><word score="0.233" text="あげない"/></data><data likelihood="-2728.300293" rank="3" score="0.3595" text="右 さげない"><word score="0.575" text="右"/><word score="0.144" text="さげない"/></data><data likelihood="-2728.382080" rank="4" score="0.2055" text="さいせい あげない"><word score="0.178" text="さいせい"/><word score="0.233" text="あげない"/></data><data likelihood="-2729.337646" rank="5" score="0.3515" text="右 さげて"><word score="0.575" text="右"/><word score="0.128" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:12:21,177 SEAT0 INFO #1: 右 あげて (0.653500)
+2014-03-17 11:12:21,178 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 11:12:21,178 SEAT0 INFO sending command none (to command)
+2014-03-17 11:12:22,394 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2950.650635" rank="1" score="0.3305" text="左 よろしく"><word score="0.322" text="左"/><word score="0.339" text="よろしく"/></data><data likelihood="-2953.341064" rank="2" score="0.3355" text="左 あげて"><word score="0.304" text="左"/><word score="0.367" text="あげて"/></data><data likelihood="-2954.338135" rank="3" score="0.499" text="右 あげて"><word score="0.631" text="右"/><word score="0.367" text="あげて"/></data><data likelihood="-2954.980225" rank="4" score="0.3455" text="右 よろしく"><word score="0.352" text="右"/><word score="0.339" text="よろしく"/></data><data likelihood="-2956.812744" rank="5" score="0.3325" text="さいせい よろしく"><word score="0.326" text="さいせい"/><word score="0.339" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 11:12:22,398 SEAT0 INFO #1: 左 よろしく (0.330500)
+2014-03-17 11:12:22,398 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:12:22,398 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:12:22,400 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:12:22,400 SEAT0 INFO #2: 左 あげて (0.335500)
+2014-03-17 11:12:22,400 SEAT0 INFO looking up...speechin: 左 あげて
+2014-03-17 11:12:22,401 SEAT0 INFO sending command none (to command)
+2014-03-17 11:12:23,528 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2765.844238" rank="1" score="0.609" text="左 あげない"><word score="0.846" text="左"/><word score="0.372" text="あげない"/></data><data likelihood="-2766.353027" rank="2" score="0.577" text="左 あげて"><word score="0.803" text="左"/><word score="0.351" text="あげて"/></data><data likelihood="-2769.978027" rank="3" score="0.358" text="左 さげない"><word score="0.574" text="左"/><word score="0.142" text="さげない"/></data><data likelihood="-2770.316895" rank="4" score="0.265" text="右 あげて"><word score="0.179" text="右"/><word score="0.351" text="あげて"/></data><data likelihood="-2770.486816" rank="5" score="0.312" text="左 さげて"><word score="0.490" text="左"/><word score="0.134" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:12:23,532 SEAT0 INFO #1: 左 あげない (0.609000)
+2014-03-17 11:12:23,532 SEAT0 INFO looking up...speechin: 左 あげない
+2014-03-17 11:12:23,532 SEAT0 INFO sending command leftdown2 (to command)
+2014-03-17 11:12:23,533 SEAT0 INFO state transition from both_up to right_up
+2014-03-17 11:12:34,865 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-5165.391602" rank="1" score="0.532" text="左 あげない"><word score="0.462" text="左"/><word score="0.602" text="あげない"/></data><data likelihood="-5169.318359" rank="2" score="0.5615" text="さいせい あげない"><word score="0.521" text="さいせい"/><word score="0.602" text="あげない"/></data><data likelihood="-5171.298340" rank="3" score="0.5765" text="左 さげない"><word score="0.797" text="左"/><word score="0.356" text="さげない"/></data><data likelihood="-5182.640625" rank="4" score="0.262" text="さいせい さげない"><word score="0.168" text="さいせい"/><word score="0.356" text="さげない"/></data><data likelihood="-5190.083496" rank="5" score="0.3095" text="右 あげない"><word score="0.017" text="右"/><word score="0.602" text="あげない"/></data></listenText> (speechin)
+2014-03-17 11:12:34,868 SEAT0 INFO #1: 左 あげない (0.532000)
+2014-03-17 11:12:34,868 SEAT0 INFO looking up...speechin: 左 あげない
+2014-03-17 11:12:34,869 SEAT0 INFO sending command none (to command)
+2014-03-17 11:12:38,186 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-1971.367432" rank="1" score="0.7665" text="右 さげない"><word score="0.882" text="右"/><word score="0.651" text="さげない"/></data><data likelihood="-1979.175659" rank="2" score="0.3615" text="左 あげない"><word score="0.422" text="左"/><word score="0.301" text="あげない"/></data><data likelihood="-1990.524536" rank="3" score="0.431" text="右 あげない"><word score="0.561" text="右"/><word score="0.301" text="あげない"/></data><data likelihood="-1990.535767" rank="4" score="0.384" text="左 さげない"><word score="0.117" text="左"/><word score="0.651" text="さげない"/></data><data likelihood="-1997.224609" rank="5" score="0.4705" text="右 さげて"><word score="0.908" text="右"/><word score="0.033" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:12:38,190 SEAT0 INFO #1: 右 さげない (0.766500)
+2014-03-17 11:12:38,190 SEAT0 INFO looking up...speechin: 右 さげない
+2014-03-17 11:12:38,190 SEAT0 INFO sending command none (to command)
+2014-03-17 11:12:41,078 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-3891.197021" rank="1" score="0.733" text="さいせい あげない"><word score="0.830" text="さいせい"/><word score="0.636" text="あげない"/></data><data likelihood="-3899.122314" rank="2" score="0.484" text="さいせい さげない"><word score="0.813" text="さいせい"/><word score="0.155" text="さげない"/></data><data likelihood="-3904.048584" rank="3" score="0.476" text="さいせい あげて"><word score="0.807" text="さいせい"/><word score="0.145" text="あげて"/></data><data likelihood="-3905.088135" rank="4" score="0.3775" text="右 あげない"><word score="0.119" text="右"/><word score="0.636" text="あげない"/></data><data likelihood="-3907.001709" rank="5" score="0.438" text="さいせい さげて"><word score="0.813" text="さいせい"/><word score="0.063" text="さげて"/></data></listenText> (speechin)
+2014-03-17 11:12:41,082 SEAT0 INFO #1: さいせい あげない (0.733000)
+2014-03-17 11:12:41,084 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:12:41,084 SEAT0 INFO looking up...speechin: さいせい あげない
+2014-03-17 11:12:41,084 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:12:41,085 SEAT0 INFO #2: さいせい さげない (0.484000)
+2014-03-17 11:12:41,085 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:12:41,085 SEAT0 INFO looking up...speechin: さいせい さげない
+2014-03-17 11:12:41,085 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:12:41,085 SEAT0 INFO #3: さいせい あげて (0.476000)
+2014-03-17 11:12:41,085 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:12:41,086 SEAT0 INFO looking up...speechin: さいせい あげて
+2014-03-17 11:12:41,086 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:12:41,086 SEAT0 INFO #4: 右 あげない (0.377500)
+2014-03-17 11:12:41,086 SEAT0 INFO looking up...speechin: 右 あげない
+2014-03-17 11:12:41,088 SEAT0 INFO sending command rightdown1 (to command)
+2014-03-17 11:12:41,088 SEAT0 INFO state transition from right_up to both_down
+2014-03-17 11:12:43,769 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-5327.089844" rank="1" score="0.648" text="左 あげて"><word score="0.923" text="左"/><word score="0.373" text="あげて"/></data><data likelihood="-5332.329102" rank="2" score="0.626" text="左 あげない"><word score="0.921" text="左"/><word score="0.331" text="あげない"/></data><data likelihood="-5337.862305" rank="3" score="0.55" text="左 さげて"><word score="0.944" text="左"/><word score="0.156" text="さげて"/></data><data likelihood="-5339.334961" rank="4" score="0.5495" text="左 さげない"><word score="0.967" text="左"/><word score="0.132" text="さげない"/></data><data likelihood="-5350.909180" rank="5" score="0.2055" text="さいせい あげて"><word score="0.038" text="さいせい"/><word score="0.373" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:12:43,775 SEAT0 INFO #1: 左 あげて (0.648000)
+2014-03-17 11:12:43,775 SEAT0 INFO looking up...speechin: 左 あげて
+2014-03-17 11:12:43,775 SEAT0 INFO sending command leftup1 (to command)
+2014-03-17 11:12:43,776 SEAT0 INFO state transition from both_down to left_up
+2014-03-17 11:12:47,411 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-2971.462646" rank="1" score="0.6515" text="右 よろしく"><word score="0.773" text="右"/><word score="0.530" text="よろしく"/></data><data likelihood="-2980.540771" rank="2" score="0.5395" text="右 さげて"><word score="0.897" text="右"/><word score="0.182" text="さげて"/></data><data likelihood="-2984.253906" rank="3" score="0.3485" text="左 よろしく"><word score="0.167" text="左"/><word score="0.530" text="よろしく"/></data><data likelihood="-2984.257813" rank="4" score="0.3405" text="右 あげない"><word score="0.586" text="右"/><word score="0.095" text="あげない"/></data><data likelihood="-2989.496338" rank="5" score="0.3775" text="右 あげて"><word score="0.586" text="右"/><word score="0.169" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:12:47,414 SEAT0 INFO #1: 右 よろしく (0.651500)
+2014-03-17 11:12:47,414 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:12:47,415 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:12:47,415 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:12:47,415 SEAT0 INFO #2: 右 さげて (0.539500)
+2014-03-17 11:12:47,417 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 11:12:47,417 SEAT0 INFO sending command none (to command)
+2014-03-17 11:12:55,026 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-4039.950684" rank="1" score="0.485" text="左 さげて"><word score="0.613" text="左"/><word score="0.357" text="さげて"/></data><data likelihood="-4044.410156" rank="2" score="0.3625" text="右 さげて"><word score="0.368" text="右"/><word score="0.357" text="さげて"/></data><data likelihood="-4044.838135" rank="3" score="0.5175" text="左 あげて"><word score="0.626" text="左"/><word score="0.409" text="あげて"/></data><data likelihood="-4049.307373" rank="4" score="0.373" text="右 あげて"><word score="0.337" text="右"/><word score="0.409" text="あげて"/></data><data likelihood="-4050.378174" rank="5" score="0.357" text="左 さげない"><word score="0.606" text="左"/><word score="0.108" text="さげない"/></data></listenText> (speechin)
+2014-03-17 11:12:55,030 SEAT0 INFO #1: 左 さげて (0.485000)
+2014-03-17 11:12:55,030 SEAT0 INFO looking up...speechin: 左 さげて
+2014-03-17 11:12:55,030 SEAT0 INFO sending command leftdown1 (to command)
+2014-03-17 11:12:55,032 SEAT0 INFO state transition from left_up to both_down
+2014-03-17 11:12:58,046 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-6637.825195" rank="1" score="0.7995" text="左 よろしく"><word score="0.745" text="左"/><word score="0.854" text="よろしく"/></data><data likelihood="-6645.333008" rank="2" score="0.516" text="右 よろしく"><word score="0.178" text="右"/><word score="0.854" text="よろしく"/></data><data likelihood="-6650.754883" rank="3" score="0.4655" text="さいせい よろしく"><word score="0.077" text="さいせい"/><word score="0.854" text="よろしく"/></data><data likelihood="-6660.389648" rank="4" score="0.1495" text="さいせい さげて"><word score="0.183" text="さいせい"/><word score="0.116" text="さげて"/></data><data likelihood="-6672.004883" rank="5" score="0.139" text="さいせい あげて"><word score="0.253" text="さいせい"/><word score="0.025" text="あげて"/></data></listenText> (speechin)
+2014-03-17 11:12:58,052 SEAT0 INFO #1: 左 よろしく (0.799500)
+2014-03-17 11:12:58,053 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:12:58,055 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 11:12:58,055 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:12:58,055 SEAT0 INFO #2: 右 よろしく (0.516000)
+2014-03-17 11:12:58,055 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:12:58,055 SEAT0 INFO looking up...speechin: 右 よろしく
+2014-03-17 11:12:58,056 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 11:12:58,056 SEAT0 INFO #3: さいせい よろしく (0.465500)
+2014-03-17 11:12:58,056 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 11:12:58,058 SEAT0 INFO sending command SampleMotion1 (to command)

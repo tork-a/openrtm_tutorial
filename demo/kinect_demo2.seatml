@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<seatml>
+  <general name="flaggame">
+    <agent name="gesture" type="rtcin" datatype="TimedString" />
+    <agent name="longvalue" type="rtcin" datatype="TimedLong" />
+    <agent name="command" type="rtcout" datatype="TimedString" />
+    <agent name="ppt" type="socket" host="localhost" port="10030" />
+    <agent name="mplayer" type="socket" host="localhost" port="10020" />
+  </general>
+
+  <state name="ppt_mode">
+    <rule>
+      <key>(list|リスト)</key>
+      <command host="ppt">(openList)</command>
+      <script host="ppt">
+global current_item
+current_item=0
+rtc_result="(select %d)" % current_item
+</script>
+      <statetransition>ppt_list_mode</statetransition>
+    </rule>
+
+    <rule>
+      <key>close</key>
+      <command host="ppt">(close)</command>
+    </rule>
+    <rule>
+      <key>(run|実行|再生)</key>
+      <command host="ppt">(run)</command>
+      <statetransition>ppt_run_mode</statetransition>
+    </rule>
+
+    <rule>
+      <key>(video|ビデオ|ビデオプレーヤ)</key>
+      <statetransition>video_mode</statetransition>
+    </rule>
+  </state>
+
+  <state name="ppt_list_mode">
+    <rule>
+      <key>(open|オープン)</key>
+      <command host="ppt">(open)</command>
+      <statetransition>ppt_mode</statetransition>
+    </rule>
+        <rule>
+      <key>select</key>
+      <script host="ppt">
+global current_item
+current_item=0
+rtc_result="(select %d)" % current_item
+</script>
+    </rule>
+
+    <rule>
+      <key>next_item</key>
+      <script host="ppt">
+global current_item
+current_item += 1
+rtc_result="(select %d)" % current_item
+</script>
+    </rule>
+
+    <rule>
+      <key>prev_item</key>
+      <script host="ppt">
+global current_item
+current_item -= 1
+rtc_result="(select %d)" % current_item
+</script>
+    </rule>
+
+    <rule>
+      <key>(いち|に|さん|よん|ご|ろく|なな|はち|きゅう|じゅう) 番目</key>
+      <script host="ppt">
+global current_item
+items ={u"いち":0, u"に":1, u"さん":2, u"よん":3, u"ご":4, u"ろく":5, u"なな":6, u"はち":7, u"きゅう":8, u"じゅう":9}
+v = rtc_in_data.split(' ')[0]
+print v
+current_item = items[v]
+rtc_result="(select %d)" % current_item
+</script>
+    </rule>
+      <rule>
+      <key>(ppt|スライド)</key>
+      <statetransition>ppt_mode</statetransition>
+    </rule>
+  </state>
+  
+   <state name="ppt_run_mode">
+       <rule>
+      <key>(next|次へ|次の スライド)</key>
+      <command host="ppt">(next)</command>
+    </rule>
+    <rule>
+      <key>(prev|前へ|前の スライド)</key>
+      <command host="ppt">(previous)</command>
+    </rule>
+    <rule>
+      <key>(最初の スライド)</key>
+      <command host="ppt">(first)</command>
+    </rule>
+    <rule>
+      <key>(最後の スライド)</key>
+      <command host="ppt">(last)</command>
+    </rule>
+
+      <rule>
+      <key>(end|終了)</key>
+      <command host="ppt">(end)</command>
+      <statetransition>ppt_mode</statetransition>
+    </rule>
+   </state>
+
+   
+  <state name="video_mode">
+    <rule>
+      <key>(list|リスト)</key>
+      <command host="mplayer">(openList)
+     </command>
+      <script host="mplayer">
+global current_item
+current_item=0
+rtc_result="(select %d)\n" % current_item
+</script>
+    <statetransition>video_list_mode</statetransition>
+    </rule>
+
+    <rule>
+      <key>close</key>
+      <command host="mplayer">(close)</command>
+    </rule>
+      <rule>
+      <key>(play|再生)</key>
+      <command host="mplayer">(play)</command>
+      <statetransition>video_run_mode</statetransition>
+    </rule>
+
+
+    <rule>
+      <key>(ppt|スライド)</key>
+      <statetransition>ppt_mode</statetransition>
+    </rule>
+
+  </state>
+  
+  <state name="video_list_mode">
+      <rule>
+      <key>(open|オープン)</key>
+      <command host="mplayer">(open)</command>
+      <script host="mplayer">
+global current_volume
+current_volume = 10
+rtc_result="(volume %d)\n" % current_volume
+</script>
+<statetransition>video_mode</statetransition>
+    </rule>
+    
+    <rule>
+      <key>select</key>
+      <script host="mplayer">
+global current_item
+current_item=0
+rtc_result="(select %d)\n" % current_item
+</script>
+    </rule>
+
+    <rule>
+      <key>next_item</key>
+      <script host="mplayer">
+global current_item
+current_item += 1
+rtc_result="(select %d)\n" % current_item
+</script>
+    </rule>
+
+    <rule>
+      <key>prev_item</key>
+      <script host="mplayer">
+global current_item
+current_item -= 1
+rtc_result="(select %d)\n" % current_item
+</script>
+    </rule>
+    <rule>
+      <key>(いち|に|さん|よん|ご|ろく|なな|はち|きゅう|じゅう) 番目</key>
+      <script host="mplayer">
+global current_item
+items ={u"いち":0, u"に":1, u"さん":2, u"よん":3, u"ご":4, u"ろく":5, u"なな":6, u"はち":7, u"きゅう":8, u"じゅう":9}
+v = rtc_in_data.split(' ')[0]
+current_item = items[v]
+rtc_result="(select %d)" % current_item
+</script>
+    </rule>
+      <rule>
+      <key>(play|再生)</key>
+      <command host="mplayer">(play)</command>
+      <statetransition>video_run_mode</statetransition>
+    </rule>
+
+      <rule>
+      <key>(video|ビデオ|ビデオプレーヤ)</key>
+      <statetransition>video_mode</statetransition>
+    </rule>
+  </state>
+  
+  <state name="video_run_mode">
+
+
+    <rule>
+      <key>(ff|早送り)</key>
+      <command host="mplayer">(forward)</command>
+    </rule>
+
+    <rule>
+      <key>(bw|巻き戻し)</key>
+      <command host="mplayer">(backward)</command>
+    </rule>
+
+    <rule>
+      <key>(pause|一時停止)</key>
+      <command host="mplayer">(pause)</command>
+       <statetransition>video_mode</statetransition>
+    </rule>
+
+    <rule>
+      <key>(stop|停止|ストップ)</key>
+      <command host="mplayer">(stop)</command>
+       <statetransition>video_mode</statetransition>
+    </rule>
+    
+      <rule>
+      <key>(fullScreen|全画面)</key>
+      <command host="mplayer">(fullScreen)</command>
+    </rule>
+  </state>
+</seatml>

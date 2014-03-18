@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.w3.org/2001/06/grammar
+                             http://www.w3.org/TR/speech-grammar/grammar.xsd"
+         xml:lang="jp"
+         version="1.0" mode="voice" root="command">
+         
+  <rule id="command">
+    <one-of>
+      <item><ruleref uri="#command_simple" /></item>
+      <item><ruleref uri="#command2" /></item>
+      <item><ruleref uri="#command_select" /></item>
+    </one-of>
+  </rule>
+  <rule id="command_simple">
+    <one-of>
+      <item>ビデオ</item>
+      <item>ビデオプレーヤ</item>
+      <item>スライド</item>
+      <item>リスト</item>
+      <item>次へ</item>
+      <item>前へ</item>
+      <item>オープン</item>
+      <item>実行</item>
+      <item>終了</item>
+      <item>再生</item>
+      <item>ストップ</item>
+      <item>停止</item>
+      <item>一時停止</item>
+      <item>早送り</item>
+      <item>巻き戻し</item>
+      <item>全画面</item>
+    </one-of>
+  </rule>
+  <rule id="command2">
+    <one-of>
+      <item>次の</item>
+      <item>前の</item>
+      <item>最初の</item>
+      <item>最後の</item>
+    </one-of>
+    <one-of>
+      <item>スライド</item>
+    </one-of>
+  </rule>
+   <rule id="command_select">
+    <one-of>
+      <item>いち</item>
+      <item>に</item>
+      <item>さん</item>
+      <item>よん</item>
+      <item>ご</item>
+      <item>ろく</item>
+      <item>なな</item>
+      <item>はち</item>
+      <item>きゅう</item>
+      <item>じゅう</item>
+    </one-of>
+    <one-of>
+      <item>番目</item>
+    </one-of>
+  </rule>
+</grammar>
+

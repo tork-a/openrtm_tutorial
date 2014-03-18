@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seatml>
+  <general name="flaggame">
+    <agent name="speechin" type="rtcin" datatype="TimedString" />
+    <agent name="command" type="rtcout" datatype="TimedString" />
+  </general>
+  <state name="both_down">
+    <rule>
+      <key>右 (あげて|さげない)</key>
+      <command host="command">rightup1</command>
+      <statetransition>right_up</statetransition>
+    </rule>
+    <rule>
+      <key>左 (あげて|さげない)</key>
+      <command host="command">leftup1</command>
+      <statetransition>left_up</statetransition>
+    </rule>
+    <rule>
+      <key>(右|左) (さげて|あげない)</key>
+      <command host="command">none</command>
+    </rule>
+    <rule>
+      <key>さいせい よろしく</key>
+      <command host="command">bow</command>
+      <statetransition>dance_ready</statetransition>
+    </rule>
+  </state>
+  <state name="both_up">
+    <rule>
+      <key>右 (さげて|あげない)</key>
+      <command host="command">rightdown2</command>
+      <statetransition>left_up</statetransition>
+    </rule>
+    <rule>
+      <key>左 (さげて|あげない)</key>
+      <command host="command">leftdown2</command>
+      <statetransition>right_up</statetransition>
+    </rule>
+    <rule>
+      <key>(右|左) (あげて|さげない)</key>
+      <command host="command">none</command>
+    </rule>
+  </state>
+  <state name="left_up">
+    <rule>
+      <key>左 (さげて|あげない)</key>
+      <command host="command">leftdown1</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+    <rule>
+      <key>右 (あげて|さげない)</key>
+      <command host="command">rightup2</command>
+      <statetransition>both_up</statetransition>
+    </rule>
+    <rule>
+      <key>左 (あげて|さげない)</key>
+      <key>右 (さげて|あげない)</key>
+      <command host="command">none</command>
+    </rule>
+    <rule>
+      <key>さいせい よろしく</key>
+      <command host="command">bow</command>
+      <statetransition>dance_ready</statetransition>
+    </rule>
+  </state>
+  <state name="right_up">
+    <rule>
+      <key>左 (あげて|さげない)</key>
+      <command host="command">leftup2</command>
+      <statetransition>both_up</statetransition>
+    </rule>
+    <rule>
+      <key>右 (さげて|あげない)</key>
+      <command host="command">rightdown1</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+    <rule>
+      <key>左 (さげて|あげない)</key>
+      <key>右 (あげて|さげない)</key>
+      <command host="command">none</command>
+    </rule>
+    <rule>
+      <key>さいせい よろしく</key>
+      <command host="command">bow</command>
+      <statetransition>dance_ready</statetransition>
+    </rule>
+  </state>
+  <state name="dance_ready">
+    <rule>
+      <key>あくしょん よろしく</key>
+      <command host="command">SampleMotion1</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+  </state>
+</seatml>

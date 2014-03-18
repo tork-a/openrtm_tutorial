@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seatml>
+  <general name="flaggame">
+    <agent name="gesture" type="rtcin" datatype="TimedString" />
+    <agent name="longvalue" type="rtcin" datatype="TimedLong" />
+    <agent name="command" type="rtcout" datatype="TimedString" />
+  </general>
+
+  <state name="all">
+    <rule>
+      <key>start_gesture</key>
+      <command host="command">stop</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+  </state>
+
+  <state name="direct_mode">
+    <rule>
+      <key>start_gesture</key>
+      <command host="command">stop</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+  </state>
+
+  <state name="both_down">
+    <rule>
+      <key>(swipe_left_fast)</key>
+      <command host="command">left_step</command>
+    </rule>
+    <rule>
+      <key>(swipe_left)</key>
+      <command host="command">look_left</command>
+    </rule>
+    <rule>
+      <key>(swipe_right_fast)</key>
+      <command host="command">right_step</command>
+    </rule>
+    <rule>
+      <key>(swipe_right)</key>
+      <command host="command">look_right</command>
+    </rule>
+    <rule>
+      <key>(swipe_up|swipe_up_fast)</key>
+      <command host="command">go_ahead</command>
+    </rule>
+
+    <rule>
+      <key>(swipe_down|swipe_down_fast)</key>
+      <command host="command">go_back</command>
+    </rule>
+
+
+    <rule>
+      <key>both_up</key>
+      <command host="command">bothup</command>
+      <statetransition>both_up</statetransition>
+    </rule>
+
+    <rule>
+      <key>right_up</key>
+      <command host="command">rightup1</command>
+      <statetransition>right_up</statetransition>
+    </rule>
+
+    <rule>
+      <key>left_up</key>
+      <command host="command">leftup1</command>
+      <statetransition>left_up</statetransition>
+    </rule>
+
+    <rule>
+      <key>both_down</key>
+      <command host="command">none</command>
+    </rule>
+
+    <rule>
+      <key>right_byebye</key>
+      <command host="command">muri</command>
+    </rule>
+
+    <rule>
+      <key>left_byebye</key>
+      <command host="command">bye</command>
+    </rule>
+
+    <rule>
+      <key>start_gesture</key>
+      <command host="command">stop</command>
+    </rule>
+    <rule>
+      <key>stop_gesture</key>
+      <command host="command">start</command>
+      <statetransition>direct_mode</statetransition>
+    </rule>
+  </state>
+
+  
+  <state name="both_up">
+    <rule>
+      <key>start_gesture</key>
+      <command host="command">stop</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+    <rule>
+      <key>left_up</key>
+      <command host="command">rightdown2</command>
+      <statetransition>left_up</statetransition>
+    </rule>
+    <rule>
+      <key>right_up</key>
+      <command host="command">leftdown2</command>
+      <statetransition>right_up</statetransition>
+    </rule>
+    <rule>
+      <key>both_down</key>
+      <command host="command">bothdown</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+    <rule>
+      <key>stop_gesture</key>
+      <command host="command">start</command>
+      <statetransition>direct_mode</statetransition>
+    </rule>
+    <rule>
+      <key>both_up</key>
+      <command host="command">none</command>
+    </rule>
+  </state>
+
+  <state name="left_up">
+    <rule>
+      <key>start_gesture</key>
+      <command host="command">stop</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+    <rule>
+      <key>both_down</key>
+      <command host="command">leftdown1</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+    <rule>
+      <key>both_up</key>
+      <command host="command">rightup2</command>
+      <statetransition>both_up</statetransition>
+    </rule>
+    <rule>
+      <key>left_up|right_up</key>
+      <command host="command">none</command>
+    </rule>
+  </state>
+
+
+  <state name="right_up">
+    <rule>
+      <key>start_gesture</key>
+      <command host="command">stop</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+    <rule>
+      <key>both_up</key>
+      <command host="command">leftup2</command>
+      <statetransition>both_up</statetransition>
+    </rule>
+    <rule>
+      <key>both_down</key>
+      <command host="command">rightdown1</command>
+      <statetransition>both_down</statetransition>
+    </rule>
+    <rule>
+      <key>left_up|right_up</key>
+      <command host="command">none</command>
+    </rule>
+  </state>
+  
+
+
+</seatml>

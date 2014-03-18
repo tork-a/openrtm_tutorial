@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.w3.org/2001/06/grammar
+                             http://www.w3.org/TR/speech-grammar/grammar.xsd"
+         xml:lang="jp"
+         version="1.0" mode="voice" root="command">
+ 
+  <rule id="command">
+    <one-of>
+      <item>右</item>
+      <item>左</item>
+      <item>さいせい</item>
+    </one-of>
+    <one-of>
+      <item>あげて</item>
+      <item>あげない</item>
+      <item>さげて</item>
+      <item>さげない</item>
+<!--      <item></item> --> <!-- For the potentially single word commands. Turned out empty item is invalid. -->
+      <item>よろしく</item>
+    </one-of>
+  </rule>
+ 
+</grammar>

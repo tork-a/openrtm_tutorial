@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seatml>
+  <general name="flaggame">
+    <agent name="gesture" type="rtcin" datatype="TimedString" />
+    <agent name="longvalue" type="rtcin" datatype="TimedLong" />
+    <agent name="command" type="rtcout" datatype="TimedString" />
+  </general>
+
+  <state name="all">
+    <rule>
+      <key>Start</key>
+      <command host="command">Start</command>
+<!--      <statetransition>both_down</statetransition> -->
+    </rule>
+  </state>
+
+</seatml>

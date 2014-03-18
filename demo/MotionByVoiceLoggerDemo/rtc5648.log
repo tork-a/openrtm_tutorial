@@ -1,0 +1,88 @@
+2014-03-17 08:54:05,480 manager INFO 1.1.0
+2014-03-17 08:54:05,486 manager INFO Copyright (C) 2003-2010
+2014-03-17 08:54:05,487 manager INFO   Noriaki Ando
+2014-03-17 08:54:05,487 manager INFO   Intelligent Systems Research Institute, AIST
+2014-03-17 08:54:05,487 manager INFO Manager starting.
+2014-03-17 08:54:05,487 manager INFO Starting local logging.
+2014-03-17 08:54:05,506 manager.namingmanager INFO NameServer connection succeeded: corba/localhost
+2014-03-17 08:54:07,523 ManagerServant INFO Master manager not found
+2014-03-17 08:54:07,525 manager ERROR Traceback (most recent call last):
+  File "OpenRTM_aist\Manager.pyc", line 1751, in initManagerServant
+IOError: [Errno 2] No such file or directory: '/var/log/rtcmanager.ref'
+
+2014-03-17 08:54:07,697 SEAT0 INFO SEAT (Speech Event Action Transfer) version 2.00
+2014-03-17 08:54:07,698 SEAT0 INFO Copyright (C) 2009-2010 Yosuke Matsusaka and Isao Hara
+2014-03-17 08:54:07,703 SEAT0 INFO load script file: ..\\MotionByVoiceDemo\\motion_cnoid.seatml
+2014-03-17 08:54:07,704 SEAT0 INFO create inport: speechin
+2014-03-17 08:54:07,709 SEAT0 INFO create outport: command
+2014-03-17 08:54:07,713 SEAT0 INFO register both_down:default:右 あげて
+2014-03-17 08:54:07,714 SEAT0 INFO register both_down:default:右 さげない
+2014-03-17 08:54:07,714 SEAT0 INFO register both_down:default:左 あげて
+2014-03-17 08:54:07,716 SEAT0 INFO register both_down:default:左 さげない
+2014-03-17 08:54:07,716 SEAT0 INFO register both_down:default:右 さげて
+2014-03-17 08:54:07,717 SEAT0 INFO register both_down:default:右 あげない
+2014-03-17 08:54:07,717 SEAT0 INFO register both_down:default:左 さげて
+2014-03-17 08:54:07,717 SEAT0 INFO register both_down:default:左 あげない
+2014-03-17 08:54:07,717 SEAT0 INFO register both_down:default:さいせい よろしく
+2014-03-17 08:54:07,719 SEAT0 INFO register both_up:default:右 さげて
+2014-03-17 08:54:07,719 SEAT0 INFO register both_up:default:右 あげない
+2014-03-17 08:54:07,720 SEAT0 INFO register both_up:default:左 さげて
+2014-03-17 08:54:07,720 SEAT0 INFO register both_up:default:左 あげない
+2014-03-17 08:54:07,720 SEAT0 INFO register both_up:default:右 あげて
+2014-03-17 08:54:07,720 SEAT0 INFO register both_up:default:右 さげない
+2014-03-17 08:54:07,720 SEAT0 INFO register both_up:default:左 あげて
+2014-03-17 08:54:07,720 SEAT0 INFO register both_up:default:左 さげない
+2014-03-17 08:54:07,721 SEAT0 INFO register left_up:default:左 さげて
+2014-03-17 08:54:07,721 SEAT0 INFO register left_up:default:左 あげない
+2014-03-17 08:54:07,723 SEAT0 INFO register left_up:default:右 あげて
+2014-03-17 08:54:07,723 SEAT0 INFO register left_up:default:右 さげない
+2014-03-17 08:54:07,723 SEAT0 INFO register left_up:default:左 あげて
+2014-03-17 08:54:07,723 SEAT0 INFO register left_up:default:左 さげない
+2014-03-17 08:54:07,724 SEAT0 INFO register left_up:default:右 さげて
+2014-03-17 08:54:07,724 SEAT0 INFO register left_up:default:右 あげない
+2014-03-17 08:54:07,726 SEAT0 INFO register right_up:default:左 あげて
+2014-03-17 08:54:07,726 SEAT0 INFO register right_up:default:左 さげない
+2014-03-17 08:54:07,726 SEAT0 INFO register right_up:default:右 さげて
+2014-03-17 08:54:07,726 SEAT0 INFO register right_up:default:右 あげない
+2014-03-17 08:54:07,727 SEAT0 INFO register right_up:default:左 さげて
+2014-03-17 08:54:07,727 SEAT0 INFO register right_up:default:左 あげない
+2014-03-17 08:54:07,727 SEAT0 INFO register right_up:default:右 あげて
+2014-03-17 08:54:07,727 SEAT0 INFO register right_up:default:右 さげない
+2014-03-17 08:54:07,729 SEAT0 INFO current state both_down
+2014-03-17 08:54:07,729 SEAT0 INFO loaded successfully
+2014-03-17 08:54:38,259 SdoServiceAdmin WARNING No available SDO service in the factory: 
+2014-03-17 08:54:38,259 SdoServiceAdmin ERROR type  already exists.
+2014-03-17 08:54:38,262 SdoServiceAdmin WARNING No available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+2014-03-17 08:54:38,263 SdoServiceAdmin ERROR type 61bc4620-5410-4bc5-8ac7-845c717b2729 already exists.
+2014-03-17 08:56:31,986 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-25848.355469" rank="1" score="0.4095" text="左 さげて"><word score="0.689" text="左"/><word score="0.130" text="さげて"/></data><data likelihood="-25849.417969" rank="2" score="0.5245" text="右 あげて"><word score="0.230" text="右"/><word score="0.819" text="あげて"/></data><data likelihood="-25852.500000" rank="3" score="0.7555" text="左 あげて"><word score="0.692" text="左"/><word score="0.819" text="あげて"/></data><data likelihood="-25853.500000" rank="4" score="0.175" text="右 さげて"><word score="0.220" text="右"/><word score="0.130" text="さげて"/></data><data likelihood="-25854.949219" rank="5" score="0.4485" text="さいせい あげて"><word score="0.078" text="さいせい"/><word score="0.819" text="あげて"/></data></listenText> (speechin)
+2014-03-17 08:56:31,993 SEAT0 INFO #1: 左 さげて (0.409500)
+2014-03-17 08:56:31,993 SEAT0 INFO looking up...speechin: 左 さげて
+2014-03-17 08:56:31,993 SEAT0 INFO sending command none (to command)
+2014-03-17 08:56:44,368 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-27480.902344" rank="1" score="0.5175" text="右 あげて"><word score="0.385" text="右"/><word score="0.650" text="あげて"/></data><data likelihood="-27481.355469" rank="2" score="0.394" text="さいせい さげて"><word score="0.589" text="さいせい"/><word score="0.199" text="さげて"/></data><data likelihood="-27481.609375" rank="3" score="0.5915" text="さいせい あげて"><word score="0.533" text="さいせい"/><word score="0.650" text="あげて"/></data><data likelihood="-27489.191406" rank="4" score="0.2345" text="右 さげて"><word score="0.270" text="右"/><word score="0.199" text="さげて"/></data><data likelihood="-27494.212891" rank="5" score="0.17" text="左 さげて"><word score="0.141" text="左"/><word score="0.199" text="さげて"/></data></listenText> (speechin)
+2014-03-17 08:56:44,371 SEAT0 INFO #1: 右 あげて (0.517500)
+2014-03-17 08:56:44,372 SEAT0 INFO looking up...speechin: 右 あげて
+2014-03-17 08:56:44,372 SEAT0 INFO sending command rightup1 (to command)
+2014-03-17 08:56:44,374 SEAT0 INFO state transition from both_down to right_up
+2014-03-17 08:57:08,509 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-4561.681641" rank="1" score="0.5515" text="左 よろしく"><word score="0.635" text="左"/><word score="0.468" text="よろしく"/></data><data likelihood="-4567.716309" rank="2" score="0.357" text="さいせい よろしく"><word score="0.246" text="さいせい"/><word score="0.468" text="よろしく"/></data><data likelihood="-4571.138184" rank="3" score="0.367" text="右 さげて"><word score="0.575" text="右"/><word score="0.159" text="さげて"/></data><data likelihood="-4572.619141" rank="4" score="0.314" text="右 さげない"><word score="0.492" text="右"/><word score="0.136" text="さげない"/></data><data likelihood="-4574.757324" rank="5" score="0.294" text="右 よろしく"><word score="0.120" text="右"/><word score="0.468" text="よろしく"/></data></listenText> (speechin)
+2014-03-17 08:57:08,515 SEAT0 INFO #1: 左 よろしく (0.551500)
+2014-03-17 08:57:08,515 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 08:57:08,516 SEAT0 INFO looking up...speechin: 左 よろしく
+2014-03-17 08:57:08,516 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 08:57:08,516 SEAT0 INFO #2: さいせい よろしく (0.357000)
+2014-03-17 08:57:08,516 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 08:57:08,516 SEAT0 INFO looking up...speechin: さいせい よろしく
+2014-03-17 08:57:08,516 SEAT0 INFO [rejected] no matching phrases
+2014-03-17 08:57:08,517 SEAT0 INFO #3: 右 さげて (0.367000)
+2014-03-17 08:57:08,517 SEAT0 INFO looking up...speechin: 右 さげて
+2014-03-17 08:57:08,517 SEAT0 INFO sending command rightdown1 (to command)
+2014-03-17 08:57:08,519 SEAT0 INFO state transition from right_up to both_down
+2014-03-17 08:58:23,576 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-6408.689453" rank="1" score="0.7765" text="左 あげて"><word score="0.930" text="左"/><word score="0.623" text="あげて"/></data><data likelihood="-6418.708496" rank="2" score="0.621" text="左 あげない"><word score="0.988" text="左"/><word score="0.254" text="あげない"/></data><data likelihood="-6434.922852" rank="3" score="0.3365" text="さいせい あげて"><word score="0.050" text="さいせい"/><word score="0.623" text="あげて"/></data><data likelihood="-6441.342285" rank="4" score="0.476" text="左 さげて"><word score="0.920" text="左"/><word score="0.032" text="さげて"/></data><data likelihood="-6444.686523" rank="5" score="0.3215" text="右 あげて"><word score="0.020" text="右"/><word score="0.623" text="あげて"/></data></listenText> (speechin)
+2014-03-17 08:58:23,581 SEAT0 INFO #1: 左 あげて (0.776500)
+2014-03-17 08:58:23,582 SEAT0 INFO looking up...speechin: 左 あげて
+2014-03-17 08:58:23,582 SEAT0 INFO sending command leftup1 (to command)
+2014-03-17 08:58:23,582 SEAT0 INFO state transition from both_down to left_up
+2014-03-17 08:58:39,125 SEAT0 INFO got input <?xml version="1.0" encoding="utf-8"?><listenText><data likelihood="-33983.601563" rank="1" score="0.882" text="左 あげない"><word score="0.934" text="左"/><word score="0.830" text="あげない"/></data><data likelihood="-34013.339844" rank="2" score="0.4365" text="さいせい あげない"><word score="0.043" text="さいせい"/><word score="0.830" text="あげない"/></data><data likelihood="-34032.929688" rank="3" score="0.4265" text="右 あげない"><word score="0.023" text="右"/><word score="0.830" text="あげない"/></data></listenText> (speechin)
+2014-03-17 08:58:39,128 SEAT0 INFO #1: 左 あげない (0.882000)
+2014-03-17 08:58:39,128 SEAT0 INFO looking up...speechin: 左 あげない
+2014-03-17 08:58:39,128 SEAT0 INFO sending command leftdown1 (to command)
+2014-03-17 08:58:39,128 SEAT0 INFO state transition from left_up to both_down

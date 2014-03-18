@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<suiml>
+  <general name="guicommand">
+    <agent name="command" type="rtcout" datatype="TimedChar" />
+  </general>
+
+  <state name="robot_mode">
+
+    <label text="Left-Right(+):" color="#ffff00" />
+
+    <button label="left_1" >
+      <command host="command">q</command>
+    </button>
+
+    <button label="left_2" >
+      <command host="command">w</command>
+    </button>
+
+    <button label="left_3" >
+      <command host="command">e</command>
+    </button>
+
+   <space />
+
+    <button label="right_1" >
+      <command host="command">u</command>
+    </button>
+
+    <button label="right_2" >
+      <command host="command">i</command>
+    </button>
+
+    <button label="right_3" >
+      <command host="command">o</command>
+    </button>
+
+    <brk />
+
+    <label text="Left-Right(-):" />
+
+    <button label="left_1" >
+      <command host="command">a</command>
+    </button>
+
+    <button label="left_2" >
+      <command host="command">s</command>
+    </button>
+
+    <button label="left_3" >
+      <command host="command">d</command>
+    </button>
+
+   <space />
+
+    <button label="right_1" >
+      <command host="command">j</command>
+    </button>
+
+    <button label="right_2" >
+      <command host="command">k</command>
+    </button>
+
+    <button label="right_3" >
+      <command host="command">l</command>
+    </button>
+
+
+
+  </state>
+
+</suiml>

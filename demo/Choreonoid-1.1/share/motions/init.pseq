@@ -1,0 +1,51 @@
+# Body pose sequence format version 1.0 defined by cnoid-Robotics
+
+type: PoseSeq
+name: "init"
+targetBody: "GR001"
+refs: 
+  - 
+    time: 1
+    refer: 
+      type: Pose
+      name: ""
+      joints: [ 
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 
+        9, 10, 11, 12, 13, 14, 15, 16, 17, 
+        18, 19 ]
+      q: [ 
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 
+        0, 0 ]
+      ikLinks: 
+        - 
+          name: WAIST
+          index: 0
+          isBaseLink: true
+          translation: [ -0.00379997263, 1.7628912e-007, 0.160651609 ]
+          rotation: [ 
+            1, 4.71184124e-009, -6.86392329e-009, 
+            -4.71184124e-009, 1, 6.13485734e-010, 
+            6.86392326e-009, -6.13485707e-010, 1 ]
+        - 
+          name: R_ANKLE_R
+          index: 6
+          translation: [ 0.0252000282, -0.0195998239, 0.0211516095 ]
+          rotation: [ 
+            1, 4.71184124e-009, -6.86392329e-009, 
+            -4.71184124e-009, 1, 6.13485734e-010, 
+            6.86392326e-009, -6.13485707e-010, 1 ]
+          isTouching: true
+          partingDirection: [ 0, 0, 1 ]
+        - 
+          name: L_ANKLE_R
+          index: 12
+          translation: [ 0.0252000284, 0.0196001761, 0.0211516095 ]
+          rotation: [ 
+            1, 4.71184124e-009, -6.86392329e-009, 
+            -4.71184124e-009, 1, 6.13485734e-010, 
+            6.86392326e-009, -6.13485707e-010, 1 ]
+          isTouching: true
+          partingDirection: [ 0, 0, 1 ]
+      zmp: [ 0.020338788, 0.00202274039, 0 ]
+      isZmpStationaryPoint: true

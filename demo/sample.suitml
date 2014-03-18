@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<suiml>
+  <general name="guicommand">
+    <agent name="command" type="rtcout" datatype="TimedString" />
+    <agent name="intdate" type="rtcout" datatype="TimedLong" />
+  </general>
+
+  <state name="isobot_mode">
+    <label text="Mode:" />
+
+    <button label="PPT Mode" bg_color="#ff0000" color="#ffffff">
+      <command host="command">ppt</command>
+      <statetransition>ppt_mode</statetransition>
+    </button>
+
+    <button label="Video Mode" >
+      <command host="command">video</command>
+      <statetransition>video_mode</statetransition>
+    </button>
+
+    <brk />
+    <label text="Walk:" />
+
+    <button label="walk" >
+
+      <command host="command" encode="shift-jis">walk</command>
+    </button>
+    <button label="back" >
+      <command host="command" encode="shift-jis">back</command>
+    </button>
+    <button label="left" >
+      <command host="command">left</command>
+      <command host="intdate">124</command>
+    </button>
+    <button label="right">
+      <command host="command">right</command>
+    </button>
+
+    <brk />
+    <label text="Head:" color="#ffff00"/>
+
+    <button label="look_r" >
+      <command host="command">look_r</command>
+    </button>
+   <space length="2" />
+    <button label="look_l" >
+      <command host="command">look_l</command>
+    </button>
+
+    <brk />
+    <label text=" Action:" />
+
+    <button label="right_punch" >
+      <command host="command">right_punch</command>
+    </button>
+    <button label="left_punch" >
+      <command host="command">left_punch</command>
+    </button>
+    <button label="swerve" >
+      <command host="command">swerve</command>
+    </button>
+    <button label="thanks">
+      <command host="command">thanks</command>
+    </button>
+
+  </state>
+
+  <state name="ppt_mode">
+    <label text="Mode:" />
+
+    <button label="Video Mode" >
+      <command host="command">video</command>
+      <statetransition>video_mode</statetransition>
+    </button>
+    <button label="Robot Mode" >
+      <statetransition>isobot_mode</statetransition>
+    </button>
+
+    <brk />
+    <label text="Command:" />
+
+    <button label="list" >
+      <command host="command">list</command>
+    </button>
+    <button label="next_item" >
+      <command host="command">next_item</command>
+    </button>
+    <button label="prev_item" >
+      <command host="command">prev_item</command>
+    </button>
+    <button label="open" >
+      <command host="command">open</command>
+    </button>
+    <button label="run" >
+      <command host="command">run</command>
+    </button>
+    <button label="next" >
+      <command host="command">next</command>
+    </button>
+    <button label="prev">
+      <command host="command">prev</command>
+    </button>
+    <button label="end">
+      <command host="command">end</command>
+    </button>
+
+  </state>
+
+  <state name="video_mode">
+    <label text="Mode:" />
+
+    <button label="PPT Mode" >
+      <command host="command">ppt</command>
+      <statetransition>ppt_mode</statetransition>
+    </button>
+    <button label="Robot Mode" >
+     <statetransition>isobot_mode</statetransition>
+    </button>
+
+    <brk />
+    <label text="Command:" />
+
+    <button label="list">
+      <command host="command">list</command>
+    </button>
+    <button label="next_item" >
+      <command host="command">next_item</command>
+    </button>
+    <button label="prev_item" >
+      <command host="command">prev_item</command>
+    </button>
+    <button label="Open">
+      <command host="command">open</command>
+    </button>
+    <button label="Play" >
+      <command host="command">play</command>
+    </button>
+    <button label="FF">
+      <command host="command">ff</command>
+    </button>
+    <button label="REW">
+      <command host="command">bw</command>
+    </button>
+    <button label="Stop">
+      <command host="command">stop</command>
+    </button>
+    <button label="Pause">
+      <command host="command">pause</command>
+    </button>
+    <button label="full Screen">
+      <command host="command">fullScreen</command>
+    </button>
+  </state>
+
+</suiml>

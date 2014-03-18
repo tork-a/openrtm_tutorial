@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<suiml>
+  <general name="guicommand">
+    <agent name="command" type="rtcout" datatype="TimedString" />
+  </general>
+
+  <state name="ppt_mode">
+    <label text="Mode:" />
+    <button label="video" >
+      <command host="command">video</command>
+     <statetransition>video_mode</statetransition>
+    </button>
+
+    <brk />
+    <label text="Commnad:" />
+    <button label="list">
+      <command host="command">list</command>
+    </button>
+
+    <button label="next_item">
+      <command host="command">next_item</command>
+    </button>
+
+    <button label="prev_item">
+      <command host="command">prev_item</command>
+    </button>
+
+    <button label="open">
+      <command host="command">open</command>
+    </button>
+
+    <button label="run">
+      <command host="command">run</command>
+    </button>
+
+    <button label="next">
+      <command host="command">next</command>
+    </button>
+
+    <button label="prev">
+      <command host="command">prev</command>
+    </button>
+
+    <button label="end">
+      <command host="command">end</command>
+    </button>
+
+  </state>
+
+  <state name="video_mode">
+    <label text="Mode:" />
+    <button label="ppt">
+      <command host="command">ppt</command>
+      <statetransition>ppt_mode</statetransition>
+    </button>
+    <brk />
+    <label text="Commnad:" />
+    <button label="list">
+      <command host="command">list</command>
+    </button>
+    <button label="next_item">
+      <command host="command">next_item</command>
+    </button>
+
+    <button label="prev_item">
+      <command host="command">prev_item</command>
+    </button>
+
+    <button label="Open">
+      <command host="command">open</command>
+    </button>
+
+    <button label="Play">
+      <command host="command">play</command>
+    </button>
+
+    <button label="FF">
+      <command host="command">ff</command>
+    </button>
+
+    <button label="REW">
+      <command host="command">bw</command>
+    </button>
+
+    <button label="Stop">
+      <command host="command">stop</command>
+    </button>
+
+    <button label="Pause">
+      <command host="command">pause</command>
+    </button>
+    <button label="fullScreen">
+      <command host="command">fullScreen</command>
+    </button>
+  </state>
+
+</suiml>

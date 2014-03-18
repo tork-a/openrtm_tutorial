@@ -1,0 +1,26 @@
+
+Overview of Changes in Choreonoid 1.1.0
+=======================================
+
+* Supported internationalization
+
+ - Messages can be translated into other languages
+ - Added Japanese translations
+ - International  characters (any characters defined in Unicode) can be used
+   in data and filenames in the Linux distributions based on UTF-8
+ - Local character encoding (such as shift-jis) can be used in data and filenames in Windows
+ - Added some scripts for handling gettext files
+
+* New graphical tool bar icons
+
+* New application icon
+
+* Fixed a compile error in Visual C++ 2010
+
+* Some bug fixes
+
+
+Overview of Choreonoid 1.0.0
+============================
+
+* The initial release version
