@@ -1,0 +1,167 @@
+/*
+
+
+*/
+li {
+  list-style: none;
+  margin:3px;
+  padding-left:20px;
+  background-image: url('../images/Question.gif');
+  background-repeat:no-repeat;
+  background-position:0px 2px;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+ /*
+  background: #eee;
+ */
+/*
+  border-bottom: dotted 1px #000;
+*/
+  margin: 0px;
+  padding: 0px;
+  display: block;
+}
+
+li.host {
+  padding-left:20px;
+  background-image: url('../images/RT.png');
+  background-repeat:no-repeat;
+  background-position:0px 2px;
+}
+
+span.haschild {
+/*
+  border-bottom: dashed 1px #0000ff;
+*/
+  padding-right:4px;
+  border-right: solid 2px #888888;
+  border-bottom: solid 1px #999999;
+}
+
+li.ctx {
+  padding-left:20px;
+  background-image: url('../images/Server.png');
+  background-repeat:no-repeat;
+  background-position:0px 2px;
+}
+
+li.rtc {
+  padding-left:20px;
+  background-image: url('../images/ModuleNamingContext.png');
+  background-repeat:no-repeat;
+  background-position:0px 2px;
+}
+
+li.zmb {
+  padding-left:20px;
+  background-image: url('../images/Zombie.gif');
+  background-repeat:no-repeat;
+  background-position:0px 2px;
+}
+
+*[draggable=true] {
+  -moz-user-select:none;
+  -khtml-user-drag: element;
+  cursor: move;
+}
+
+/*
+*:-khtml-drag {
+  background-color: rgba(238,238,238, 0.5);
+}
+*/
+
+
+li.over {
+  border-color: #333;
+  background: #ccc;
+}
+
+
+ul {
+ padding-left: 0px;
+ margin-left: 10px;
+}
+
+ul.host {
+
+ margin-left: 0px;
+}
+
+td{
+  border: 1px solid #999;
+  padding:3px;
+  margin:0px;
+  vertical-align:top;
+}
+
+td#NsView{
+ width:200px;
+ vertical-align:top;
+}
+
+td#SysDiagram{
+ vertical-align:top;
+}
+
+div#diagram {
+ border: 1px solid #f000CC;
+}
+
+td#PropView{
+ vertical-align:top;
+ width:200px;
+ background-color:#fff;
+
+}
+
+div#InportSide{
+ vertical-align:top;
+ background-color:#fff;
+}
+
+div#Connector{
+ text-align:center;
+ vertical-align:top;
+}
+
+div#OutportSide{
+ vertical-align:top;
+ background-color:#fff;
+}
+
+table.props{
+  font-size: small;
+}
+
+table.props table{
+  font-size: small;
+}
+
+table.configview{
+  border: 1px solid #999;
+  width: 100%;
+}
+
+table.configview th{
+  border: 1px solid #999;
+  background-color: #444444;
+  color: #ffffff;
+}
+
+table.configview td{
+  border: 1px solid #999;
+}
+
+
+table.configview td.title{
+  border: 1px solid #999;
+  width: 30%;
+}
+table.configview td.value{
+  border: 1px solid #999;
+  width: 70%;
+}

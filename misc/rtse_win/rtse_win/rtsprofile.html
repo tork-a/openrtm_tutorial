@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="utf-8">
+<!--
+<meta name="viewport" content="user-scalavle=no,maximum-scale=1.00">
+-->
+<title>RT System Editor on the Web</title>
+
+
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/rtsprofile.js"></script>
+<script type="text/javascript" src="js/rtse.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/rtse.css">
+
+</head>
+<body onload="initRtse(600,300);">
+
+
+<h1>RT System Editor on the Web (Sample)</h1>
+<hr>
+
+<input type="file" id="files" name="files[]" multiple />
+<output id="list"></output>
+
+<script type="text/javascript">
+document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
+
+
+</body>
+</html>

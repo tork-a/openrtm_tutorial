@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rtc:RtcProfile rtc:version="0.2" rtc:id="$id" xmlns:rtcExt="http://www.openrtp.org/namespaces/rtc_ext" xmlns:rtcDoc="http://www.openrtp.org/namespaces/rtc_doc" xmlns:rtc="http://www.openrtp.org/namespaces/rtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+       <rtc:BasicInfo xsi:type="rtcExt:basic_info_ext" rtcExt:saveProject="CvMonitor" rtc:updateDate="2012-11-20T13:20:43+09:00" rtc:creationDate="2012-11-20T13:20:43+09:00" rtc:version="1.0.0" rtc:vendor="AIST"  rtc:maxInstances="1" rtc:executionType="PeriodicExecutionContext" rtc:executionRate="1000.0" rtc:description="Image Viewer for KinectRTC" rtc:category="Sample" rtc:componentKind="DataFlowComponent" rtc:activityType="PERIODOC"  rtc:componentType="STATIC" rtc:name="CvMonitor">
+        <rtcExt:VersionUpLogs></rtcExt:VersionUpLogs>
+    </rtc:BasicInfo>
+    <rtc:Actions>
+     <rtc:OnInitialize xsi:type="rtcDoc:action_status_doc" rtc:implemented="true"/>
+     <rtc:OnFinalize xsi:type="rtcDoc:action_status_doc" rtc:implemented="true"/>
+     <rtc:OnStartup xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+     <rtc:OnShutdown xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+     <rtc:OnActivated xsi:type="rtcDoc:action_status_doc" rtc:implemented="true"/>
+     <rtc:OnDeactivated xsi:type="rtcDoc:action_status_doc" rtc:implemented="true"/>
+     <rtc:OnAborting xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+     <rtc:OnError xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+     <rtc:OnReset xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+     <rtc:OnExecute xsi:type="rtcDoc:action_status_doc" rtc:implemented="true"/>
+     <rtc:OnStateUpdate xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+     <rtc:OnRateChanged xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+     <rtc:OnAction xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+     <rtc:OnModeChanged xsi:type="rtcDoc:action_status_doc" rtc:implemented="false"/>
+
+    </rtc:Actions>
+    <rtc:ConfigurationSet>
+      <rtc:Configuration xsi:type="rtcExt:configuration_ext" rtcExt:variableName="m_image_width" rtc:unit="" rtc:defaultValue="320" rtc:type="int" rtc:name="image_width">
+          <rtcExt:Properties rtcExt:value="text" rtcExt:name="__widget__"/>
+      </rtc:Configuration>
+      <rtc:Configuration xsi:type="rtcExt:configuration_ext" rtcExt:variableName="m_image_height" rtc:unit="" rtc:defaultValue="240" rtc:type="int" rtc:name="image_height">
+          <rtcExt:Properties rtcExt:value="text" rtcExt:name="__widget__"/>
+      </rtc:Configuration>
+      <rtc:Configuration xsi:type="rtcExt:configuration_ext" rtcExt:variableName="m_image_channel" rtc:unit="" rtc:defaultValue="3" rtc:type="int" rtc:name="image_channel">
+          <rtcExt:Properties rtcExt:value="text" rtcExt:name="__widget__"/>
+      </rtc:Configuration>
+      <rtc:Configuration xsi:type="rtcExt:configuration_ext" rtcExt:variableName="m_dist" rtc:unit="" rtc:defaultValue="180" rtc:type="int" rtc:name="dist">
+          <rtcExt:Properties rtcExt:value="text" rtcExt:name="__widget__"/>
+      </rtc:Configuration>
+
+    </rtc:ConfigurationSet>
+    <rtc:DataPorts  xsi:type="rtcExt:dataport_ext" rtcExt:position="LEFT" rtcExt:variableName="m_rawImage" rtc:unit="" rtc:subscriptionType="" rtc:dataflowType="" rtc:interfaceType="" rtc:idlFile="" rtc:type="RTC::TimedOctetSeq" rtc:name="rawImage" rtc:portType="DataInPort"/>
+
+    <rtc:DataPorts  xsi:type="rtcExt:dataport_ext" rtcExt:position="LEFT" rtcExt:variableName="m_points" rtc:unit="" rtc:subscriptionType="" rtc:dataflowType="" rtc:interfaceType="" rtc:idlFile="" rtc:type="RTC::TimedShortSeq" rtc:name="points" rtc:portType="DataInPort"/>
+
+
+    <rtc:Language xsi:type="rtcExt:language_ext" rtc:kind="C++"/>
+</rtc:RtcProfile>

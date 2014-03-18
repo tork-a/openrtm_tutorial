@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta charset="utf-8">
+<!--
+<meta name="viewport" content="user-scalavle=no,maximum-scale=1.00">
+-->
+<title>RT System Editor on the Web</title>
+
+
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/rtsprofile.js"></script>
+<script type="text/javascript" src="js/rtse.js"></script>
+<script type="text/javascript" >
+  rtsh_com = "/cgi-bin/rtsh.exe";
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="css/rtse.css">
+
+</head>
+<body onload="initRtse(600,300);">
+
+
+<h1>RT System Editor on the Web (Sample)</h1>
+<hr>
+
+<input type="button" name="open_rtsprofile" value="Open..." onClick="openRtsProfileWindow();">
+<input type="button" name="create_rtsprofile" value="RtsProfile..." onClick="createRtsProfile();">
+
+
+<table>
+ <tr>
+  <th colspan="2">NameServer</th><th>Online System Diagram
+   <input type="image" onClick="drawContent();" src="images/Svg.gif">
+   <input type="button" onClick="allRtcActivate();" value="ActAll">
+   <input type="button" onClick="allRtcDeactivate();" value="DeactAll">
+   <input type="button" onClick="exitAll();" value="ExitAll">
+   <input type="button" onClick="refreshAll();" value="All">
+</th>
+<th>Properties
+ <input type="button" onClick="openPropWindow();" value="Open">
+</th>
+ </tr>
+ <tr>
+  <td colspan="2">
+   <input type="input" id="hostname_in" value="127.0.0.1" size="15">
+   <input type="image" onClick="delZombieComponents();" src="images/KillZombie.gif">
+   &nbsp; &nbsp;
+   <input type="image" onClick="addNsView();" src="images/Connect.png">
+  </td>
+  <td id="rtse_info"></td>
+  <td id="props"></td>
+ </tr>
+ <tr>
+  <td id="NsView"><img src="images/indicator.gif" id="indicator" style="display:none;"> </td>
+  <td style="vertical-align:middle;"><img src="images/right_arrow.gif" onClick="addSelectedComponent();"></td>
+  <td id="SysDiagram"> <div id="diagram"> </div> </td>
+  <td id="PropView"> <div  id="property"> --- </div> </td>
+ </tr>
+
+<!--
+ <tr>
+  <th colspan="4" >Connection Manager</th></tr>
+ <tr>
+  <td colspan="4">
+
+  </td>
+ </tr>
+-->
+ <tr>
+  <th colspan="4" >
+Configuration Set: <span id="active_config_set_name" style="color:blue">---</span>
+
+<input type="button" onClick="editConfigurationValue();" value="Edit">
+<input type="button" onClick="applyConfigurationValues();" value="Apply">
+</th>
+</tr>
+
+ <tr>
+ <td>
+ <div id="ConfigSetList"></div>
+ </td>
+ <td colspan="3">
+
+ <div id="ConfigrationList"></div>
+ </td>
+</tr>
+
+</table>
+
+<div style="display:none">
+   <table width="100%">
+    <tr>
+     <th style="background-color:#444;color:#fff;">OutPort</th>
+     <th style="background-color:#444;color:#fff;" onClick="mkConnectors('Connector');">Connector</th>
+     <th style="background-color:#444;color:#fff;">InPort</th>
+    </tr>
+    <tr>
+     <td width="30%"><div id="OutportSide"> &nbsp;</div></td>
+     <td><div id="Connector"> &nbsp;</div></td>
+     <td width="30%"><div id="InportSide"> &nbsp;</div></td>
+    </tr>
+   </table>
+</div>
+
+<div id="profile"><div>
+</body>
+</html>

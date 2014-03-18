@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/rtse.js"></script>
+<link rel="stylesheet" type="text/css" href="css/rtse.css">
+
+<script type="text/javascript">
+<!--
+function setConfiguration(){
+　　if(!window.opener || window.opener.closed){
+　　  window.close();
+　　} else{
+      var ele = document.getElementById('config_editor');
+      //window.opener.
+
+        var ele2 = window.opener.document.getElementById('ConfigrationList');
+        if(ele2){
+/*
+　　　　  ele.innerHTML = window.opener.document.getElementById('ConfigrationList').innerHTML;
+*/
+           ele.innerHTML = "申し訳ございません。ただ今実装中です"
+        }else{
+          ele.innerHTML = "";
+        }
+　　}
+}
+
+function apply_config(){
+  window.opener.displayInfoMessage("Hello");
+
+}
+
+// -->
+</script>
+</head>
+<body onload="setConfiguration();">
+<input type="button" value="Reload" onclick="setProperties();">
+<input type="button" value="Close" onclick="window.close();">
+<hr>
+Configuration: <span id="active_conf_name"></span>
+<input type="button" value="Apply" onClick="apply_config();">
+<div id="config_editor">
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/rtse.js"></script>
+<link rel="stylesheet" type="text/css" href="css/rtse.css">
+
+<script type="text/javascript">
+<!--
+function setProperties(){
+　　if(!window.opener || window.opener.closed){
+　　　　window.close();
+　　} else{
+        var ele = document.getElementById('props');
+        var ele2 = window.opener.document.getElementById('rtc_property_table');
+        if(ele2){
+　　　　  ele.innerHTML = window.opener.document.getElementById('property').innerHTML;
+        }else{
+          ele.innerHTML = "";
+        }
+　　}
+}
+
+function testfunc(){
+  window.opener.displayInfoMessage("Hello");
+
+}
+
+// -->
+</script>
+</head>
+<body onload="setProperties();">
+<input type="button" value="Reload" onclick="setProperties();">
+<input type="button" value="Close" onclick="window.close();">
+<hr>
+Properties:
+<input type="button" value="test" onClick="testfunc();">
+<div id="props">
+</div>
+</body>
+</html>
