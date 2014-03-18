@@ -1,0 +1,79 @@
+============================================
+(RTC 作成 1) 音声キーワードロガー RTC の開発
+============================================
+
+このページで体験すること
+========================
+
+- `OpenHRI` の RTC と接続することで，音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する `SampleWordLogger RTC` の開発
+
+関連するチュートリアル
+======================
+- `RTC` 作成の一般的作業の詳細は[1_]に記述があります．特に `Eclipse` 上での GUI を利用した開発が説明されています．
+
+SystemEnvironment
+=================
+- Windows 7 / 8
+- Visual C++ 2010
+- `CMake` 2.8 (インストーラが同梱されています ./misc/installer/cmake-2.8.8-win32-x86.exe)
+
+実行方法
+========
+以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
+
+`SampleWordLogger` は単体だと何も行わないので，先に紹介された `MotionByVoiceDemo` と組合せて発話を記録してみましょう．
+
+ここでは上記二つのフォルダから RTC を呼ぶための .bat ファイルを格納する `./demo/MotionByVoiceLoggerDemo` を使います．
+
+1) `./demo/MotionByVoiceLoggerDemo` から "0 StartDemo.bat"，"1 ConnectRTC.bat"，"2 ActivateRTC.bat" をそれぞれ実行．RT System Editor 上ではこのようになる．
+
+.. image:: media/rtse_motionvoicelogger_activated.png
+
+2) `MotionByVoiceDemo のチュートリアル <1.4_callmotion_byvoice.rst#HowToRun>`__ に従い，発話デモを実行．
+
+3) 3 から 5 までの `.bat` ファイルを実行し，RT システムを停止する．
+
+4) `./demo/SampleWordLogger/build/Debug/SampleWord.log` をテキストエディタで開くと，時刻と発話内容が記録されている．
+
+    2014/03/13 08:56:31 左 さげて
+    2014/03/13 08:56:44 右 あげて
+    2014/03/13 08:57:08 左 よろしく
+    2014/03/13 08:58:23 左 あげて
+    2014/03/13 08:58:39 左 あげない
+
+
+RTC I/O Spec
+============
+
++----------------+--------------------+
+| Component Name | SampleWordLogger   |
++================+====================+
+|              InPort                 |
++----------------+--------------------+
+|Port Name       | result             |
++----------------+--------------------+
+|Data Type       | TimedString        |
++----------------+--------------------+
+|              OutPort                |
++----------------+--------------------+
+|Port Name       | (None)             |
++----------------+--------------------+
+|Data Type       | (None)             |
++----------------+--------------------+
+|              Configuration          |
++----------------+--------------------+
+|Parameter Name  | (None)             |
++----------------+--------------------+
+|Data Type       | (None)             |
++----------------+--------------------+
+|Values          | (None)             |
++----------------+--------------------+
+
+
+
+How to make RTC
+===============
+SampleWordLogger RTC では、onActivated(), onDeactivated(), onExecute() コールバックを使用します。下図のように (1) の onAtivated をクリック後に (2) のラジオボタンにて "on" にチェックを入れます。onDeactivated, onExecute についても同様の手順を行います。
+
+さらに、"Data Ports" タブを選択し、データポートの情報を入力します。 先ほど決めた仕様を元に以下のように入力します。
+
