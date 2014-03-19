@@ -1,0 +1,5 @@
+#Eclipse Product File
+#Thu Jan 28 10:41:44 JST 2010
+version=1.0.0
+name=RT System Editor RCP
+id=jp.go.aist.rtm.systemeditor.RCP.product
