@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature id="jp.go.aist.rtm.rtsystemeditor.feature" label="RT System Editor" plugin="jp.go.aist.rtm.systemeditor" provider-name="AIST" version="1.1.0.rc4v20130216">
+
+   <url>
+      <update label="Open RTP tools update site" url="http://www.openrtm.org/staging/pub/OpenRTP/updates/"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.platform" match="compatible" version="3.4"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import feature="org.eclipse.emf.ecore" match="greaterOrEqual" version="2.4"/>
+      <import feature="org.eclipse.gef" match="greaterOrEqual" version="3.4"/>
+   </requires>
+
+   <plugin download-size="754207" id="jp.go.aist.rtm.systemeditor" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+   <plugin download-size="159440" id="jp.go.aist.rtm.nameserviceview" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+   <plugin download-size="90493" id="jp.go.aist.rtm.repositoryView" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+   <plugin download-size="914477" id="jp.go.aist.rtm.toolscommon" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+   <plugin download-size="992871" id="jp.go.aist.rtm.toolscommon.profiles" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+</feature>

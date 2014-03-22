@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- contextQualifierLength=14 -->
+<!-- contextQualifierLength=14 -->
+<feature
+      id="org.eclipse.emf.ecore.xcore.sdk"
+      label="%featureName"
+      version="1.0.1.v20120917-0741"
+      provider-name="%providerName"
+      image="eclipse_update_120.jpg">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="http://www.eclipse.org/legal/epl-v10.html">
+      Copyright (c) 2011-2012 Eclipse contributors and others.
+All rights reserved.   This program and the accompanying materials
+are made available under the terms of the Eclipse Public License v1.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%ModelingUpdateSiteName" url="http://www.eclipse.org/modeling/updates/"/>
+      <discovery label="%ModelingUpdateSiteName" url="http://www.eclipse.org/modeling/updates/"/>
+   </url>
+
+   <includes
+         id="org.eclipse.emf.ecore.xcore"
+         version="1.0.1.v20120917-0741"/>
+
+   <includes
+         id="org.eclipse.emf.ecore.xcore.source"
+         version="1.0.1.v20120917-0741"/>
+
+   <includes
+         id="org.eclipse.emf.ecore.xcore.ui"
+         version="1.0.1.v20120917-0741"/>
+
+   <includes
+         id="org.eclipse.emf.ecore.xcore.ui.source"
+         version="1.0.1.v20120917-0741"/>
+
+</feature>

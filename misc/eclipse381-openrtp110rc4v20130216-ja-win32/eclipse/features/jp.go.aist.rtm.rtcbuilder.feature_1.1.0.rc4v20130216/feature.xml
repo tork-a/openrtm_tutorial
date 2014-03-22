@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature id="jp.go.aist.rtm.rtcbuilder.feature" label="RT Component Builder" plugin="jp.go.aist.rtm.rtcbuilder" provider-name="AIST" version="1.1.0.rc4v20130216">
+
+   <url>
+      <update label="Open RTP tools update site" url="http://www.openrtm.org/staging/pub/OpenRTP/updates/"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.platform" match="compatible" version="3.4"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.compare"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.forms"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import feature="org.eclipse.emf" match="greaterOrEqual" version="2.4"/>
+      <import feature="org.eclipse.gef" match="greaterOrEqual" version="3.4"/>
+   </requires>
+
+   <plugin download-size="1726551" id="jp.go.aist.rtm.rtcbuilder" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+   <plugin download-size="34756" id="jp.go.aist.rtm.rtcbuilder.java" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+   <plugin download-size="32181" id="jp.go.aist.rtm.rtcbuilder.python" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+   <plugin download-size="992871" id="jp.go.aist.rtm.toolscommon.profiles" install-size="0" unpack="false" version="1.1.0.rc4v20130216"/>
+
+</feature>
