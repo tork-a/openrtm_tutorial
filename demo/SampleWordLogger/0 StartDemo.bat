@@ -1,4 +1,4 @@
 rem setup SampleWordLogger
-cd ..\SampleWordLogger\build\Debug
+cd ..\SampleWordLogger\build\src\Debug
 call SampleWordLoggerComp.exe
 cd ..\..
