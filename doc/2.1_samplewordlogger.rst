@@ -171,6 +171,8 @@ SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder`
 
 .. image:: media/vc_logger_built.png
 
+ここで `VC++ 2010` は閉じても構いません．
+
 ヘッダ，ソースの編集
 ====================
 
@@ -354,11 +356,8 @@ SampleWordLogger RTC では，InPort から語を受け取った時刻とその�
        return RTC::RTC_OK;
     }
 
-CMake によるビルドに必要なファイルの生成
-========================================
-
 CMakeList.txt の編集
---------------------
+========================================
 
 この RTC ではログファイル生成のために `xmllib` を使用しています (実際のログのフォーマットは xml ではありませんが) ので，`RTCBuilder` が生成した `CMakeLists.txt` にその旨を追記します．
 
@@ -386,12 +385,13 @@ CMakeList.txt の編集
 
 VC++ によるビルド
 =================
-`SampleWordLogger.sln` ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010の起動後，下図のようにし，コンポーネントのビルドを行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`_)．
+Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 `SampleWordLogger.sln` ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010 の起動後，下図のようにし，コンポーネントのビルドを行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`_)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png
 
-以上で RTC 作成が終了です．
+Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．
 
+========
 実行方法
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
