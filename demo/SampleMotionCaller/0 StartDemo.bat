@@ -1,7 +1,6 @@
 call Choreonoid-GRobot_withMotion.bat
 
-cd ..\SampleMotionCaller\bin
+cd ..\SampleMotionCaller\build\src\Debug
 call SampleMotionCallerComp.exe
-
-
+cd ..\..\..
 

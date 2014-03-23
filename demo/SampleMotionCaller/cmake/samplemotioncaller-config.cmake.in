@@ -1,0 +1,54 @@
+# SampleMotionCaller CMake config file
+#
+# This file sets the following variables:
+# SampleMotionCaller_FOUND - Always TRUE.
+# SampleMotionCaller_INCLUDE_DIRS - Directories containing the SampleMotionCaller include files.
+# SampleMotionCaller_IDL_DIRS - Directories containing the SampleMotionCaller IDL files.
+# SampleMotionCaller_LIBRARIES - Libraries needed to use SampleMotionCaller.
+# SampleMotionCaller_DEFINITIONS - Compiler flags for SampleMotionCaller.
+# SampleMotionCaller_VERSION - The version of SampleMotionCaller found.
+# SampleMotionCaller_VERSION_MAJOR - The major version of SampleMotionCaller found.
+# SampleMotionCaller_VERSION_MINOR - The minor version of SampleMotionCaller found.
+# SampleMotionCaller_VERSION_REVISION - The revision version of SampleMotionCaller found.
+# SampleMotionCaller_VERSION_CANDIDATE - The candidate version of SampleMotionCaller found.
+
+message(STATUS "Found SampleMotionCaller-@PROJECT_VERSION@")
+set(SampleMotionCaller_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(SampleMotionCaller_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(SampleMotionCaller_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(SampleMotionCaller_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(SampleMotionCaller_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(SampleMotionCaller_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(SampleMotionCaller_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(SampleMotionCaller_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(SampleMotionCaller_VERSION @PROJECT_VERSION@)
+set(SampleMotionCaller_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(SampleMotionCaller_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(SampleMotionCaller_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(SampleMotionCaller_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+
