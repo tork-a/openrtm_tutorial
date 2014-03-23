@@ -14,6 +14,7 @@ Introduction
 関連するチュートリアル
 ======================
 - `RTC` 作成の一般的作業の詳細は SampleWordLogger コンポーネントのチュートリアル[1_]に記述があります．特に `Eclipse` 上での GUI を利用した開発が説明されています．
+  - なお本チュートリアル内で，[1_]内の多くの画像を参照しています．参照元はその都度記載しています．
 
 SystemEnvironment
 =================
@@ -63,11 +64,11 @@ RTCBuilder のインストール，起動
 ===============================
 本章では `Eclipse` ベースのツール `OpenRTP (Open RT Platform)` に同梱される `RTBuilder` を利用するので，[2_]からダウンロード・インストールして下さい．
 
-新規ワークスペースを指定してeclipseを起動すると，以下のような Welcome ページが表示されます (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png>`_)．
+新規ワークスペースを指定して Eclipse を起動すると，以下のような Welcome ページが表示されます (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png>`_)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png
 
-Welcomeページはいまは必要ないので左上の「×」ボタンを押して閉じてください (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png>`_)．
+Welcome ページはいまは必要ないので左上の「×」ボタンを押して閉じてください (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png>`_)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png
 
@@ -75,7 +76,7 @@ Welcomeページはいまは必要ないので左上の「×」ボタンを押�
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png
 
-`RTC Builder` を選択することで，RTCBuilderが起動します．
+`RTC Builder` を選択することで，RTCBuilder が起動します．
 
 ===============
 How to make RTC
@@ -133,7 +134,7 @@ SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder`
 仮ビルド
 ========
 
-さて，ここまででSampleWordLogger コンポーネントのソースコードが生成されました． 処理の中身は実装されていないので，`InPort` に他の `RTC` を接続しても何も出力されませんが，生成直後のソースコードだけでもコンパイルおよび実行は できます．
+さて，ここまででSampleWordLogger コンポーネントのソースコードが生成されました． 処理の中身は実装されていないので，`InPort` に他の `RTC` を接続しても何も出力されませんが，生成直後のソースコードだけでもコンパイルおよび実行はできます．
 
 ※サービスポートとプロバイダを持つコンポーネントの場合，実装を行わないとビルドが通らないものもあります．
 
@@ -152,7 +153,7 @@ SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder`
 
 ソースコードの場所はSampleWordLogger コンポーネントのソースが生成された場所で `CMakeList.txt` が存在するディレクトリです．デフォルトでは <ワークス ペースディレクトリ>/SampleWordLogger になります．
 
-また，ビルドディレクトリとは，ビルドするためのプロジェクトファイルやオブジェクトファイル，バイナリを格納する場所のことです．場所は任意ですが，この場合 <ワークスペースディレクトリ>/SampleWordLogger/build のよう に分かりやすい名前をつけたSampleWordLogger のサブディレクトリを指定することをお勧めします．
+また，ビルドディレクトリとは，ビルドするためのプロジェクトファイルやオブジェクトファイル，バイナリを格納する場所のことです．場所は任意ですが，この場合 <ワークスペースディレクトリ>/SampleWordLogger/build のように分かりやすい名前をつけた SampleWordLogger のサブディレクトリを指定することをお勧めします．
 
 .. image:: media/logger_cmake_1.png
 
@@ -177,7 +178,7 @@ SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder`
 ------------------------
 SampleWordLogger RTC では，InPort から語を受け取った時刻とその語をファイルストリームに流します．
 
-`onActivated()`, `onExecute()`, `onDeactivated()` での処理内容を下図に示します (`編集用ファイル <https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit>`_ 必要であれば編集権を同ページ内から申請して下さい)．
+`onActivated()`, `onExecute()`, `onDeactivated()` での処理内容を下図に示します (`編集用の図ファイル <https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit>`_ 必要であれば編集権を同ページ内から申請して下さい)．
 
 .. image:: https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/pub?w=960&amp;h=720
 
@@ -354,12 +355,34 @@ SampleWordLogger RTC では，InPort から語を受け取った時刻とその�
     }
 
 CMake によるビルドに必要なファイルの生成
-=======================================
+========================================
 
 CMakeList.txt の編集
 --------------------
 
-この RTC では特に特殊なライブラリを使用しないので，`RTCBuilder` が生成した `CMakeLists.txt` を編集することなくでビルド可能です．
+この RTC ではログファイル生成のために `xmllib` を使用しています (実際のログのフォーマットは xml ではありませんが) ので，`RTCBuilder` が生成した `CMakeLists.txt` にその旨を追記します．
+
+適当なエディタ (`VC++ 2010, Emacs` 等) 上で，`SampleWordLogger/CMakeLists.txt` を開いて下さい．::
+
+    add_subdirectory(src)
+
+とあり，`src` フォルダの情報は移譲されていることが分かるので，`SampleWordLogger/src/CMakeLists.txt` を開きます．このファイル中を例えば以下の様に変更します::
+
+    + # Add xmllibs that's necessary for this SampleWordLogger project
+    + set(REQ_LIBS xmllite.dll)
+    
+      add_library(${PROJECT_NAME} ${LIB_TYPE} ${comp_srcs}
+        ${comp_headers} ${ALL_IDL_SRCS})
+      set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
+      set_source_files_properties(${ALL_IDL_SRCS} PROPERTIES GENERATED 1)
+      add_dependencies(${PROJECT_NAME} ALL_IDL_TGT)
+    - target_link_libraries(${PROJECT_NAME} ${OPENRTM_LIBRARIES})
+    + target_link_libraries(${PROJECT_NAME} ${OPENRTM_LIBRARIES} ${REQ_LIBS})
+    
+      add_executable(${PROJECT_NAME}Comp ${standalone_srcs}
+        ${comp_srcs} ${comp_headers} ${ALL_IDL_SRCS})
+    - target_link_libraries(${PROJECT_NAME}Comp ${OPENRTM_LIBRARIES})
+    + target_link_libraries(${PROJECT_NAME}Comp ${OPENRTM_LIBRARIES} ${REQ_LIBS})
 
 VC++ によるビルド
 =================
@@ -376,9 +399,9 @@ SampleWordLogger.slnファイルをダブルクリックし，Visual C++ 2010を
 では実行してみましょう．
 `SampleWordLogger` は単体だと何も行わないので，先に紹介された `MotionByVoiceDemo` と組合せて発話を記録してみましょう．
 
-ここでは上記二つのフォルダから RTC を呼ぶための .bat ファイルを格納する `./demo/MotionByVoiceLoggerDemo` を使います．
+上記二つのフォルダからそれぞれに格納される RTC を呼ぶための .bat ファイルを既に `./demo/MotionByVoiceLoggerDemo` として用意してあります．
 
-1) `./demo/MotionByVoiceLoggerDemo` から "0 StartDemo.bat"，"1 ConnectRTC.bat"，"2 ActivateRTC.bat" をそれぞれ実行．RT System Editor 上ではこのようになる．
+1) `./demo/MotionByVoiceLoggerDemo` から "0 StartDemo.bat"，"1 ConnectRTC.bat"，"2 ActivateRTC.bat" をそれぞれ実行．RT System Editor で見てみると，`SampleWordLogger` の RTC も実行されているのが確認可能．
 
 .. image:: media/rtse_motionvoicelogger_activated.png
 
@@ -386,7 +409,7 @@ SampleWordLogger.slnファイルをダブルクリックし，Visual C++ 2010を
 
 3) 3 から 5 までの `.bat` ファイルを実行し，RT システムを停止する．
 
-4) `./demo/SampleWordLogger/build/Debug/SampleWord.log` をテキストエディタで開くと，時刻と発話内容が記録されている．
+4) `./demo/SampleWordLogger/build/Debug/SampleWord.log` をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．
 
     2014/03/13 08:56:31 左 さげて
     2014/03/13 08:56:44 右 あげて
