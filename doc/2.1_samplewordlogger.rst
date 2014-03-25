@@ -65,7 +65,7 @@ RTCBuilder のインストール，起動
 ===============================
 本章では `Eclipse` ベースのツール `OpenRTP (Open RT Platform)` に同梱される `RTBuilder` を利用するので，[2_]からダウンロード・インストールして下さい．
 
-新規ワークスペースを指定して Eclipse を起動すると，以下のような Welcome ページが表示されます (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png>`_)．
+新規ワークスペースを指定して Eclipse を起動すると，以下のような Welcome ページが表示されます (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png>`__)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png
 
@@ -106,7 +106,7 @@ SampleWordLogger コンポーネントを作成するために，`RTCBuilder` �
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-10FileMenuOpenNewBuilder.png
 
 SampleWordLogger コンポーネントの雛型の生成
-========================================
+===========================================
 
 SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder` を用いて行います．
 
