@@ -407,7 +407,7 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 
 .. image:: media/rtse_motionvoicelogger_activated.png
 
-2) `MotionByVoiceDemo のチュートリアル <1.4_callmotion_byvoice.rst#HowToRun>`__ に従い，発話デモを実行．
+2) `MotionByVoiceDemo のチュートリアル <1.4_callmotion_byvoice.htm#HowToRun>`__ に従い，発話デモを実行．
 
 3) 3 から 5 までの `.bat` ファイルを実行し，RT システムを停止する．
 

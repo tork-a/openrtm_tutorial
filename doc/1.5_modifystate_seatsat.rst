@@ -16,13 +16,13 @@
 
 動作環境
 --------
-- `前チュートリアルの動作環境 <1.4_callmotion_byvoice.rst#SystemEnvironment>`__ を満たす．
+- `前チュートリアルの動作環境 <1.4_callmotion_byvoice.htm#SystemEnvironment>`__ を満たす．
 
 実行方法
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
 
-まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル <1.4_callmotion_byvoice.rst#SystemEnvironment>`__ を再び利用します．
+まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル <1.4_callmotion_byvoice.htm#SystemEnvironment>`__ を再び利用します．
 
 1) `./demo/MotionByVoiceDemo` の "0 StartDemo2.bat" (前回使った "0 StartDemo.bat" ではなく) を実行．
 

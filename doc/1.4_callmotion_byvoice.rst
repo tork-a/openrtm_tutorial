@@ -56,4 +56,4 @@ HowToRun
 .. _1: http://www.openrtp.jp/wiki/_default/ja/Software/ChoreonodRtcManager.html
 .. _2: http://www.openrtp.jp/wiki/_default/ja/Software/ChoreonoidTutorial.html
 .. _3: http://openrtc.org/OpenHRI/systems/FlagGame.html
-.. _4: 1.5_modifystate_seatsat.rst
+.. _4: 1.5_modifystate_seatsat.htm

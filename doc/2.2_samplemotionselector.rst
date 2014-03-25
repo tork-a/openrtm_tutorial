@@ -176,4 +176,4 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 
 2) 1) のプロンプト上で表示されたコマンドをキーボードから入力．`Choreonoid` 上でロボットが指示に従い動作する
 
-.. _1: 2.1_samplewordlogger.rst
+.. _1: 2.1_samplewordlogger.htm
