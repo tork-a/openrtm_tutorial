@@ -32,7 +32,7 @@ RTC I/O Spec
 ============
 
 +----------------+--------------------+
-| Component Name | SampleMotionCaller   |
+| Component Name | SampleMotionCaller |
 +================+====================+
 |              InPort                 |
 +----------------+--------------------+

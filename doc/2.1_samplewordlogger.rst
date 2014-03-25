@@ -69,11 +69,11 @@ RTCBuilder のインストール，起動
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png
 
-Welcome ページはいまは必要ないので左上の「×」ボタンを押して閉じてください (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png>`_)．
+Welcome ページはいまは必要ないので左上の「×」ボタンを押して閉じてください (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png>`__)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png
 
-右上の「Open Perspective」ボタンを押下し，プルダウンの「Other…」 ボタンを押下します(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png>`_)．
+右上の「Open Perspective」ボタンを押下し，プルダウンの「Other…」 ボタンを押下します(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png>`__)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png
 
@@ -101,12 +101,13 @@ SampleWordLogger コンポーネントを作成するために，`RTCBuilder` �
 
 .. image:: media/rtb_button_open_rtbeditor.png
 
-(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-10FileMenuOpenNewBuilder.png>`_)．
+(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-10FileMenuOpenNewBuilder.png>`__)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-10FileMenuOpenNewBuilder.png
 
 SampleWordLogger コンポーネントの雛型の生成
-==============================
+========================================
+
 SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder` を用いて行います．
 
 プロファイル情報入力とコードの生成
@@ -116,7 +117,7 @@ SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder`
 .. image:: media/rtb_logger_componentinfo.png
 
 次に，「アクティビティ」タブを選択し，使用するアクションコールバッ クを指定します．
-`SampleWordLogger RTC` では，onActivated(), onDeactivated(), onExecute() コールバックを使用します．下図のように (1) の onAtivated をクリック後に (2) のラジオボタンにて "on" にチェックを入れます．onDeactivated, onExecute についても同様の手順を行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png>`_)．
+`SampleWordLogger RTC` では，onActivated(), onDeactivated(), onExecute() コールバックを使用します．下図のように (1) の onAtivated をクリック後に (2) のラジオボタンにて "on" にチェックを入れます．onDeactivated, onExecute についても同様の手順を行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png>`__)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png
 
@@ -144,7 +145,7 @@ SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder`
     $ cmake .
     $ make
 
-とすれば，Configureおよびビルドが完了するはずです．`Windows` の場合は GUI を利用して `Configure` してみます． スタートメニューなどから `CMake (cmake-gui)` を起動します(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png>`_)．
+とすれば，Configureおよびビルドが完了するはずです．`Windows` の場合は GUI を利用して `Configure` してみます． スタートメニューなどから `CMake (cmake-gui)` を起動します(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png>`__)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png
 
@@ -158,7 +159,7 @@ SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder`
 
 .. image:: media/logger_cmake_1.png
 
-指定したら，下の `Configure` ボタンを押します．すると下図のようなダイアログが表示されますので，生成したいプロジェクトの種類を指定します．今回は `Visual Studio 10` とします(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png>`_)．
+指定したら，下の `Configure` ボタンを押します．すると下図のようなダイアログが表示されますので，生成したいプロジェクトの種類を指定します．今回は `Visual Studio 10` とします(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png>`__)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png
 
@@ -181,7 +182,7 @@ SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder`
 ------------------------
 SampleWordLogger RTC では，InPort から語を受け取った時刻とその語をファイルストリームに流します．
 
-`onActivated()`, `onExecute()`, `onDeactivated()` での処理内容を下図に示します (`編集用の図ファイル <https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit>`_ 必要であれば編集権を同ページ内から申請して下さい)．
+`onActivated()`, `onExecute()`, `onDeactivated()` での処理内容を下図に示します (`編集用の図ファイル <https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit>`__ 必要であれば編集権を同ページ内から申請して下さい)．
 
 .. image:: https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/pub?w=960&amp;h=720
 
@@ -386,7 +387,7 @@ CMakeList.txt の編集
 
 VC++ によるビルド
 =================
-Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 `SampleWordLogger.sln` ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010 の起動後，下図のようにし，コンポーネントのビルドを行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`_)．
+Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 `SampleWordLogger.sln` ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010 の起動後，下図のようにし，コンポーネントのビルドを行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`__)．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png
 

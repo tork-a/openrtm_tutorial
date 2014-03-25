@@ -13,16 +13,18 @@
 当ページでは最低限の操作方法のみ紹介します．`Choreonoid` や関連する `RTC` に関する詳細は下記リンクを参照ください．
 
 - `Choreonoid` 上のロボットの腕を音声で上下する "腕上げロボット" サンプルについては[3_]
-- `Choreonoid` 上のロボットを `OpenRTM` 経由で操作するための RTC `RobotMotionRtc`に関しては[1_]
+- `Choreonoid` 上のロボットを `OpenRTM` 経由で操作するための RTC `RobotMotionRtc` に関しては[1_]
 - 今回用いるモデルで再現されるロボット `G-ROBOTS GR-001` を用いた `Choreonoid` のスタートアップガイドは[2_]
 
 .. _1_4_sysenvironment:
+
 SystemEnvironment
 -----------------
 - Windows 7／ 8
 - マイクが Windows に認識されていること
 
 .. _1_4_howtorun:
+
 HowToRun
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
