@@ -1,0 +1,72 @@
+**(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT)**
+
+.. contents::
+.. sectnum::
+
+このページで体験すること
+========================
+
+- SEATSAT が管理するロボットの状態遷移に新たな状態を追加し，音声命令によりその状態へ遷移して `Choreonoid` 上のロボットのモーションを再生する．
+
+関連するチュートリアル
+======================
+当ページでは最低限の操作方法のみ紹介します．`SEAT (Speech Event Action Transfer)` の一般的情報については下記リンクを参照ください．
+
+- `SEAT` 含む対話マネージャの書式について[1_]
+
+動作環境
+--------
+- `前チュートリアルの動作環境 <1.4_callmotion_byvoice.htm#SystemEnvironment>`__ を満たす．
+
+実行方法
+========
+以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
+
+まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル <1.4_callmotion_byvoice.htm#SystemEnvironment>`__ を再び利用します．
+
+1) `./demo/MotionByVoiceDemo` の "0 StartDemo2.bat" (前回使った "0 StartDemo.bat" ではなく) を実行．
+
+2) 1 と 2 の `.bat` ファイルを実行．
+
+3) "さいせい よろしく" と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお `Choreonoid` 画面上では見えないが，`SEAT` の管理するロボットの状態は `dance_ready` という新たな状態に移っている．
+
+  "さいせい よろしく" コマンドは，既存のどのロボット状態からでも有効です; (例．右手だけ上がった状態)
+
+4) "あくしょん よろしく" と発話．ロボットは前回のチュートリアルで見せたのと同じダンスをする．その後 `both_down` 状態 (初期の状態) に戻る．
+
+新規状態の追加方法
+==================
+状態を追加するために今回追加したのは次の箇所::
+
+    In ./demo/MotionByVoiceDemo/motion_cnoid2.seatml
+
+      <state name="both_down">
+        <rule>
+      :
+    +    <rule>
+    +      <key>さいせい よろしく</key>
+    +      <command host="command">bow</command>
+    +      <statetransition>dance_ready</statetransition>
+    +    </rule>
+      </state>
+      :
+    +  <state name="dance_ready">
+    +    <rule>
+    +      <key>あくしょん よろしく</key>
+    +      <command host="command">SampleMotion1</command>
+    +      <statetransition>both_down</statetransition>
+    +    </rule>
+    +  </state>
+
+また，`あくしょん` という新たな語を音声認識させるために，`Julius` の設定ファイルも次のように更新::
+
+    In ./demo/MotionByVoiceDemo/motion2.grxml
+
+    +      <item>あくしょん</item>
+    :
+    +    </one-of>
+    +    <one-of>
+    :
+    +      <item>よろしく</item>
+    
+.. _1: http://openhri.net/doc/scriptingdialogmanager-ja.html

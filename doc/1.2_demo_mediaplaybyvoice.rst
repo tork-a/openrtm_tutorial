@@ -1,0 +1,38 @@
+**(デモ 2) 音声命令による動画再生 (OpenHRI)**
+
+.. contents::
+.. sectnum::
+
+関連するチュートリアル
+======================
+当ページでは最低限の操作方法のみ紹介します．`OpenHRI`, `SEATSAT` の詳細ては下記リンクを参照ください．
+
+- 当ページで紹介するデモの詳細．ページ内下方にある "システムを起動する"，"動作例" の章にしたがって作業を行ってください．[1_]
+
+  - なおソフトウェアは `./demo/0 SpeechDemo` にも梱包してあります．
+  - ネット接続不可の場合のために同チュートリアル PDF を同梱しています ./doc/tutorial_openhri_mediaplay.pdf
+
+HowToRun
+========
+他のウィンドウの陰に表示されることがあるのでその場合は探して前面に移動．
+
+1) Explorer で "./demo/0 SpeechDemo" を開く．
+
+2) "0 StartDemo.bat"，"1 ConnectRTC.bat"，"2 ActivateRTC.bat" の順に実行．
+
+3) "tk" と表示されるウィンドウを前面に移動．
+   
+4) "ビデオ" と発話．"video_list_mode" と左肩に書かれた tk ウィンドウが表示される．
+
+5) "リスト" と発話．"PlayList" ウィンドウが表示される．
+
+
+6) "xばんめ" (x = 1...5) と発話．"PlayList" ウィンドウ上でハイライト選択領域が変わる．
+
+7) "再生" と発話．"Player" ウィンドウで指定動画が再生される．
+
+8) "停止" など試す．
+
+9) 終了時は，"3 DeactivateRTC.bat", "4 DisconnectRTC.bat"，"5 DemoExit.bat" の順に実行．
+
+.. _1: http://openrtc.org/OpenHRI/systems/AppControl.html

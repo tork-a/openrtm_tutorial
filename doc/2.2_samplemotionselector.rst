@@ -1,0 +1,179 @@
+**(RTC 作成 2) Choreonoid のモーションを選択する RTC の開発**
+
+.. contents::
+.. sectnum::
+
+============
+Introduction
+============
+
+このページで体験すること
+========================
+
+- キーボードからの入力によって， Choreonoidのモーションを呼び出すことが出来る `SampleMotionCaller RTC` の開発
+
+関連するチュートリアル
+======================
+- 前章 (Logger RTC 開発)[1_]を終了し，`RTC` のスクラッチからの作成方法を習得していることを前提としています． 
+
+SystemEnvironment
+=================
+- 前章 (Logger RTC 開発)[1_]に同じ．
+
+===============================
+RTC の仕様 (I/O, Configuration)
+===============================
+
+これから作成するコンポーネントを `SampleMotionCaller` RTC と呼ぶことにします．
+
+このコンポーネントは，キーボードからの入力を受け付けるので `InPort` は未指定です．入力を解釈した結果を `TimedString` で `OutPort` へ出力します．
+
+RTC I/O Spec
+============
+
++----------------+--------------------+
+| Component Name | SampleMotionCaller |
++================+====================+
+|              InPort                 |
++----------------+--------------------+
+|Port Name       | (None)             |
++----------------+--------------------+
+|Data Type       | (None)             |
++----------------+--------------------+
+|              OutPort                |
++----------------+--------------------+
+|Port Name       | (None)             |
++----------------+--------------------+
+|Data Type       | TimedString        |
++----------------+--------------------+
+|              Configuration          |
++----------------+--------------------+
+|Parameter Name  | (None)             |
++----------------+--------------------+
+|Data Type       | (None)             |
++----------------+--------------------+
+|Values          | (None)             |
++----------------+--------------------+
+
+SampleMotionCaller RTC では、onExecute() コールバックのみ使用します。
+
+===============
+How to make RTC
+===============
+`RTC Builder` を用いた初期設定は省略します．前章[1_]で習得したことを用い，上記設計を実装して下さい．
+
+ここで `VC++ 2010` は閉じても構いません．
+
+ヘッダ，ソースの編集
+====================
+
+.h, .cpp ファイル編集
+---------------------
+
+`.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h` に次のように追加します::
+
+     protected:
+
+    +  TimedString m_command;
+    +  OutPort<TimedString> m_commandOut;
+
+下記のように `onExecute()` を実装します．::
+
+    RTC::ReturnCode_t SampleMotionCaller::onExecute(RTC::UniqueId ec_id)
+    {
+       // Check if keyboard is hit.
+       if ( _kbhit() ) {
+           char c = _getch();
+           switch (c) {
+           case '1':
+               m_command.data = "rightup1";
+               break;
+           case '2':
+               m_command.data = "leftup1";
+               break;
+           case '3':
+               m_command.data = "rightdown1";
+               break;
+           case '4':
+               m_command.data = "leftdown1";
+               break;
+           case '5':
+               m_command.data = "rightup2";
+               break;
+           case '6':
+               m_command.data = "leftup2";
+               break;
+           case '7':
+               m_command.data = "rightdown2";
+               break;
+           case '8':
+               m_command.data = "leftdown2";
+               break;
+           case 'r':
+               if ( strcmp(m_command.data, "rightdown1") == 0 ||
+                    strcmp(m_command.data, "leftdown1") == 0 ) {
+                   m_command.data = "rightup1";
+               } else if ( strcmp(m_command.data, "rightup1") == 0||
+                           strcmp(m_command.data, "leftdown2") == 0) {
+                   m_command.data = "rightdown1";
+               } else if ( strcmp(m_command.data, "leftup1") == 0||
+                           strcmp(m_command.data, "rightdown2") == 0) {
+                   m_command.data = "rightup2";
+               } else if ( strcmp(m_command.data, "rightup2") == 0||
+                           strcmp(m_command.data, "leftup2") == 0) {
+                   m_command.data = "rightdown2";
+               }
+               break;
+           case 'l':
+               if ( strcmp(m_command.data, "rightdown2") == 0||
+                    strcmp(m_command.data, "leftdown1") == 0) {
+                   m_command.data = "leftup1";
+               } else if ( strcmp(m_command.data, "leftup1") == 0||
+                           strcmp(m_command.data, "rightdown2") == 0) {
+                   m_command.data = "leftdown1";
+               } else if ( strcmp(m_command.data, "rightup1") == 0||
+                           strcmp(m_command.data, "leftdown2") == 0) {
+                   m_command.data = "leftup2";
+               } else if ( strcmp(m_command.data, "leftup2") == 0||
+                           strcmp(m_command.data, "rightup2") == 0) {
+                   m_command.data = "leftdown2";
+               }
+               break;
+           }
+           std::cerr << "Keyboad input " << c << ", command =  " << m_command.data << std::endl;
+           m_commandOut.write();
+       }
+       return RTC::RTC_OK;
+    }
+
+ファイル全体はこちらで閲覧可能:
+- `.demo/SampleMotionCaller/src/SampleMotionCaller.cpp`
+- `demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h`
+
+CMakeList.txt の編集
+====================
+
+この RTC では Windows 標準ライブラリのみ使用するので，`CMakeLists.txt` の編集は不要です．
+
+VC++ によるビルド
+=================
+Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 `SampleMotionCaller.sln` ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010の起動後，下図のようにし，コンポーネントのビルドを行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`_)．
+
+.. image:: http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png
+
+Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．
+
+実行方法
+========
+以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
+
+では実行してみましょう．
+`Choreonoid` 上で `GRobot` を走らせ，`SampleMotionCaller` から指示を送ってみましょう．
+
+`Choreonoid` と `SampleMotionCaller` を簡便に呼び出すための .bat ファイルを既に `./demo/`SampleMotionCaller` に用意してあります．
+
+1) `./demo/SampleMotionCaller` から "0 StartDemo.bat"，"1 ConnectRTC.bat"，"2 ActivateRTC.bat" をそれぞれ実行．RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．
+
+2) 1) のプロンプト上で表示されたコマンドをキーボードから入力．`Choreonoid` 上でロボットが指示に従い動作する
+
+.. _1: 2.1_samplewordlogger.htm

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
+<title></title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7514 2012-09-14 14:27:12Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<p><strong>(RTC 作成 2) Choreonoid のモーションを選択する RTC の開発</strong></p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="#introduction" id="id7">1&nbsp;&nbsp;&nbsp;Introduction</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id1" id="id8">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a></li>
+<li><a class="reference internal" href="#id2" id="id9">1.2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a></li>
+<li><a class="reference internal" href="#systemenvironment" id="id10">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rtc-i-o-configuration" id="id11">2&nbsp;&nbsp;&nbsp;RTC の仕様 (I/O, Configuration)</a><ul class="auto-toc">
+<li><a class="reference internal" href="#rtc-i-o-spec" id="id12">2.1&nbsp;&nbsp;&nbsp;RTC I/O Spec</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-make-rtc" id="id13">3&nbsp;&nbsp;&nbsp;How to make RTC</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id3" id="id14">3.1&nbsp;&nbsp;&nbsp;ヘッダ，ソースの編集</a><ul class="auto-toc">
+<li><a class="reference internal" href="#h-cpp" id="id15">3.1.1&nbsp;&nbsp;&nbsp;.h, .cpp ファイル編集</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cmakelist-txt" id="id16">3.2&nbsp;&nbsp;&nbsp;CMakeList.txt の編集</a></li>
+<li><a class="reference internal" href="#vc" id="id17">3.3&nbsp;&nbsp;&nbsp;VC++ によるビルド</a></li>
+<li><a class="reference internal" href="#id5" id="id18">3.4&nbsp;&nbsp;&nbsp;実行方法</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h1><a class="toc-backref" href="#id7">1&nbsp;&nbsp;&nbsp;Introduction</a></h1>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id8">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a></h2>
+<ul class="simple">
+<li>キーボードからの入力によって， Choreonoidのモーションを呼び出すことが出来る <cite>SampleMotionCaller RTC</cite> の開発</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id9">1.2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a></h2>
+<ul class="simple">
+<li>前章 (Logger RTC 開発)[<a class="reference external" href="2.1_samplewordlogger.htm">1</a>]を終了し，<cite>RTC</cite> のスクラッチからの作成方法を習得していることを前提としています．</li>
+</ul>
+</div>
+<div class="section" id="systemenvironment">
+<h2><a class="toc-backref" href="#id10">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a></h2>
+<ul class="simple">
+<li>前章 (Logger RTC 開発)[<a class="reference external" href="2.1_samplewordlogger.htm">1</a>]に同じ．</li>
+</ul>
+</div>
+</div>
+<div class="section" id="rtc-i-o-configuration">
+<h1><a class="toc-backref" href="#id11">2&nbsp;&nbsp;&nbsp;RTC の仕様 (I/O, Configuration)</a></h1>
+<p>これから作成するコンポーネントを <cite>SampleMotionCaller</cite> RTC と呼ぶことにします．</p>
+<p>このコンポーネントは，キーボードからの入力を受け付けるので <cite>InPort</cite> は未指定です．入力を解釈した結果を <cite>TimedString</cite> で <cite>OutPort</cite> へ出力します．</p>
+<div class="section" id="rtc-i-o-spec">
+<h2><a class="toc-backref" href="#id12">2.1&nbsp;&nbsp;&nbsp;RTC I/O Spec</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Component Name</th>
+<th class="head">SampleMotionCaller</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td colspan="2">InPort</td>
+</tr>
+<tr><td>Port Name</td>
+<td>(None)</td>
+</tr>
+<tr><td>Data Type</td>
+<td>(None)</td>
+</tr>
+<tr><td colspan="2">OutPort</td>
+</tr>
+<tr><td>Port Name</td>
+<td>(None)</td>
+</tr>
+<tr><td>Data Type</td>
+<td>TimedString</td>
+</tr>
+<tr><td colspan="2">Configuration</td>
+</tr>
+<tr><td>Parameter Name</td>
+<td>(None)</td>
+</tr>
+<tr><td>Data Type</td>
+<td>(None)</td>
+</tr>
+<tr><td>Values</td>
+<td>(None)</td>
+</tr>
+</tbody>
+</table>
+<p>SampleMotionCaller RTC では、onExecute() コールバックのみ使用します。</p>
+</div>
+</div>
+<div class="section" id="how-to-make-rtc">
+<h1><a class="toc-backref" href="#id13">3&nbsp;&nbsp;&nbsp;How to make RTC</a></h1>
+<p><cite>RTC Builder</cite> を用いた初期設定は省略します．前章[<a class="reference external" href="2.1_samplewordlogger.htm">1</a>]で習得したことを用い，上記設計を実装して下さい．</p>
+<p>ここで <cite>VC++ 2010</cite> は閉じても構いません．</p>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id14">3.1&nbsp;&nbsp;&nbsp;ヘッダ，ソースの編集</a></h2>
+<div class="section" id="h-cpp">
+<h3><a class="toc-backref" href="#id15">3.1.1&nbsp;&nbsp;&nbsp;.h, .cpp ファイル編集</a></h3>
+<p><cite>.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h</cite> に次のように追加します:</p>
+<pre class="literal-block">
+ protected:
+
++  TimedString m_command;
++  OutPort&lt;TimedString&gt; m_commandOut;
+</pre>
+<p>下記のように <cite>onExecute()</cite> を実装します．:</p>
+<pre class="literal-block">
+RTC::ReturnCode_t SampleMotionCaller::onExecute(RTC::UniqueId ec_id)
+{
+   // Check if keyboard is hit.
+   if ( _kbhit() ) {
+       char c = _getch();
+       switch (c) {
+       case '1':
+           m_command.data = &quot;rightup1&quot;;
+           break;
+       case '2':
+           m_command.data = &quot;leftup1&quot;;
+           break;
+       case '3':
+           m_command.data = &quot;rightdown1&quot;;
+           break;
+       case '4':
+           m_command.data = &quot;leftdown1&quot;;
+           break;
+       case '5':
+           m_command.data = &quot;rightup2&quot;;
+           break;
+       case '6':
+           m_command.data = &quot;leftup2&quot;;
+           break;
+       case '7':
+           m_command.data = &quot;rightdown2&quot;;
+           break;
+       case '8':
+           m_command.data = &quot;leftdown2&quot;;
+           break;
+       case 'r':
+           if ( strcmp(m_command.data, &quot;rightdown1&quot;) == 0 ||
+                strcmp(m_command.data, &quot;leftdown1&quot;) == 0 ) {
+               m_command.data = &quot;rightup1&quot;;
+           } else if ( strcmp(m_command.data, &quot;rightup1&quot;) == 0||
+                       strcmp(m_command.data, &quot;leftdown2&quot;) == 0) {
+               m_command.data = &quot;rightdown1&quot;;
+           } else if ( strcmp(m_command.data, &quot;leftup1&quot;) == 0||
+                       strcmp(m_command.data, &quot;rightdown2&quot;) == 0) {
+               m_command.data = &quot;rightup2&quot;;
+           } else if ( strcmp(m_command.data, &quot;rightup2&quot;) == 0||
+                       strcmp(m_command.data, &quot;leftup2&quot;) == 0) {
+               m_command.data = &quot;rightdown2&quot;;
+           }
+           break;
+       case 'l':
+           if ( strcmp(m_command.data, &quot;rightdown2&quot;) == 0||
+                strcmp(m_command.data, &quot;leftdown1&quot;) == 0) {
+               m_command.data = &quot;leftup1&quot;;
+           } else if ( strcmp(m_command.data, &quot;leftup1&quot;) == 0||
+                       strcmp(m_command.data, &quot;rightdown2&quot;) == 0) {
+               m_command.data = &quot;leftdown1&quot;;
+           } else if ( strcmp(m_command.data, &quot;rightup1&quot;) == 0||
+                       strcmp(m_command.data, &quot;leftdown2&quot;) == 0) {
+               m_command.data = &quot;leftup2&quot;;
+           } else if ( strcmp(m_command.data, &quot;leftup2&quot;) == 0||
+                       strcmp(m_command.data, &quot;rightup2&quot;) == 0) {
+               m_command.data = &quot;leftdown2&quot;;
+           }
+           break;
+       }
+       std::cerr &lt;&lt; &quot;Keyboad input &quot; &lt;&lt; c &lt;&lt; &quot;, command =  &quot; &lt;&lt; m_command.data &lt;&lt; std::endl;
+       m_commandOut.write();
+   }
+   return RTC::RTC_OK;
+}
+</pre>
+<p>ファイル全体はこちらで閲覧可能:
+- <cite>.demo/SampleMotionCaller/src/SampleMotionCaller.cpp</cite>
+- <cite>demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h</cite></p>
+</div>
+</div>
+<div class="section" id="cmakelist-txt">
+<h2><a class="toc-backref" href="#id16">3.2&nbsp;&nbsp;&nbsp;CMakeList.txt の編集</a></h2>
+<p>この RTC では Windows 標準ライブラリのみ使用するので，<cite>CMakeLists.txt</cite> の編集は不要です．</p>
+</div>
+<div class="section" id="vc">
+<h2><a class="toc-backref" href="#id17">3.3&nbsp;&nbsp;&nbsp;VC++ によるビルド</a></h2>
+<p>Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 <cite>SampleMotionCaller.sln</cite> ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010の起動後，下図のようにし，コンポーネントのビルドを行います(<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png" src="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png" />
+<p>Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．</p>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id18">3.4&nbsp;&nbsp;&nbsp;実行方法</a></h2>
+<p>以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．</p>
+<p>では実行してみましょう．
+<cite>Choreonoid</cite> 上で <cite>GRobot</cite> を走らせ，<cite>SampleMotionCaller</cite> から指示を送ってみましょう．</p>
+<p><cite>Choreonoid</cite> と <cite>SampleMotionCaller</cite> を簡便に呼び出すための .bat ファイルを既に <cite>./demo/`SampleMotionCaller</cite> に用意してあります．</p>
+<ol class="arabic simple">
+<li><cite>./demo/SampleMotionCaller</cite> から &quot;0 StartDemo.bat&quot;，&quot;1 ConnectRTC.bat&quot;，&quot;2 ActivateRTC.bat&quot; をそれぞれ実行．RT System Editor で見てみると，<cite>SampleMotionCaller</cite> の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．</li>
+<li><ol class="first arabic">
+<li>のプロンプト上で表示されたコマンドをキーボードから入力．<cite>Choreonoid</cite> 上でロボットが指示に従い動作する</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>
