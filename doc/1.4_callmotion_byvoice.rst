@@ -29,7 +29,7 @@ HowToRun
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
 
-1) `Explorer` で `./demo/MotionByVoiceDemo` を開き，"0 StartDemo.bat", "1 ConnectRTC.bat", "2 ActivateRTC.bat" を実行．
+1) `Explorer` で `./demo/MotionByVoiceDemo` を開き，"0 StartDemo.bat_", "1 ConnectRTC.bat_", "2 ActivateRTC.bat_" を実行．
 
 2) (Optional) デバッグ用途として，`./demo/SampleWordLogger` 内の 0 から 2 までの `.bat` ファイルを実行しても良い．発話内容を記録する RTC である．
 
@@ -49,6 +49,8 @@ HowToRun
 
 5) "さいせい よろしく" と発話．うまく認識されると，定義済の `SampleMotion1` に従ってロボットが動き出す．
 
+6) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
+
 管理されているロボット状態
 ==========================
 次のチュートリアル[4_]のトピックですが，当デモは `SEAT` というモジュールを用いて状態を管理しています．当デモが管理する状態は，`./demo/MotionByVoiceDemo/motion_cnoid.seatml` で定義されているように，`both_down`, `both_up`, `left_up`, `right_up` といった，各腕の位置の組合せによる四種類です．
@@ -57,3 +59,9 @@ HowToRun
 .. _2: http://www.openrtp.jp/wiki/_default/ja/Software/ChoreonoidTutorial.html
 .. _3: http://openrtc.org/OpenHRI/systems/FlagGame.html
 .. _4: 1.5_modifystate_seatsat.htm
+.. _StartDemo.bat: ../demo/MotionByVoiceDemo/0%20StartDemo.bat
+.. _ConnectRTC.bat: ../demo/MotionByVoiceDemo/1%20ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/MotionByVoiceDemo/2%20ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/MotionByVoiceDemo/3%20DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/MotionByVoiceDemo/4%20DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/MotionByVoiceDemo/5%20DemoExit.bat

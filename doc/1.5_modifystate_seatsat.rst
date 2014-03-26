@@ -24,15 +24,17 @@
 
 まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル <1.4_callmotion_byvoice.htm#SystemEnvironment>`__ を再び利用します．
 
-1) `./demo/MotionByVoiceDemo` の "0 StartDemo2.bat" (前回使った "0 StartDemo.bat" ではなく) を実行．
+1) `./demo/MotionByVoiceDemo` の "0 StartDemo2.bat_" (前回使った "0 StartDemo.bat" ではなく) を実行．
 
-2) 1 と 2 の `.bat` ファイルを実行．
+2) "1 ConnectRTC.bat_", "2 ActivateRTC.bat_" を実行．
 
 3) "さいせい よろしく" と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお `Choreonoid` 画面上では見えないが，`SEAT` の管理するロボットの状態は `dance_ready` という新たな状態に移っている．
 
   "さいせい よろしく" コマンドは，既存のどのロボット状態からでも有効です; (例．右手だけ上がった状態)
 
 4) "あくしょん よろしく" と発話．ロボットは前回のチュートリアルで見せたのと同じダンスをする．その後 `both_down` 状態 (初期の状態) に戻る．
+
+5) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
 
 新規状態の追加方法
 ==================
@@ -70,3 +72,9 @@
     +      <item>よろしく</item>
     
 .. _1: http://openhri.net/doc/scriptingdialogmanager-ja.html
+.. _StartDemo2.bat: ../demo/MotionByVoiceDemo/0%20StartDemo2.bat
+.. _ConnectRTC.bat: ../demo/MotionByVoiceDemo/1%20ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/MotionByVoiceDemo/2%20ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/MotionByVoiceDemo/3%20DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/MotionByVoiceDemo/4%20DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/MotionByVoiceDemo/5%20DemoExit.bat

@@ -403,7 +403,7 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 
 上記二つのフォルダからそれぞれに格納される RTC を呼ぶための .bat ファイルを既に `./demo/MotionByVoiceLoggerDemo` として用意してあります．
 
-1) `./demo/MotionByVoiceLoggerDemo` から "0 StartDemo.bat"，"1 ConnectRTC.bat"，"2 ActivateRTC.bat" をそれぞれ実行．RT System Editor で見てみると，`SampleWordLogger` の RTC も実行されているのが確認可能．
+1) `./demo/MotionByVoiceLoggerDemo` から "0 StartDemo.bat_"，"1 ConnectRTC.bat_"，"2 ActivateRTC.bat_" をそれぞれ実行．RT System Editor で見てみると，`SampleWordLogger` の RTC も実行されているのが確認可能．
 
 .. image:: media/rtse_motionvoicelogger_activated.png
 
@@ -419,8 +419,17 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
     2014/03/13 08:58:23 左 あげて
     2014/03/13 08:58:39 左 あげない
 
+6) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
+
 .. _1: http://www.openrtm.org/openrtm/ja/node/4625#toc7
 .. _2: http://openrtm.org/openrtm/ja/download/openrtp/openrtp-110-rc4-ja#toc1
 .. _3: http://www.visualstudio.com/downloads/download-visual-studio-vs#DownloadFamilies_4
 .. _4: http://go.microsoft.com/fwlink/?LinkId=190491&clcid=0x411
 .. _5: http://openrtp.jp/wiki/attachments/_default/Home/iRex2011/eclipse342_rtmtools110-rc2_win32_ja.zip/download
+.. _StartDemo.bat: ../demo/MotionByVoiceLoggerDemo/0%20StartDemo.bat
+.. _ConnectRTC.bat: ../demo/MotionByVoiceLoggerDemo/1%20ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/MotionByVoiceLoggerDemo/2%20ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/MotionByVoiceLoggerDemo/3%20DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/MotionByVoiceLoggerDemo/4%20DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/MotionByVoiceLoggerDemo/5%20DemoExit.bat
+

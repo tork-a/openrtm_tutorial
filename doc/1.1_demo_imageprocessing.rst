@@ -29,7 +29,7 @@ nameserver 起動 (全チュートリアル共通)
 --------------------------------------
 基本的に `OpenRTM` の nameserver は一度起動すると，起動したままでもすべてのチュートリアルは動作すると思われます．
 
-1) `Explorer` で `demo` フォルダを開き，`rtm-naming.bat` をダブルクリックして実行．
+1) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ をダブルクリックして実行．
 
 - `cmd.exe` (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::
     Starting omniNames for the first time.
@@ -53,7 +53,7 @@ nameserver 起動 (全チュートリアル共通)
 チュートリアルのプログラム実行
 ------------------------------
 
-1) ./demo/OpencvRtmDemo/0 StartDemo.bat を実行
+1) ./demo/OpencvRtmDemo/0 StartDemo.bat_ を実行
 
 2) ./demo/RTSE.bat を実行．RT System Editor が下図のように起動する．
 
@@ -84,3 +84,5 @@ nameserver 起動 (全チュートリアル共通)
 .. _3: http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html
 .. _4: http://pcsupport.about.com/od/windows7/a/command-prompt-windows-7.htm
 .. _5: http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm
+.. _rtm-naming.bat: ../demo/rtm-naming.bat
+.. _StartDemo.bat: ../demo/OpencvRtmDemo/0%20StartDemo.bat

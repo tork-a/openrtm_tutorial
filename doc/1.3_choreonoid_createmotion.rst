@@ -23,7 +23,7 @@
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
 
-1) `.demo/BatchFiles/Choreonoid-GRobot.bat` を実行．`Choreonoid` の GUI が起動する．
+1) .demo/BatchFiles/Choreonoid-GRobot.bat_ を実行．`Choreonoid` の GUI が起動する．
 
 2) `Choreonoid` の GUI 上で，次の手順で既存モーションを読み込む．
 
@@ -51,3 +51,4 @@
 
 .. _1: http://www.openrtm.org/openrtm/sites/default/files/5048/Hara.pdf
 .. _2: http://choreonoid.org/ja/StartupGuide/sample/editSampleMotion.html
+.. _Choreonoid-GRobot.bat: ../demo/BatchFiles/Choreonoid-GRobot.bat

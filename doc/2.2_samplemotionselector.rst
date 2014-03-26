@@ -172,8 +172,16 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 
 `Choreonoid` と `SampleMotionCaller` を簡便に呼び出すための .bat ファイルを既に `./demo/`SampleMotionCaller` に用意してあります．
 
-1) `./demo/SampleMotionCaller` から "0 StartDemo.bat"，"1 ConnectRTC.bat"，"2 ActivateRTC.bat" をそれぞれ実行．RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．
+1) `./demo/SampleMotionCaller` から "0 StartDemo.bat_"，"1 ConnectRTC.bat_"，"2 ActivateRTC.bat_" をそれぞれ実行．RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．
 
 2) 1) のプロンプト上で表示されたコマンドをキーボードから入力．`Choreonoid` 上でロボットが指示に従い動作する
 
+3) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
+
 .. _1: 2.1_samplewordlogger.htm
+.. _StartDemo.bat: ../demo/SampleMotionCaller/0%20StartDemo.bat
+.. _ConnectRTC.bat: ../demo/SampleMotionCaller/1%20ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/SampleMotionCaller/2%20ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/SampleMotionCaller/3%20DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/SampleMotionCaller/4%20DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/SampleMotionCaller/5%20DemoExit.bat

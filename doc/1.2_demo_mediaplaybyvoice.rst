@@ -16,23 +16,29 @@ HowToRun
 ========
 他のウィンドウの陰に表示されることがあるのでその場合は探して前面に移動．
 
-1) Explorer で "./demo/0 SpeechDemo" を開く．
+1) "0 StartDemo.bat_"，"1 ConnectRTC.bat_"，"2 ActivateRTC.bat_" の順に実行．クリックして開けない場合，Explorer で "./demo/0 SpeechDemo" を開いてそれぞれ実行．
 
-2) "0 StartDemo.bat"，"1 ConnectRTC.bat"，"2 ActivateRTC.bat" の順に実行．
+2) "tk" と表示されるウィンドウを前面に移動．
 
-3) "tk" と表示されるウィンドウを前面に移動．
-   
-4) "ビデオ" と発話．"video_list_mode" と左肩に書かれた tk ウィンドウが表示される．
+3) "ビデオ" と発話．"video_list_mode" と左肩に書かれた tk ウィンドウが表示される．
 
-5) "リスト" と発話．"PlayList" ウィンドウが表示される．
+4) "リスト" と発話．"PlayList" ウィンドウが表示される．
 
 
-6) "xばんめ" (x = 1...5) と発話．"PlayList" ウィンドウ上でハイライト選択領域が変わる．
+5) "xばんめ" (x = 1...5) と発話．"PlayList" ウィンドウ上でハイライト選択領域が変わる．
 
-7) "再生" と発話．"Player" ウィンドウで指定動画が再生される．
+6) "再生" と発話．"Player" ウィンドウで指定動画が再生される．
 
-8) "停止" など試す．
+7) "停止" など試す．
 
-9) 終了時は，"3 DeactivateRTC.bat", "4 DisconnectRTC.bat"，"5 DemoExit.bat" の順に実行．
+8) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
 
 .. _1: http://openrtc.org/OpenHRI/systems/AppControl.html
+.. _StartDemo.bat: ../demo/0%20SpeechDemo/0%20StartDemo.bat
+.. _ConnectRTC.bat: ../demo/0%20SpeechDemo/1%20ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/0%20SpeechDemo/2%20ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/0%20SpeechDemo/3%20DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/0%20SpeechDemo/4%20DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/0%20SpeechDemo/5%20DemoExit.bat
+
+
