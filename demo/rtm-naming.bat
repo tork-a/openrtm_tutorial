@@ -23,9 +23,13 @@ rem if exist %cosnames%  echo "ok, cosnames exists."
 echo hostname = %hosts% TEMPFILE = %TEMP%\omninames-%hosts%.log
 if EXIST %TEMP%\omninames-%hosts%.log del /F %TEMP%\omninames-%hosts%.log
 if EXIST %TEMP%\omninames-%hosts%.bak del /f %TEMP%\omninames-%hosts%.bak
-echo Debug) PATH = %PATH%
+rem echo Debug) PATH = %PATH%
 echo Starting omniORB omniNames: %hosts%:%port%
-%cosnames% -start %port% -logdir %TEMP%\
+rem %cosnames% -start %port% -logdir %TEMP%\
+f:    REM This is temporary and better solution is much required. Further discussion at https://github.com/tork-a/openrtm_tutorial/issues/5
+echo CURRENT DIR=%cd%
+.\misc\OpenRTM-aist\1.1\tools\omniNames.exe -start %port% -logdir %TEMP%\
+
 
 goto:EOF
 
