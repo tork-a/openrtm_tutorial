@@ -1,5 +1,10 @@
 @echo off
 
+REM ''' Usage of this file
+REM %1 port num for omninames. Should be 2809 unless there's a reason.
+REM %2 usb drive to be used
+REM '''
+
 rem set cosnames="omninames"
 set cosnames="omniNames"
 set orb="omniORB"
@@ -23,9 +28,15 @@ rem if exist %cosnames%  echo "ok, cosnames exists."
 echo hostname = %hosts% TEMPFILE = %TEMP%\omninames-%hosts%.log
 if EXIST %TEMP%\omninames-%hosts%.log del /F %TEMP%\omninames-%hosts%.log
 if EXIST %TEMP%\omninames-%hosts%.bak del /f %TEMP%\omninames-%hosts%.bak
-echo Debug) PATH = %PATH%
+rem echo Debug) PATH = %PATH%
+echo CURRENT DIR=%cd%
+set usbdrive=%2
+%usbdrive%   REM Changing directory to the USB drive.
+cd demo  
+echo Moved to DIR=%cd%
 echo Starting omniORB omniNames: %hosts%:%port%
-%cosnames% -start %port% -logdir %TEMP%\
+cmd.exe /K ..\misc\OpenRTM-aist\1.1\tools\omniNames.exe -start %port% -logdir %TEMP%\
+
 
 goto:EOF
 

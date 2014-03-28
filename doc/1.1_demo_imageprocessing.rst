@@ -3,6 +3,10 @@
 .. contents::
 .. sectnum::
 
+.. raw:: html
+
+   <script src="batcall.js"></script>
+
 Introduction
 ============
 
@@ -29,7 +33,13 @@ nameserver 起動 (全チュートリアル共通)
 --------------------------------------
 基本的に `OpenRTM` の nameserver は一度起動すると，起動したままでもすべてのチュートリアルは動作すると思われます．
 
-1) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ をダブルクリックして実行．
+0) 次のリンクをクリックして nameserver を起動．
+
+.. raw:: html
+
+    <a class="reference external"  href="javascript:void(0)" onclick="rtm_naming(); return false;">rtm-naming.bat</a>
+
+1) (上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ をダブルクリックして実行．
 
 - `cmd.exe` (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::
     Starting omniNames for the first time.
