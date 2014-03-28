@@ -79,6 +79,7 @@ nameserver 起動 (全チュートリアル共通)
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png
 
+
 .. _1: http://www.openrtm.org/openrtm/ja/node/4625#toc26 
 .. _2: http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png
 .. _3: http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html
@@ -86,3 +87,8 @@ nameserver 起動 (全チュートリアル共通)
 .. _5: http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm
 .. _rtm-naming.bat: ../demo/rtm-naming.bat
 .. _StartDemo.bat: ../demo/OpencvRtmDemo/0%20StartDemo.bat
+
+----
+
+Go back to `index <index.htm>`__ | Go to `next <1.2_demo_mediaplaybyvoice.htm>`__
+

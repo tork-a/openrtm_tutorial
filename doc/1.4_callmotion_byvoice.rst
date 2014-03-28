@@ -65,3 +65,7 @@ HowToRun
 .. _DeactivateRTC.bat: ../demo/MotionByVoiceDemo/3%20DeactivateRTC.bat
 .. _DisconnectRTC.bat: ../demo/MotionByVoiceDemo/4%20DisconnectRTC.bat
 .. _DemoExit.bat: ../demo/MotionByVoiceDemo/5%20DemoExit.bat
+
+----
+
+Go back to `index <index.htm>`__ | Go to `next <1.5_modifystate_seatsat.htm>`__

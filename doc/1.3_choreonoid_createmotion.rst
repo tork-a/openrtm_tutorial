@@ -52,3 +52,7 @@
 .. _1: http://www.openrtm.org/openrtm/sites/default/files/5048/Hara.pdf
 .. _2: http://choreonoid.org/ja/StartupGuide/sample/editSampleMotion.html
 .. _Choreonoid-GRobot.bat: ../demo/BatchFiles/Choreonoid-GRobot.bat
+
+----
+
+Go back to `index <index.htm>`__ | Go to `next <1.4_callmotion_byvoice.htm>`__

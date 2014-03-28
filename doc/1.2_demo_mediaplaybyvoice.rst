@@ -41,4 +41,6 @@ HowToRun
 .. _DisconnectRTC.bat: ../demo/0%20SpeechDemo/4%20DisconnectRTC.bat
 .. _DemoExit.bat: ../demo/0%20SpeechDemo/5%20DemoExit.bat
 
+----
 
+Go back to `index <index.htm>`__ | Go to `next <1.3_choreonoid_createmotion.htm>`__

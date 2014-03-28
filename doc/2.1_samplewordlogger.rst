@@ -433,3 +433,6 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 .. _DisconnectRTC.bat: ../demo/MotionByVoiceLoggerDemo/4%20DisconnectRTC.bat
 .. _DemoExit.bat: ../demo/MotionByVoiceLoggerDemo/5%20DemoExit.bat
 
+----
+
+Go back to `index <index.htm>`__ | Go to `next <2.2_samplemotionselector.htm>`__
