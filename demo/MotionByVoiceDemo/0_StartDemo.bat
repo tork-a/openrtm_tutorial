@@ -1,3 +1,8 @@
+echo CURRENT DIR=%cd%
+set usbdrive=%2
+if NOT DEFINED usbdrive set usbdrive=F:
+cd /F %usbdrive%\   REM Changing directory to the USB drive.
+
 rem These processes are added by trial to mimic "0 SpeechDemo"
 start ..\OpenHRIAudio\portaudioinput.exe
 call ..\MotionByVoiceDemo\Julius_Motion.bat
