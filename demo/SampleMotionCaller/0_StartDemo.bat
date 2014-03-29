@@ -1,6 +1,12 @@
-call Choreonoid-GRobot_withMotion.bat
+REM ''' Usage of this file
+REM %1 usb drive to be used
+REM '''
 
-cd ..\SampleMotionCaller\build\src\Debug
-call SampleMotionCallerComp.exe
-cd ..\..\..
+set usbdrive=%1
+%usbdrive%
+cd demo\SampleMotionCaller
+echo Moved to DIR=%cd%
 
+call ..\SampleMotionCaller\Choreonoid-GRobot_withMotion.bat
+
+call ..\SampleMotionCaller\bin\SampleMotionCallerComp.exe

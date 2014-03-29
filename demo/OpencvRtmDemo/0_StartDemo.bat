@@ -1,5 +1,5 @@
 echo CURRENT DIR=%cd%
-set usbdrive=%2
+set usbdrive=%1
 if NOT DEFINED usbdrive set usbdrive=F:
 cd /d %usbdrive%\
 

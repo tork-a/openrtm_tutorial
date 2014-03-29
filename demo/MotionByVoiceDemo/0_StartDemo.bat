@@ -1,3 +1,12 @@
+REM ''' Usage of this file
+REM %1 usb drive to be used
+REM '''
+
+set usbdrive=%1
+%usbdrive%
+cd demo\MotionByVoiceDemo
+echo Moved to DIR=%cd%
+
 echo CURRENT DIR=%cd%
 set usbdrive=%2
 if NOT DEFINED usbdrive set usbdrive=F:
