@@ -3,6 +3,10 @@
 .. contents::
 .. sectnum::
 
+.. raw:: html
+
+   <script src="batcall.js"></script>
+
 関連するチュートリアル
 ======================
 当ページでは最低限の操作方法のみ紹介します．`OpenHRI`, `SEATSAT` の詳細ては下記リンクを参照ください．
@@ -21,9 +25,9 @@ HowToRun
 .. raw:: html
 
   <ul>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("0_SpeechDemo\\0_StartDemo.bat"); return false;">./demo/0_SpeechDemo/0_StartDemo.bat</a></li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("0_SpeechDemo\\1_ConnectRTC.bat"); return false;">./demo/0_SpeechDemo/1_ConnectRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("0_SpeechDemo\\2_ActivateRTC.bat"); return false;">./demo/0_SpeechDemo/2_ActivateRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\0_StartDemo.bat'); return false;">./demo/0_SpeechDemo/0_StartDemo.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\1_ConnectRTC.bat'); return false;">./demo/0_SpeechDemo/1_ConnectRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\2_ActivateRTC.bat'); return false;">./demo/0_SpeechDemo/2_ActivateRTC.bat</a></li>
   </ul>
 
 2) "tk" と表示されるウィンドウを前面に移動．
@@ -43,9 +47,9 @@ HowToRun
 .. raw:: html
 
   <ul>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("0_SpeechDemo\\3_DeactivateRTC.bat"); return false;">./demo/0_SpeechDemo/3_DeactivateRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("0_SpeechDemo\\4_DisconnectRTC.bat"); return false;">./demo/0_SpeechDemo/4_DisconnectRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("0_SpeechDemo\\5_DemoExit.bat"); return false;">./demo/0_SpeechDemo/5_DemoExit.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\3_DeactivateRTC.bat'); return false;">./demo/0_SpeechDemo/3_DeactivateRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\4_DisconnectRTC.bat'); return false;">./demo/0_SpeechDemo/4_DisconnectRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\5_DemoExit.bat'); return false;">./demo/0_SpeechDemo/5_DemoExit.bat</a></li>
   </ul>
 
 .. _1: http://openrtc.org/OpenHRI/systems/AppControl.html

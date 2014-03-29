@@ -3,6 +3,10 @@
 .. contents::
 .. sectnum::
 
+.. raw:: html
+
+   <script src="batcall.js"></script>
+
 このページで体験すること
 ========================
 
@@ -27,7 +31,7 @@
 
 .. raw:: html
 
-    <a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("BatchFiles\\Choreonoid-GRobot.bat"); return false;">./demo/BatchFiles/Choreonoid-GRobot.bat</a>
+    <a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('BatchFiles\\Choreonoid-GRobot.bat'); return false;">./demo/BatchFiles/Choreonoid-GRobot.bat</a>
 
 2) `Choreonoid` の GUI 上で，次の手順で既存モーションを読み込む．
 

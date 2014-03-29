@@ -3,6 +3,10 @@
 .. contents::
 .. sectnum::
 
+.. raw:: html
+
+   <script src="batcall.js"></script>
+
 ============
 Introduction
 ============
@@ -410,9 +414,9 @@ MotionByVoiceLoggerDemo
 .. raw:: html
 
   <ul>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceLoggerDemo\\0_StartDemo.bat"); return false;">./demo/MotionByVoiceLoggerDemo/0_StartDemo.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceLoggerDemo\\1_ConnectRTC.bat"); return false;">./demo/MotionByVoiceLoggerDemo/1_ConnectRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceLoggerDemo\\2_ActivateRTC.bat"); return false;">./demo/MotionByVoiceLoggerDemo/2_ActivateRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\0_StartDemo.bat'); return false;">./demo/MotionByVoiceLoggerDemo/0_StartDemo.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\1_ConnectRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/1_ConnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\2_ActivateRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/2_ActivateRTC.bat</a></li>
   </ul>
 
 RT System Editor で見てみると，`SampleWordLogger` の RTC も実行されているのが確認可能．
@@ -426,9 +430,9 @@ RT System Editor で見てみると，`SampleWordLogger` の RTC も実行され
 .. raw:: html
 
   <ul>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceLoggerDemo\\3_DeactivateRTC.bat"); return false;">./demo/MotionByVoiceLoggerDemo/3_DeactivateRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceLoggerDemo\\4_DisconnectRTC.bat"); return false;">./demo/MotionByVoiceLoggerDemo/4_DisconnectRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceLoggerDemo\\5_DemoExit.bat"); return false;">./demo/MotionByVoiceLoggerDemo/5_DemoExit.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\3_DeactivateRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/3_DeactivateRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\4_DisconnectRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/4_DisconnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\5_DemoExit.bat'); return false;">./demo/MotionByVoiceLoggerDemo/5_DemoExit.bat</a></li>
   </ul>
 
 4) `./demo/SampleWordLogger/build/Debug/SampleWord.log` をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．

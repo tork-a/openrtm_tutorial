@@ -3,6 +3,10 @@
 .. contents::
 .. sectnum::
 
+.. raw:: html
+
+   <script src="batcall.js"></script>
+
 このページで体験すること
 ========================
 
@@ -29,7 +33,7 @@
 .. raw:: html
 
   <ul>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\0_StartDemo2.bat"); return false;">./demo/MotionByVoiceDemo/0_StartDemo2.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\0_StartDemo2.bat'); return false;">./demo/MotionByVoiceDemo/0_StartDemo2.bat</a> | </li>
   </ul>
 
 2) "1 ConnectRTC.bat", "2 ActivateRTC.bat" を実行．
@@ -37,8 +41,8 @@
 .. raw:: html
 
   <ul>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\1_ConnectRTC.bat"); return false;">./demo/MotionByVoiceDemo/1_ConnectRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\2_ActivateRTC.bat"); return false;">./demo/MotionByVoiceDemo/2_ActivateRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\1_ConnectRTC.bat'); return false;">./demo/MotionByVoiceDemo/1_ConnectRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\2_ActivateRTC.bat'); return false;">./demo/MotionByVoiceDemo/2_ActivateRTC.bat</a></li>
   </ul>
 
 3) "さいせい よろしく" と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお `Choreonoid` 画面上では見えないが，`SEAT` の管理するロボットの状態は `dance_ready` という新たな状態に移っている．
@@ -52,9 +56,9 @@
 .. raw:: html
 
   <ul>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\3_DeactivateRTC.bat"); return false;">./demo/MotionByVoiceDemo/3_DeactivateRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\4_DisconnectRTC.bat"); return false;">./demo/MotionByVoiceDemo/4_DisconnectRTC.bat</a> | </li>
-  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\5_DemoExit.bat"); return false;">./demo/MotionByVoiceDemo/5_DemoExit.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\3_DeactivateRTC.bat'); return false;">./demo/MotionByVoiceDemo/3_DeactivateRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\4_DisconnectRTC.bat'); return false;">./demo/MotionByVoiceDemo/4_DisconnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\5_DemoExit.bat'); return false;">./demo/MotionByVoiceDemo/5_DemoExit.bat</a></li>
   </ul>
 
 新規状態の追加方法

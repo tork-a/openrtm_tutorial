@@ -67,8 +67,7 @@ nameserver 起動 (全チュートリアル共通)
 
 .. raw:: html
 
-    <a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("OpencvRtmDemo\\0_StartDemo.bat"); return false;">./demo/OpencvRtmDemo/0_StartDemo.bat</a>
-
+    <a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('OpencvRtmDemo\\0_StartDemo.bat'); return false;">./demo/OpencvRtmDemo/0_StartDemo.bat</a>
 
 2) ./demo/RTSE.bat を実行．
 
