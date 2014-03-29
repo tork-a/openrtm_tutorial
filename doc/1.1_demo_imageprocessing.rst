@@ -37,7 +37,7 @@ nameserver 起動 (全チュートリアル共通)
 
 .. raw:: html
 
-    <a class="reference external"  href="javascript:void(0)" onclick="rtm_naming(); return false;">rtm-naming.bat</a>
+    <a class="reference external"  href="javascript:void(0)" onclick="call_rtmnamerserver(); return false;">rtm-naming.bat</a>
 
 1) (上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ をダブルクリックして実行．
 
@@ -63,9 +63,20 @@ nameserver 起動 (全チュートリアル共通)
 チュートリアルのプログラム実行
 ------------------------------
 
-1) ./demo/OpencvRtmDemo/0 StartDemo.bat_ を実行
+1) `./demo/OpencvRtmDemo/0_StartDemo.bat` を実行．次のリンクから起動できなければ，手動で `Explorer` から実行．
 
-2) ./demo/RTSE.bat を実行．RT System Editor が下図のように起動する．
+.. raw:: html
+
+    <a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("OpencvRtmDemo\\0_StartDemo.bat"); return false;">./demo/OpencvRtmDemo/0_StartDemo.bat</a>
+
+
+2) ./demo/RTSE.bat を実行．
+
+.. raw:: html
+
+    <a class="reference external"  href="javascript:void(0)" onclick="call_rtseditor(); return false;">./demo/RTSE.bat</a>
+
+RT System Editor が下図のように起動する．
 
 .. image:: media/rtse_nocomponents.png
 
@@ -96,7 +107,7 @@ nameserver 起動 (全チュートリアル共通)
 .. _4: http://pcsupport.about.com/od/windows7/a/command-prompt-windows-7.htm
 .. _5: http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm
 .. _rtm-naming.bat: ../demo/rtm-naming.bat
-.. _StartDemo.bat: ../demo/OpencvRtmDemo/0%20StartDemo.bat
+.. _StartDemo.bat: ../demo/OpencvRtmDemo/0_StartDemo.bat
 
 ----
 

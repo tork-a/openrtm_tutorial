@@ -24,9 +24,22 @@
 
 まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル <1.4_callmotion_byvoice.htm#SystemEnvironment>`__ を再び利用します．
 
-1) `./demo/MotionByVoiceDemo` の "0 StartDemo2.bat_" (前回使った "0 StartDemo.bat" ではなく) を実行．
+1) `./demo/MotionByVoiceDemo` の "0_StartDemo2.bat" (前回使った "0_StartDemo.bat" ではなく) を実行．
 
-2) "1 ConnectRTC.bat_", "2 ActivateRTC.bat_" を実行．
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\0_StartDemo2.bat"); return false;">./demo/MotionByVoiceDemo/0_StartDemo2.bat</a> | </li>
+  </ul>
+
+2) "1 ConnectRTC.bat", "2 ActivateRTC.bat" を実行．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\1_ConnectRTC.bat"); return false;">./demo/MotionByVoiceDemo/1_ConnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\2_ActivateRTC.bat"); return false;">./demo/MotionByVoiceDemo/2_ActivateRTC.bat</a></li>
+  </ul>
 
 3) "さいせい よろしく" と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお `Choreonoid` 画面上では見えないが，`SEAT` の管理するロボットの状態は `dance_ready` という新たな状態に移っている．
 
@@ -34,7 +47,15 @@
 
 4) "あくしょん よろしく" と発話．ロボットは前回のチュートリアルで見せたのと同じダンスをする．その後 `both_down` 状態 (初期の状態) に戻る．
 
-5) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
+6) 終了時は，"3_DeactivateRTC.bat", "4_DisconnectRTC.bat"，"5_DemoExit.bat" の順に実行．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\3_DeactivateRTC.bat"); return false;">./demo/MotionByVoiceDemo/3_DeactivateRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\4_DisconnectRTC.bat"); return false;">./demo/MotionByVoiceDemo/4_DisconnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\5_DemoExit.bat"); return false;">./demo/MotionByVoiceDemo/5_DemoExit.bat</a></li>
+  </ul>
 
 新規状態の追加方法
 ==================

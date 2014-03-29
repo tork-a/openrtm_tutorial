@@ -528,14 +528,25 @@ RTC::ReturnCode_t SampleMotionCaller::onExecute(RTC::UniqueId ec_id)
 <cite>Choreonoid</cite> 上で <cite>GRobot</cite> を走らせ，<cite>SampleMotionCaller</cite> から指示を送ってみましょう．</p>
 <p><cite>Choreonoid</cite> と <cite>SampleMotionCaller</cite> を簡便に呼び出すための .bat ファイルを既に <cite>./demo/`SampleMotionCaller</cite> に用意してあります．</p>
 <ol class="arabic simple">
-<li><cite>./demo/SampleMotionCaller</cite> から &quot;0 <a class="reference external" href="../demo/SampleMotionCaller/0%20StartDemo.bat">StartDemo.bat</a>&quot;，&quot;1 <a class="reference external" href="../demo/SampleMotionCaller/1%20ConnectRTC.bat">ConnectRTC.bat</a>&quot;，&quot;2 <a class="reference external" href="../demo/SampleMotionCaller/2%20ActivateRTC.bat">ActivateRTC.bat</a>&quot; をそれぞれ実行．RT System Editor で見てみると，<cite>SampleMotionCaller</cite> の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．</li>
+<li><cite>./demo/SampleMotionCaller</cite> から &quot;0_StartDemo.bat&quot;，&quot;1_ConnectRTC.bat&quot;，&quot;2_ActivateRTC.bat&quot; の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("SampleMotionCaller\\0_StartDemo.bat"); return false;">./demo/SampleMotionCaller/0_StartDemo.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("SampleMotionCaller\\1_ConnectRTC.bat"); return false;">./demo/SampleMotionCaller/1_ConnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("SampleMotionCaller\\2_ActivateRTC.bat"); return false;">./demo/SampleMotionCaller/2_ActivateRTC.bat</a></li>
+</ul><p>RT System Editor で見てみると，<cite>SampleMotionCaller</cite> の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．</p>
+<ol class="arabic simple" start="2">
 <li><ol class="first arabic">
 <li>のプロンプト上で表示されたコマンドをキーボードから入力．<cite>Choreonoid</cite> 上でロボットが指示に従い動作する</li>
 </ol>
 </li>
-<li>終了時は，&quot;3 <a class="reference external" href="../demo/SampleMotionCaller/3%20DeactivateRTC.bat">DeactivateRTC.bat</a>&quot;, &quot;4 <a class="reference external" href="../demo/SampleMotionCaller/4%20DisconnectRTC.bat">DisconnectRTC.bat</a>&quot;，&quot;5 <a class="reference external" href="../demo/SampleMotionCaller/5%20DemoExit.bat">DemoExit.bat</a>&quot; の順に実行．</li>
+<li>&quot;3_DeactivateRTC.bat&quot;, &quot;4_DisconnectRTC.bat&quot;，&quot;5_DemoExit.bat&quot; の順に実行し，RT システムを停止．</li>
 </ol>
-<hr class="docutils" />
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("SampleMotionCaller\\3_DeactivateRTC.bat"); return false;">./demo/SampleMotionCaller/3_DeactivateRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("SampleMotionCaller\\4_DisconnectRTC.bat"); return false;">./demo/SampleMotionCaller/4_DisconnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("SampleMotionCaller\\5_DemoExit.bat"); return false;">./demo/SampleMotionCaller/5_DemoExit.bat</a></li>
+</ul><hr class="docutils" />
 <p>Go back to <a class="reference external" href="index.htm">index</a></p>
 </div>
 </div>

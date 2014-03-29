@@ -29,7 +29,15 @@ HowToRun
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
 
-1) `Explorer` で `./demo/MotionByVoiceDemo` を開き，"0 StartDemo.bat_", "1 ConnectRTC.bat_", "2 ActivateRTC.bat_" を実行．
+1) "0_StartDemo.bat"，"1_ConnectRTC.bat"，"2_ActivateRTC.bat" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で "./demo/0 SpeechDemo" を開いてそれぞれ実行．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\0_StartDemo.bat"); return false;">./demo/MotionByVoiceDemo/0_StartDemo.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\1_ConnectRTC.bat"); return false;">./demo/MotionByVoiceDemo/1_ConnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\2_ActivateRTC.bat"); return false;">./demo/MotionByVoiceDemo/2_ActivateRTC.bat</a></li>
+  </ul>
 
 2) (Optional) デバッグ用途として，`./demo/SampleWordLogger` 内の 0 から 2 までの `.bat` ファイルを実行しても良い．発話内容を記録する RTC である．
 
@@ -49,7 +57,15 @@ HowToRun
 
 5) "さいせい よろしく" と発話．うまく認識されると，定義済の `SampleMotion1` に従ってロボットが動き出す．
 
-6) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
+6) 終了時は，"3_DeactivateRTC.bat", "4_DisconnectRTC.bat"，"5_DemoExit.bat" の順に実行．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\3_DeactivateRTC.bat"); return false;">./demo/MotionByVoiceDemo/3_DeactivateRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\4_DisconnectRTC.bat"); return false;">./demo/MotionByVoiceDemo/4_DisconnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("MotionByVoiceDemo\\5_DemoExit.bat"); return false;">./demo/MotionByVoiceDemo/5_DemoExit.bat</a></li>
+  </ul>
 
 管理されているロボット状態
 ==========================

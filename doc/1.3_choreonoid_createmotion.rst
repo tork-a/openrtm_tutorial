@@ -23,7 +23,11 @@
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
 
-1) .demo/BatchFiles/Choreonoid-GRobot.bat_ を実行．`Choreonoid` の GUI が起動する．
+1) .demo/BatchFiles/Choreonoid-GRobot.bat を実行．`Choreonoid` の GUI が起動する．
+
+.. raw:: html
+
+    <a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath("BatchFiles\\Choreonoid-GRobot.bat"); return false;">./demo/BatchFiles/Choreonoid-GRobot.bat</a>
 
 2) `Choreonoid` の GUI 上で，次の手順で既存モーションを読み込む．
 
