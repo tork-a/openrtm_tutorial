@@ -1,0 +1,14 @@
+﻿Build started 3/23/2014 3:57:00 AM.
+     1>Project "C:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\ALL_BUILD.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Win32\Debug\ALL_BUILD\ALL_BUILD.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Build all projects
+       FinalizeBuildStatus:
+         Deleting file "Win32\Debug\ALL_BUILD\ALL_BUILD.unsuccessfulbuild".
+         Touching "Win32\Debug\ALL_BUILD\ALL_BUILD.lastbuildstate".
+     1>Done Building Project "C:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\ALL_BUILD.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.22

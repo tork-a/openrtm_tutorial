@@ -1,0 +1,52 @@
+﻿Build started 3/23/2014 3:56:47 AM.
+     1>Project "C:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\ZERO_CHECK.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/cmake/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/doc/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/idl/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/include/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/include/SampleMotionCaller/CMakeFiles/generate.stamp is up-to-date.
+         CMake is re-running because C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/src/CMakeFiles/generate.stamp is out-of-date.
+           the file 'C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/src/CMakeLists.txt'
+           is newer than 'C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/src/CMakeFiles/generate.stamp.depend'
+           result='-1'
+         -- OpenRTMConfig.cmake found.
+         -- Configrued by configuration mode.
+         -- OpenRTM-aist configuration done
+         --   OMNIORB_DIR=C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5
+         --   OMNIORB_VERSION=4.1.5
+         --   OMNIORB_CFLAGS=-D__WIN32__;-D__x86__;-D__NT__;-D__OSVERSION__=4;-D_CRT_SECURE_NO_DEPRECATE
+         --   OMNIORB_INCLUDE_DIRS=C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/include
+         --   OMNIORB_LDFLAGS=
+         --   OMNIORB_LIBRARY_DIRS=C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32
+         --   OMNIORB_LIBRARIES=optimized;omniORB415_rt;optimized;omniDynamic415_rt;optimized;omnithread34_rt;debug;omniORB415_rtd;debug;omniDynamic415_rtd;debug;omnithread34_rtd
+         --   OPENRTM_DIR=C:/Program Files (x86)/OpenRTM-aist/1.1
+         --   OPENRTM_VERSION=1.1.0
+         --   OPENRTM_VERSION_MAJOR=1
+         --   OPENRTM_VERSION_MINOR=1
+         --   OPENRTM_VERSION_PATCH=0
+         --   OPENRTM_CFLAGS=-D__WIN32__;-D__x86__;-D__NT__;-D__OSVERSION__=4;-D_CRT_SECURE_NO_DEPRECATE;-DINCLUDE_stub_in_nt_dll;-DRTC_CORBA_CXXMAPPING11;-D_WIN32_WINNT=0x0500
+         --   OPENRTM_INCLUDE_DIRS=C:/Program Files (x86)/OpenRTM-aist/1.1;C:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl
+         --   OPENRTM_LDFLAGS=
+         --   OPENRTM_LIBRARY_DIRS=C:/Program Files (x86)/OpenRTM-aist/1.1/bin;C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32
+         --   OPENRTM_LIBRARIES=optimized;RTC110;optimized;coil110;optimized;omniORB415_rt;optimized;omniDynamic415_rt;optimized;omnithread34_rt;optimized;advapi32;optimized;ws2_32;optimized;mswsock;debug;RTC110d;debug;coil110d;debug;omniORB415_rtd;debug;omniDynamic415_rtd;debug;omnithread34_rtd;debug;advapi32;debug;ws2_32;debug;mswsock
+         --   OPENRTM_IDLC=omniidl
+         --   OPENRTM_IDLFLAGS=-bcxx;-Wba;-nf;-IC:/Program Files (x86)/OpenRTM-aist/1.1/rtm/idl
+         --   OPENRTM_IDL_WRAPPER=rtm-skelwrapper.py
+         --   OPENRTM_IDL_WRAPPER_FLAGS=--include-dir="";--skel-suffix=Skel;--stub-suffix=Stub
+         -- OpenRTM configuration Found
+         -- Configuring done
+         -- Generating done
+         -- Build files have been written to: C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build
+       FinalizeBuildStatus:
+         Deleting file "Win32\Debug\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild".
+         Touching "Win32\Debug\ZERO_CHECK\ZERO_CHECK.lastbuildstate".
+     1>Done Building Project "C:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\ZERO_CHECK.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.54

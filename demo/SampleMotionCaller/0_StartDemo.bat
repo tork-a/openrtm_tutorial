@@ -9,4 +9,4 @@ echo Moved to DIR=%cd%
 
 call ..\SampleMotionCaller\Choreonoid-GRobot_withMotion.bat
 
-call ..\SampleMotionCaller\bin\SampleMotionCallerComp.exe
+call ..\SampleMotionCaller\build\src\Debug\SampleMotionCallerComp.exe

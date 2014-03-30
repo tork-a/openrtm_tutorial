@@ -1,0 +1,87 @@
+﻿Build started 3/23/2014 3:56:48 AM.
+     1>Project "C:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\src\SampleMotionCaller.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "SampleMotionCaller.dir\Debug\SampleMotionCaller.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\include /IC:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\include\SampleMotionCaller /IC:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build /IC:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\idl /I"C:\Program Files (x86)\OpenRTM-aist\1.1" /I"C:\Program Files (x86)\OpenRTM-aist\1.1\rtm\idl" /I"C:\Program Files (x86)\OpenRTM-aist\1.1\omniORB\4.1.5\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D __WIN32__ /D __x86__ /D __NT__ /D __OSVERSION__=4 /D _CRT_SECURE_NO_DEPRECATE /D INCLUDE_stub_in_nt_dll /D RTC_CORBA_CXXMAPPING11 /D _WIN32_WINNT=0x0500 /D "CMAKE_INTDIR=\"Debug\"" /D SampleMotionCaller_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"SampleMotionCaller.dir\Debug\\" /Fd"SampleMotionCaller.dir\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\SampleMotionCaller.cpp
+         SampleMotionCaller.cpp
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/InPortBase.h(599): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/InPortConsumer.h(258): warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\coil/Factory.h(424): warning C4251: 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>::m_creators' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>'
+                 with
+                 [
+                     AbstractClass=RTC::InPortConsumer,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::InPortConsumer *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::InPortConsumer *&)
+                 ]
+                 and
+                 [
+                     _Kty=std::string,
+                     _Ty=coil::Factory<RTC::InPortConsumer,std::string,std::less<std::string>,RTC::InPortConsumer *(__cdecl *)(void),void (__cdecl *)(RTC::InPortConsumer *&)>::FactoryEntry
+                 ]
+                 and
+                 [
+                     AbstractClass=RTC::InPortConsumer,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::InPortConsumer *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::InPortConsumer *&)
+                 ]
+                 C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/InPortConsumer.h(258) : see reference to class template instantiation 'coil::GlobalFactory<AbstractClass>' being compiled
+                 with
+                 [
+                     AbstractClass=RTC::InPortConsumer
+                 ]
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/OutPortProvider.h(551): warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\coil/Factory.h(424): warning C4251: 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>::m_creators' : class 'std::map<_Kty,_Ty>' needs to have dll-interface to be used by clients of class 'coil::Factory<AbstractClass,Identifier,Compare,Creator,Destructor>'
+                 with
+                 [
+                     AbstractClass=RTC::OutPortProvider,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::OutPortProvider *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::OutPortProvider *&)
+                 ]
+                 and
+                 [
+                     _Kty=std::string,
+                     _Ty=coil::Factory<RTC::OutPortProvider,std::string,std::less<std::string>,RTC::OutPortProvider *(__cdecl *)(void),void (__cdecl *)(RTC::OutPortProvider *&)>::FactoryEntry
+                 ]
+                 and
+                 [
+                     AbstractClass=RTC::OutPortProvider,
+                     Identifier=std::string,
+                     Compare=std::less<std::string>,
+                     Creator=RTC::OutPortProvider *(__cdecl *)(void),
+                     Destructor=void (__cdecl *)(RTC::OutPortProvider *&)
+                 ]
+                 C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/OutPortProvider.h(551) : see reference to class template instantiation 'coil::GlobalFactory<AbstractClass>' being compiled
+                 with
+                 [
+                     AbstractClass=RTC::OutPortProvider
+                 ]
+     1>C:\Program Files (x86)\OpenRTM-aist\1.1\rtm/OutPortBase.h(777): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\src\Debug\SampleMotionCaller.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/bin" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/bin/Debug" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32" /LIBPATH:"C:/Program Files (x86)/OpenRTM-aist/1.1/omniORB/4.1.5/lib/x86_win32/Debug" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib RTC110d.lib coil110d.lib omniORB415_rtd.lib omniDynamic415_rtd.lib omnithread34_rtd.lib advapi32.lib ws2_32.lib mswsock.lib /MANIFEST /ManifestFile:"SampleMotionCaller.dir\Debug\SampleMotionCaller.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/src/Debug/SampleMotionCaller.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/src/Debug/SampleMotionCaller.lib" /MACHINE:X86 /DLL SampleMotionCaller.dir\Debug\SampleMotionCaller.dll.embed.manifest.res
+         SampleMotionCaller.dir\Debug\SampleMotionCaller.obj  /machine:X86 /debug 
+            Creating library C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/src/Debug/SampleMotionCaller.lib and object C:/Users/n130s/data/openrtm_tutorial/demo/SampleMotionCaller/build/src/Debug/SampleMotionCaller.exp
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"SampleMotionCaller.dir\Debug\SampleMotionCaller.dll.embed.manifest" /manifest SampleMotionCaller.dir\Debug\SampleMotionCaller.dll.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         SampleMotionCaller.vcxproj -> C:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\src\Debug\SampleMotionCaller.dll
+       FinalizeBuildStatus:
+         Deleting file "SampleMotionCaller.dir\Debug\SampleMotionCaller.unsuccessfulbuild".
+         Touching "SampleMotionCaller.dir\Debug\SampleMotionCaller.lastbuildstate".
+     1>Done Building Project "C:\Users\n130s\data\openrtm_tutorial\demo\SampleMotionCaller\build\src\SampleMotionCaller.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.83
