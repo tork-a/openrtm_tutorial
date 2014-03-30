@@ -60,15 +60,13 @@ class SampleWordLogger
   // </rtc-template>
 
   /***
-   * コンポーネント自身の各種初期化処理
-   *
    * The initialize action (on CREATED->ALIVE transition)
    * formaer rtc_init_entry() 
    *
    * @return RTC::ReturnCode_t
    * 
-   * @pre なし
-   * @post コンポーネントの初期化処理が正常に完了している
+   * @pre None.
+   * @post Initialization is done.
    * 
    */
    virtual RTC::ReturnCode_t onInitialize();
@@ -228,10 +226,9 @@ class SampleWordLogger
   // Configuration variable declaration
   // <rtc-template block="config_declare">
   /*!
-   * キーワードログを書き込むファイル名
+   * Key word log file name.
    * - Name: SampleWordLoggerMode SampleWordLoggerFileName
    * - DefaultValue: "SampleWord.log"
-   * - String: なし
    */
   std::string m_SampleWordLoggerFileName;
   // </rtc-template>
@@ -240,7 +237,7 @@ class SampleWordLogger
   // <rtc-template block="inport_declare">
   TimedString m_result;
   /*!
-   * 音声認識の結果
+   * Input string saved that is the result from the other RT component.
    * - Type: TimedString
    *         
    */
