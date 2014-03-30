@@ -97,12 +97,12 @@
     +      <item>よろしく</item>
     
 .. _1: http://openhri.net/doc/scriptingdialogmanager-ja.html
-.. _StartDemo2.bat: ../demo/MotionByVoiceDemo/0%20StartDemo2.bat
-.. _ConnectRTC.bat: ../demo/MotionByVoiceDemo/1%20ConnectRTC.bat
-.. _ActivateRTC.bat: ../demo/MotionByVoiceDemo/2%20ActivateRTC.bat
-.. _DeactivateRTC.bat: ../demo/MotionByVoiceDemo/3%20DeactivateRTC.bat
-.. _DisconnectRTC.bat: ../demo/MotionByVoiceDemo/4%20DisconnectRTC.bat
-.. _DemoExit.bat: ../demo/MotionByVoiceDemo/5%20DemoExit.bat
+.. _StartDemo2.bat: ../demo/MotionByVoiceDemo/0_StartDemo2.bat
+.. _ConnectRTC.bat: ../demo/MotionByVoiceDemo/1_ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/MotionByVoiceDemo/2_ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/MotionByVoiceDemo/3_DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/MotionByVoiceDemo/4_DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/MotionByVoiceDemo/5_DemoExit.bat
 
 ----
 

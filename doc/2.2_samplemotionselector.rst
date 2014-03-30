@@ -202,12 +202,12 @@ RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行さ�
   </ul>
 
 .. _1: 2.1_samplewordlogger.htm
-.. _StartDemo.bat: ../demo/SampleMotionCaller/0%20StartDemo.bat
-.. _ConnectRTC.bat: ../demo/SampleMotionCaller/1%20ConnectRTC.bat
-.. _ActivateRTC.bat: ../demo/SampleMotionCaller/2%20ActivateRTC.bat
-.. _DeactivateRTC.bat: ../demo/SampleMotionCaller/3%20DeactivateRTC.bat
-.. _DisconnectRTC.bat: ../demo/SampleMotionCaller/4%20DisconnectRTC.bat
-.. _DemoExit.bat: ../demo/SampleMotionCaller/5%20DemoExit.bat
+.. _StartDemo.bat: ../demo/SampleMotionCaller/0_StartDemo.bat
+.. _ConnectRTC.bat: ../demo/SampleMotionCaller/1_ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/SampleMotionCaller/2_ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/SampleMotionCaller/3_DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/SampleMotionCaller/4_DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/SampleMotionCaller/5_DemoExit.bat
 
 ----
 

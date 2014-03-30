@@ -18,7 +18,7 @@ Introduction
 このページで体験すること
 ------------------------
 - カメラで認識する動画像を反転 (OpenRTM-aist，OpenCV による)
-- RT System Editor の初歩的な利用
+- `RT System Editor` の初歩的な利用法
 
 動作環境
 --------
@@ -37,7 +37,9 @@ nameserver 起動 (全チュートリアル共通)
 
 .. raw:: html
 
-    <a class="reference external"  href="javascript:void(0)" onclick="call_rtmnamerserver(); return false;">rtm-naming.bat</a>
+    <ul>
+     <li><a class="reference external"  href="javascript:void(0)" onclick="call_rtmnamerserver(); return false;">rtm-naming.bat</a></li>
+    </ul>
 
 1) (上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ をダブルクリックして実行．
 
@@ -99,6 +101,13 @@ RT System Editor が下図のように起動する．
 
 .. image:: http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png
 
+11) 終了するには，次の手順で "RTC を inactivate" --> "RTC 間のリンクを切り離し" --> "各 RTC を停止" を行う．
+
+- 同ペイン上で直上左にある "All Deactivate" というアイコンをクリック
+- (5) で行ったのと逆を行う -- つまり，各接続線上で右クリックし"切断"を選択
+- (1) で起動されたコマンドプロンプト群を手動で終了．ただし `rtm-naming.bat` のそれは停止せずとも良い．
+
+ここで挙げた終了手順はやや煩雑ですが，御心配なく．次のチュートリアルからはこれらを一括して行うスクリプトを用意してあります．今回は初回なのでほぼすべてを手動で行い，`OpenRTM` のプログラム実行に必要な手順を体験して頂きました．
 
 .. _1: http://www.openrtm.org/openrtm/ja/node/4625#toc26 
 .. _2: http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png

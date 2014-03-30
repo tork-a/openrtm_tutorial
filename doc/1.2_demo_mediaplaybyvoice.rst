@@ -52,13 +52,15 @@ HowToRun
   <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\5_DemoExit.bat'); return false;">./demo/0_SpeechDemo/5_DemoExit.bat</a></li>
   </ul>
 
+RTC の deactivation は，コンポーネントがロードした実行時の必要リソースの量によって，時間がかかることがあります．
+
 .. _1: http://openrtc.org/OpenHRI/systems/AppControl.html
-.. _StartDemo.bat: ../demo/0%20SpeechDemo/0%20StartDemo.bat
-.. _ConnectRTC.bat: ../demo/0%20SpeechDemo/1%20ConnectRTC.bat
-.. _ActivateRTC.bat: ../demo/0%20SpeechDemo/2%20ActivateRTC.bat
-.. _DeactivateRTC.bat: ../demo/0%20SpeechDemo/3%20DeactivateRTC.bat
-.. _DisconnectRTC.bat: ../demo/0%20SpeechDemo/4%20DisconnectRTC.bat
-.. _DemoExit.bat: ../demo/0%20SpeechDemo/5%20DemoExit.bat
+.. _StartDemo.bat: ../demo/0_SpeechDemo/0_StartDemo.bat
+.. _ConnectRTC.bat: ../demo/0_SpeechDemo/1_ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/0_SpeechDemo/2_ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/0_SpeechDemo/3_DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/0_SpeechDemo/4_DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/0_SpeechDemo/5_DemoExit.bat
 
 ----
 
