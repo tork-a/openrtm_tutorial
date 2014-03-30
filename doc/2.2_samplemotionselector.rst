@@ -3,6 +3,10 @@
 .. contents::
 .. sectnum::
 
+.. raw:: html
+
+   <script src="batcall.js"></script>
+
 ============
 Introduction
 ============
@@ -163,6 +167,7 @@ Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 `Sampl
 
 Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．
 
+========
 実行方法
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
@@ -172,19 +177,37 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 
 `Choreonoid` と `SampleMotionCaller` を簡便に呼び出すための .bat ファイルを既に `./demo/`SampleMotionCaller` に用意してあります．
 
-1) `./demo/SampleMotionCaller` から "0 StartDemo.bat_"，"1 ConnectRTC.bat_"，"2 ActivateRTC.bat_" をそれぞれ実行．RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．
+1) `./demo/SampleMotionCaller` から "0_StartDemo.bat"，"1_ConnectRTC.bat"，"2_ActivateRTC.bat" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\0_StartDemo.bat'); return false;">./demo/SampleMotionCaller/0_StartDemo.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\1_ConnectRTC.bat'); return false;">./demo/SampleMotionCaller/1_ConnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\2_ActivateRTC.bat'); return false;">./demo/SampleMotionCaller/2_ActivateRTC.bat</a></li>
+  </ul>
+
+RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．
 
 2) 1) のプロンプト上で表示されたコマンドをキーボードから入力．`Choreonoid` 上でロボットが指示に従い動作する
 
-3) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
+3) "3_DeactivateRTC.bat", "4_DisconnectRTC.bat"，"5_DemoExit.bat" の順に実行し，RT システムを停止．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\3_DeactivateRTC.bat'); return false;">./demo/SampleMotionCaller/3_DeactivateRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\4_DisconnectRTC.bat'); return false;">./demo/SampleMotionCaller/4_DisconnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\5_DemoExit.bat'); return false;">./demo/SampleMotionCaller/5_DemoExit.bat</a></li>
+  </ul>
 
 .. _1: 2.1_samplewordlogger.htm
-.. _StartDemo.bat: ../demo/SampleMotionCaller/0%20StartDemo.bat
-.. _ConnectRTC.bat: ../demo/SampleMotionCaller/1%20ConnectRTC.bat
-.. _ActivateRTC.bat: ../demo/SampleMotionCaller/2%20ActivateRTC.bat
-.. _DeactivateRTC.bat: ../demo/SampleMotionCaller/3%20DeactivateRTC.bat
-.. _DisconnectRTC.bat: ../demo/SampleMotionCaller/4%20DisconnectRTC.bat
-.. _DemoExit.bat: ../demo/SampleMotionCaller/5%20DemoExit.bat
+.. _StartDemo.bat: ../demo/SampleMotionCaller/0_StartDemo.bat
+.. _ConnectRTC.bat: ../demo/SampleMotionCaller/1_ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/SampleMotionCaller/2_ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/SampleMotionCaller/3_DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/SampleMotionCaller/4_DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/SampleMotionCaller/5_DemoExit.bat
 
 ----
 

@@ -357,7 +357,7 @@ ul.auto-toc {
 <li><a class="reference internal" href="#id8" id="id30">5&nbsp;&nbsp;&nbsp;実行方法</a></li>
 </ul>
 </div>
-<div class="section" id="introduction">
+<script src="batcall.js"></script><div class="section" id="introduction">
 <h1><a class="toc-backref" href="#id14">1&nbsp;&nbsp;&nbsp;Introduction</a></h1>
 <div class="section" id="id1">
 <h2><a class="toc-backref" href="#id15">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a></h2>
@@ -719,15 +719,24 @@ add_subdirectory(src)
 <p>では実行してみましょう．
 <cite>SampleWordLogger</cite> は単体だと何も行わないので，先に紹介された <cite>MotionByVoiceDemo</cite> と組合せて発話を記録してみましょう．</p>
 <p>上記二つのフォルダからそれぞれに格納される RTC を呼ぶための .bat ファイルを既に <cite>./demo/MotionByVoiceLoggerDemo</cite> として用意してあります．</p>
+<p>MotionByVoiceLoggerDemo</p>
 <ol class="arabic simple">
-<li><cite>./demo/MotionByVoiceLoggerDemo</cite> から &quot;0 <a class="reference external" href="../demo/MotionByVoiceLoggerDemo/0%20StartDemo.bat">StartDemo.bat</a>&quot;，&quot;1 <a class="reference external" href="../demo/MotionByVoiceLoggerDemo/1%20ConnectRTC.bat">ConnectRTC.bat</a>&quot;，&quot;2 <a class="reference external" href="../demo/MotionByVoiceLoggerDemo/2%20ActivateRTC.bat">ActivateRTC.bat</a>&quot; をそれぞれ実行．RT System Editor で見てみると，<cite>SampleWordLogger</cite> の RTC も実行されているのが確認可能．</li>
+<li><cite>./demo/MotionByVoiceLoggerDemo</cite> から &quot;0_StartDemo.bat&quot;，&quot;1_ConnectRTC.bat&quot;，&quot;2_ActivateRTC.bat&quot; の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．</li>
 </ol>
-<img alt="media/rtse_motionvoicelogger_activated.png" src="media/rtse_motionvoicelogger_activated.png" />
-<ol class="arabic" start="2">
-<li><p class="first"><a class="reference external" href="1.4_callmotion_byvoice.htm#HowToRun">MotionByVoiceDemo のチュートリアル</a> に従い，発話デモを実行．</p>
-</li>
-<li><p class="first">3 から 5 までの <cite>.bat</cite> ファイルを実行し，RT システムを停止する．</p>
-</li>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\0_StartDemo.bat'); return false;">./demo/MotionByVoiceLoggerDemo/0_StartDemo.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\1_ConnectRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/1_ConnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\2_ActivateRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/2_ActivateRTC.bat</a></li>
+</ul><a class="reference external"  href="javascript:void(0)" onclick="call_rtseditor(); return false;">./demo/RTSE.bat</a> で見てみると，`SampleWordLogger` の RTC も実行されているのが確認可能．<img alt="media/rtse_motionvoicelogger_activated.png" src="media/rtse_motionvoicelogger_activated.png" />
+<ol class="arabic simple" start="2">
+<li><a class="reference external" href="1.4_callmotion_byvoice.htm#HowToRun">MotionByVoiceDemo のチュートリアル</a> に従い，発話デモを実行．</li>
+<li>&quot;3_DeactivateRTC.bat&quot;, &quot;4_DisconnectRTC.bat&quot;，&quot;5_DemoExit.bat&quot; の順に実行し，RT システムを停止．</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\3_DeactivateRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/3_DeactivateRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\4_DisconnectRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/4_DisconnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\5_DemoExit.bat'); return false;">./demo/MotionByVoiceLoggerDemo/5_DemoExit.bat</a></li>
+</ul><ol class="arabic" start="4">
 <li><p class="first"><cite>./demo/SampleWordLogger/build/Debug/SampleWord.log</cite> をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．</p>
 <blockquote>
 <p>2014/03/13 08:56:31 左 さげて
@@ -737,9 +746,6 @@ add_subdirectory(src)
 2014/03/13 08:58:39 左 あげない</p>
 </blockquote>
 </li>
-</ol>
-<ol class="arabic simple" start="6">
-<li>終了時は，&quot;3 <a class="reference external" href="../demo/MotionByVoiceLoggerDemo/3%20DeactivateRTC.bat">DeactivateRTC.bat</a>&quot;, &quot;4 <a class="reference external" href="../demo/MotionByVoiceLoggerDemo/4%20DisconnectRTC.bat">DisconnectRTC.bat</a>&quot;，&quot;5 <a class="reference external" href="../demo/MotionByVoiceLoggerDemo/5%20DemoExit.bat">DemoExit.bat</a>&quot; の順に実行．</li>
 </ol>
 <hr class="docutils" />
 <p>Go back to <a class="reference external" href="index.htm">index</a> | Go to <a class="reference external" href="2.2_samplemotionselector.htm">next</a></p>

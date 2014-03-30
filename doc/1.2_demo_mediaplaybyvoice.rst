@@ -3,20 +3,32 @@
 .. contents::
 .. sectnum::
 
+.. raw:: html
+
+   <script src="batcall.js"></script>
+
 関連するチュートリアル
 ======================
 当ページでは最低限の操作方法のみ紹介します．`OpenHRI`, `SEATSAT` の詳細ては下記リンクを参照ください．
 
 - 当ページで紹介するデモの詳細．ページ内下方にある "システムを起動する"，"動作例" の章にしたがって作業を行ってください．[1_]
 
-  - なおソフトウェアは `./demo/0 SpeechDemo` にも梱包してあります．
+  - なおソフトウェアは `./demo/0_SpeechDemo` にも梱包してあります．
   - ネット接続不可の場合のために同チュートリアル PDF を同梱しています ./doc/tutorial_openhri_mediaplay.pdf
 
 HowToRun
 ========
 他のウィンドウの陰に表示されることがあるのでその場合は探して前面に移動．
 
-1) "0 StartDemo.bat_"，"1 ConnectRTC.bat_"，"2 ActivateRTC.bat_" の順に実行．クリックして開けない場合，Explorer で "./demo/0 SpeechDemo" を開いてそれぞれ実行．
+1) "0_StartDemo.bat"，"1_ConnectRTC.bat"，"2_ActivateRTC.bat" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で "./demo/0 SpeechDemo" を開いてそれぞれ実行．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\0_StartDemo.bat'); return false;">./demo/0_SpeechDemo/0_StartDemo.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\1_ConnectRTC.bat'); return false;">./demo/0_SpeechDemo/1_ConnectRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\2_ActivateRTC.bat'); return false;">./demo/0_SpeechDemo/2_ActivateRTC.bat</a></li>
+  </ul>
 
 2) "tk" と表示されるウィンドウを前面に移動．
 
@@ -24,22 +36,31 @@ HowToRun
 
 4) "リスト" と発話．"PlayList" ウィンドウが表示される．
 
-
 5) "xばんめ" (x = 1...5) と発話．"PlayList" ウィンドウ上でハイライト選択領域が変わる．
 
 6) "再生" と発話．"Player" ウィンドウで指定動画が再生される．
 
 7) "停止" など試す．
 
-8) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
+8) 終了時は，"3_DeactivateRTC.bat", "4_DisconnectRTC.bat"，"5_DemoExit.bat" の順に実行．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\3_DeactivateRTC.bat'); return false;">./demo/0_SpeechDemo/3_DeactivateRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\4_DisconnectRTC.bat'); return false;">./demo/0_SpeechDemo/4_DisconnectRTC.bat</a></li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\5_DemoExit.bat'); return false;">./demo/0_SpeechDemo/5_DemoExit.bat</a></li>
+  </ul>
+
+RTC の deactivation は，コンポーネントがロードした実行時の必要リソースの量によって，時間がかかることがあります．
 
 .. _1: http://openrtc.org/OpenHRI/systems/AppControl.html
-.. _StartDemo.bat: ../demo/0%20SpeechDemo/0%20StartDemo.bat
-.. _ConnectRTC.bat: ../demo/0%20SpeechDemo/1%20ConnectRTC.bat
-.. _ActivateRTC.bat: ../demo/0%20SpeechDemo/2%20ActivateRTC.bat
-.. _DeactivateRTC.bat: ../demo/0%20SpeechDemo/3%20DeactivateRTC.bat
-.. _DisconnectRTC.bat: ../demo/0%20SpeechDemo/4%20DisconnectRTC.bat
-.. _DemoExit.bat: ../demo/0%20SpeechDemo/5%20DemoExit.bat
+.. _StartDemo.bat: ../demo/0_SpeechDemo/0_StartDemo.bat
+.. _ConnectRTC.bat: ../demo/0_SpeechDemo/1_ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/0_SpeechDemo/2_ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/0_SpeechDemo/3_DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/0_SpeechDemo/4_DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/0_SpeechDemo/5_DemoExit.bat
 
 ----
 

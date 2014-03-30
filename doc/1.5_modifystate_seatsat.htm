@@ -339,7 +339,7 @@ ul.auto-toc {
 <li><a class="reference internal" href="#id5" id="id11">4&nbsp;&nbsp;&nbsp;新規状態の追加方法</a></li>
 </ul>
 </div>
-<div class="section" id="id1">
+<script src="batcall.js"></script><div class="section" id="id1">
 <h1><a class="toc-backref" href="#id7">1&nbsp;&nbsp;&nbsp;このページで体験すること</a></h1>
 <ul class="simple">
 <li>SEATSAT が管理するロボットの状態遷移に新たな状態を追加し，音声命令によりその状態へ遷移して <cite>Choreonoid</cite> 上のロボットのモーションを再生する．</li>
@@ -363,17 +363,32 @@ ul.auto-toc {
 <p>以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．</p>
 <p>まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．<a class="reference external" href="1.4_callmotion_byvoice.htm#SystemEnvironment">前チュートリアル</a> を再び利用します．</p>
 <ol class="arabic simple">
-<li><cite>./demo/MotionByVoiceDemo</cite> の &quot;0 <a class="reference external" href="../demo/MotionByVoiceDemo/0%20StartDemo2.bat">StartDemo2.bat</a>&quot; (前回使った &quot;0 StartDemo.bat&quot; ではなく) を実行．</li>
-<li>&quot;1 <a class="reference external" href="../demo/MotionByVoiceDemo/1%20ConnectRTC.bat">ConnectRTC.bat</a>&quot;, &quot;2 <a class="reference external" href="../demo/MotionByVoiceDemo/2%20ActivateRTC.bat">ActivateRTC.bat</a>&quot; を実行．</li>
+<li><cite>./demo/MotionByVoiceDemo</cite> の &quot;0_StartDemo2.bat&quot; (前回使った &quot;0_StartDemo.bat&quot; ではなく) を実行．</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\0_StartDemo2.bat'); return false;">./demo/MotionByVoiceDemo/0_StartDemo2.bat</a> | </li>
+</ul><ol class="arabic simple" start="2">
+<li>&quot;1 ConnectRTC.bat&quot;, &quot;2 ActivateRTC.bat&quot; を実行．</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\1_ConnectRTC.bat'); return false;">./demo/MotionByVoiceDemo/1_ConnectRTC.bat</a></li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\2_ActivateRTC.bat'); return false;">./demo/MotionByVoiceDemo/2_ActivateRTC.bat</a></li>
+</ul><ol class="arabic simple" start="3">
 <li>&quot;さいせい よろしく&quot; と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお <cite>Choreonoid</cite> 画面上では見えないが，<cite>SEAT</cite> の管理するロボットの状態は <cite>dance_ready</cite> という新たな状態に移っている．</li>
 </ol>
 <blockquote>
 &quot;さいせい よろしく&quot; コマンドは，既存のどのロボット状態からでも有効です; (例．右手だけ上がった状態)</blockquote>
 <ol class="arabic simple" start="4">
 <li>&quot;あくしょん よろしく&quot; と発話．ロボットは前回のチュートリアルで見せたのと同じダンスをする．その後 <cite>both_down</cite> 状態 (初期の状態) に戻る．</li>
-<li>終了時は，&quot;3 <a class="reference external" href="../demo/MotionByVoiceDemo/3%20DeactivateRTC.bat">DeactivateRTC.bat</a>&quot;, &quot;4 <a class="reference external" href="../demo/MotionByVoiceDemo/4%20DisconnectRTC.bat">DisconnectRTC.bat</a>&quot;，&quot;5 <a class="reference external" href="../demo/MotionByVoiceDemo/5%20DemoExit.bat">DemoExit.bat</a>&quot; の順に実行．</li>
 </ol>
-</div>
+<ol class="arabic simple" start="6">
+<li>終了時は，&quot;3_DeactivateRTC.bat&quot;, &quot;4_DisconnectRTC.bat&quot;，&quot;5_DemoExit.bat&quot; の順に実行．</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\3_DeactivateRTC.bat'); return false;">./demo/MotionByVoiceDemo/3_DeactivateRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\4_DisconnectRTC.bat'); return false;">./demo/MotionByVoiceDemo/4_DisconnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\5_DemoExit.bat'); return false;">./demo/MotionByVoiceDemo/5_DemoExit.bat</a></li>
+</ul></div>
 <div class="section" id="id5">
 <h1><a class="toc-backref" href="#id11">4&nbsp;&nbsp;&nbsp;新規状態の追加方法</a></h1>
 <p>状態を追加するために今回追加したのは次の箇所:</p>

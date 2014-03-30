@@ -356,7 +356,7 @@ ul.auto-toc {
 <h2><a class="toc-backref" href="#id13">1.2&nbsp;&nbsp;&nbsp;このページで体験すること</a></h2>
 <ul class="simple">
 <li>カメラで認識する動画像を反転 (OpenRTM-aist，OpenCV による)</li>
-<li>RT System Editor の初歩的な利用</li>
+<li><cite>RT System Editor</cite> の初歩的な利用法</li>
 </ul>
 </div>
 <div class="section" id="id3">
@@ -376,8 +376,12 @@ ul.auto-toc {
 <ol class="arabic simple" start="0">
 <li>次のリンクをクリックして nameserver を起動．</li>
 </ol>
-<a class="reference external"  href="javascript:void(0)" onclick="rtm_naming(); return false;">rtm-naming.bat</a><ol class="arabic simple">
-<li>(上記方法でうまく行かなかった場合のみ) <cite>Explorer</cite> で <cite>demo</cite> フォルダを開き，<a class="reference external" href="../demo/rtm-naming.bat">rtm-naming.bat</a> をダブルクリックして実行．</li>
+<ul>
+ <li><a class="reference external"  href="javascript:void(0)" onclick="call_rtmnamerserver(); return false;">rtm-naming.bat</a></li>
+</ul>
+<ol class="arabic simple">
+<li>(上記方法でうまく行かなかった場合のみ以降実施) <cite>Explorer</cite> で <cite>demo</cite> フォルダを開き，<a class="reference external" href="../demo/rtm-naming.bat">rtm-naming.bat</a> をダブルクリックして実行．</li>
+
 </ol>
 <ul>
 <li><dl class="first docutils">
@@ -407,9 +411,12 @@ prompt&gt; rtm-naming.bat
 <div class="section" id="id5">
 <h2><a class="toc-backref" href="#id17">2.2&nbsp;&nbsp;&nbsp;チュートリアルのプログラム実行</a></h2>
 <ol class="arabic simple">
-<li>./demo/OpencvRtmDemo/0 <a class="reference external" href="../demo/OpencvRtmDemo/0%20StartDemo.bat">StartDemo.bat</a> を実行</li>
-<li>./demo/RTSE.bat を実行．RT System Editor が下図のように起動する．</li>
+<li><cite>./demo/OpencvRtmDemo/0_StartDemo.bat</cite> を実行．次のリンクから起動できなければ，手動で <cite>Explorer</cite> から実行．</li>
 </ol>
+<a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('OpencvRtmDemo\\0_StartDemo.bat'); return false;">./demo/OpencvRtmDemo/0_StartDemo.bat</a><ol class="arabic simple" start="2">
+<li>./demo/RTSE.bat を実行．</li>
+</ol>
+<a class="reference external"  href="javascript:void(0)" onclick="call_rtseditor(); return false;">./demo/RTSE.bat</a><p>RT System Editor が下図のように起動する．</p>
 <img alt="media/rtse_nocomponents.png" src="media/rtse_nocomponents.png" />
 <ol class="arabic simple" start="3">
 <li>左側のペインで 127.0.0.1 を選択し直上の右矢印をクリックすると，起動中の RT Component が同ペイン上に表示される．ここでは <cite>DirectShowCamComp</cite>，<cite>FlipComp</cite>，<cite>CameraViewerComp</cite> となるはず．</li>
@@ -429,6 +436,21 @@ prompt&gt; rtm-naming.bat
 <li><cite>RTSystemEditor</cite> 上で flip_mode の値を 1 --&gt; 0 --&gt; -1 と変える (Apply を忘れずに) とカメラ画像も変わることを確認できる．<cite>flip_mode</cite> の値と対応する挙動は次のようになる (画像引用元 <a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png">2</a>)</li>
 </ol>
 <img alt="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png" src="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png" />
+<ol class="arabic simple" start="11">
+<li>終了するには，次の手順で &quot;RTC を inactivate&quot; --&gt; &quot;RTC 間のリンクを切り離し&quot; --&gt; &quot;各 RTC を停止&quot; を行う．</li>
+</ol>
+<ul class="simple">
+<li>同ペイン上で直上左にある &quot;All Deactivate&quot; というアイコンをクリック</li>
+<li><ol class="first arabic" start="5">
+<li>で行ったのと逆を行う -- つまり，各接続線上で右クリックし&quot;切断&quot;を選択</li>
+</ol>
+</li>
+<li><ol class="first arabic">
+<li>で起動されたコマンドプロンプト群を手動で終了．ただし <cite>rtm-naming.bat</cite> のそれは停止せずとも良い．</li>
+</ol>
+</li>
+</ul>
+<p>ここで挙げた終了手順はやや煩雑ですが，御心配なく．次のチュートリアルからはこれらを一括して行うスクリプトを用意してあります．今回は初回なのでほぼすべてを手動で行い，<cite>OpenRTM</cite> のプログラム実行に必要な手順を体験して頂きました．</p>
 <hr class="docutils" />
 <p>Go back to <a class="reference external" href="index.htm">index</a> | Go to <a class="reference external" href="1.2_demo_mediaplaybyvoice.htm">next</a></p>
 </div>

@@ -3,6 +3,10 @@
 .. contents::
 .. sectnum::
 
+.. raw:: html
+
+   <script src="batcall.js"></script>
+
 ============
 Introduction
 ============
@@ -403,13 +407,35 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 
 上記二つのフォルダからそれぞれに格納される RTC を呼ぶための .bat ファイルを既に `./demo/MotionByVoiceLoggerDemo` として用意してあります．
 
-1) `./demo/MotionByVoiceLoggerDemo` から "0 StartDemo.bat_"，"1 ConnectRTC.bat_"，"2 ActivateRTC.bat_" をそれぞれ実行．RT System Editor で見てみると，`SampleWordLogger` の RTC も実行されているのが確認可能．
+MotionByVoiceLoggerDemo
+
+1) `./demo/MotionByVoiceLoggerDemo` から "0_StartDemo.bat"，"1_ConnectRTC.bat"，"2_ActivateRTC.bat" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\0_StartDemo.bat'); return false;">./demo/MotionByVoiceLoggerDemo/0_StartDemo.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\1_ConnectRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/1_ConnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\2_ActivateRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/2_ActivateRTC.bat</a></li>
+  </ul>
+
+.. raw:: html
+
+    <a class="reference external"  href="javascript:void(0)" onclick="call_rtseditor(); return false;">./demo/RTSE.bat</a> で見てみると，`SampleWordLogger` の RTC も実行されているのが確認可能．
 
 .. image:: media/rtse_motionvoicelogger_activated.png
 
 2) `MotionByVoiceDemo のチュートリアル <1.4_callmotion_byvoice.htm#HowToRun>`__ に従い，発話デモを実行．
 
-3) 3 から 5 までの `.bat` ファイルを実行し，RT システムを停止する．
+3) "3_DeactivateRTC.bat", "4_DisconnectRTC.bat"，"5_DemoExit.bat" の順に実行し，RT システムを停止．
+
+.. raw:: html
+
+  <ul>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\3_DeactivateRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/3_DeactivateRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\4_DisconnectRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/4_DisconnectRTC.bat</a> | </li>
+  <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\5_DemoExit.bat'); return false;">./demo/MotionByVoiceLoggerDemo/5_DemoExit.bat</a></li>
+  </ul>
 
 4) `./demo/SampleWordLogger/build/Debug/SampleWord.log` をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．
 
@@ -419,19 +445,17 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
     2014/03/13 08:58:23 左 あげて
     2014/03/13 08:58:39 左 あげない
 
-6) 終了時は，"3 DeactivateRTC.bat_", "4 DisconnectRTC.bat_"，"5 DemoExit.bat_" の順に実行．
-
 .. _1: http://www.openrtm.org/openrtm/ja/node/4625#toc7
 .. _2: http://openrtm.org/openrtm/ja/download/openrtp/openrtp-110-rc4-ja#toc1
 .. _3: http://www.visualstudio.com/downloads/download-visual-studio-vs#DownloadFamilies_4
 .. _4: http://go.microsoft.com/fwlink/?LinkId=190491&clcid=0x411
 .. _5: http://openrtp.jp/wiki/attachments/_default/Home/iRex2011/eclipse342_rtmtools110-rc2_win32_ja.zip/download
-.. _StartDemo.bat: ../demo/MotionByVoiceLoggerDemo/0%20StartDemo.bat
-.. _ConnectRTC.bat: ../demo/MotionByVoiceLoggerDemo/1%20ConnectRTC.bat
-.. _ActivateRTC.bat: ../demo/MotionByVoiceLoggerDemo/2%20ActivateRTC.bat
-.. _DeactivateRTC.bat: ../demo/MotionByVoiceLoggerDemo/3%20DeactivateRTC.bat
-.. _DisconnectRTC.bat: ../demo/MotionByVoiceLoggerDemo/4%20DisconnectRTC.bat
-.. _DemoExit.bat: ../demo/MotionByVoiceLoggerDemo/5%20DemoExit.bat
+.. _StartDemo.bat: ../demo/MotionByVoiceLoggerDemo/0_StartDemo.bat
+.. _ConnectRTC.bat: ../demo/MotionByVoiceLoggerDemo/1_ConnectRTC.bat
+.. _ActivateRTC.bat: ../demo/MotionByVoiceLoggerDemo/2_ActivateRTC.bat
+.. _DeactivateRTC.bat: ../demo/MotionByVoiceLoggerDemo/3_DeactivateRTC.bat
+.. _DisconnectRTC.bat: ../demo/MotionByVoiceLoggerDemo/4_DisconnectRTC.bat
+.. _DemoExit.bat: ../demo/MotionByVoiceLoggerDemo/5_DemoExit.bat
 
 ----
 
