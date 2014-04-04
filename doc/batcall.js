@@ -11,9 +11,11 @@
 function callbat_relativepath(bat_name) {
   var objFileSys = new ActiveXObject("Scripting.FileSystemObject");
   var objFile = objFileSys.GetFile(location.pathname.slice(1));
+  var driveLetter = location.pathname.slice(1, 3);
   var path = objFile.ParentFolder + "\\..\\demo\\" + bat_name;
   var obj = new ActiveXObject("WScript.Shell");
-  obj.Run(path + " F: 2809"); // 2 values in double-quote represent arguments to the command passed.
+  //alert(path);  // Comment in this life for debugging
+  obj.Run(path + " " + driveLetter + " 2809"); // 2 values in double-quote represent arguments to the command passed.
 }
 
 function call_rtmnamerserver() {
