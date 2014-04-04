@@ -4,7 +4,7 @@ REM '''
 
 set usbdrive=%1
 %usbdrive%   REM Changing directory to the USB drive.
-cd demo\0_SpeechDemo
+cd openrtm_tutorial\demo\0_SpeechDemo
 echo Moved to DIR=%cd%
 
 for /f "usebackq" %%h in (`hostname`) do set HOSTNAME=%%h
