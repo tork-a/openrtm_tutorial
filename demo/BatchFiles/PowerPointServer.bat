@@ -4,7 +4,7 @@ REM '''
 
 set usbdrive=%1
 %usbdrive%
-cd demo\BatchFiles
+cd openrtm_tutorial\demo\BatchFiles
 echo Moved to DIR=%cd%
 
 tasklist |findstr "PowerPointServer.exe" > nul

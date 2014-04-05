@@ -7,7 +7,7 @@ REM '''
 
 set usbdrive=%1
 %usbdrive%   REM Changing directory to the USB drive.
-cd demo  
+cd openrtm_tutorial\demo  
 echo Moved to DIR=%cd%
 
 rem set cosnames="omninames"

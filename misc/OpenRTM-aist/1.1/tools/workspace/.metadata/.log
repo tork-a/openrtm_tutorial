@@ -1496,3 +1496,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.osgi 4 0 2013-05-22 14:36:39.747
 !MESSAGE バンドル org.eclipse.core.runtime.nl_ja が見つかりません。
+!SESSION 2014-04-04 10:46:44.889 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0-u45-unofficial
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 4 0 2014-04-04 10:46:47.198
+!MESSAGE バンドル org.eclipse.core.runtime.nl_ja が見つかりません。
