@@ -14,36 +14,41 @@ msgstr ""
 #: ../../1.4_callmotion_byvoice.rst:1
 msgid "**(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid)**"
 msgstr ""
+"`(Demo 4) Playing Motions via Voice (OpenHRI，Choreonoid) "
+"<1.4_callmotion_byvoice.html>`_"
 
 #: ../../1.4_callmotion_byvoice.rst:11
 msgid "このページで体験すること"
-msgstr ""
+msgstr "What you'll experience"
 
 #: ../../1.4_callmotion_byvoice.rst:13
 msgid "音声命令により `Choreonoid` 上のロボットのモーションを再生する．"
-msgstr ""
+msgstr "Play motion via voice on `Choreonoid`"
 
 #: ../../1.4_callmotion_byvoice.rst:16
 msgid "関連するチュートリアル"
-msgstr ""
+msgstr "Related Tutorials"
 
 #: ../../1.4_callmotion_byvoice.rst:17
 msgid "当ページでは最低限の操作方法のみ紹介します．`Choreonoid` や関連する `RTC` に関する詳細は下記リンクを参照ください．"
-msgstr ""
+msgstr "You'll see very basic operation for `Choreonoid` and related `RTC` in this tutorial. "
+"See the following links for more details."
 
 #: ../../1.4_callmotion_byvoice.rst:19
 msgid "`Choreonoid` 上のロボットの腕を音声で上下する \"腕上げロボット\" サンプルについては[3_]"
-msgstr ""
+msgstr "Sample demo to operate robot\'s arm via voice on `Choreonoid`[3_]"
 
 #: ../../1.4_callmotion_byvoice.rst:20
 msgid ""
 "`Choreonoid` 上のロボットを `OpenRTM` 経由で操作するための RTC `RobotMotionRtc` に関しては[1_]"
 msgstr ""
+"`RobotMotionRtc` -- sample RTC to operate robot via `OpenRTM` on `Choreonoid`[1_]"
 
 #: ../../1.4_callmotion_byvoice.rst:21
 msgid ""
 "今回用いるモデルで再現されるロボット `G-ROBOTS GR-001` を用いた `Choreonoid` のスタートアップガイドは[2_]"
 msgstr ""
+"Startup guide for `Choreonoid` by using `G-ROBOTS GR-001`[2_]"
 
 #: ../../1.4_callmotion_byvoice.rst:26
 msgid "SystemEnvironment"
@@ -55,7 +60,7 @@ msgstr ""
 
 #: ../../1.4_callmotion_byvoice.rst:28
 msgid "マイクが Windows に認識されていること"
-msgstr ""
+msgstr "A microphone recognized by Windows"
 
 #: ../../1.4_callmotion_byvoice.rst:33
 msgid "HowToRun"
@@ -63,7 +68,7 @@ msgstr ""
 
 #: ../../1.4_callmotion_byvoice.rst:34
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
-msgstr ""
+msgstr "Your current directory is assumed to be the home of the USB unless specified."
 
 #: ../../1.4_callmotion_byvoice.rst:36
 msgid ""
@@ -71,30 +76,37 @@ msgid ""
 "の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で \"./demo/0 SpeechDemo\" "
 "を開いてそれぞれ実行．"
 msgstr ""
+"Click \"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" respectively."
+"If it doesn't work, run it manually in \"./demo/0 SpeechDemo\" from `Explorer`. 
 
 #: ../../1.4_callmotion_byvoice.rst:46
 msgid ""
 "(Optional) デバッグ用途として，`./demo/SampleWordLogger` 内の 0 から 2 までの `.bat` "
 "ファイルを実行しても良い．発話内容を記録する RTC である．"
 msgstr ""
+"(Optional) To debug, you can run 0 to 2  `.bat` files in `./demo/SampleWordLogger` "
+"(an RTC that records what's spoken)."
 
 #: ../../1.4_callmotion_byvoice.rst:48
 msgid ""
 "このときの RTC の連結状況を `RT System Editor` で表示 (SampleWordLogger "
 "を実行しなかった場合は，`SampleWordLogger0` RTC が無くなるのみ):"
 msgstr ""
+"Show the connection status of RTCs that are run in the `.bat` files on `RT System Editor` "
+"(If you didn't run `SampleWordLogger`, you just don't see `SampleWordLogger0` RTC):"
 
 #: ../../1.4_callmotion_byvoice.rst:52
 msgid "マイクに向かって \"みぎ あげて\" (スペースは0.5秒程度間を空ける) と発話．うまく認識されると，ロボットが右手を上げる．"
-msgstr ""
+msgstr "Say toward microphone \"migi a-ge-te\" (meaning: raise right hand, halt for about half an second "
+"at whitespace is better)"
 
 #: ../../1.4_callmotion_byvoice.rst:54
 msgid "他に可能な組み合わせは"
-msgstr ""
+msgstr "Other possible combinations:"
 
 #: ../../1.4_callmotion_byvoice.rst:56
 msgid "みぎ|ひだり"
-msgstr ""
+msgstr "right | left"
 
 #: ../../1.4_callmotion_byvoice.rst:58
 msgid "`+`"
@@ -102,19 +114,19 @@ msgstr ""
 
 #: ../../1.4_callmotion_byvoice.rst:60
 msgid "あげて|さげて|あげない|さげない"
-msgstr ""
+msgstr "a-ge-te|sa-ge-te|a-ge-nai|sa-ge-nai"
 
 #: ../../1.4_callmotion_byvoice.rst:62
 msgid "\"さいせい よろしく\" と発話．うまく認識されると，定義済の `SampleMotion1` に従ってロボットが動き出す．"
-msgstr ""
+msgstr "Say \"sai-sei yoro-shiku\" (meaning: let's play) will let the robot move according to `SampleMotion1`."
 
 #: ../../1.4_callmotion_byvoice.rst:64
 msgid "終了時は，\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行．"
-msgstr ""
+msgstr "Click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\", respectively."
 
 #: ../../1.4_callmotion_byvoice.rst:75
 msgid "管理されているロボット状態"
-msgstr ""
+msgstr "Managed status of the robot"
 
 #: ../../1.4_callmotion_byvoice.rst:76
 msgid ""
@@ -123,6 +135,10 @@ msgid ""
 " で定義されているように，`both_down`, `both_up`, `left_up`, `right_up` "
 "といった，各腕の位置の組合せによる四種類です．"
 msgstr ""
+"(Though this is the topic in the next tutorial[4_]) the demo here uses a module called `SEAT` "
+"for managing status. The statuses handled in this demo are, as defined in "
+"`./demo/MotionByVoiceDemo/motion_cnoid.seatml`, the combination of arms positions such as "
+"`both_down`, `both_up`, `left_up`, `right_up`."
 
 #: ../../1.4_callmotion_byvoice.rst:91
 msgid ""
