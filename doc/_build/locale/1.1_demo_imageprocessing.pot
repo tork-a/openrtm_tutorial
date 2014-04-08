@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, NEDO, TORK
+# This file is distributed under the same license as the openrtm_tutorial package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openrtm_tutorial 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-08 10:42\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../1.1_demo_imageprocessing.rst:1
+# cf27d0f656414d4391496106fbc0be88
+msgid "**(デモ 1) 画像処理 (OpenRTM-aist，OpenCV)**"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:11
+# eade1684bc35470ea2ae6893ff148954
+msgid "Introduction"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:14
+# fbd87bc4d3034c1eaaa68237906f5bb0
+msgid "関連するチュートリアル"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:15
+# 42f1466574434949a710559734575517
+msgid "http://www.openrtm.org/openrtm/ja/node/4625 - ネット接続不可の場合は ./doc/tutorial_openrtm_opencv_cmake_imgprocessing.pdf"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:19
+# 96463ea05cc84fd09044dcd501c79163
+msgid "このページで体験すること"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:20
+# d0b02fa8cd3642c8bc59f61554ba0814
+msgid "カメラで認識する動画像を反転 (OpenRTM-aist，OpenCV による)"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:21
+# 4bb3e4babcb34880b8cf0202408dacc9
+msgid "`RT System Editor` の初歩的な利用法"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:24
+# 874dcca9f6da4aae9278a2f21368b6eb
+msgid "動作環境"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:25
+# bf3c2f9ef3224c1b8a7275e0adc947c9
+msgid "Windows 7／ 8"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:26
+# 47fab0d9014a48b3bd0a04f1df610ea6
+msgid "Java Runtime Environment (JRE) 7 (`../misc/openjdk_1.7.0_u45_2.4.3_installed` として同梱，インストール不要)"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:29
+# ef56a36f39104b0cbd55fb149181ec13
+msgid "実行方法"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:30
+# 7dc414e1423f4784a2edcecdf6f55b1c
+msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:33
+# 1b8df5d3d2a64159a3335edf35dd132b
+msgid "nameserver 起動 (全チュートリアル共通)"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:34
+# ea6b952ecb474e9a85323556d13f7c04
+msgid "基本的に `OpenRTM` の nameserver は一度起動すると，起動したままでもすべてのチュートリアルは動作すると思われます．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:36
+# c1b7d5da4f3d49a7b49138da4f07e48b
+msgid "次のリンクをクリックして nameserver を起動．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:44
+# d180eac83d1f4f4db5ac4cb49ec2d6b6
+msgid "(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ をダブルクリックして実行．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:47
+# b6f785507d214b4ca2b5570433de2453
+msgid "Starting omniNames for the first time. : Checkpointing completed."
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:51
+# 5b2a96ae7c284561b5f8d0cc038e8692
+msgid "上記手順で `cmd.exe` が消えてしまう場合は，`nameserver` がうまく起動していないので次の手順で原因を発見："
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:53
+# 7bb095552b194ffb88c5549040207093
+msgid "2.1) `Explorer` 上で，USB のドライヴ名を確認 (D/E/F etc. ここでは `F` と仮定)"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:55
+# 614c6c86f14449468de8fa44f4618283
+msgid "2.2) `cmd.exe` を手動起動 (Win 7: [4_], Win 8: [5_])"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:57
+# b0677575d4bf4ac4811e6fb4405d0c1d
+msgid "2.3) 以下コマンドでフォルダ移動・コマンド実行::"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:63
+# 62ad0bc53e934a9b9d6c2066bb1c9d7b
+msgid "エラー等発生していればここで表示されるのでその内容を診断．`OpenRTM` の `nameserver` の問題は WEB で検索して対処してみてください．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:66
+# 06eb3a934b7941499bed0866f394b23c
+msgid "チュートリアルのプログラム実行"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:68
+# fc0aa3ebf669414bab834a1f3a2e898c
+msgid "`./demo/OpencvRtmDemo/0_StartDemo.bat` を実行．次のリンクから起動できなければ，手動で `Explorer` から実行．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:74
+# 33463b57b1804f928b62d5f63d22cb6a
+msgid "./demo/RTSE.bat を実行．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:80
+# f4c87d470a9343768f90a2da716c6ed6
+msgid "RT System Editor が下図のように起動する．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:84
+# 960905db6efb412491e2b14526a8a029
+msgid "左側のペインで 127.0.0.1 を選択し直上の右矢印をクリックすると，起動中の RT Component が同ペイン上に表示される．ここでは `DirectShowCamComp`，`FlipComp`，`CameraViewerComp` となるはず．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:86
+# 92fe523d477843a688ada63fad9ece5a
+msgid "File --> Open New System Editor を選ぶと，`System Diagram` が真ん中のペインに開かれる．左側のペインから各 RTC を System Diagram にドラッグすると下図のように表示される．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:90
+# 87fdcf75203740818e6f575fc12bbd68
+msgid "同ペイン上で各 RTC を接続．上に挙げた三つの RTC を左から接続する．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:92
+# ed9a4904d13e41a5a23719ca4015d9cc
+msgid "同ペイン上で直上左にある \"ALL\" というアイコンをクリック，すべての RTC を activate (参考リンク 1_)"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:96
+# 1ecc3f6baded419d99496ac4c9066dd1
+msgid "`CaptureImage` というウィンドウにカメラ画像が表示されれば入出力・接続が成功．同時に `DirectShowCamComp` のコマンドプロンプトにも `frame rate` が定期的に追加表示される．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:100
+# 15582079b5174a8c87737eef4179c562
+msgid "`RTSystemEditor` 上で flip_mode の値を 1 --> 0 --> -1 と変える (Apply を忘れずに) とカメラ画像も変わることを確認できる．`flip_mode` の値と対応する挙動は次のようになる (画像引用元 2_)"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:104
+# 77aec42fe8d1412b987bb89215c46519
+msgid "終了するには，次の手順で \"RTC を inactivate\" --> \"RTC 間のリンクを切り離し\" --> \"各 RTC を停止\" を行う．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:106
+# 0c7ee8d2acca49658f595108ad7d9dd6
+msgid "同ペイン上で直上左にある \"All Deactivate\" というアイコンをクリック"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:107
+# 3ceddc8ffb464cf587f09280d28f9c07
+msgid "で行ったのと逆を行う -- つまり，各接続線上で右クリックし\"切断\"を選択"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:108
+# ed30dc59aa284b38a8618d0e8dc58d38
+msgid "で起動されたコマンドプロンプト群を手動で終了．ただし `rtm-naming.bat` のそれは停止せずとも良い．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:110
+# 8f55372e3d8543cc924f735b074a52fb
+msgid "ここで挙げた終了手順はやや煩雑ですが，御心配なく．次のチュートリアルからはこれらを一括して行うスクリプトを用意してあります．今回は初回なのでほぼすべてを手動で行い，`OpenRTM` のプログラム実行に必要な手順を体験して頂きました．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:122
+# 464f0ac6f3ce4b65ab2706146d76783c
+msgid "Go back to `index <index.html>`__ | Go to `next <1.2_demo_mediaplaybyvoice.html>`__"
+msgstr ""
+

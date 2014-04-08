@@ -1,0 +1,540 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1   Introduction &mdash; openrtm_tutorial 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="openrtm_tutorial 0.4 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li><a href="index.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <p><strong>(RTC 作成 1) 音声キーワードロガー RTC の開発</strong></p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="#introduction" id="id14">1&nbsp;&nbsp;&nbsp;Introduction</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id1" id="id15">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a></li>
+<li><a class="reference internal" href="#id2" id="id16">1.2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a></li>
+<li><a class="reference internal" href="#systemenvironment" id="id17">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rtc-i-o-configuration" id="id18">2&nbsp;&nbsp;&nbsp;RTC の仕様 (I/O, Configuration)</a></li>
+<li><a class="reference internal" href="#rtcbuilder" id="id19">3&nbsp;&nbsp;&nbsp;RTCBuilder のインストール，起動</a></li>
+<li><a class="reference internal" href="#how-to-make-rtc" id="id20">4&nbsp;&nbsp;&nbsp;How to make RTC</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id3" id="id21">4.1&nbsp;&nbsp;&nbsp;新規プロジェクトの作成</a></li>
+<li><a class="reference internal" href="#samplewordlogger" id="id22">4.2&nbsp;&nbsp;&nbsp;SampleWordLogger コンポーネントの雛型の生成</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id4" id="id23">4.2.1&nbsp;&nbsp;&nbsp;プロファイル情報入力とコードの生成</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5" id="id24">4.3&nbsp;&nbsp;&nbsp;仮ビルド</a></li>
+<li><a class="reference internal" href="#id6" id="id25">4.4&nbsp;&nbsp;&nbsp;ヘッダ，ソースの編集</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id7" id="id26">4.4.1&nbsp;&nbsp;&nbsp;アクティビティ処理の実装</a></li>
+<li><a class="reference internal" href="#cpp" id="id27">4.4.2&nbsp;&nbsp;&nbsp;.cpp ファイル編集</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cmakelist-txt" id="id28">4.5&nbsp;&nbsp;&nbsp;CMakeList.txt の編集</a></li>
+<li><a class="reference internal" href="#vc" id="id29">4.6&nbsp;&nbsp;&nbsp;VC++ によるビルド</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id8" id="id30">5&nbsp;&nbsp;&nbsp;実行方法</a></li>
+</ul>
+</div>
+<script src="batcall.js"></script><div class="section" id="introduction">
+<h1><a class="toc-backref" href="#id14">1&nbsp;&nbsp;&nbsp;Introduction</a><a class="headerlink" href="#introduction" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id15">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a><a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><cite>OpenHRI</cite> の RTC と接続することで，音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する <cite>SampleWordLogger RTC</cite> の開発</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id16">1.2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a><a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><cite>RTC</cite> 作成の一般的作業の詳細は SampleWordLogger コンポーネントのチュートリアル[<a class="reference external" href="http://www.openrtm.org/openrtm/ja/node/4625#toc7">1</a>]に記述があります．特に <cite>Eclipse</cite> 上での GUI を利用した開発が説明されています．
+- なお本チュートリアル内で，[<a class="reference external" href="http://www.openrtm.org/openrtm/ja/node/4625#toc7">1</a>]内の多くの画像を参照しています．参照元はその都度記載しています．</li>
+</ul>
+</div>
+<div class="section" id="systemenvironment">
+<h2><a class="toc-backref" href="#id17">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a><a class="headerlink" href="#systemenvironment" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li>Windows 7 / 8</li>
+<li>Visual C++ 2010 (English [<a class="reference external" href="http://www.visualstudio.com/downloads/download-visual-studio-vs#DownloadFamilies_4">3</a>], Japanese [<a class="reference external" href="http://go.microsoft.com/fwlink/?LinkId=190491&amp;clcid=0x411">4</a>])</li>
+<li><cite>CMake</cite> 2.8 (インストーラが同梱されています ./misc/installer/cmake-2.8.8-win32-x86.exe)</li>
+<li><cite>RTCBuilder</cite> 1.1 (bundled in Eclipse [<a class="reference external" href="http://openrtp.jp/wiki/attachments/_default/Home/iRex2011/eclipse342_rtmtools110-rc2_win32_ja.zip/download">5</a>])</li>
+</ul>
+</div>
+</div>
+<div class="section" id="rtc-i-o-configuration">
+<h1><a class="toc-backref" href="#id18">2&nbsp;&nbsp;&nbsp;RTC の仕様 (I/O, Configuration)</a><a class="headerlink" href="#rtc-i-o-configuration" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>これから作成するコンポーネントを SampleWordLogger RTC と呼ぶことにします．</p>
+<p>このコンポーネントは <cite>TimedString</cite> 型の入力ポート (<cite>InPort</cite>) を持ちます．今回はログをファイルへ出力するのみとし，`RTC` として出力ポート (<cite>OutPort</cite>) は持たないｋとにします．`InPort` 名を <cite>result</cite> とします．</p>
+<p>ログファイルの場所は今回はハードコードします (お好みに変えて下さい)．</p>
+<p>上から RTC の仕様を次のようにまとめます．</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Component Name</th>
+<th class="head">SampleWordLogger</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2">InPort</td>
+</tr>
+<tr class="row-odd"><td>Port Name</td>
+<td>result</td>
+</tr>
+<tr class="row-even"><td>Data Type</td>
+<td>TimedString</td>
+</tr>
+<tr class="row-odd"><td colspan="2">OutPort</td>
+</tr>
+<tr class="row-even"><td>Port Name</td>
+<td>(None)</td>
+</tr>
+<tr class="row-odd"><td>Data Type</td>
+<td>(None)</td>
+</tr>
+<tr class="row-even"><td colspan="2">Configuration</td>
+</tr>
+<tr class="row-odd"><td>Parameter Name</td>
+<td>(None)</td>
+</tr>
+<tr class="row-even"><td>Data Type</td>
+<td>(None)</td>
+</tr>
+<tr class="row-odd"><td>Values</td>
+<td>(None)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rtcbuilder">
+<h1><a class="toc-backref" href="#id19">3&nbsp;&nbsp;&nbsp;RTCBuilder のインストール，起動</a><a class="headerlink" href="#rtcbuilder" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>本章では <cite>Eclipse</cite> ベースのツール <cite>OpenRTP (Open RT Platform)</cite> に同梱される <cite>RTBuilder</cite> を利用するので，[<a class="reference external" href="http://openrtm.org/openrtm/ja/download/openrtp/openrtp-110-rc4-ja#toc1">2</a>]からダウンロード・インストールして下さい．</p>
+<p>新規ワークスペースを指定して Eclipse を起動すると，以下のような Welcome ページが表示されます (<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png" src="http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png" />
+<p>Welcome ページはいまは必要ないので左上の「×」ボタンを押して閉じてください (<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png" src="http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png" />
+<p>右上の「Open Perspective」ボタンを押下し，プルダウンの「Other…」 ボタンを押下します(<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png" src="http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png" />
+<p><cite>RTC Builder</cite> を選択することで，RTCBuilder が起動します．</p>
+</div>
+<div class="section" id="how-to-make-rtc">
+<h1><a class="toc-backref" href="#id20">4&nbsp;&nbsp;&nbsp;How to make RTC</a><a class="headerlink" href="#how-to-make-rtc" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id21">4.1&nbsp;&nbsp;&nbsp;新規プロジェクトの作成</a><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>SampleWordLogger コンポーネントを作成するために，`RTCBuilder` で新規プロジェクトを 作成する必要が有ります．画面上部のメニューから[ファイル]－[新規]－ [プロジェクト]を選択します．</p>
+<img alt="_images/rtb_new_prj.png" src="_images/rtb_new_prj.png" />
+<p>表示された ｢新規プロジェクト｣ 画面において，｢その他｣－｢RTCビルダ｣ を選択し，｢次へ｣ をクリックします．｢プロジェクト名｣欄に作成するプロジェクト名 (ここでは SampleWordLogger) を入力して｢終了｣をクリックします．</p>
+<img alt="_images/rtb_new_prj_name.png" src="_images/rtb_new_prj_name.png" />
+<p>指定した名称のプロジェクトが生成され，パッケージエクスプローラ内に追加されます． 生成したプロジェクト内には，デフォルト値が設定された RTC プロファ イル XML(RTC.xml) が自動的に生成されるのがわかると思います．</p>
+<img alt="_images/rtb_wordlogger_created.png" src="_images/rtb_wordlogger_created.png" />
+<p><cite>RTC.xml</cite> が生成された時点で，このプロジェクトに関連付けられているワークスペースとして <cite>RTCBuilder</cite> のエディタが開くはずです．もし開かない場合は，ツールバーの｢Open New RtcBuilder Editor｣ボタンを押下するか，メニューバーの [file]-[Open New Builder Editor] を選択します．</p>
+<img alt="_images/rtb_button_open_rtbeditor.png" src="_images/rtb_button_open_rtbeditor.png" />
+<p>(<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-10FileMenuOpenNewBuilder.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-10FileMenuOpenNewBuilder.png" src="http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-10FileMenuOpenNewBuilder.png" />
+</div>
+<div class="section" id="samplewordlogger">
+<h2><a class="toc-backref" href="#id22">4.2&nbsp;&nbsp;&nbsp;SampleWordLogger コンポーネントの雛型の生成</a><a class="headerlink" href="#samplewordlogger" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の <cite>RTCBuilder</cite> を用いて行います．</p>
+<div class="section" id="id4">
+<h3><a class="toc-backref" href="#id23">4.2.1&nbsp;&nbsp;&nbsp;プロファイル情報入力とコードの生成</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>まず，いちばん左の「基本」タブを選択し，基本情報を入力します．先ほ ど決めた SampleWordLogger コンポーネントの仕様(名前)の他に，概要やバージョン等を入力してください．ラベルが赤字の項目は必須項目です．その他はデフォルトで構いません．</p>
+<img alt="_images/rtb_logger_componentinfo.png" src="_images/rtb_logger_componentinfo.png" />
+<p>次に，「アクティビティ」タブを選択し，使用するアクションコールバッ クを指定します．
+<cite>SampleWordLogger RTC</cite> では，onActivated(), onDeactivated(), onExecute() コールバックを使用します．下図のように (1) の onAtivated をクリック後に (2) のラジオボタンにて &#8220;on&#8221; にチェックを入れます．onDeactivated, onExecute についても同様の手順を行います(<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png" src="http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png" />
+<p>さらに，&#8221;Data Ports&#8221; タブを選択し，データポートの情報を入力します． 先ほど決めた仕様を元に以下のように入力します．なお，変数名や表示位置はオプションで，そのままで結構です．</p>
+<img alt="_images/rtb_logger_dataport.png" src="_images/rtb_logger_dataport.png" />
+<p>次に，「言語・環境」タブを選択し，プログラミング言語を選択します． ここでは，`C++` を選択します．なお，言語・環境はデフォルト等が 設定されておらず，指定し忘れるとコード生成時にエラーになりますので， 必ず言語の指定を行うようにしてください．</p>
+<p>また，`C++` の場合デフォルトでは <cite>CMake</cite> を利用してビルドすることになって いますが，旧式の <cite>VC</cite> のプロジェクトやソリューションを直接 <cite>RTCBuilder</cite> が 生成する方法を利用したい場合は <cite>Use old build environment</cite> を チェックしてください．</p>
+<p>最後に，「基本」タブにある&#8221;コード生成&#8221;ボタンをクリックし，コンポー ネントの雛型を生成します．</p>
+<p>※ 生成されるコード群は，eclipse 起動時に指定したワークスペースフォルダの中に生成されます．現在のワークスペースは，「ファイル(F)」 &gt; 「ワークスペースの切り替え(W)...」で確認することができます．</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id24">4.3&nbsp;&nbsp;&nbsp;仮ビルド</a><a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>さて，ここまでで SampleWordLogger コンポーネントのソースコードが生成されました． 処理の中身は実装されていないので，`InPort` に他の <cite>RTC</cite> を接続しても何も出力されませんが，生成直後のソースコードだけでもコンパイルおよび実行はできます．</p>
+<p>※サービスポートとプロバイダを持つコンポーネントの場合，実装を行わないとビルドが通らないものもあります．</p>
+<p>では，まず <cite>CMake</cite> を利用してビルド環境の <cite>Configure</cite> を行います．Linuxで あれば，SampleWordLogger コンポーネントのソースが生成されたディレクトリで:</p>
+<div class="highlight-python"><pre>$ cmake .
+$ make</pre>
+</div>
+<p>とすれば，Configureおよびビルドが完了するはずです．`Windows` の場合は GUI を利用して <cite>Configure</cite> してみます． スタートメニューなどから <cite>CMake (cmake-gui)</cite> を起動します(<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png" src="http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png" />
+<p>画面上部に以下のようなテキストボックスがありますので，それぞれソースコードの場所(<cite>CMakeList.txt</cite> が有る場所) と，ビルドディレクトリを指定します．</p>
+<blockquote>
+<div>Where is the soruce code ^ Where to build the binaries</div></blockquote>
+<p>ソースコードの場所は SampleWordLogger コンポーネントのソースが生成された場所で <cite>CMakeList.txt</cite> が存在するディレクトリです．デフォルトでは &lt;ワークス ペースディレクトリ&gt;/SampleWordLogger になります．</p>
+<p>また，ビルドディレクトリとは，ビルドするためのプロジェクトファイルやオブジェクトファイル，バイナリを格納する場所のことです．場所は任意ですが，この場合 &lt;ワークスペースディレクトリ&gt;/SampleWordLogger/build のように分かりやすい名前をつけた SampleWordLogger のサブディレクトリを指定することをお勧めします．</p>
+<img alt="_images/logger_cmake_1.png" src="_images/logger_cmake_1.png" />
+<p>指定したら，下の <cite>Configure</cite> ボタンを押します．すると下図のようなダイアログが表示されますので，生成したいプロジェクトの種類を指定します．今回は <cite>Visual Studio 10</cite> とします(<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png" src="http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png" />
+<p>ダイアログで Finish を押すと Configure が始まります．問題がなければ下部のログウインドウに Configuring done と出力されますので，続けて Generate ボタンを押します．Generating done と出ればプロジェクトファイル・ソリューションファイル等の出力が完了します．</p>
+<p>なお，`CMake` は Configure の段階でキャッシュファイルを生成しますので，トラブルなどで設定を変更したり環境を変更した場合は [File]-[Delete Cache] でキャッシュを削除して <cite>Configure</cite> からやり直してください．</p>
+<p>次に先ほど指定した <cite>build</cite> ディレクトリの中の SampleWordLogger.sln をダブルクリックして <cite>Visual Studio 2010</cite> を起動します．</p>
+<p>起動後，ソリューションエクスプローラーの <cite>ALL_BUILD</cite> を右クリックしビルドを選択してビルドします．特に問題がなければ正常にビルドが終了します．</p>
+<img alt="_images/vc_logger_built.png" src="_images/vc_logger_built.png" />
+<p>ここで <cite>VC++ 2010</cite> は閉じても構いません．</p>
+</div>
+<div class="section" id="id6">
+<h2><a class="toc-backref" href="#id25">4.4&nbsp;&nbsp;&nbsp;ヘッダ，ソースの編集</a><a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id7">
+<h3><a class="toc-backref" href="#id26">4.4.1&nbsp;&nbsp;&nbsp;アクティビティ処理の実装</a><a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>SampleWordLogger RTC では，InPort から語を受け取った時刻とその語をファイルストリームに流します．</p>
+<p><cite>onActivated()</cite>, <cite>onExecute()</cite>, <cite>onDeactivated()</cite> での処理内容を下図に示します (<a class="reference external" href="https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit">編集用の図ファイル</a> 必要であれば編集権を同ページ内から申請して下さい)．</p>
+<img alt="https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/pub?w=960&amp;amp;h=720" src="https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/pub?w=960&amp;amp;h=720" />
+</div>
+<div class="section" id="cpp">
+<h3><a class="toc-backref" href="#id27">4.4.2&nbsp;&nbsp;&nbsp;.cpp ファイル編集</a><a class="headerlink" href="#cpp" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>下記のように，`onActivated()`, <cite>onDeactivated()</cite>, <cite>onExecute()</cite> を実装します．:</p>
+<div class="highlight-python"><pre>RTC::ReturnCode_t SampleWordLogger::onActivated(RTC::UniqueId ec_id)
+{
+  // open file
+  std::cerr &lt;&lt; "Opening Log File ... " &lt;&lt; m_SampleWordLoggerFileName &lt;&lt; std::endl;
+  std::locale::global(std::locale(""));
+  m_SampleWordFileStream.open(m_SampleWordLoggerFileName);
+  if(!m_SampleWordFileStream) {
+      std::cerr&lt;&lt;"Error opening file"&lt;&lt; std::endl;
+      return RTC::RTC_ERROR;
+  }
+
+  m_SampleWordFileStream.imbue(std::locale(m_SampleWordFileStream.getloc(),new std::codecvt_utf8_utf16&lt;wchar_t&gt;));
+
+  return RTC::RTC_OK;
+}
+
+RTC::ReturnCode_t SampleWordLogger::onDeactivated(RTC::UniqueId ec_id)
+{
+  // close file
+  m_SampleWordFileStream.close();
+
+  return RTC::RTC_OK;
+}
+
+RTC::ReturnCode_t SampleWordLogger::onExecute(RTC::UniqueId ec_id)
+{
+   // Check if the inbound data is new.
+   if (m_resultIn.isNew()) {
+     // Read in from InPort.
+     m_resultIn.read();
+
+     //
+     SYSTEMTIME systime;
+     GetLocalTime(&amp;systime);
+     static char sDate[128];
+     sprintf(sDate, "%04d/%02d/%02d %02d:%02d:%02d", systime.wYear, systime.wMonth, systime.wDay, systime.wHour, systime.wMinute, systime.wSecond);
+     std::cerr &lt;&lt; "Writing... " &lt;&lt; std::endl;
+     std::cerr &lt;&lt; "    " &lt;&lt; sDate &lt;&lt; std::endl;
+     m_SampleWordFileStream &lt;&lt; sDate &lt;&lt; " ";
+
+     HRESULT hr = S_OK;
+     IXmlReader *pReader = NULL;
+     XmlNodeType nodeType;
+     IStream *pStream;
+     CreateStreamOnHGlobal(NULL, TRUE, &amp;pStream);
+     LARGE_INTEGER liBeggining = { 0 };
+     pStream-&gt;Seek(liBeggining, STREAM_SEEK_SET, NULL);
+     ULONG ulBytesWritten = 0;
+     ULONG ulSize = 0;
+     ULARGE_INTEGER uliSize = { 0 };
+     pStream -&gt; SetSize (uliSize);
+     ulSize = (ULONG)strlen(m_result.data);
+     pStream-&gt;Write((void const*)m_result.data,(ULONG)ulSize, (ULONG*)&amp;ulBytesWritten);
+     pStream-&gt;Seek(liBeggining, STREAM_SEEK_SET, NULL);
+
+     if (FAILED(hr = CreateXmlReader(__uuidof(IXmlReader), (void**) &amp;pReader, NULL)))
+     {
+        wprintf(L"Error creating xml reader, error is %08.8lx", hr);
+            return RTC::RTC_ERROR;
+     }
+
+     if (FAILED(hr = pReader-&gt;SetProperty(XmlReaderProperty_DtdProcessing, DtdProcessing_Prohibit)))
+     {
+        wprintf(L"Error setting XmlReaderProperty_DtdProcessing, error is %08.8lx", hr);
+            return RTC::RTC_ERROR;
+     }
+
+     if (FAILED(hr = pReader-&gt;SetInput(pStream)))
+     {
+        wprintf(L"Error setting input for reader, error is %08.8lx", hr);
+        return RTC::RTC_ERROR;
+     }
+
+
+     bool firstText = true;
+     while (S_OK == (hr = pReader-&gt;Read(&amp;nodeType)))
+     {
+        LPCWSTR pwszPrefix = NULL;
+        UINT cwchPrefix = 0;
+        LPCWSTR pwszLocalName = NULL;
+        LPCWSTR pwszValue = NULL;
+
+            switch (nodeType)
+            {
+            case XmlNodeType_Element:
+                    if (FAILED(hr = pReader-&gt;GetPrefix(&amp;pwszPrefix, &amp;cwchPrefix)))
+                    {
+                            wprintf(L"Error getting prefix, error is %08.8lx", hr);
+                            return RTC::RTC_ERROR;
+                    }
+                    if (FAILED(hr = pReader-&gt;GetLocalName(&amp;pwszLocalName, NULL)))
+                    {
+                             wprintf(L"Error getting local name, error is %08.8lx", hr);
+                             return RTC::RTC_ERROR;
+                }
+                    if (cwchPrefix &gt; 0)
+                            wprintf(L"Element: %s:%s\n", pwszPrefix, pwszLocalName);
+                    else
+                            wprintf(L"Element: %s\n", pwszLocalName);
+
+                    // Attributes
+                    const WCHAR* pwszPrefix;
+                    const WCHAR* pwszLocalName;
+                    const WCHAR* pwszValue;
+                    hr = pReader-&gt;MoveToFirstAttribute();
+                    while (TRUE)
+                    {
+                            if (!pReader-&gt;IsDefault())
+                            {
+                                    UINT cwchPrefix;
+                                    if (FAILED(hr = pReader-&gt;GetPrefix(&amp;pwszPrefix, &amp;cwchPrefix)))
+                                    {
+                                            wprintf(L"Error getting prefix, error is %08.8lx", hr);
+                                            return RTC::RTC_ERROR;
+                                    }
+                                    if (FAILED(hr = pReader-&gt;GetLocalName(&amp;pwszLocalName, NULL)))
+                                    {
+                                            wprintf(L"Error getting local name, error is %08.8lx", hr);
+                                            return RTC::RTC_ERROR;
+                                    }
+                                    if (FAILED(hr = pReader-&gt;GetValue(&amp;pwszValue, NULL)))
+                                    {
+                                            wprintf(L"Error getting value, error is %08.8lx", hr);
+                                            return RTC::RTC_ERROR;
+                                    }
+                                    if (cwchPrefix &gt; 0)
+                                            wprintf(L"Attr: %s:%s=\"%s\" \n", pwszPrefix, pwszLocalName, pwszValue);
+                                    else
+                                            wprintf(L"Attr: %s=\"%s\" \n", pwszLocalName, pwszValue);
+
+                                    if ( firstText &amp;&amp; wcscmp(pwszLocalName, L"text") == 0 ) {
+                                            m_SampleWordFileStream &lt;&lt; pwszValue &lt;&lt; std::endl;
+                                            firstText = false;
+                                    }
+                                    //m_SampleWordFileStream &lt;&lt; "  " &lt;&lt;  pwszLocalName &lt;&lt; ":" &lt;&lt; pwszValue &lt;&lt; std::endl;
+                            }
+
+                            if (S_OK != pReader-&gt;MoveToNextAttribute())
+                                    break;
+                    }
+
+                    if (pReader-&gt;IsEmptyElement() )
+                            wprintf(L" (empty)");
+                     break;
+             case XmlNodeType_EndElement:
+                     if (FAILED(hr = pReader-&gt;GetPrefix(&amp;pwszPrefix, &amp;cwchPrefix)))
+                     {
+                            wprintf(L"Error getting prefix, error is %08.8lx", hr);
+                            return RTC::RTC_ERROR;
+                 }
+                     if (FAILED(hr = pReader-&gt;GetLocalName(&amp;pwszLocalName, NULL)))
+                     {
+                            wprintf(L"Error getting local name, error is %08.8lx", hr);
+                            return RTC::RTC_ERROR;
+                     }
+                     if (cwchPrefix &gt; 0)
+                            wprintf(L"End Element: %s:%s\n", pwszPrefix, pwszLocalName);
+                     else
+                            wprintf(L"End Element: %s\n", pwszLocalName);
+                     break;
+            }
+     }
+    //
+   }
+   return RTC::RTC_OK;
+}</pre>
+</div>
+</div>
+</div>
+<div class="section" id="cmakelist-txt">
+<h2><a class="toc-backref" href="#id28">4.5&nbsp;&nbsp;&nbsp;CMakeList.txt の編集</a><a class="headerlink" href="#cmakelist-txt" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>この RTC ではログファイル生成のために <cite>xmllib</cite> を使用しています (実際のログのフォーマットは xml ではありませんが) ので，`RTCBuilder` が生成した <cite>CMakeLists.txt</cite> にその旨を追記します．</p>
+<p>適当なエディタ (<cite>VC++ 2010, Emacs</cite> 等) 上で，`SampleWordLogger/CMakeLists.txt` を開いて下さい．:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">add_subdirectory</span><span class="p">(</span><span class="n">src</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>とあり，`src` フォルダの情報は移譲されていることが分かるので，`SampleWordLogger/src/CMakeLists.txt` を開きます．このファイル中を例えば以下の様に変更します:</p>
+<div class="highlight-python"><pre>+ # Add xmllibs that's necessary for this SampleWordLogger project
++ set(REQ_LIBS xmllite.dll)
+
+  add_library(${PROJECT_NAME} ${LIB_TYPE} ${comp_srcs}
+    ${comp_headers} ${ALL_IDL_SRCS})
+  set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
+  set_source_files_properties(${ALL_IDL_SRCS} PROPERTIES GENERATED 1)
+  add_dependencies(${PROJECT_NAME} ALL_IDL_TGT)
+- target_link_libraries(${PROJECT_NAME} ${OPENRTM_LIBRARIES})
++ target_link_libraries(${PROJECT_NAME} ${OPENRTM_LIBRARIES} ${REQ_LIBS})
+
+  add_executable(${PROJECT_NAME}Comp ${standalone_srcs}
+    ${comp_srcs} ${comp_headers} ${ALL_IDL_SRCS})
+- target_link_libraries(${PROJECT_NAME}Comp ${OPENRTM_LIBRARIES})
++ target_link_libraries(${PROJECT_NAME}Comp ${OPENRTM_LIBRARIES} ${REQ_LIBS})</pre>
+</div>
+</div>
+<div class="section" id="vc">
+<h2><a class="toc-backref" href="#id29">4.6&nbsp;&nbsp;&nbsp;VC++ によるビルド</a><a class="headerlink" href="#vc" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 <cite>SampleWordLogger.sln</cite> ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010 の起動後，下図のようにし，コンポーネントのビルドを行います(<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png">画像引用元</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png" src="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png" />
+<p>Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h1><a class="toc-backref" href="#id30">5&nbsp;&nbsp;&nbsp;実行方法</a><a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．</p>
+<p>では実行してみましょう．
+<cite>SampleWordLogger</cite> は単体だと何も行わないので，先に紹介された <cite>MotionByVoiceDemo</cite> と組合せて発話を記録してみましょう．</p>
+<p>上記二つのフォルダからそれぞれに格納される RTC を呼ぶための .bat ファイルを既に <cite>./demo/MotionByVoiceLoggerDemo</cite> として用意してあります．</p>
+<p>MotionByVoiceLoggerDemo</p>
+<ol class="arabic simple">
+<li><cite>./demo/MotionByVoiceLoggerDemo</cite> から &#8220;0_StartDemo.bat&#8221;，&#8221;1_ConnectRTC.bat&#8221;，&#8221;2_ActivateRTC.bat&#8221; の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\0_StartDemo.bat'); return false;">./demo/MotionByVoiceLoggerDemo/0_StartDemo.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\1_ConnectRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/1_ConnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\2_ActivateRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/2_ActivateRTC.bat</a></li>
+</ul><a class="reference external"  href="javascript:void(0)" onclick="call_rtseditor(); return false;">./demo/RTSE.bat</a> で見てみると，`SampleWordLogger` の RTC も実行されているのが確認可能．<img alt="_images/rtse_motionvoicelogger_activated.png" src="_images/rtse_motionvoicelogger_activated.png" />
+<ol class="arabic simple" start="2">
+<li><a class="reference external" href="1.4_callmotion_byvoice.html#HowToRun">MotionByVoiceDemo のチュートリアル</a> に従い，発話デモを実行．</li>
+<li>&#8220;3_DeactivateRTC.bat&#8221;, &#8220;4_DisconnectRTC.bat&#8221;，&#8221;5_DemoExit.bat&#8221; の順に実行し，RT システムを停止．</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\3_DeactivateRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/3_DeactivateRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\4_DisconnectRTC.bat'); return false;">./demo/MotionByVoiceLoggerDemo/4_DisconnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceLoggerDemo\\5_DemoExit.bat'); return false;">./demo/MotionByVoiceLoggerDemo/5_DemoExit.bat</a></li>
+</ul><ol class="arabic" start="4">
+<li><p class="first"><cite>./demo/SampleWordLogger/build/Debug/SampleWord.log</cite> をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．</p>
+<blockquote>
+<div><p>2014/03/13 08:56:31 左 さげて
+2014/03/13 08:56:44 右 あげて
+2014/03/13 08:57:08 左 よろしく
+2014/03/13 08:58:23 左 あげて
+2014/03/13 08:58:39 左 あげない</p>
+</div></blockquote>
+</li>
+</ol>
+<hr class="docutils" />
+<p>Go back to <a class="reference external" href="index.html">index</a> | Go to <a class="reference external" href="2.2_samplemotionselector.html">next</a></p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Introduction</a><ul>
+<li><a class="reference internal" href="#id1">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a></li>
+<li><a class="reference internal" href="#id2">1.2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a></li>
+<li><a class="reference internal" href="#systemenvironment">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rtc-i-o-configuration">2&nbsp;&nbsp;&nbsp;RTC の仕様 (I/O, Configuration)</a></li>
+<li><a class="reference internal" href="#rtcbuilder">3&nbsp;&nbsp;&nbsp;RTCBuilder のインストール，起動</a></li>
+<li><a class="reference internal" href="#how-to-make-rtc">4&nbsp;&nbsp;&nbsp;How to make RTC</a><ul>
+<li><a class="reference internal" href="#id3">4.1&nbsp;&nbsp;&nbsp;新規プロジェクトの作成</a></li>
+<li><a class="reference internal" href="#samplewordlogger">4.2&nbsp;&nbsp;&nbsp;SampleWordLogger コンポーネントの雛型の生成</a><ul>
+<li><a class="reference internal" href="#id4">4.2.1&nbsp;&nbsp;&nbsp;プロファイル情報入力とコードの生成</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">4.3&nbsp;&nbsp;&nbsp;仮ビルド</a></li>
+<li><a class="reference internal" href="#id6">4.4&nbsp;&nbsp;&nbsp;ヘッダ，ソースの編集</a><ul>
+<li><a class="reference internal" href="#id7">4.4.1&nbsp;&nbsp;&nbsp;アクティビティ処理の実装</a></li>
+<li><a class="reference internal" href="#cpp">4.4.2&nbsp;&nbsp;&nbsp;.cpp ファイル編集</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cmakelist-txt">4.5&nbsp;&nbsp;&nbsp;CMakeList.txt の編集</a></li>
+<li><a class="reference internal" href="#vc">4.6&nbsp;&nbsp;&nbsp;VC++ によるビルド</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id8">5&nbsp;&nbsp;&nbsp;実行方法</a></li>
+</ul>
+
+  <h3>このページ</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/2.1_samplewordlogger.txt"
+           rel="nofollow">ソースコードを表示</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>クイック検索</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    モジュール、クラス、または関数名を入力してください
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             >索引</a></li>
+        <li><a href="index.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, NEDO, TORK.
+      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 で生成しました。
+    </div>
+  </body>
+</html>

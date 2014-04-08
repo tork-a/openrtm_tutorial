@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, NEDO, TORK
+# This file is distributed under the same license as the openrtm_tutorial package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openrtm_tutorial 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-08 10:42\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:1
+# 1e0129f9635c48889c62b1809133e35b
+msgid "**(デモ 2) 音声命令による動画再生 (OpenHRI)**"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:11
+# cbfc1549b12b46c8af8b5323c9806c04
+msgid "関連するチュートリアル"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:12
+# 1b807fdfa7cb40c09228cf06b6bb40a9
+msgid "当ページでは最低限の操作方法のみ紹介します．`OpenHRI`, `SEATSAT` の詳細ては下記リンクを参照ください．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:14
+# d7ffe07466454fb59d833933c7158b15
+msgid "当ページで紹介するデモの詳細．ページ内下方にある \"システムを起動する\"，\"動作例\" の章にしたがって作業を行ってください．[1_]"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:16
+# a5fc6dcf7dbf459f876ef3b6a28ef48f
+msgid "なおソフトウェアは `./demo/0_SpeechDemo` にも梱包してあります．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:17
+# 77266bfaf6a94cdba4fdf742068c95e3
+msgid "ネット接続不可の場合のために同チュートリアル PDF を同梱しています ./doc/tutorial_openhri_mediaplay.pdf"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:20
+# 7a82a95d8af54bfe8d70fb6b0ea1f9cf
+msgid "HowToRun"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:21
+# e4fd00cd9bcd4ce197cd9af2c7ddd169
+msgid "他のウィンドウの陰に表示されることがあるのでその場合は探して前面に移動．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:23
+# 1e257686690640a4a7057a17c57a8278
+msgid "\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で \"./demo/0 SpeechDemo\" を開いてそれぞれ実行．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:33
+# fd28a2acff2f4aa6932fef032f19d51a
+msgid "\"tk\" と表示されるウィンドウを前面に移動．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:35
+# 70c500a2152a48e38608f7406f4103b8
+msgid "\"ビデオ\" と発話．\"video_list_mode\" と左肩に書かれた tk ウィンドウが表示される．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:37
+# b14e299ef80547b6b7d2e2eb4990def7
+msgid "\"リスト\" と発話．\"PlayList\" ウィンドウが表示される．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:39
+# b656d8736aa84753942e1a48ca09a157
+msgid "\"xばんめ\" (x = 1...5) と発話．\"PlayList\" ウィンドウ上でハイライト選択領域が変わる．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:41
+# 527f525fe2f2411182c980002bbf6aff
+msgid "\"再生\" と発話．\"Player\" ウィンドウで指定動画が再生される．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:43
+# 3004dac6c33f420a8b7caea988df578b
+msgid "\"停止\" など試す．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:45
+# 3e1cf5e721774a4d87331ec367b41911
+msgid "終了時は，\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:55
+# 95ac0fe3bfe5499191ef4971b28a3456
+msgid "RTC の deactivation は，コンポーネントがロードした実行時の必要リソースの量によって，時間がかかることがあります．"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:67
+# 11d4ac71f6e64726a34854280d24c55b
+msgid "Go back to `index <index.html>`__ | Go to `next <1.3_choreonoid_createmotion.html>`__"
+msgstr ""
+
