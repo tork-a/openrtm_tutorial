@@ -7,4 +7,4 @@
 RT Middleware Tutorial USB
 ========================================
 
-`日本語 <locale/ja/index.html>`_ | `English <locale/en/index.html>`_
+`日本語 <locale/ja/top.html>`_ | `English <locale/en/top.html>`_

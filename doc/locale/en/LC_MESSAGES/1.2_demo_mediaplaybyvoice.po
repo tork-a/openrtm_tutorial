@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-08 07:58\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-04-09 04:00+0900\n"
+"Last-Translator: Isaac Saito<iisaito@opensource-robotics.tokyo.jp>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,27 +14,29 @@ msgstr ""
 #: ../../1.2_demo_mediaplaybyvoice.rst:1
 msgid "**(デモ 2) 音声命令による動画再生 (OpenHRI)**"
 msgstr ""
+"`(Demo 2) Playing Movie via Voice (OpenHRI) "
+"<1.2_demo_mediaplaybyvoice.html>`_"
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:11
 msgid "関連するチュートリアル"
-msgstr ""
+msgstr "Related Tutorials"
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:12
 msgid "当ページでは最低限の操作方法のみ紹介します．`OpenHRI`, `SEATSAT` の詳細ては下記リンクを参照ください．"
-msgstr ""
+msgstr "You'll see very basic operation for `OpenHRI`, `SEATSAT`. See the following links for more."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:14
 msgid "当ページで紹介するデモの詳細．ページ内下方にある \"システムを起動する\"，\"動作例\" の章にしたがって作業を行ってください．[1_]"
-msgstr ""
+msgstr "Detail of the demo in this tutorial (in Japanese). Follow 'Running the system', 'Running example' at the lower side in the page [1_]"
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:16
 msgid "なおソフトウェアは `./demo/0_SpeechDemo` にも梱包してあります．"
-msgstr ""
+msgstr "Same software is bundled in `./demo/0_SpeechDemo` in the USB."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:17
 msgid ""
 "ネット接続不可の場合のために同チュートリアル PDF を同梱しています ./doc/tutorial_openhri_mediaplay.pdf"
-msgstr ""
+msgstr "Same PDF files in bundled at ./doc/tutorial_openhri_mediaplay.pdf"
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:20
 msgid "HowToRun"
@@ -42,7 +44,7 @@ msgstr ""
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:21
 msgid "他のウィンドウの陰に表示されることがあるのでその場合は探して前面に移動．"
-msgstr ""
+msgstr "Multiple windows get opened and overlap with each other. Find appropriate one."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:23
 msgid ""
@@ -50,38 +52,41 @@ msgid ""
 "の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で \"./demo/0 SpeechDemo\" "
 "を開いてそれぞれ実行．"
 msgstr ""
+"Click in the following order \"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" "
+"If they don't seem to be working, on `Explorer` open \"./demo/0 SpeechDemo\" and run them."
+"(Since this demo uses Japanese language processor, we're not sure if this works in English though)"
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:33
 msgid "\"tk\" と表示されるウィンドウを前面に移動．"
-msgstr ""
+msgstr "Move the window \"tk\" forward."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:35
 msgid "\"ビデオ\" と発話．\"video_list_mode\" と左肩に書かれた tk ウィンドウが表示される．"
-msgstr ""
+msgstr "Say \"Video\". A window whose title is \"video_list_mode\" appears."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:37
 msgid "\"リスト\" と発話．\"PlayList\" ウィンドウが表示される．"
-msgstr ""
+msgstr "Say \"list\" will open a window \"PlayList\"."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:39
 msgid "\"xばんめ\" (x = 1...5) と発話．\"PlayList\" ウィンドウ上でハイライト選択領域が変わる．"
-msgstr ""
+msgstr "(Not sure if this works in English though) Say \"x ban-me\" (x = 1...5) will pop up a window \"PlayList\" where highlighted item changes per the number you say."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:41
 msgid "\"再生\" と発話．\"Player\" ウィンドウで指定動画が再生される．"
-msgstr ""
+msgstr "Say \"Play\" will play the content on a window \"Player\""
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:43
 msgid "\"停止\" など試す．"
-msgstr ""
+msgstr "Say \"Stop\" and other commands that are available on the GUI."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:45
 msgid "終了時は，\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行．"
-msgstr ""
+msgstr "When you finish the demo, click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\", \"5_DemoExit.bat\" respectively"
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:55
 msgid "RTC の deactivation は，コンポーネントがロードした実行時の必要リソースの量によって，時間がかかることがあります．"
-msgstr ""
+msgstr "Deactivation of RTCs might take awhile depending on the amount of the resource loaded by each component."
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:67
 msgid ""

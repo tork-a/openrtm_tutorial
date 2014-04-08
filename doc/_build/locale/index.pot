@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-08 10:42\n"
+"POT-Creation-Date: 2014-04-09 04:01\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,56 +18,11 @@ msgstr ""
 
 #: ../../index.rst:8
 # 0a434c1c41c84ce499307020c8c91aa8
-msgid "RT Middleware 体験用チュートリアル用 USB"
+msgid "RT Middleware Tutorial USB"
 msgstr ""
 
 #: ../../index.rst:10
-# 39f199feba0643669fba648d9b58d5d7
-msgid "Contents:"
-msgstr ""
-
-#: ../../index.rst:16
-# 99a02ccbe18647dd93ff56386c4152cb
-msgid "デモの体験"
-msgstr ""
-
-#: ../../index.rst:18
-# 9817b21f98d34417bbc208a3390e2eec
-msgid "`(デモ 1) 画像処理 (OpenRTM-aist，OpenCV) <1.1_demo_imageprocessing.html>`_"
-msgstr ""
-
-#: ../../index.rst:19
-# 5c6c5a0eac0e4dffa1f713c31be0fe90
-msgid "`(デモ 2) 音声命令による動画再生 (OpenHRI) <1.2_demo_mediaplaybyvoice.html>`_"
-msgstr ""
-
-#: ../../index.rst:20
-# 75f178c4a89645a6a9e78f51b33d5489
-msgid "`(デモ 3) ロボットモーションの新規作成 (Choreonoid) <1.3_choreonoid_createmotion.html>`_"
-msgstr ""
-
-#: ../../index.rst:21
-# 63d8f84c118446f8bac503883a7bbb5b
-msgid "`(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid) <1.4_callmotion_byvoice.html>`_"
-msgstr ""
-
-#: ../../index.rst:22
-# 625b9b62671c40d19d91c722ba11d244
-msgid "`(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT) <1.5_modifystate_seatsat.html>`_"
-msgstr ""
-
-#: ../../index.rst:25
-# 66de424e52dc4e5cacc27ab9b9f285f6
-msgid "RTC 開発の体験"
-msgstr ""
-
-#: ../../index.rst:27
-# 8f1257c1cef34832b3287a229afbaae4
-msgid "`音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する ロガー RTC の開発 <2.1_samplewordlogger.html>`_"
-msgstr ""
-
-#: ../../index.rst:28
-# 741a33a956824f0db718ff9fa890a151
-msgid "`キーボードからの入力によって Choreonoid のモーションを呼び出すことが出来る RTC の開発 <2.2_samplemotionselector.html>`_"
+# b80e9ddba3a443c8a95d0b39039aed44
+msgid "`日本語 <locale/ja/top.html>`_ | `English <locale/en/top.html>`_"
 msgstr ""
 

@@ -37,7 +37,7 @@ msgstr "What you'll experience"
 
 #: ../../1.1_demo_imageprocessing.rst:20
 msgid "カメラで認識する動画像を反転 (OpenRTM-aist，OpenCV による)"
-msgstr ""
+msgstr "Transform camera images (by OpenRTM-aist，OpenCV)"
 
 #: ../../1.1_demo_imageprocessing.rst:25
 msgid "Windows 7／ 8"
@@ -67,8 +67,7 @@ msgstr "Start CORBA nameserver (common throughout all tutorials)"
 
 #: ../../1.1_demo_imageprocessing.rst:34
 msgid "基本的に `OpenRTM` の nameserver は一度起動すると，起動したままでもすべてのチュートリアルは動作すると思われます．"
-msgstr ""
-"Once you start, nameserver can be kept running throught all tutorials."
+msgstr "Once you start, nameserver can be kept running throught all tutorials."
 
 #: ../../1.1_demo_imageprocessing.rst:36
 msgid "次のリンクをクリックして nameserver を起動．"
