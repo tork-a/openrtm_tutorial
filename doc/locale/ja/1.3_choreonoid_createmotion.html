@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1   このページで体験すること &mdash; openrtm_tutorial 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="openrtm_tutorial 0.4 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li><a href="index.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <p><strong>(デモ 3) ロボットモーションの新規作成 (Choreonoid)</strong></p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="#id1" id="id7">1&nbsp;&nbsp;&nbsp;このページで体験すること</a></li>
+<li><a class="reference internal" href="#id2" id="id8">2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id3" id="id9">2.1&nbsp;&nbsp;&nbsp;動作環境</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4" id="id10">3&nbsp;&nbsp;&nbsp;実行方法</a></li>
+</ul>
+</div>
+<script src="batcall.js"></script><div class="section" id="id1">
+<h1><a class="toc-backref" href="#id7">1&nbsp;&nbsp;&nbsp;このページで体験すること</a><a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<ul class="simple">
+<li><cite>Choreonoid</cite> 上で，既存のロボットモーションサンプルに自作のモーションを追加する．</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h1><a class="toc-backref" href="#id8">2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a><a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>当ページでは最低限の操作方法のみ紹介します．`Choreonoid` に関する詳細は下記リンクを参照ください．</p>
+<ul class="simple">
+<li>概要，詳細な使用法に関しては[<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/5048/Hara.pdf">1</a>]</li>
+<li>モーション変更に関する詳細は[<a class="reference external" href="http://choreonoid.org/ja/StartupGuide/sample/editSampleMotion.html">2</a>]</li>
+</ul>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id9">2.1&nbsp;&nbsp;&nbsp;動作環境</a><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li>Windows 7／ 8</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id4">
+<h1><a class="toc-backref" href="#id10">3&nbsp;&nbsp;&nbsp;実行方法</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．</p>
+<ol class="arabic simple">
+<li>.demo/BatchFiles/Choreonoid-GRobot.bat を実行．`Choreonoid` の GUI が起動する．</li>
+</ol>
+<a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('BatchFiles\\Choreonoid-GRobot.bat'); return false;">./demo/BatchFiles/Choreonoid-GRobot.bat</a><ol class="arabic simple" start="2">
+<li><cite>Choreonoid</cite> の GUI 上で，次の手順で既存モーションを読み込む．</li>
+</ol>
+<blockquote>
+<div><p>(英語版) &#8220;File&#8221; &#8211;&gt; &#8220;Open&#8221; &#8211;&gt; &#8220;Pose Sequence&#8221; &#8211;&gt; Choose GR001SampleMotion1.pseq</p>
+<p>(日本語版) &#8220;ファイル&#8221; &#8211;&gt; &#8220;読み込み&#8221; &#8211;&gt; &#8220;ポーズ列&#8221; &#8211;&gt; Choose GR001SampleMotion1.pseq</p>
+<p>もし上記手順でファイルが見えない場合，ファイルは以下に在る． <cite>./demo/Choreonoid-1.1/share/projects/GR001SampleMotion1.pseq</cite></p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>選択したファイルに記述されるモーションが，`Choreonoid` 上の左側のペインに表示されるはずなのでそれをクリックして選択 (下図参照)．</li>
+</ol>
+<img alt="_images/choreo_samplemotion_selected.png" src="_images/choreo_samplemotion_selected.png" />
+<ol class="arabic simple" start="4">
+<li><cite>Choreonoid</cite> 上の &#8220;PoseRoll&#8221; ペイン上でカーソル (時間軸上に細い縦線で表示される) を，今回動作を追加する時点に移動．例えば既存のモーションの最後とする．</li>
+<li>ロボットのペインを右クリックし，&#8221;Edit Mode&#8221;／&#8221;編集モード&#8221; に変更．これによりロボットのパーツを動かすことができるようになる．</li>
+<li>ロボットのパーツを好きなように動かす．</li>
+<li>&#8220;PoseRoll&#8221; ペインの &#8220;Insert&#8221;／&#8221;現在姿勢の記憶&#8221; をクリック．新たに追加された動作部分が赤く表示される．</li>
+<li>保存を忘れずに．</li>
+</ol>
+<img alt="_images/choreo_newmovement_added.png" src="_images/choreo_newmovement_added.png" />
+<ol class="arabic simple" start="9">
+<li>ファイルを保存し，作業を終えたら，`Choreonoid` は終了して良い．</li>
+</ol>
+<hr class="docutils" />
+<p>Go back to <a class="reference external" href="index.html">index</a> | Go to <a class="reference external" href="1.4_callmotion_byvoice.html">next</a></p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">目次</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;このページで体験すること</a></li>
+<li><a class="reference internal" href="#id2">2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a><ul>
+<li><a class="reference internal" href="#id3">2.1&nbsp;&nbsp;&nbsp;動作環境</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4">3&nbsp;&nbsp;&nbsp;実行方法</a></li>
+</ul>
+
+  <h3>このページ</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/1.3_choreonoid_createmotion.txt"
+           rel="nofollow">ソースコードを表示</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>クイック検索</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="検索" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    モジュール、クラス、または関数名を入力してください
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="総合索引"
+             >索引</a></li>
+        <li><a href="index.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, NEDO, TORK.
+      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 で生成しました。
+    </div>
+  </body>
+</html>

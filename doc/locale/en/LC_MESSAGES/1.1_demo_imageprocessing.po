@@ -1,0 +1,234 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: openrtm_tutorial 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-08 07:58\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../1.1_demo_imageprocessing.rst:1
+msgid "**(デモ 1) 画像処理 (OpenRTM-aist，OpenCV)**"
+msgstr "**(Demo1) Image Processing (OpenRTM-aist，OpenCV)**"
+
+#: ../../1.1_demo_imageprocessing.rst:11
+msgid "Introduction"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:14
+msgid "関連するチュートリアル"
+msgstr "Related Tutorials"
+
+#: ../../1.1_demo_imageprocessing.rst:15
+msgid ""
+"http://www.openrtm.org/openrtm/ja/node/4625 - ネット接続不可の場合は "
+"./doc/tutorial_openrtm_opencv_cmake_imgprocessing.pdf"
+msgstr ""
+"http://www.openrtm.org/openrtm/ja/node/4625 - If internet connection is not "
+"available, find it in:./doc/tutorial_openrtm_opencv_cmake_imgprocessing.pdf"
+
+#: ../../1.1_demo_imageprocessing.rst:19
+msgid "このページで体験すること"
+msgstr "What you'll experience"
+
+#: ../../1.1_demo_imageprocessing.rst:20
+msgid "カメラで認識する動画像を反転 (OpenRTM-aist，OpenCV による)"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:25
+msgid "Windows 7／ 8"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:26
+msgid ""
+"Java Runtime Environment (JRE) 7 "
+"(`../misc/openjdk_1.7.0_u45_2.4.3_installed` として同梱，インストール不要)"
+msgstr ""
+"Java Runtime Environment (JRE) 7 (Bundled at "
+"`../misc/openjdk_1.7.0_u45_2.4.3_installed`, no need to install)"
+
+#: ../../1.1_demo_imageprocessing.rst:29
+msgid "実行方法"
+msgstr "Run the tutorial"
+
+#: ../../1.1_demo_imageprocessing.rst:30
+msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
+msgstr ""
+"Your current directory is assumed to be the home of the USB unless "
+"specified."
+
+#: ../../1.1_demo_imageprocessing.rst:33
+msgid "nameserver 起動 (全チュートリアル共通)"
+msgstr "Start CORBA nameserver (common throughout all tutorials)"
+
+#: ../../1.1_demo_imageprocessing.rst:34
+msgid "基本的に `OpenRTM` の nameserver は一度起動すると，起動したままでもすべてのチュートリアルは動作すると思われます．"
+msgstr ""
+"Once you start, nameserver can be kept running throught all tutorials."
+
+#: ../../1.1_demo_imageprocessing.rst:36
+msgid "次のリンクをクリックして nameserver を起動．"
+msgstr "Click the link to start nameserver."
+
+#: ../../1.1_demo_imageprocessing.rst:44
+msgid ""
+"(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ "
+"をダブルクリックして実行．"
+msgstr ""
+"(Only when the link above didn't work) Open `demo` folder on `Explorer` then"
+" start rtm-naming.bat_ by double clicking the file."
+
+#: ../../1.1_demo_imageprocessing.rst:47
+msgid "Starting omniNames for the first time. : Checkpointing completed."
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:51
+msgid "上記手順で `cmd.exe` が消えてしまう場合は，`nameserver` がうまく起動していないので次の手順で原因を発見："
+msgstr ""
+"If `cmd.exe` doesn't stay, you're somehow failing to run `nameserver` so try"
+" to find the cause by the following:"
+
+#: ../../1.1_demo_imageprocessing.rst:53
+msgid "2.1) `Explorer` 上で，USB のドライヴ名を確認 (D/E/F etc. ここでは `F` と仮定)"
+msgstr ""
+"2.1) On `Explorer`, check the drive letter of the tutorial USB (usually "
+"either D/E/F. Here we assume as `F`)"
+
+#: ../../1.1_demo_imageprocessing.rst:55
+msgid "2.2) `cmd.exe` を手動起動 (Win 7: [4_], Win 8: [5_])"
+msgstr "2.2) Manually start `cmd.exe` (Win 7: [4_], Win 8: [5_])"
+
+#: ../../1.1_demo_imageprocessing.rst:57
+msgid "2.3) 以下コマンドでフォルダ移動・コマンド実行::"
+msgstr "2.3) Run the following commands to move to the folder::"
+
+#: ../../1.1_demo_imageprocessing.rst:63
+msgid ""
+"エラー等発生していればここで表示されるのでその内容を診断．`OpenRTM` の `nameserver` の問題は WEB "
+"で検索して対処してみてください．"
+msgstr "Diagnose errors. Many errors with `CORBA` can be found on the WEB."
+
+#: ../../1.1_demo_imageprocessing.rst:66
+msgid "チュートリアルのプログラム実行"
+msgstr "Run programs in the tutorial"
+
+#: ../../1.1_demo_imageprocessing.rst:68
+msgid ""
+"`./demo/OpencvRtmDemo/0_StartDemo.bat` を実行．次のリンクから起動できなければ，手動で `Explorer` "
+"から実行．"
+msgstr ""
+"Run `./demo/OpencvRtmDemo/0_StartDemo.bat` by clicking on the link below. If"
+" it doesn't work, run it manually from `Explorer`."
+
+#: ../../1.1_demo_imageprocessing.rst:74
+msgid "./demo/RTSE.bat を実行．"
+msgstr "Run ./demo/RTSE.bat."
+
+#: ../../1.1_demo_imageprocessing.rst:80
+msgid "RT System Editor が下図のように起動する．"
+msgstr "RT System Editor should look like the following."
+
+#: ../../1.1_demo_imageprocessing.rst:84
+msgid ""
+"左側のペインで 127.0.0.1 を選択し直上の右矢印をクリックすると，起動中の RT Component が同ペイン上に表示される．ここでは "
+"`DirectShowCamComp`，`FlipComp`，`CameraViewerComp` となるはず．"
+msgstr ""
+"On the pane on the left, select `127.0.0.1`, then clicking the arrow sign "
+"above will show the RT Components that are running. Here you should see "
+"`DirectShowCamComp`，`FlipComp`，`CameraViewerComp`."
+
+#: ../../1.1_demo_imageprocessing.rst:86
+msgid ""
+"File --> Open New System Editor を選ぶと，`System Diagram` "
+"が真ん中のペインに開かれる．左側のペインから各 RTC を System Diagram にドラッグすると下図のように表示される．"
+msgstr ""
+"Selecting `File --> Open New System Editor` will open`System Diagram` in the"
+" pane at the center.Drag RTCs from left pane onto System Diagram and you'll "
+"see:"
+
+#: ../../1.1_demo_imageprocessing.rst:90
+msgid "同ペイン上で各 RTC を接続．上に挙げた三つの RTC を左から接続する．"
+msgstr ""
+"Connect RTCs on the same pane. Connect them from left in the order listed "
+"above."
+
+#: ../../1.1_demo_imageprocessing.rst:92
+msgid "同ペイン上で直上左にある \"ALL\" というアイコンをクリック，すべての RTC を activate (参考リンク 1_)"
+msgstr "Click \"ALL\" above, activate all RTCs."
+
+#: ../../1.1_demo_imageprocessing.rst:96
+msgid ""
+"`CaptureImage` というウィンドウにカメラ画像が表示されれば入出力・接続が成功．同時に `DirectShowCamComp` "
+"のコマンドプロンプトにも `frame rate` が定期的に追加表示される．"
+msgstr ""
+"Sucess if you see the image taken from camera on the window called "
+"`CaptureImage`. You'll also see constantly `frame rate` output on the "
+"command prompt `DirectShowCamComp`."
+
+#: ../../1.1_demo_imageprocessing.rst:100
+msgid ""
+"`RTSystemEditor` 上で flip_mode の値を 1 --> 0 --> -1 と変える (Apply を忘れずに) "
+"とカメラ画像も変わることを確認できる．`flip_mode` の値と対応する挙動は次のようになる (画像引用元 2_)"
+msgstr ""
+"Change `flip_mode` value from 1 --> 0 --> -1 on `RTSystemEditor` (don't "
+"forget to `Apply` button) then you see the image is converted. Behavior "
+"associated with `flip_mode` is as follows (image source 2_)"
+
+#: ../../1.1_demo_imageprocessing.rst:104
+msgid "終了するには，次の手順で \"RTC を inactivate\" --> \"RTC 間のリンクを切り離し\" --> \"各 RTC を停止\" を行う．"
+msgstr "To end, \"inactivate RTC\" --> \"disconnect RTCs\" --> \"stop each RTC\""
+
+#: ../../1.1_demo_imageprocessing.rst:106
+msgid "同ペイン上で直上左にある \"All Deactivate\" というアイコンをクリック"
+msgstr "Click \"All Deactivate\" at above left."
+
+#: ../../1.1_demo_imageprocessing.rst:107
+msgid "で行ったのと逆を行う -- つまり，各接続線上で右クリックし\"切断\"を選択"
+msgstr ""
+"do the oposite -- that is, right-click on each connection line and "
+"\"Disconnect\""
+
+#: ../../1.1_demo_imageprocessing.rst:108
+msgid "で起動されたコマンドプロンプト群を手動で終了．ただし `rtm-naming.bat` のそれは停止せずとも良い．"
+msgstr ""
+"manually end the command prompts. You can keep `rtm-naming.bat` running as "
+"mentioned earlier."
+
+#: ../../1.1_demo_imageprocessing.rst:110
+msgid ""
+"ここで挙げた終了手順はやや煩雑ですが，御心配なく．次のチュートリアルからはこれらを一括して行うスクリプトを用意してあります．今回は初回なのでほぼすべてを手動で行い，`OpenRTM`"
+" のプログラム実行に必要な手順を体験して頂きました．"
+msgstr ""
+"Steps explained in this tutorial may sound complicated. No worries! In the "
+"rest of tutorials, you'll be introduced scripts that run all these at once; "
+"Just this time we've walked through behind-the-scenes of `OpenRTM` manually "
+"to get an idea."
+
+#: ../../1.1_demo_imageprocessing.rst:122
+msgid ""
+"Go back to `index <index.html>`__ | Go to `next "
+"<1.2_demo_mediaplaybyvoice.html>`__"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:21
+msgid "`RT System Editor` の初歩的な利用法"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:24
+msgid "動作環境"
+msgstr ""
+
+#~ msgid "Very basic usage for `RT System Editor`"
+#~ msgstr ""
+
+#~ msgid "Required environment"
+#~ msgstr ""
+
+#~ msgid "`cmd.exe` (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::"
+#~ msgstr ""
+#~ "Now `cmd.exe` (Command prompt) is kept open and you'll see following texts "
+#~ "::"

@@ -1,0 +1,482 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014, NEDO, TORK
+# This file is distributed under the same license as the openrtm_tutorial package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: openrtm_tutorial 0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-08 10:42\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../2.1_samplewordlogger.rst:1
+# 4dd9702a486440d7825973df074d8bbf
+msgid "**(RTC 作成 1) 音声キーワードロガー RTC の開発**"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:12
+# 211000ef92514691889402a91f8c7c01
+msgid "Introduction"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:15
+# e8818d50c9ee48ab9e4ecba87c1a463e
+msgid "このページで体験すること"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:17
+# bd4a9843e34340a79628cbfb6f6ecdd4
+msgid "`OpenHRI` の RTC と接続することで，音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する `SampleWordLogger RTC` の開発"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:20
+# 588dab3793ac4c00b7b00d0fa6929359
+msgid "関連するチュートリアル"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:21
+# 64aafe6db3bf4729aaf7f4dbaf16b894
+msgid "`RTC` 作成の一般的作業の詳細は SampleWordLogger コンポーネントのチュートリアル[1_]に記述があります．特に `Eclipse` 上での GUI を利用した開発が説明されています． - なお本チュートリアル内で，[1_]内の多くの画像を参照しています．参照元はその都度記載しています．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:25
+# 2f44eeedfc6f46079197620c4c7de40e
+msgid "SystemEnvironment"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:26
+# 75c1243a79234907901732d429ddfc2c
+msgid "Windows 7 / 8"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:27
+# 23c4a469b39645c689490382056a270c
+msgid "Visual C++ 2010 (English [3_], Japanese [4_])"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:28
+# beea77ec6d214b23a54ec66af8743525
+msgid "`CMake` 2.8 (インストーラが同梱されています ./misc/installer/cmake-2.8.8-win32-x86.exe)"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:29
+# 087b8dfe943b4530b4bf789ee130f443
+msgid "`RTCBuilder` 1.1 (bundled in Eclipse [5_])"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:33
+# 5386c84d52bf42ef92a8bf194772889f
+msgid "RTC の仕様 (I/O, Configuration)"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:35
+# c761653be92243f5a795e4779b653313
+msgid "これから作成するコンポーネントを SampleWordLogger RTC と呼ぶことにします．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:37
+# bada98b1c42f4ddd9f6b693c07e43ade
+msgid "このコンポーネントは `TimedString` 型の入力ポート (`InPort`) を持ちます．今回はログをファイルへ出力するのみとし，`RTC` として出力ポート (`OutPort`) は持たないｋとにします．`InPort` 名を `result` とします．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:39
+# 0523db11913b4ef6a4876b2d267e2553
+msgid "ログファイルの場所は今回はハードコードします (お好みに変えて下さい)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:41
+# a68f941bc8bf4a788f61c237a2a0a519
+msgid "上から RTC の仕様を次のようにまとめます．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:44
+# 06a8b8a353f145279f43498240fbb4f0
+msgid "Component Name"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:44
+# d484b437b74e4775929b151e4808a401
+msgid "SampleWordLogger"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:46
+# c9b93141e200429b940b5d95905ecbfd
+msgid "InPort"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:48
+#: ../../2.1_samplewordlogger.rst:54
+# 8f4d02077dda41efbf7ef0c67ddd4806
+# 4daef383f5b74996a0222d52c9a66934
+msgid "Port Name"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:48
+# 5975f6aebee14fbd854cff184bc5e2eb
+msgid "result"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:50
+#: ../../2.1_samplewordlogger.rst:56
+#: ../../2.1_samplewordlogger.rst:62
+# fbbf435a532d4b24a8bca0322c67026c
+# 9c1e3abc62534e3f843cd0f17ff771e4
+# 983742ab6d6b4360bc0b2c8b3899f3e4
+msgid "Data Type"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:50
+# 3ac9068f5f3f4a679adbee94948851da
+msgid "TimedString"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:52
+# dc63c4bf63f64759afee68dc520bedd9
+msgid "OutPort"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:54
+#: ../../2.1_samplewordlogger.rst:56
+#: ../../2.1_samplewordlogger.rst:60
+#: ../../2.1_samplewordlogger.rst:62
+#: ../../2.1_samplewordlogger.rst:64
+# 88fa985ecf094fe987af484574524ce1
+# 0ed824b7ee1045218654fd1461a03f35
+# 8c4dadfa748149df996814d1da57a397
+# 8579c7c8c70c43a1a3319e2f40ae768d
+# de7d9c3c0234416799eb8422bc2cb2e2
+msgid "(None)"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:58
+# 77c1e1ecd4e949cc8a00dd168f8b86a0
+msgid "Configuration"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:60
+# 9421372d81654706b625435a284a84ed
+msgid "Parameter Name"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:64
+# 7c2f35c7600c448c975898954651b17f
+msgid "Values"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:69
+# 897731687c5a492a82923a0dcf63cda7
+msgid "RTCBuilder のインストール，起動"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:70
+# b18682754641499fbd67101049c4c016
+msgid "本章では `Eclipse` ベースのツール `OpenRTP (Open RT Platform)` に同梱される `RTBuilder` を利用するので，[2_]からダウンロード・インストールして下さい．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:72
+# 3cb6b3add8d54921a14831b03a05ca2b
+msgid "新規ワークスペースを指定して Eclipse を起動すると，以下のような Welcome ページが表示されます (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png>`__)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:76
+# 54a6d6f3bde44bccb0ee5c82edccf350
+msgid "Welcome ページはいまは必要ないので左上の「×」ボタンを押して閉じてください (`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png>`__)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:80
+# 80318091ee1444eaa9124a95d688412f
+msgid "右上の「Open Perspective」ボタンを押下し，プルダウンの「Other…」 ボタンを押下します(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png>`__)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:84
+# 809bf3899843423e84622eb6cfa2f5ca
+msgid "`RTC Builder` を選択することで，RTCBuilder が起動します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:88
+# 99703f8331084b4b86cdd8871dc2c61d
+msgid "How to make RTC"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:91
+# ef43c970414747d08183813853e4fac8
+msgid "新規プロジェクトの作成"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:92
+# a5c3f94f09b74c5396ae50ce7c3fff0e
+msgid "SampleWordLogger コンポーネントを作成するために，`RTCBuilder` で新規プロジェクトを 作成する必要が有ります．画面上部のメニューから[ファイル]－[新規]－ [プロジェクト]を選択します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:96
+# 43a024c10f3c4cccb186f045b009982e
+msgid "表示された ｢新規プロジェクト｣ 画面において，｢その他｣－｢RTCビルダ｣ を選択し，｢次へ｣ をクリックします．｢プロジェクト名｣欄に作成するプロジェクト名 (ここでは SampleWordLogger) を入力して｢終了｣をクリックします．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:100
+# 3243568c7d1b4010be397d9880c639fb
+msgid "指定した名称のプロジェクトが生成され，パッケージエクスプローラ内に追加されます． 生成したプロジェクト内には，デフォルト値が設定された RTC プロファ イル XML(RTC.xml) が自動的に生成されるのがわかると思います．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:104
+# a828be4cf2aa45c8b87a6a2e8e30d570
+msgid "`RTC.xml` が生成された時点で，このプロジェクトに関連付けられているワークスペースとして `RTCBuilder` のエディタが開くはずです．もし開かない場合は，ツールバーの｢Open New RtcBuilder Editor｣ボタンを押下するか，メニューバーの [file]-[Open New Builder Editor] を選択します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:108
+# b37866f8243b44aca1eae06ba95192cd
+msgid "(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-10FileMenuOpenNewBuilder.png>`__)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:113
+# 5c496f609c0a40d8b1398f762213dd19
+msgid "SampleWordLogger コンポーネントの雛型の生成"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:115
+# c82612189eb04072a669631fef9e281f
+msgid "SampleWordLogger RTC の雛型の生成は，`OpenRTP` に同梱の `RTCBuilder` を用いて行います．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:118
+# 7d21b339c1b645d1a24e5895db9c8012
+msgid "プロファイル情報入力とコードの生成"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:119
+# 289b27c8ad7348b0a9f8d99b9b5892d9
+msgid "まず，いちばん左の「基本」タブを選択し，基本情報を入力します．先ほ ど決めた SampleWordLogger コンポーネントの仕様(名前)の他に，概要やバージョン等を入力してください．ラベルが赤字の項目は必須項目です．その他はデフォルトで構いません．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:123
+# ea2b994cbe084db1b54d4f166f16cf89
+msgid "次に，「アクティビティ」タブを選択し，使用するアクションコールバッ クを指定します． `SampleWordLogger RTC` では，onActivated(), onDeactivated(), onExecute() コールバックを使用します．下図のように (1) の onAtivated をクリック後に (2) のラジオボタンにて \"on\" にチェックを入れます．onDeactivated, onExecute についても同様の手順を行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png>`__)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:128
+# 589ec807804f4ca898d360fe691c4e9c
+msgid "さらに，\"Data Ports\" タブを選択し，データポートの情報を入力します． 先ほど決めた仕様を元に以下のように入力します．なお，変数名や表示位置はオプションで，そのままで結構です．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:132
+# 228a8f994eea4e8eb742acca61ff9e03
+msgid "次に，「言語・環境」タブを選択し，プログラミング言語を選択します． ここでは，`C++` を選択します．なお，言語・環境はデフォルト等が 設定されておらず，指定し忘れるとコード生成時にエラーになりますので， 必ず言語の指定を行うようにしてください．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:134
+# 90ffd50cf1564c8a9a224c8802ae2650
+msgid "また，`C++` の場合デフォルトでは `CMake` を利用してビルドすることになって いますが，旧式の `VC` のプロジェクトやソリューションを直接 `RTCBuilder` が 生成する方法を利用したい場合は `Use old build environment` を チェックしてください．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:136
+# 6db0375fc08741a1b30efc39d83a4cd2
+msgid "最後に，「基本」タブにある\"コード生成\"ボタンをクリックし，コンポー ネントの雛型を生成します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:138
+# 8d121392b06448e6a2a3b90459bb8a65
+msgid "※ 生成されるコード群は，eclipse 起動時に指定したワークスペースフォルダの中に生成されます．現在のワークスペースは，「ファイル(F)」 > 「ワークスペースの切り替え(W)...」で確認することができます．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:141
+# 4397735d164340cc912ca2201067cd76
+msgid "仮ビルド"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:143
+# 2b62ebc0fa094f2c9953b6c7b7f49a61
+msgid "さて，ここまでで SampleWordLogger コンポーネントのソースコードが生成されました． 処理の中身は実装されていないので，`InPort` に他の `RTC` を接続しても何も出力されませんが，生成直後のソースコードだけでもコンパイルおよび実行はできます．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:145
+# 1b98056bbaa64d818bcc81c6a474025b
+msgid "※サービスポートとプロバイダを持つコンポーネントの場合，実装を行わないとビルドが通らないものもあります．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:147
+# 7c3b9dc32baa41f19c1fe669cd2c210d
+msgid "では，まず `CMake` を利用してビルド環境の `Configure` を行います．Linuxで あれば，SampleWordLogger コンポーネントのソースが生成されたディレクトリで::"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:152
+# 359341bafaa845ff8e2fd65463248760
+msgid "とすれば，Configureおよびビルドが完了するはずです．`Windows` の場合は GUI を利用して `Configure` してみます． スタートメニューなどから `CMake (cmake-gui)` を起動します(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png>`__)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:156
+# 35afd6a6e1f048acba3a8cedfc9f8ada
+msgid "画面上部に以下のようなテキストボックスがありますので，それぞれソースコードの場所(`CMakeList.txt` が有る場所) と，ビルドディレクトリを指定します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:158
+# e1c1f3fd63564903b4a8ff4d47d06bbd
+msgid "Where is the soruce code ^ Where to build the binaries"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:160
+# 1c65f8717ad74c70819335b9ec8d753b
+msgid "ソースコードの場所は SampleWordLogger コンポーネントのソースが生成された場所で `CMakeList.txt` が存在するディレクトリです．デフォルトでは <ワークス ペースディレクトリ>/SampleWordLogger になります．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:162
+# 996c47a9aa33421687df1c9f13dec73e
+msgid "また，ビルドディレクトリとは，ビルドするためのプロジェクトファイルやオブジェクトファイル，バイナリを格納する場所のことです．場所は任意ですが，この場合 <ワークスペースディレクトリ>/SampleWordLogger/build のように分かりやすい名前をつけた SampleWordLogger のサブディレクトリを指定することをお勧めします．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:166
+# edab993d7fb04b5dbb634029ce4db3cd
+msgid "指定したら，下の `Configure` ボタンを押します．すると下図のようなダイアログが表示されますので，生成したいプロジェクトの種類を指定します．今回は `Visual Studio 10` とします(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png>`__)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:170
+# f35a9363a3a148b8823d5016da2d3976
+msgid "ダイアログで Finish を押すと Configure が始まります．問題がなければ下部のログウインドウに Configuring done と出力されますので，続けて Generate ボタンを押します．Generating done と出ればプロジェクトファイル・ソリューションファイル等の出力が完了します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:172
+# 0c39f3254e7a4b0bb0609db443c1c058
+msgid "なお，`CMake` は Configure の段階でキャッシュファイルを生成しますので，トラブルなどで設定を変更したり環境を変更した場合は [File]-[Delete Cache] でキャッシュを削除して `Configure` からやり直してください．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:174
+# 96e9d4d7e46747d69305ed9ca9d89fe3
+msgid "次に先ほど指定した `build` ディレクトリの中の SampleWordLogger.sln をダブルクリックして `Visual Studio 2010` を起動します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:176
+# 7c498ec94cae4d74ba6628081d355c10
+msgid "起動後，ソリューションエクスプローラーの `ALL_BUILD` を右クリックしビルドを選択してビルドします．特に問題がなければ正常にビルドが終了します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:180
+# 59827c62b0694a16a542c378bb6544eb
+msgid "ここで `VC++ 2010` は閉じても構いません．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:183
+# 76b4f6be10fc4e62afb5a02bbc406795
+msgid "ヘッダ，ソースの編集"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:186
+# 17a88f27b93d4adda8e1d9150396cac9
+msgid "アクティビティ処理の実装"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:187
+# c2634c69639e4003958fe2d5eedde6f0
+msgid "SampleWordLogger RTC では，InPort から語を受け取った時刻とその語をファイルストリームに流します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:189
+# 834076e776b14bda9d610ea7d74bdf11
+msgid "`onActivated()`, `onExecute()`, `onDeactivated()` での処理内容を下図に示します (`編集用の図ファイル <https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit>`__ 必要であれば編集権を同ページ内から申請して下さい)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:194
+# 584d97c88c5345bcb746d4018df98d66
+msgid ".cpp ファイル編集"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:196
+# 72876d4169654cdd85830cf6697db8b9
+msgid "下記のように，`onActivated()`, `onDeactivated()`, `onExecute()` を実装します．::"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:366
+# f64534b8f363469f91caf1dd6738552f
+msgid "CMakeList.txt の編集"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:368
+# eab0a823c44a40eca3e46701a28d42c4
+msgid "この RTC ではログファイル生成のために `xmllib` を使用しています (実際のログのフォーマットは xml ではありませんが) ので，`RTCBuilder` が生成した `CMakeLists.txt` にその旨を追記します．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:370
+# bc43b32c28394e62a9728ebb64b045a9
+msgid "適当なエディタ (`VC++ 2010, Emacs` 等) 上で，`SampleWordLogger/CMakeLists.txt` を開いて下さい．::"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:374
+# b43b0cc08f2c40d3a6a703bb223d8f21
+msgid "とあり，`src` フォルダの情報は移譲されていることが分かるので，`SampleWordLogger/src/CMakeLists.txt` を開きます．このファイル中を例えば以下の様に変更します::"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:393
+# 84a35cf0aebd4b05bff14117869d5560
+msgid "VC++ によるビルド"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:394
+# a2c5be48851843f493566116cfa893c5
+msgid "Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 `SampleWordLogger.sln` ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010 の起動後，下図のようにし，コンポーネントのビルドを行います(`画像引用元 <http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`__)．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:398
+# 34b91b2585d14f10bc491baf6f117133
+msgid "Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:402
+# e64a92bf17c64ac8908c36f5aec6a2c5
+msgid "実行方法"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:403
+# 838270941d1648c1992f9ebd234d208f
+msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:405
+# 53ec4bd15af441009457ae076c8e4127
+msgid "では実行してみましょう． `SampleWordLogger` は単体だと何も行わないので，先に紹介された `MotionByVoiceDemo` と組合せて発話を記録してみましょう．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:408
+# 749a40ea498342f5865cf16d836f231b
+msgid "上記二つのフォルダからそれぞれに格納される RTC を呼ぶための .bat ファイルを既に `./demo/MotionByVoiceLoggerDemo` として用意してあります．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:410
+# e2f0258e3889482693110fd64eb5168b
+msgid "MotionByVoiceLoggerDemo"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:412
+# 8e3b0401a7b74cd08269ba7908656c3a
+msgid "`./demo/MotionByVoiceLoggerDemo` から \"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:428
+# e5417f3f7f8f46f58641d593e9348187
+msgid "`MotionByVoiceDemo のチュートリアル <1.4_callmotion_byvoice.html#HowToRun>`__ に従い，発話デモを実行．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:430
+# c08a022b046e49fd98c2dff7b378aaae
+msgid "\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行し，RT システムを停止．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:440
+# cf6ed197f31a4952b3af441869008616
+msgid "`./demo/SampleWordLogger/build/Debug/SampleWord.log` をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:442
+# c7905061c36c474b9e701791337e994b
+msgid "2014/03/13 08:56:31 左 さげて 2014/03/13 08:56:44 右 あげて 2014/03/13 08:57:08 左 よろしく 2014/03/13 08:58:23 左 あげて 2014/03/13 08:58:39 左 あげない"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:462
+# 0c705b9864504cc994b757e9f5167711
+msgid "Go back to `index <index.html>`__ | Go to `next <2.2_samplemotionselector.html>`__"
+msgstr ""
+
