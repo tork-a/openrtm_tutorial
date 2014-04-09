@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 04:01\n"
+"POT-Creation-Date: 2014-04-09 11:32\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,6 @@ msgstr ""
 
 #: ../../index.rst:10
 # b80e9ddba3a443c8a95d0b39039aed44
-msgid "`日本語 <locale/ja/top.html>`_ | `English <locale/en/top.html>`_"
+msgid "`日本語 <../../locale/ja/top.html>`_ | `English <../../locale/en/top.html>`_"
 msgstr ""
 

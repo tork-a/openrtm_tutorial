@@ -12,67 +12,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../index.rst:8
-msgid "RT Middleware 体験用チュートリアル用 USB"
-msgstr "RT Middleware tutorial USB"
+msgid "RT Middleware Tutorial USB"
+msgstr ""
 
 #: ../../index.rst:10
-msgid "Contents:"
-msgstr ""
-
-#: ../../index.rst:16
-msgid "デモの体験"
-msgstr "Experience Demos"
-
-#: ../../index.rst:18
-msgid "`(デモ 1) 画像処理 (OpenRTM-aist，OpenCV) <1.1_demo_imageprocessing.html>`_"
-msgstr ""
-"`(Demo 1) Image Processing (OpenRTM-aist，OpenCV) "
-"<1.1_demo_imageprocessing.html>`_"
-
-#: ../../index.rst:19
-msgid "`(デモ 2) 音声命令による動画再生 (OpenHRI) <1.2_demo_mediaplaybyvoice.html>`_"
-msgstr ""
-"`(Demo 2) Playing Movie via Voice (OpenHRI) "
-"<1.2_demo_mediaplaybyvoice.html>`_"
-
-#: ../../index.rst:20
 msgid ""
-"`(デモ 3) ロボットモーションの新規作成 (Choreonoid) <1.3_choreonoid_createmotion.html>`_"
+"`日本語 <../../locale/ja/top.html>`_ | `English <../../locale/en/top.html>`_"
 msgstr ""
-"`(Demo 3) Create Robot Motions (Choreonoid) "
-"<1.3_choreonoid_createmotion.html>`_"
 
-#: ../../index.rst:21
-msgid ""
-"`(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid) <1.4_callmotion_byvoice.html>`_"
-msgstr ""
-"`(Demo 4) Playing Motions via Voice (OpenHRI，Choreonoid) "
-"<1.4_callmotion_byvoice.html>`_"
+#~ msgid "`日本語 <locale/ja/top.html>`_ | `English <locale/en/top.html>`_"
+#~ msgstr ""
 
-#: ../../index.rst:22
-msgid ""
-"`(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT) <1.5_modifystate_seatsat.html>`_"
-msgstr ""
-"`(Demo 5) Running New Motions Along with State Transion (SEATSAT) "
-"<1.5_modifystate_seatsat.html>`_"
+#~ msgid "RT Middleware 体験用チュートリアル用 USB"
+#~ msgstr "RT Middleware tutorial USB"
 
-#: ../../index.rst:25
-msgid "RTC 開発の体験"
-msgstr "Develop RTC"
+#~ msgid "Contents:"
+#~ msgstr ""
 
-#: ../../index.rst:27
-msgid ""
-"`音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する ロガー RTC の開発 "
-"<2.1_samplewordlogger.html>`_"
-msgstr ""
-"`Logger RTC that Saves the Voice-recognized Time-stamped Keywords"
-"<2.1_samplewordlogger.html>`_"
+#~ msgid "デモの体験"
+#~ msgstr "Experience Demos"
 
-#: ../../index.rst:28
-msgid ""
-"`キーボードからの入力によって Choreonoid のモーションを呼び出すことが出来る RTC の開発 "
-"<2.2_samplemotionselector.html>`_"
-msgstr ""
-"`Motion RTC that Calls Motions on Choreonoid from Keyboard Input" 
-"<2.2_samplemotionselector.html>`_"
+#~ msgid "`(デモ 1) 画像処理 (OpenRTM-aist，OpenCV) <1.1_demo_imageprocessing.html>`_"
+#~ msgstr ""
+#~ "`(Demo 1) Image Processing (OpenRTM-aist，OpenCV) "
+#~ "<1.1_demo_imageprocessing.html>`_"
 
+#~ msgid "`(デモ 2) 音声命令による動画再生 (OpenHRI) <1.2_demo_mediaplaybyvoice.html>`_"
+#~ msgstr ""
+#~ "`(Demo 2) Playing Movie via Voice (OpenHRI) "
+#~ "<1.2_demo_mediaplaybyvoice.html>`_"
+
+#~ msgid ""
+#~ "`(デモ 3) ロボットモーションの新規作成 (Choreonoid) <1.3_choreonoid_createmotion.html>`_"
+#~ msgstr ""
+#~ "`(Demo 3) Create Robot Motions (Choreonoid) "
+#~ "<1.3_choreonoid_createmotion.html>`_"
+
+#~ msgid ""
+#~ "`(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid) <1.4_callmotion_byvoice.html>`_"
+#~ msgstr ""
+#~ "`(Demo 4) Playing Motions via Voice (OpenHRI，Choreonoid) "
+#~ "<1.4_callmotion_byvoice.html>`_"
+
+#~ msgid ""
+#~ "`(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT) <1.5_modifystate_seatsat.html>`_"
+#~ msgstr ""
+#~ "`(Demo 5) Running New Motions Along with State Transion (SEATSAT) "
+#~ "<1.5_modifystate_seatsat.html>`_"
+
+#~ msgid "RTC 開発の体験"
+#~ msgstr "Develop RTC"
+
+#~ msgid ""
+#~ "`音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する ロガー RTC の開発 "
+#~ "<2.1_samplewordlogger.html>`_"
+#~ msgstr ""
+#~ "`Logger RTC that Saves the Voice-recognized Time-stamped "
+#~ "Keywords<2.1_samplewordlogger.html>`_"
+
+#~ msgid ""
+#~ "`キーボードからの入力によって Choreonoid のモーションを呼び出すことが出来る RTC の開発 "
+#~ "<2.2_samplemotionselector.html>`_"
+#~ msgstr ""
+#~ "`Motion RTC that Calls Motions on Choreonoid from Keyboard "
+#~ "Input<2.2_samplemotionselector.html>`_"

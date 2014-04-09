@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 04:01\n"
+"POT-Creation-Date: 2014-04-09 11:32\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,28 +27,28 @@ msgid "デモの体験"
 msgstr ""
 
 #: ../../top.rst:8
-# cf636ff3b4bc44d785278bb73dc8e6dd
-msgid "`(デモ 1) 画像処理 (OpenRTM-aist，OpenCV) <1.1_demo_imageprocessing.htm>`_"
+# 5a6bace789e342fd880128cbad042484
+msgid "`(デモ 1) 画像処理 (OpenRTM-aist，OpenCV) <1.1_demo_imageprocessing.html>`_"
 msgstr ""
 
 #: ../../top.rst:9
 # 55377813dc7843e4a5ef8171644f0949
-msgid "`(デモ 2) 音声命令による動画再生 (OpenHRI) <1.2_demo_mediaplaybyvoice.htm>`_"
+msgid "`(デモ 2) 音声命令による動画再生 (OpenHRI) <1.2_demo_mediaplaybyvoice.html>`_"
 msgstr ""
 
 #: ../../top.rst:10
-# 64753e7d50654555aea4cbb818bbb155
-msgid "`(デモ 3) ロボットモーションの新規作成 (Choreonoid) <1.3_choreonoid_createmotion.htm>`_"
+# d4319b6ede424a9887e26bf7a283d00e
+msgid "`(デモ 3) ロボットモーションの新規作成 (Choreonoid) <1.3_choreonoid_createmotion.html>`_"
 msgstr ""
 
 #: ../../top.rst:11
 # 9eecd81ecc6e427498913e029c4755f6
-msgid "`(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid) <1.4_callmotion_byvoice.htm>`_"
+msgid "`(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid) <1.4_callmotion_byvoice.html>`_"
 msgstr ""
 
 #: ../../top.rst:12
 # 85311705b6f64f6fb46723a7ecba6522
-msgid "`(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT) <1.5_modifystate_seatsat.htm>`_"
+msgid "`(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT) <1.5_modifystate_seatsat.html>`_"
 msgstr ""
 
 #: ../../top.rst:15
@@ -58,11 +58,11 @@ msgstr ""
 
 #: ../../top.rst:17
 # 1369047325cd4a4eb58e56cb04624cb0
-msgid "`音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する ロガー RTC の開発 <2.1_samplewordlogger.htm>`_"
+msgid "`(開発 1) 音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する ロガー RTC の開発 <2.1_samplewordlogger.html>`_"
 msgstr ""
 
 #: ../../top.rst:18
-# 6ce8ead420f14a73a561bafdf19f4d65
-msgid "`キーボードからの入力によって Choreonoid のモーションを呼び出すことが出来る RTC の開発 <2.2_samplemotionselector.htm>`_"
+# dc58b0823e2d46ccbbed2267f9e855a5
+msgid "`(開発 2) キーボードからの入力によって Choreonoid のモーションを呼び出すことが出来る RTC の開発 <2.2_samplemotionselector.html>`_"
 msgstr ""
 

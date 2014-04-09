@@ -14,7 +14,7 @@ msgstr ""
 #: ../../2.1_samplewordlogger.rst:1
 msgid "**(RTC 作成 1) 音声キーワードロガー RTC の開発**"
 msgstr ""
-"`Logger RTC that Saves the Voice-recognized Time-stamped Keywords"
+"`Logger RTC that Saves the Voice-recognized Time-stamped Keywords "
 "<2.1_samplewordlogger.html>`_"
 
 #: ../../2.1_samplewordlogger.rst:12
