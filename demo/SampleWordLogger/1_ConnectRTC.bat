@@ -4,7 +4,7 @@ REM '''
 
 set usbdrive=%1
 %usbdrive%
-cd demo\SampleWordLogger
+cd openrtm_tutorial\demo\SampleWordLogger
 echo Moved to DIR=%cd%
 
 for /f "usebackq" %%h in (`hostname`) do set HOSTNAME=%%h

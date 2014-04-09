@@ -18,4 +18,4 @@ start DirectShowCamComp.exe
 start FlipComp.exe
 start CameraViewerComp.exe
 
-TIMEOUT /T 130
+TIMEOUT /T 1
