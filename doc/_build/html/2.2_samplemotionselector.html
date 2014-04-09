@@ -43,57 +43,57 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <p><strong>(RTC 作成 2) Choreonoid のモーションを選択する RTC の開発</strong></p>
+  <p><a class="reference external" href="2.2_samplemotionselector.html">(Dev 2) Motion RTC that Calls Motions on Choreonoid from Keyboard Input</a></p>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="auto-toc simple">
 <li><a class="reference internal" href="#introduction" id="id7">1&nbsp;&nbsp;&nbsp;Introduction</a><ul class="auto-toc">
-<li><a class="reference internal" href="#id1" id="id8">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a></li>
-<li><a class="reference internal" href="#id2" id="id9">1.2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a></li>
+<li><a class="reference internal" href="#id1" id="id8">1.1&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a></li>
+<li><a class="reference internal" href="#id2" id="id9">1.2&nbsp;&nbsp;&nbsp;Related Tutorials</a></li>
 <li><a class="reference internal" href="#systemenvironment" id="id10">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#rtc-i-o-configuration" id="id11">2&nbsp;&nbsp;&nbsp;RTC の仕様 (I/O, Configuration)</a><ul class="auto-toc">
+<li><a class="reference internal" href="#rtc-i-o-configuration" id="id11">2&nbsp;&nbsp;&nbsp;RTC spec (I/O, Configuration)</a><ul class="auto-toc">
 <li><a class="reference internal" href="#rtc-i-o-spec" id="id12">2.1&nbsp;&nbsp;&nbsp;RTC I/O Spec</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#how-to-make-rtc" id="id13">3&nbsp;&nbsp;&nbsp;How to make RTC</a><ul class="auto-toc">
-<li><a class="reference internal" href="#id3" id="id14">3.1&nbsp;&nbsp;&nbsp;ヘッダ，ソースの編集</a><ul class="auto-toc">
-<li><a class="reference internal" href="#h-cpp" id="id15">3.1.1&nbsp;&nbsp;&nbsp;.h, .cpp ファイル編集</a></li>
+<li><a class="reference internal" href="#id3" id="id14">3.1&nbsp;&nbsp;&nbsp;Edit header, source files</a><ul class="auto-toc">
+<li><a class="reference internal" href="#h-cpp" id="id15">3.1.1&nbsp;&nbsp;&nbsp;Edit .h, .cpp</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#cmakelist-txt" id="id16">3.2&nbsp;&nbsp;&nbsp;CMakeList.txt の編集</a></li>
-<li><a class="reference internal" href="#vc" id="id17">3.3&nbsp;&nbsp;&nbsp;VC++ によるビルド</a></li>
+<li><a class="reference internal" href="#cmakelist-txt" id="id16">3.2&nbsp;&nbsp;&nbsp;Edit CMakeLists.txt</a></li>
+<li><a class="reference internal" href="#vc" id="id17">3.3&nbsp;&nbsp;&nbsp;Build by VC++</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id5" id="id18">4&nbsp;&nbsp;&nbsp;実行方法</a></li>
+<li><a class="reference internal" href="#id5" id="id18">4&nbsp;&nbsp;&nbsp;HowToRun</a></li>
 </ul>
 </div>
 <script src="batcall.js"></script><div class="section" id="introduction">
 <h1><a class="toc-backref" href="#id7">1&nbsp;&nbsp;&nbsp;Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2><a class="toc-backref" href="#id8">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">1.1&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>キーボードからの入力によって， Choreonoidのモーションを呼び出すことが出来る <cite>SampleMotionCaller RTC</cite> の開発</li>
+<li>Making Motion RTC that Calls Motions on Choreonoid from Keyboard Input</li>
 </ul>
 </div>
 <div class="section" id="id2">
-<h2><a class="toc-backref" href="#id9">1.2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">1.2&nbsp;&nbsp;&nbsp;Related Tutorials</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>前章 (Logger RTC 開発)[<a class="reference external" href="2.1_samplewordlogger.html">1</a>]を終了し，`RTC` のスクラッチからの作成方法を習得していることを前提としています．</li>
+<li>Assumed that you finished previous tutorial (Logger RTC development)[<a class="reference internal" href="#id6">1</a>]  and understand how to create <cite>RTC</cite> from scratch.</li>
 </ul>
 </div>
 <div class="section" id="systemenvironment">
 <h2><a class="toc-backref" href="#id10">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a><a class="headerlink" href="#systemenvironment" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>前章 (Logger RTC 開発)[<a class="reference external" href="2.1_samplewordlogger.html">1</a>]に同じ．</li>
+<li>same as previous tutorial (Logger RTC development)[<a class="reference internal" href="#id6">1</a>].</li>
 </ul>
 </div>
 </div>
 <div class="section" id="rtc-i-o-configuration">
-<h1><a class="toc-backref" href="#id11">2&nbsp;&nbsp;&nbsp;RTC の仕様 (I/O, Configuration)</a><a class="headerlink" href="#rtc-i-o-configuration" title="Permalink to this headline">¶</a></h1>
-<p>これから作成するコンポーネントを <cite>SampleMotionCaller</cite> RTC と呼ぶことにします．</p>
-<p>このコンポーネントは，キーボードからの入力を受け付けるので <cite>InPort</cite> は未指定です．入力を解釈した結果を <cite>TimedString</cite> で <cite>OutPort</cite> へ出力します．</p>
+<h1><a class="toc-backref" href="#id11">2&nbsp;&nbsp;&nbsp;RTC spec (I/O, Configuration)</a><a class="headerlink" href="#rtc-i-o-configuration" title="Permalink to this headline">¶</a></h1>
+<p>We&#8217;ll call the RTC we&#8217;re making as <cite>SampleMotionCaller</cite>.</p>
+<p>No <cite>InPort</cite> is defined since this RTC receives input from keyboard and that&#8217;s it. Output the result of the input into <cite>OutPort</cite> as <cite>TimedString</cite> type.</p>
 <div class="section" id="rtc-i-o-spec">
 <h2><a class="toc-backref" href="#id12">2.1&nbsp;&nbsp;&nbsp;RTC I/O Spec</a><a class="headerlink" href="#rtc-i-o-spec" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -136,24 +136,24 @@
 </tr>
 </tbody>
 </table>
-<p>SampleMotionCaller RTC では、onExecute() コールバックのみ使用します。</p>
+<p>In <cite>SampleMotionCaller RTC</cite> only <cite>onExecute()</cite> is used.</p>
 </div>
 </div>
 <div class="section" id="how-to-make-rtc">
 <h1><a class="toc-backref" href="#id13">3&nbsp;&nbsp;&nbsp;How to make RTC</a><a class="headerlink" href="#how-to-make-rtc" title="Permalink to this headline">¶</a></h1>
-<p><cite>RTC Builder</cite> を用いた初期設定は省略します．前章[<a class="reference external" href="2.1_samplewordlogger.html">1</a>]で習得したことを用い，上記設計を実装して下さい．</p>
-<p>ここで <cite>VC++ 2010</cite> は閉じても構いません．</p>
+<p>We&#8217;ll skip how to do intial setting on <cite>RTC Builder</cite>; Please refer to the previous tutorial[<a class="reference internal" href="#id6">1</a>] and implement the design above.</p>
+<p>You can close <cite>VC++ 2010</cite> at this moment.</p>
 <div class="section" id="id3">
-<h2><a class="toc-backref" href="#id14">3.1&nbsp;&nbsp;&nbsp;ヘッダ，ソースの編集</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">3.1&nbsp;&nbsp;&nbsp;Edit header, source files</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="h-cpp">
-<h3><a class="toc-backref" href="#id15">3.1.1&nbsp;&nbsp;&nbsp;.h, .cpp ファイル編集</a><a class="headerlink" href="#h-cpp" title="Permalink to this headline">¶</a></h3>
-<p><cite>.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h</cite> に次のように追加します:</p>
+<h3><a class="toc-backref" href="#id15">3.1.1&nbsp;&nbsp;&nbsp;Edit .h, .cpp</a><a class="headerlink" href="#h-cpp" title="Permalink to this headline">¶</a></h3>
+<p>Add to <cite>.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h</cite>:</p>
 <div class="highlight-python"><pre> protected:
 
 +  TimedString m_command;
 +  OutPort&lt;TimedString&gt; m_commandOut;</pre>
 </div>
-<p>下記のように <cite>onExecute()</cite> を実装します．:</p>
+<p>Write <cite>onExecute()</cite> as:</p>
 <div class="highlight-python"><pre>RTC::ReturnCode_t SampleMotionCaller::onExecute(RTC::UniqueId ec_id)
 {
    // Check if keyboard is hit.
@@ -221,42 +221,39 @@
    return RTC::RTC_OK;
 }</pre>
 </div>
-<p>ファイル全体はこちらで閲覧可能:
-- <cite>.demo/SampleMotionCaller/src/SampleMotionCaller.cpp</cite>
-- <cite>demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h</cite></p>
+<p>Entire source files can be seen at <cite>.demo/SampleMotionCaller/src/SampleMotionCaller.cpp</cite> - <cite>demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h</cite></p>
 </div>
 </div>
 <div class="section" id="cmakelist-txt">
-<h2><a class="toc-backref" href="#id16">3.2&nbsp;&nbsp;&nbsp;CMakeList.txt の編集</a><a class="headerlink" href="#cmakelist-txt" title="Permalink to this headline">¶</a></h2>
-<p>この RTC では Windows 標準ライブラリのみ使用するので，`CMakeLists.txt` の編集は不要です．</p>
+<h2><a class="toc-backref" href="#id16">3.2&nbsp;&nbsp;&nbsp;Edit CMakeLists.txt</a><a class="headerlink" href="#cmakelist-txt" title="Permalink to this headline">¶</a></h2>
+<p>No need to edit <cite>CMakeLists.txt</cite> since this <cite>RTC</cite> only uses standard Windows library.</p>
 </div>
 <div class="section" id="vc">
-<h2><a class="toc-backref" href="#id17">3.3&nbsp;&nbsp;&nbsp;VC++ によるビルド</a><a class="headerlink" href="#vc" title="Permalink to this headline">¶</a></h2>
-<p>Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 <cite>SampleMotionCaller.sln</cite> ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ 2010の起動後，下図のようにし，コンポーネントのビルドを行います(<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png">画像引用元</a>)．</p>
+<h2><a class="toc-backref" href="#id17">3.3&nbsp;&nbsp;&nbsp;Build by VC++</a><a class="headerlink" href="#vc" title="Permalink to this headline">¶</a></h2>
+<p>Back to <cite>Visual C++ 2010</cite> (if already closed, open again <cite>SampleMotionCaller.sln</cite>). Then build RTC by doing as follows (<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png">image source</a>)．</p>
 <img alt="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png" src="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png" />
-<p>Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．</p>
+<p>If you don&#8217;t see any error on <cite>Visual C++ 2010</cite> console, you&#8217;re done finally!</p>
 </div>
 </div>
 <div class="section" id="id5">
-<h1><a class="toc-backref" href="#id18">4&nbsp;&nbsp;&nbsp;実行方法</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
-<p>以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．</p>
-<p>では実行してみましょう．
-<cite>Choreonoid</cite> 上で <cite>GRobot</cite> を走らせ，`SampleMotionCaller` から指示を送ってみましょう．</p>
+<h1><a class="toc-backref" href="#id18">4&nbsp;&nbsp;&nbsp;HowToRun</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
+<p>Your current directory is assumed to be the home of the USB unless specified.</p>
+<p>Let&#8217;s run/play the game! Run <cite>GRobot</cite> on <cite>Choreonoid</cite>, then send commands from <cite>SampleMotionCaller</cite>.</p>
 <p><cite>Choreonoid</cite> と <cite>SampleMotionCaller</cite> を簡便に呼び出すための .bat ファイルを既に <cite>./demo/`SampleMotionCaller</cite> に用意してあります．</p>
 <ol class="arabic simple">
-<li><cite>./demo/SampleMotionCaller</cite> から &#8220;0_StartDemo.bat&#8221;，&#8221;1_ConnectRTC.bat&#8221;，&#8221;2_ActivateRTC.bat&#8221; の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．</li>
+<li>From <cite>./demo/SampleMotionCaller</cite>, run &#8220;0_StartDemo.bat&#8221;，&#8221;1_ConnectRTC.bat&#8221;，&#8221;2_ActivateRTC.bat&#8221;, respectively by clicking the link below. If it doesn&#8217;t work then do so from  <cite>Explorer</cite>.</li>
 </ol>
 <ul>
 <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\0_StartDemo.bat'); return false;">./demo/SampleMotionCaller/0_StartDemo.bat</a> | </li>
 <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\1_ConnectRTC.bat'); return false;">./demo/SampleMotionCaller/1_ConnectRTC.bat</a> | </li>
 <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\2_ActivateRTC.bat'); return false;">./demo/SampleMotionCaller/2_ActivateRTC.bat</a></li>
-</ul><p>RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．</p>
+</ul><p>Open <cite>RT System Editor</cite> and you&#8217;ll see <cite>SampleMotionCaller RTC</cite> is running. List of available commands are shown on the command prompt.</p>
 <ol class="arabic simple" start="2">
 <li><ol class="first arabic">
-<li>のプロンプト上で表示されたコマンドをキーボードから入力．`Choreonoid` 上でロボットが指示に従い動作する</li>
+<li>type in a command, then robot moves on <cite>Choreonoid</cite> accordingly.</li>
 </ol>
 </li>
-<li>&#8220;3_DeactivateRTC.bat&#8221;, &#8220;4_DisconnectRTC.bat&#8221;，&#8221;5_DemoExit.bat&#8221; の順に実行し，RT システムを停止．</li>
+<li>Click &#8220;3_DeactivateRTC.bat&#8221;, &#8220;4_DisconnectRTC.bat&#8221;，&#8221;5_DemoExit.bat&#8221;, respectively.</li>
 </ol>
 <ul>
 <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\3_DeactivateRTC.bat'); return false;">./demo/SampleMotionCaller/3_DeactivateRTC.bat</a> | </li>
@@ -275,25 +272,25 @@
   <h3><a href="top.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Introduction</a><ul>
-<li><a class="reference internal" href="#id1">1.1&nbsp;&nbsp;&nbsp;このページで体験すること</a></li>
-<li><a class="reference internal" href="#id2">1.2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a></li>
+<li><a class="reference internal" href="#id1">1.1&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a></li>
+<li><a class="reference internal" href="#id2">1.2&nbsp;&nbsp;&nbsp;Related Tutorials</a></li>
 <li><a class="reference internal" href="#systemenvironment">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#rtc-i-o-configuration">2&nbsp;&nbsp;&nbsp;RTC の仕様 (I/O, Configuration)</a><ul>
+<li><a class="reference internal" href="#rtc-i-o-configuration">2&nbsp;&nbsp;&nbsp;RTC spec (I/O, Configuration)</a><ul>
 <li><a class="reference internal" href="#rtc-i-o-spec">2.1&nbsp;&nbsp;&nbsp;RTC I/O Spec</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#how-to-make-rtc">3&nbsp;&nbsp;&nbsp;How to make RTC</a><ul>
-<li><a class="reference internal" href="#id3">3.1&nbsp;&nbsp;&nbsp;ヘッダ，ソースの編集</a><ul>
-<li><a class="reference internal" href="#h-cpp">3.1.1&nbsp;&nbsp;&nbsp;.h, .cpp ファイル編集</a></li>
+<li><a class="reference internal" href="#id3">3.1&nbsp;&nbsp;&nbsp;Edit header, source files</a><ul>
+<li><a class="reference internal" href="#h-cpp">3.1.1&nbsp;&nbsp;&nbsp;Edit .h, .cpp</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#cmakelist-txt">3.2&nbsp;&nbsp;&nbsp;CMakeList.txt の編集</a></li>
-<li><a class="reference internal" href="#vc">3.3&nbsp;&nbsp;&nbsp;VC++ によるビルド</a></li>
+<li><a class="reference internal" href="#cmakelist-txt">3.2&nbsp;&nbsp;&nbsp;Edit CMakeLists.txt</a></li>
+<li><a class="reference internal" href="#vc">3.3&nbsp;&nbsp;&nbsp;Build by VC++</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id5">4&nbsp;&nbsp;&nbsp;実行方法</a></li>
+<li><a class="reference internal" href="#id5">4&nbsp;&nbsp;&nbsp;HowToRun</a></li>
 </ul>
 
   <h3>This Page</h3>
