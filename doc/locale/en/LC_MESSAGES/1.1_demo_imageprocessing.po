@@ -219,7 +219,7 @@ msgstr ""
 
 #: ../../1.1_demo_imageprocessing.rst:24
 msgid "動作環境"
-msgstr ""
+msgstr "System Envirionment"
 
 #~ msgid "Very basic usage for `RT System Editor`"
 #~ msgstr ""

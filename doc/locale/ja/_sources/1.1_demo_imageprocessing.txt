@@ -5,7 +5,7 @@
 
 .. raw:: html
 
-   <script src="batcall.js"></script>
+   <script src="../../batcall.js"></script>
 
 Introduction
 ============
