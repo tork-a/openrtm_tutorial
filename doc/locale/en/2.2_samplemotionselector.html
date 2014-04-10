@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1   Introduction &mdash; openrtm_tutorial 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="openrtm_tutorial 0.4 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <p><a class="reference external" href="2.2_samplemotionselector.html">(Dev 2) Motion RTC that Calls Motions on Choreonoid from Keyboard Input</a></p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="#introduction" id="id7">1&nbsp;&nbsp;&nbsp;Introduction</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id1" id="id8">1.1&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a></li>
+<li><a class="reference internal" href="#id2" id="id9">1.2&nbsp;&nbsp;&nbsp;Related Tutorials</a></li>
+<li><a class="reference internal" href="#systemenvironment" id="id10">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rtc-i-o-configuration" id="id11">2&nbsp;&nbsp;&nbsp;RTC spec (I/O, Configuration)</a><ul class="auto-toc">
+<li><a class="reference internal" href="#rtc-i-o-spec" id="id12">2.1&nbsp;&nbsp;&nbsp;RTC I/O Spec</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-make-rtc" id="id13">3&nbsp;&nbsp;&nbsp;How to make RTC</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id3" id="id14">3.1&nbsp;&nbsp;&nbsp;Edit header, source files</a><ul class="auto-toc">
+<li><a class="reference internal" href="#h-cpp" id="id15">3.1.1&nbsp;&nbsp;&nbsp;Edit .h, .cpp</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cmakelist-txt" id="id16">3.2&nbsp;&nbsp;&nbsp;Edit CMakeLists.txt</a></li>
+<li><a class="reference internal" href="#vc" id="id17">3.3&nbsp;&nbsp;&nbsp;Build by VC++</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5" id="id18">4&nbsp;&nbsp;&nbsp;HowToRun</a></li>
+</ul>
+</div>
+<script src="../../batcall.js"></script><div class="section" id="introduction">
+<h1><a class="toc-backref" href="#id7">1&nbsp;&nbsp;&nbsp;Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id8">1.1&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Making Motion RTC that Calls Motions on Choreonoid from Keyboard Input</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id9">1.2&nbsp;&nbsp;&nbsp;Related Tutorials</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Assumed that you finished previous tutorial (Logger RTC development)[<a class="reference internal" href="#id6">1</a>]  and understand how to create <cite>RTC</cite> from scratch.</li>
+</ul>
+</div>
+<div class="section" id="systemenvironment">
+<h2><a class="toc-backref" href="#id10">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a><a class="headerlink" href="#systemenvironment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>same as previous tutorial (Logger RTC development)[<a class="reference internal" href="#id6">1</a>].</li>
+</ul>
+</div>
+</div>
+<div class="section" id="rtc-i-o-configuration">
+<h1><a class="toc-backref" href="#id11">2&nbsp;&nbsp;&nbsp;RTC spec (I/O, Configuration)</a><a class="headerlink" href="#rtc-i-o-configuration" title="Permalink to this headline">¶</a></h1>
+<p>We&#8217;ll call the RTC we&#8217;re making as <cite>SampleMotionCaller</cite>.</p>
+<p>No <cite>InPort</cite> is defined since this RTC receives input from keyboard and that&#8217;s it. Output the result of the input into <cite>OutPort</cite> as <cite>TimedString</cite> type.</p>
+<div class="section" id="rtc-i-o-spec">
+<h2><a class="toc-backref" href="#id12">2.1&nbsp;&nbsp;&nbsp;RTC I/O Spec</a><a class="headerlink" href="#rtc-i-o-spec" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Component Name</th>
+<th class="head">SampleMotionCaller</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2">InPort</td>
+</tr>
+<tr class="row-odd"><td>Port Name</td>
+<td>(None)</td>
+</tr>
+<tr class="row-even"><td>Data Type</td>
+<td>(None)</td>
+</tr>
+<tr class="row-odd"><td colspan="2">OutPort</td>
+</tr>
+<tr class="row-even"><td>Port Name</td>
+<td>(None)</td>
+</tr>
+<tr class="row-odd"><td>Data Type</td>
+<td>TimedString</td>
+</tr>
+<tr class="row-even"><td colspan="2">Configuration</td>
+</tr>
+<tr class="row-odd"><td>Parameter Name</td>
+<td>(None)</td>
+</tr>
+<tr class="row-even"><td>Data Type</td>
+<td>(None)</td>
+</tr>
+<tr class="row-odd"><td>Values</td>
+<td>(None)</td>
+</tr>
+</tbody>
+</table>
+<p>In <cite>SampleMotionCaller RTC</cite> only <cite>onExecute()</cite> is used.</p>
+</div>
+</div>
+<div class="section" id="how-to-make-rtc">
+<h1><a class="toc-backref" href="#id13">3&nbsp;&nbsp;&nbsp;How to make RTC</a><a class="headerlink" href="#how-to-make-rtc" title="Permalink to this headline">¶</a></h1>
+<p>We&#8217;ll skip how to do intial setting on <cite>RTC Builder</cite>; Please refer to the previous tutorial[<a class="reference internal" href="#id6">1</a>] and implement the design above.</p>
+<p>You can close <cite>VC++ 2010</cite> at this moment.</p>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id14">3.1&nbsp;&nbsp;&nbsp;Edit header, source files</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="h-cpp">
+<h3><a class="toc-backref" href="#id15">3.1.1&nbsp;&nbsp;&nbsp;Edit .h, .cpp</a><a class="headerlink" href="#h-cpp" title="Permalink to this headline">¶</a></h3>
+<p>Add to <cite>.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h</cite>:</p>
+<div class="highlight-python"><pre> protected:
+
++  TimedString m_command;
++  OutPort&lt;TimedString&gt; m_commandOut;</pre>
+</div>
+<p>Write <cite>onExecute()</cite> as:</p>
+<div class="highlight-python"><pre>RTC::ReturnCode_t SampleMotionCaller::onExecute(RTC::UniqueId ec_id)
+{
+   // Check if keyboard is hit.
+   if ( _kbhit() ) {
+       char c = _getch();
+       switch (c) {
+       case '1':
+           m_command.data = "rightup1";
+           break;
+       case '2':
+           m_command.data = "leftup1";
+           break;
+       case '3':
+           m_command.data = "rightdown1";
+           break;
+       case '4':
+           m_command.data = "leftdown1";
+           break;
+       case '5':
+           m_command.data = "rightup2";
+           break;
+       case '6':
+           m_command.data = "leftup2";
+           break;
+       case '7':
+           m_command.data = "rightdown2";
+           break;
+       case '8':
+           m_command.data = "leftdown2";
+           break;
+       case 'r':
+           if ( strcmp(m_command.data, "rightdown1") == 0 ||
+                strcmp(m_command.data, "leftdown1") == 0 ) {
+               m_command.data = "rightup1";
+           } else if ( strcmp(m_command.data, "rightup1") == 0||
+                       strcmp(m_command.data, "leftdown2") == 0) {
+               m_command.data = "rightdown1";
+           } else if ( strcmp(m_command.data, "leftup1") == 0||
+                       strcmp(m_command.data, "rightdown2") == 0) {
+               m_command.data = "rightup2";
+           } else if ( strcmp(m_command.data, "rightup2") == 0||
+                       strcmp(m_command.data, "leftup2") == 0) {
+               m_command.data = "rightdown2";
+           }
+           break;
+       case 'l':
+           if ( strcmp(m_command.data, "rightdown2") == 0||
+                strcmp(m_command.data, "leftdown1") == 0) {
+               m_command.data = "leftup1";
+           } else if ( strcmp(m_command.data, "leftup1") == 0||
+                       strcmp(m_command.data, "rightdown2") == 0) {
+               m_command.data = "leftdown1";
+           } else if ( strcmp(m_command.data, "rightup1") == 0||
+                       strcmp(m_command.data, "leftdown2") == 0) {
+               m_command.data = "leftup2";
+           } else if ( strcmp(m_command.data, "leftup2") == 0||
+                       strcmp(m_command.data, "rightup2") == 0) {
+               m_command.data = "leftdown2";
+           }
+           break;
+       }
+       std::cerr &lt;&lt; "Keyboad input " &lt;&lt; c &lt;&lt; ", command =  " &lt;&lt; m_command.data &lt;&lt; std::endl;
+       m_commandOut.write();
+   }
+   return RTC::RTC_OK;
+}</pre>
+</div>
+<p>Entire source files can be seen at <cite>.demo/SampleMotionCaller/src/SampleMotionCaller.cpp</cite> - <cite>demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h</cite></p>
+</div>
+</div>
+<div class="section" id="cmakelist-txt">
+<h2><a class="toc-backref" href="#id16">3.2&nbsp;&nbsp;&nbsp;Edit CMakeLists.txt</a><a class="headerlink" href="#cmakelist-txt" title="Permalink to this headline">¶</a></h2>
+<p>No need to edit <cite>CMakeLists.txt</cite> since this <cite>RTC</cite> only uses standard Windows library.</p>
+</div>
+<div class="section" id="vc">
+<h2><a class="toc-backref" href="#id17">3.3&nbsp;&nbsp;&nbsp;Build by VC++</a><a class="headerlink" href="#vc" title="Permalink to this headline">¶</a></h2>
+<p>Back to <cite>Visual C++ 2010</cite> (if already closed, open again <cite>SampleMotionCaller.sln</cite>). Then build RTC by doing as follows (<a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png">image source</a>)．</p>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png" src="http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png" />
+<p>If you don&#8217;t see any error on <cite>Visual C++ 2010</cite> console, you&#8217;re done finally!</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h1><a class="toc-backref" href="#id18">4&nbsp;&nbsp;&nbsp;HowToRun</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
+<p>Your current directory is assumed to be the home of the USB unless specified.</p>
+<p>Let&#8217;s run/play the game! Run <cite>GRobot</cite> on <cite>Choreonoid</cite>, then send commands from <cite>SampleMotionCaller</cite>.</p>
+<p><cite>Choreonoid</cite> と <cite>SampleMotionCaller</cite> を簡便に呼び出すための .bat ファイルを既に <cite>./demo/`SampleMotionCaller</cite> に用意してあります．</p>
+<ol class="arabic simple">
+<li>From <cite>./demo/SampleMotionCaller</cite>, run &#8220;0_StartDemo.bat&#8221;，&#8221;1_ConnectRTC.bat&#8221;，&#8221;2_ActivateRTC.bat&#8221;, respectively by clicking the link below. If it doesn&#8217;t work then do so from  <cite>Explorer</cite>.</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\0_StartDemo.bat'); return false;">./demo/SampleMotionCaller/0_StartDemo.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\1_ConnectRTC.bat'); return false;">./demo/SampleMotionCaller/1_ConnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\2_ActivateRTC.bat'); return false;">./demo/SampleMotionCaller/2_ActivateRTC.bat</a></li>
+</ul><p>Open <cite>RT System Editor</cite> and you&#8217;ll see <cite>SampleMotionCaller RTC</cite> is running. List of available commands are shown on the command prompt.</p>
+<ol class="arabic simple" start="2">
+<li><ol class="first arabic">
+<li>type in a command, then robot moves on <cite>Choreonoid</cite> accordingly.</li>
+</ol>
+</li>
+<li>Click &#8220;3_DeactivateRTC.bat&#8221;, &#8220;4_DisconnectRTC.bat&#8221;，&#8221;5_DemoExit.bat&#8221;, respectively.</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\3_DeactivateRTC.bat'); return false;">./demo/SampleMotionCaller/3_DeactivateRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\4_DisconnectRTC.bat'); return false;">./demo/SampleMotionCaller/4_DisconnectRTC.bat</a> | </li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('SampleMotionCaller\\5_DemoExit.bat'); return false;">./demo/SampleMotionCaller/5_DemoExit.bat</a></li>
+</ul><hr class="docutils" />
+<p>Go back to <a class="reference external" href="index.html">index</a></p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="top.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Introduction</a><ul>
+<li><a class="reference internal" href="#id1">1.1&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a></li>
+<li><a class="reference internal" href="#id2">1.2&nbsp;&nbsp;&nbsp;Related Tutorials</a></li>
+<li><a class="reference internal" href="#systemenvironment">1.3&nbsp;&nbsp;&nbsp;SystemEnvironment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rtc-i-o-configuration">2&nbsp;&nbsp;&nbsp;RTC spec (I/O, Configuration)</a><ul>
+<li><a class="reference internal" href="#rtc-i-o-spec">2.1&nbsp;&nbsp;&nbsp;RTC I/O Spec</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#how-to-make-rtc">3&nbsp;&nbsp;&nbsp;How to make RTC</a><ul>
+<li><a class="reference internal" href="#id3">3.1&nbsp;&nbsp;&nbsp;Edit header, source files</a><ul>
+<li><a class="reference internal" href="#h-cpp">3.1.1&nbsp;&nbsp;&nbsp;Edit .h, .cpp</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cmakelist-txt">3.2&nbsp;&nbsp;&nbsp;Edit CMakeLists.txt</a></li>
+<li><a class="reference internal" href="#vc">3.3&nbsp;&nbsp;&nbsp;Build by VC++</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">4&nbsp;&nbsp;&nbsp;HowToRun</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/2.2_samplemotionselector.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, NEDO, TORK.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

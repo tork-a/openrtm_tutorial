@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1   Introduction &mdash; openrtm_tutorial 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="openrtm_tutorial 0.4 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <p><strong>(Demo1) Image Processing (OpenRTM-aist，OpenCV)</strong></p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="#introduction" id="id11">1&nbsp;&nbsp;&nbsp;Introduction</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id1" id="id12">1.1&nbsp;&nbsp;&nbsp;Related Tutorials</a></li>
+<li><a class="reference internal" href="#id2" id="id13">1.2&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a></li>
+<li><a class="reference internal" href="#id3" id="id14">1.3&nbsp;&nbsp;&nbsp;System Envirionment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4" id="id15">2&nbsp;&nbsp;&nbsp;Run the tutorial</a><ul class="auto-toc">
+<li><a class="reference internal" href="#nameserver" id="id16">2.1&nbsp;&nbsp;&nbsp;Start CORBA nameserver (common throughout all tutorials)</a></li>
+<li><a class="reference internal" href="#id5" id="id17">2.2&nbsp;&nbsp;&nbsp;Run programs in the tutorial</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<script src="../../batcall.js"></script><div class="section" id="introduction">
+<h1><a class="toc-backref" href="#id11">1&nbsp;&nbsp;&nbsp;Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id12">1.1&nbsp;&nbsp;&nbsp;Related Tutorials</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.openrtm.org/openrtm/ja/node/4625">http://www.openrtm.org/openrtm/ja/node/4625</a> - If internet connection is not available, find it in:./doc/tutorial_openrtm_opencv_cmake_imgprocessing.pdf</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id13">1.2&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Transform camera images (by OpenRTM-aist，OpenCV)</li>
+<li><cite>RT System Editor</cite> の初歩的な利用法</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id14">1.3&nbsp;&nbsp;&nbsp;System Envirionment</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Windows 7／ 8</li>
+<li>Java Runtime Environment (JRE) 7 (Bundled at <cite>../misc/openjdk_1.7.0_u45_2.4.3_installed</cite>, no need to install)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id4">
+<h1><a class="toc-backref" href="#id15">2&nbsp;&nbsp;&nbsp;Run the tutorial</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h1>
+<p>Your current directory is assumed to be the home of the USB unless specified.</p>
+<div class="section" id="nameserver">
+<h2><a class="toc-backref" href="#id16">2.1&nbsp;&nbsp;&nbsp;Start CORBA nameserver (common throughout all tutorials)</a><a class="headerlink" href="#nameserver" title="Permalink to this headline">¶</a></h2>
+<p>Once you start, nameserver can be kept running throught all tutorials.</p>
+<ol class="arabic simple" start="0">
+<li>Click the link to start nameserver.</li>
+</ol>
+<ul>
+ <li><a class="reference external"  href="javascript:void(0)" onclick="call_rtmnamerserver(); return false;">rtm-naming.bat</a></li>
+</ul><ol class="arabic simple">
+<li>(Only when the link above didn&#8217;t work) Open <cite>demo</cite> folder on <cite>Explorer</cite> then start <a class="reference internal" href="#rtm-naming-bat">rtm-naming.bat</a> by double clicking the file.</li>
+</ol>
+<ul>
+<li><dl class="first docutils">
+<dt><cite>cmd.exe</cite> (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::</dt>
+<dd><p class="first last">Starting omniNames for the first time.
+:
+Checkpointing completed.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li>If <cite>cmd.exe</cite> doesn&#8217;t stay, you&#8217;re somehow failing to run <cite>nameserver</cite> so try to find the cause by the following:</li>
+</ol>
+<blockquote>
+<div><p>2.1) On <cite>Explorer</cite>, check the drive letter of the tutorial USB (usually either D/E/F. Here we assume as <cite>F</cite>)</p>
+<p>2.2) Manually start <cite>cmd.exe</cite> (Win 7: [<a class="reference internal" href="#id9">4</a>], Win 8: [<a class="reference internal" href="#id10">5</a>])</p>
+<p>2.3) Run the following commands to move to the folder:</p>
+<div class="highlight-python"><pre>prompt&gt; F:
+prompt&gt; cd demo
+prompt&gt; rtm-naming.bat</pre>
+</div>
+<p>Diagnose errors. Many errors with <cite>CORBA</cite> can be found on the WEB.</p>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id17">2.2&nbsp;&nbsp;&nbsp;Run programs in the tutorial</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Run <cite>./demo/OpencvRtmDemo/0_StartDemo.bat</cite> by clicking on the link below. If it doesn&#8217;t work, run it manually from <cite>Explorer</cite>.</li>
+</ol>
+<a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('OpencvRtmDemo\\0_StartDemo.bat'); return false;">./demo/OpencvRtmDemo/0_StartDemo.bat</a><ol class="arabic simple" start="2">
+<li>Run ./demo/RTSE.bat.</li>
+</ol>
+<a class="reference external"  href="javascript:void(0)" onclick="call_rtseditor(); return false;">./demo/RTSE.bat</a><p>RT System Editor should look like the following.</p>
+<img alt="_images/rtse_nocomponents.png" src="_images/rtse_nocomponents.png" />
+<ol class="arabic simple" start="3">
+<li>On the pane on the left, select <cite>127.0.0.1</cite>, then clicking the arrow sign above will show the RT Components that are running. Here you should see <cite>DirectShowCamComp`，`FlipComp`，`CameraViewerComp</cite>.</li>
+<li>Selecting <cite>File &#8211;&gt; Open New System Editor</cite> will open`System Diagram` in the pane at the center.Drag RTCs from left pane onto System Diagram and you&#8217;ll see:</li>
+</ol>
+<img alt="_images/rtse_opencvflip_launched.png" src="_images/rtse_opencvflip_launched.png" />
+<ol class="arabic simple" start="5">
+<li>Connect RTCs on the same pane. Connect them from left in the order listed above.</li>
+<li>Click &#8220;ALL&#8221; above, activate all RTCs.</li>
+</ol>
+<img alt="_images/1.1_rtc_activated.png" src="_images/1.1_rtc_activated.png" />
+<ol class="arabic simple" start="9">
+<li>Sucess if you see the image taken from camera on the window called <cite>CaptureImage</cite>. You&#8217;ll also see constantly <cite>frame rate</cite> output on the command prompt <cite>DirectShowCamComp</cite>.</li>
+</ol>
+<img alt="_images/1.1_framerate.png" src="_images/1.1_framerate.png" />
+<ol class="arabic simple" start="10">
+<li>Change <cite>flip_mode</cite> value from 1 &#8211;&gt; 0 &#8211;&gt; -1 on <cite>RTSystemEditor</cite> (don&#8217;t forget to <cite>Apply</cite> button) then you see the image is converted. Behavior associated with <cite>flip_mode</cite> is as follows (image source <a class="reference internal" href="#id7">2</a>)</li>
+</ol>
+<img alt="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png" src="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png" />
+<ol class="arabic simple" start="11">
+<li>To end, &#8220;inactivate RTC&#8221; &#8211;&gt; &#8220;disconnect RTCs&#8221; &#8211;&gt; &#8220;stop each RTC&#8221;</li>
+</ol>
+<ul class="simple">
+<li>Click &#8220;All Deactivate&#8221; at above left.</li>
+<li><ol class="first arabic" start="5">
+<li>do the oposite &#8211; that is, right-click on each connection line and &#8220;Disconnect&#8221;</li>
+</ol>
+</li>
+<li><ol class="first arabic">
+<li>manually end the command prompts. You can keep <cite>rtm-naming.bat</cite> running as mentioned earlier.</li>
+</ol>
+</li>
+</ul>
+<p>Steps explained in this tutorial may sound complicated. No worries! In the rest of tutorials, you&#8217;ll be introduced scripts that run all these at once; Just this time we&#8217;ve walked through behind-the-scenes of <cite>OpenRTM</cite> manually to get an idea.</p>
+<hr class="docutils" />
+<p>Go back to <a class="reference external" href="index.html">index</a> | Go to <a class="reference external" href="1.2_demo_mediaplaybyvoice.html">next</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="top.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Introduction</a><ul>
+<li><a class="reference internal" href="#id1">1.1&nbsp;&nbsp;&nbsp;Related Tutorials</a></li>
+<li><a class="reference internal" href="#id2">1.2&nbsp;&nbsp;&nbsp;What you&#8217;ll experience</a></li>
+<li><a class="reference internal" href="#id3">1.3&nbsp;&nbsp;&nbsp;System Envirionment</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4">2&nbsp;&nbsp;&nbsp;Run the tutorial</a><ul>
+<li><a class="reference internal" href="#nameserver">2.1&nbsp;&nbsp;&nbsp;Start CORBA nameserver (common throughout all tutorials)</a></li>
+<li><a class="reference internal" href="#id5">2.2&nbsp;&nbsp;&nbsp;Run programs in the tutorial</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/1.1_demo_imageprocessing.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, NEDO, TORK.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

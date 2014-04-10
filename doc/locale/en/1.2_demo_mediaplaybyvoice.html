@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1   Related Tutorials &mdash; openrtm_tutorial 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="openrtm_tutorial 0.4 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <p><a class="reference external" href="1.2_demo_mediaplaybyvoice.html">(Demo 2) Playing Movie via Voice (OpenHRI)</a></p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="#id1" id="id3">1&nbsp;&nbsp;&nbsp;Related Tutorials</a></li>
+<li><a class="reference internal" href="#howtorun" id="id4">2&nbsp;&nbsp;&nbsp;HowToRun</a></li>
+</ul>
+</div>
+<script src="../../batcall.js"></script><div class="section" id="id1">
+<h1><a class="toc-backref" href="#id3">1&nbsp;&nbsp;&nbsp;Related Tutorials</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>You&#8217;ll see very basic operation for <cite>OpenHRI</cite>, <cite>SEATSAT</cite>. See the following links for more.</p>
+<ul class="simple">
+<li>Detail of the demo in this tutorial (in Japanese). Follow &#8216;Running the system&#8217;, &#8216;Running example&#8217; at the lower side in the page [<a class="reference internal" href="#id2">1</a>]<ul>
+<li>Same software is bundled in <cite>./demo/0_SpeechDemo</cite> in the USB.</li>
+<li>Same PDF files in bundled at ./doc/tutorial_openhri_mediaplay.pdf</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="howtorun">
+<h1><a class="toc-backref" href="#id4">2&nbsp;&nbsp;&nbsp;HowToRun</a><a class="headerlink" href="#howtorun" title="Permalink to this headline">¶</a></h1>
+<p>Multiple windows get opened and overlap with each other. Find appropriate one.</p>
+<ol class="arabic simple">
+<li>Click in the following order &#8220;0_StartDemo.bat&#8221;，&#8221;1_ConnectRTC.bat&#8221;，&#8221;2_ActivateRTC.bat&#8221; If they don&#8217;t seem to be working, on <cite>Explorer</cite> open &#8221;./demo/0 SpeechDemo&#8221; and run them.(Since this demo uses Japanese language processor, we&#8217;re not sure if this works in English though)</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\0_StartDemo.bat'); return false;">./demo/0_SpeechDemo/0_StartDemo.bat</a></li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\1_ConnectRTC.bat'); return false;">./demo/0_SpeechDemo/1_ConnectRTC.bat</a></li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\2_ActivateRTC.bat'); return false;">./demo/0_SpeechDemo/2_ActivateRTC.bat</a></li>
+</ul><ol class="arabic simple" start="2">
+<li>Move the window &#8220;tk&#8221; forward.</li>
+<li>Say &#8220;Video&#8221;. A window whose title is &#8220;video_list_mode&#8221; appears.</li>
+<li>Say &#8220;list&#8221; will open a window &#8220;PlayList&#8221;.</li>
+<li>(Not sure if this works in English though) Say &#8220;x ban-me&#8221; (x = 1...5) will pop up a window &#8220;PlayList&#8221; where highlighted item changes per the number you say.</li>
+<li>Say &#8220;Play&#8221; will play the content on a window &#8220;Player&#8221;</li>
+<li>Say &#8220;Stop&#8221; and other commands that are available on the GUI.</li>
+<li>When you finish the demo, click &#8220;3_DeactivateRTC.bat&#8221;, &#8220;4_DisconnectRTC.bat&#8221;, &#8220;5_DemoExit.bat&#8221; respectively</li>
+</ol>
+<ul>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\3_DeactivateRTC.bat'); return false;">./demo/0_SpeechDemo/3_DeactivateRTC.bat</a></li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\4_DisconnectRTC.bat'); return false;">./demo/0_SpeechDemo/4_DisconnectRTC.bat</a></li>
+<li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('0_SpeechDemo\\5_DemoExit.bat'); return false;">./demo/0_SpeechDemo/5_DemoExit.bat</a></li>
+</ul><p>Deactivation of RTCs might take awhile depending on the amount of the resource loaded by each component.</p>
+<hr class="docutils" />
+<p>Go back to <a class="reference external" href="index.html">index</a> | Go to <a class="reference external" href="1.3_choreonoid_createmotion.html">next</a></p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="top.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Related Tutorials</a></li>
+<li><a class="reference internal" href="#howtorun">2&nbsp;&nbsp;&nbsp;HowToRun</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/1.2_demo_mediaplaybyvoice.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, NEDO, TORK.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -8,6 +8,6 @@ echo #############################################
 echo 
 echo Now git pull from github.com
 
-PATH=%PATH%:PortableGit-1.9.0preview\bin
-PortableGit-1.9.0preview\bin\git pull
+PATH=%PATH%:misc\PortableGit-1.9.0preview\bin
+.\misc\PortableGit-1.9.0preview\bin\git pull
 timeout -1
