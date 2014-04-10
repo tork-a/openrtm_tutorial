@@ -88,4 +88,6 @@ HowToRun
 
 ----
 
-Go back to `index <index.html>`__ | Go to `next <1.5_modifystate_seatsat.html>`__
+Go back to `index <top.html>`__ | Go to `next <1.5_modifystate_seatsat.html>`__ |
+
+Choose `Other language <index.html>`__

@@ -459,4 +459,6 @@ MotionByVoiceLoggerDemo
 
 ----
 
-Go back to `index <index.html>`__ | Go to `next <2.2_samplemotionselector.html>`__
+Go back to `index <top.html>`__ | Go to `next <2.2_samplemotionselector.html>`__ |
+
+Choose `Other language <index.html>`__

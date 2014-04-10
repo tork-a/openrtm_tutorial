@@ -211,4 +211,5 @@ RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行さ�
 
 ----
 
-Go back to `index <index.html>`__
+Go back to `index <top.html>`__ |
+Choose `Other language <index.html>`__

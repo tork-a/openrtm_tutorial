@@ -65,4 +65,6 @@
 
 ----
 
-Go back to `index <index.html>`__ | Go to `next <1.4_callmotion_byvoice.html>`__
+Go back to `index <top.html>`__ | Go to `next <1.4_callmotion_byvoice.html>`__ |
+
+Choose `Other language <index.html>`__
