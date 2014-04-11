@@ -206,7 +206,7 @@ msgstr ""
 "Your current directory is assumed to be the home of the USB unless "
 "specified."
 
-#: ../../2.2_samplemotionselector.rst:175
+#: ../../2.2_samplemotionselector.rst:179
 msgid ""
 "では実行してみましょう． `Choreonoid` 上で `GRobot` を走らせ，`SampleMotionCaller` "
 "から指示を送ってみましょう．"
@@ -214,7 +214,7 @@ msgstr ""
 "Let's run/play the game! Run `GRobot` on `Choreonoid`, then send commands "
 "from `SampleMotionCaller`."
 
-#: ../../2.2_samplemotionselector.rst:180
+#: ../../2.2_samplemotionselector.rst:184
 msgid ""
 "`./demo/SampleMotionCaller` から "
 "\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" "
@@ -224,7 +224,7 @@ msgstr ""
 "\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\", respectively"
 " by clicking the link below. If it doesn't work then do so from  `Explorer`."
 
-#: ../../2.2_samplemotionselector.rst:190
+#: ../../2.2_samplemotionselector.rst:194
 msgid ""
 "RT System Editor で見てみると，`SampleMotionCaller` の RTC "
 "も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．"
@@ -232,11 +232,11 @@ msgstr ""
 "Open `RT System Editor` and you'll see `SampleMotionCaller RTC` is running. "
 "List of available commands are shown on the command prompt."
 
-#: ../../2.2_samplemotionselector.rst:192
+#: ../../2.2_samplemotionselector.rst:196
 msgid "のプロンプト上で表示されたコマンドをキーボードから入力．`Choreonoid` 上でロボットが指示に従い動作する"
 msgstr "type in a command, then robot moves on `Choreonoid` accordingly."
 
-#: ../../2.2_samplemotionselector.rst:194
+#: ../../2.2_samplemotionselector.rst:198
 msgid ""
 "\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" "
 "の順に実行し，RT システムを停止．"
@@ -244,15 +244,19 @@ msgstr ""
 "Click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\", "
 "respectively."
 
-#: ../../2.2_samplemotionselector.rst:178
+#: ../../2.2_samplemotionselector.rst:182
 msgid ""
 "`Choreonoid` と `SampleMotionCaller` を簡便に呼び出すための .bat ファイルを既に "
 "`./demo/`SampleMotionCaller` に用意してあります．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:214
+#: ../../2.2_samplemotionselector.rst:218
 msgid ""
 "Go back to `index <top.html>`__ | Choose `Other language <index.html>`__"
+msgstr ""
+
+#: ../../2.2_samplemotionselector.rst:177
+msgid "For starting necessary services, quickly go [2_] and come back."
 msgstr ""
 
 #~ msgid ""

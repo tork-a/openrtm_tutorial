@@ -172,6 +172,10 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
 
+..
+
+  For starting necessary services, quickly go [2_] and come back.
+
 では実行してみましょう．
 `Choreonoid` 上で `GRobot` を走らせ，`SampleMotionCaller` から指示を送ってみましょう．
 

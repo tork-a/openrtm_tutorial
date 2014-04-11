@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 11:32\n"
+"POT-Creation-Date: 2014-04-11 23:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -227,38 +227,43 @@ msgstr ""
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:175
+#: ../../2.2_samplemotionselector.rst:177
+# d92536f9d0474c1ba559432fc652a1cd
+msgid "For starting necessary services, quickly go [2_] and come back."
+msgstr ""
+
+#: ../../2.2_samplemotionselector.rst:179
 # e59caba722954aae9a89bae76cb38bff
 msgid "では実行してみましょう． `Choreonoid` 上で `GRobot` を走らせ，`SampleMotionCaller` から指示を送ってみましょう．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:178
+#: ../../2.2_samplemotionselector.rst:182
 # f2233d7253984339887b1180cf7458e0
 msgid "`Choreonoid` と `SampleMotionCaller` を簡便に呼び出すための .bat ファイルを既に `./demo/`SampleMotionCaller` に用意してあります．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:180
+#: ../../2.2_samplemotionselector.rst:184
 # 3e616b01addb45cea24f97918370fa67
 msgid "`./demo/SampleMotionCaller` から \"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:190
+#: ../../2.2_samplemotionselector.rst:194
 # 64f9eea024674d03ae3539c0ed9fa2b3
 msgid "RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:192
+#: ../../2.2_samplemotionselector.rst:196
 # 7b02efe49e8a466cad69a9173f401843
 msgid "のプロンプト上で表示されたコマンドをキーボードから入力．`Choreonoid` 上でロボットが指示に従い動作する"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:194
+#: ../../2.2_samplemotionselector.rst:198
 # 77805330ebea40b9bf60cb73dd51c60f
 msgid "\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行し，RT システムを停止．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:214
-# 48d71d35b5c9405ba4c45e092e975fec
-msgid "Go back to `index <index.html>`__"
+#: ../../2.2_samplemotionselector.rst:218
+# 5b2d44a65ef94a03a1ec8b32756c0541
+msgid "Go back to `index <top.html>`__ | Choose `Other language <index.html>`__"
 msgstr ""
 

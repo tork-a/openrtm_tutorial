@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 11:32\n"
+"POT-Creation-Date: 2014-04-11 23:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -435,48 +435,58 @@ msgstr ""
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:405
+#: ../../2.1_samplewordlogger.rst:407
+# e2e1f72797514b1a8295eaa0b547cb24
+msgid "For starting necessary services, quickly go [2_] and come back."
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:409
 # 53ec4bd15af441009457ae076c8e4127
 msgid "では実行してみましょう． `SampleWordLogger` は単体だと何も行わないので，先に紹介された `MotionByVoiceDemo` と組合せて発話を記録してみましょう．"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:408
+#: ../../2.1_samplewordlogger.rst:412
 # 749a40ea498342f5865cf16d836f231b
 msgid "上記二つのフォルダからそれぞれに格納される RTC を呼ぶための .bat ファイルを既に `./demo/MotionByVoiceLoggerDemo` として用意してあります．"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:410
+#: ../../2.1_samplewordlogger.rst:414
 # e2f0258e3889482693110fd64eb5168b
 msgid "MotionByVoiceLoggerDemo"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:412
+#: ../../2.1_samplewordlogger.rst:416
 # 8e3b0401a7b74cd08269ba7908656c3a
 msgid "`./demo/MotionByVoiceLoggerDemo` から \"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:428
+#: ../../2.1_samplewordlogger.rst:432
 # e5417f3f7f8f46f58641d593e9348187
 msgid "`MotionByVoiceDemo のチュートリアル <1.4_callmotion_byvoice.html#HowToRun>`__ に従い，発話デモを実行．"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:430
+#: ../../2.1_samplewordlogger.rst:434
 # c08a022b046e49fd98c2dff7b378aaae
 msgid "\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行し，RT システムを停止．"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:440
+#: ../../2.1_samplewordlogger.rst:444
 # cf6ed197f31a4952b3af441869008616
 msgid "`./demo/SampleWordLogger/build/Debug/SampleWord.log` をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:442
+#: ../../2.1_samplewordlogger.rst:446
 # c7905061c36c474b9e701791337e994b
 msgid "2014/03/13 08:56:31 左 さげて 2014/03/13 08:56:44 右 あげて 2014/03/13 08:57:08 左 よろしく 2014/03/13 08:58:23 左 あげて 2014/03/13 08:58:39 左 あげない"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:462
+#: ../../2.1_samplewordlogger.rst:466
 # 0c705b9864504cc994b757e9f5167711
-msgid "Go back to `index <index.html>`__ | Go to `next <2.2_samplemotionselector.html>`__"
+msgid "Go back to `index <top.html>`__ | Go to `next <2.2_samplemotionselector.html>`__ |"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:468
+# 055c905ca9344b96b380d938faf64711
+msgid "Choose `Other language <index.html>`__"
 msgstr ""
 

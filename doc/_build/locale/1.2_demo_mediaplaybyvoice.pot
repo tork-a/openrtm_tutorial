@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 11:32\n"
+"POT-Creation-Date: 2014-04-11 23:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,6 +103,11 @@ msgstr ""
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:67
 # 11d4ac71f6e64726a34854280d24c55b
-msgid "Go back to `index <index.html>`__ | Go to `next <1.3_choreonoid_createmotion.html>`__"
+msgid "Go back to `index <top.html>`__ | Go to `next <1.3_choreonoid_createmotion.html>`__ |"
+msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:69
+# 05e3176bb57845cea0ab8c98ccbfa68f
+msgid "Choose `Other language <index.html>`__"
 msgstr ""
 

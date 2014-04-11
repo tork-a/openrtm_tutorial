@@ -26,6 +26,10 @@
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
 
+..
+
+  For starting necessary services, quickly go [2_] and come back.
+
 まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル <1.4_callmotion_byvoice.html#SystemEnvironment>`__ を再び利用します．
 
 1) `./demo/MotionByVoiceDemo` の "0_StartDemo2.bat" (前回使った "0_StartDemo.bat" ではなく) を実行．
@@ -103,6 +107,7 @@
 .. _DeactivateRTC.bat: ../demo/MotionByVoiceDemo/3_DeactivateRTC.bat
 .. _DisconnectRTC.bat: ../demo/MotionByVoiceDemo/4_DisconnectRTC.bat
 .. _DemoExit.bat: ../demo/MotionByVoiceDemo/5_DemoExit.bat
+.. _2: ./1.4_callmotion_byvoice.html#run-common-tools
 
 ----
 

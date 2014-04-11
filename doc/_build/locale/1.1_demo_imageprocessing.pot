@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 11:32\n"
+"POT-Creation-Date: 2014-04-11 23:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../1.1_demo_imageprocessing.rst:44
 # d180eac83d1f4f4db5ac4cb49ec2d6b6
-msgid "(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ をダブルクリックして実行．"
+msgid "(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，`rtm-naming.bat` をダブルクリックして実行．"
 msgstr ""
 
 #: ../../1.1_demo_imageprocessing.rst:47
@@ -203,6 +203,11 @@ msgstr ""
 
 #: ../../1.1_demo_imageprocessing.rst:122
 # 464f0ac6f3ce4b65ab2706146d76783c
-msgid "Go back to `index <index.html>`__ | Go to `next <1.2_demo_mediaplaybyvoice.html>`__"
+msgid "Go back to `index <top.html>`__ | Go to `next <1.2_demo_mediaplaybyvoice.html>`__ |"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:124
+# fa5bbaf993c7429fa1dd4b590b816216
+msgid "Choose `Other language <index.html>`__"
 msgstr ""
 

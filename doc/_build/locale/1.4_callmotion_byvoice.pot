@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 11:32\n"
+"POT-Creation-Date: 2014-04-11 23:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,68 +81,88 @@ msgstr ""
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:36
+#: ../../1.4_callmotion_byvoice.rst:37
+# aa8794bb83394650a04ef1faff150e5e
+msgid "Run Common Tools"
+msgstr ""
+
+#: ../../1.4_callmotion_byvoice.rst:38
+# 86086678c5704cd2aeee4c633f6dfb1b
+msgid "In case they are not running."
+msgstr ""
+
+#: ../../1.4_callmotion_byvoice.rst:49
+# 0929399ec367462794d83681a32cf29c
+msgid "Run This Tutorial"
+msgstr ""
+
+#: ../../1.4_callmotion_byvoice.rst:51
 # 894d3600360e41348571bd061c0d2220
 msgid "\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で \"./demo/0 SpeechDemo\" を開いてそれぞれ実行．"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:46
+#: ../../1.4_callmotion_byvoice.rst:61
 # abc2f44008e14a2ab38cd8b9212fe7d5
 msgid "(Optional) デバッグ用途として，`./demo/SampleWordLogger` 内の 0 から 2 までの `.bat` ファイルを実行しても良い．発話内容を記録する RTC である．"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:48
+#: ../../1.4_callmotion_byvoice.rst:63
 # 1e0a1a01ca8049318efcddac81658edf
 msgid "このときの RTC の連結状況を `RT System Editor` で表示 (SampleWordLogger を実行しなかった場合は，`SampleWordLogger0` RTC が無くなるのみ):"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:52
+#: ../../1.4_callmotion_byvoice.rst:67
 # 5f25396a35ae4c43a466fc696cd68aea
 msgid "マイクに向かって \"みぎ あげて\" (スペースは0.5秒程度間を空ける) と発話．うまく認識されると，ロボットが右手を上げる．"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:54
+#: ../../1.4_callmotion_byvoice.rst:69
 # 40dad168af9b4cc4916bc2e97db8f763
 msgid "他に可能な組み合わせは"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:56
+#: ../../1.4_callmotion_byvoice.rst:71
 # 7f90ca726d2d4fb797b322854b196f21
 msgid "みぎ|ひだり"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:58
+#: ../../1.4_callmotion_byvoice.rst:73
 # 896c192eac6b4515a98060da5bcea465
 msgid "`+`"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:60
+#: ../../1.4_callmotion_byvoice.rst:75
 # ee29155637f749abad419b3a9337022b
 msgid "あげて|さげて|あげない|さげない"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:62
+#: ../../1.4_callmotion_byvoice.rst:77
 # 550fca8979484dd5b8750527e7814626
 msgid "\"さいせい よろしく\" と発話．うまく認識されると，定義済の `SampleMotion1` に従ってロボットが動き出す．"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:64
+#: ../../1.4_callmotion_byvoice.rst:79
 # 356156b4440b4bc9959792e28373562b
 msgid "終了時は，\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行．"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:75
+#: ../../1.4_callmotion_byvoice.rst:90
 # f7b9a1fddb284fb4b5757b3c5a239113
 msgid "管理されているロボット状態"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:76
+#: ../../1.4_callmotion_byvoice.rst:91
 # e80e04428fcf486b8228995a459bb5eb
 msgid "(次のチュートリアル[4_]のトピックですが) 当デモは `SEAT` というモジュールを用いて状態を管理しています．当デモが管理する状態は，`./demo/MotionByVoiceDemo/motion_cnoid.seatml` で定義されているように，`both_down`, `both_up`, `left_up`, `right_up` といった，各腕の位置の組合せによる四種類です．"
 msgstr ""
 
-#: ../../1.4_callmotion_byvoice.rst:91
+#: ../../1.4_callmotion_byvoice.rst:106
 # eaf00755c16049c78b42ca6f6b7186e3
-msgid "Go back to `index <index.html>`__ | Go to `next <1.5_modifystate_seatsat.html>`__"
+msgid "Go back to `index <top.html>`__ | Go to `next <1.5_modifystate_seatsat.html>`__ |"
+msgstr ""
+
+#: ../../1.4_callmotion_byvoice.rst:108
+# c2c3c323f7364b3a927323f32c9fe4c9
+msgid "Choose `Other language <index.html>`__"
 msgstr ""
 

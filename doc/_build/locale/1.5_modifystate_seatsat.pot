@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-09 11:32\n"
+"POT-Creation-Date: 2014-04-11 23:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,58 +66,68 @@ msgstr ""
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:29
+#: ../../1.5_modifystate_seatsat.rst:31
+# c8941723e79f4dbab9213c6c79bf83df
+msgid "For starting necessary services, quickly go [2_] and come back."
+msgstr ""
+
+#: ../../1.5_modifystate_seatsat.rst:33
 # 41630ad9fcff4239a2dda8697ebef28c
 msgid "まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル <1.4_callmotion_byvoice.html#SystemEnvironment>`__ を再び利用します．"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:31
+#: ../../1.5_modifystate_seatsat.rst:35
 # a9a18945f3d64c1aa5e6539006de83d1
 msgid "`./demo/MotionByVoiceDemo` の \"0_StartDemo2.bat\" (前回使った \"0_StartDemo.bat\" ではなく) を実行．"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:39
+#: ../../1.5_modifystate_seatsat.rst:43
 # 10491ca847bf44fb82c1a25f4015e20f
 msgid "\"1 ConnectRTC.bat\", \"2 ActivateRTC.bat\" を実行．"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:48
+#: ../../1.5_modifystate_seatsat.rst:52
 # 5b75118d459c4c76aa6d4bec63369bc7
 msgid "\"さいせい よろしく\" と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお `Choreonoid` 画面上では見えないが，`SEAT` の管理するロボットの状態は `dance_ready` という新たな状態に移っている．"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:50
+#: ../../1.5_modifystate_seatsat.rst:54
 # 787fcadf5dce4bed9e9e404108c6bcd7
 msgid "\"さいせい よろしく\" コマンドは，既存のどのロボット状態からでも有効です; (例．右手だけ上がった状態)"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:52
+#: ../../1.5_modifystate_seatsat.rst:56
 # 07ee62aa58a84879b412e7655f1968dd
 msgid "\"あくしょん よろしく\" と発話．ロボットは前回のチュートリアルで見せたのと同じダンスをする．その後 `both_down` 状態 (初期の状態) に戻る．"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:54
+#: ../../1.5_modifystate_seatsat.rst:58
 # a4497fc779454a408978ccf997672ac9
 msgid "終了時は，\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行．"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:65
+#: ../../1.5_modifystate_seatsat.rst:69
 # 5f0e6496947343c4ab8a187f07dad8e3
 msgid "新規状態の追加方法"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:66
+#: ../../1.5_modifystate_seatsat.rst:70
 # d9d6e7b1aec44d9d92898cad02b8af8a
 msgid "状態を追加するために今回追加したのは次の箇所::"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:88
+#: ../../1.5_modifystate_seatsat.rst:92
 # 20e673efd0a54e8fac97320bf8c4fcbc
 msgid "また，`あくしょん` という新たな語を音声認識させるために，`Julius` の設定ファイルも次のように更新::"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:109
+#: ../../1.5_modifystate_seatsat.rst:114
 # 43544dbe76a247faa5aeb512471646cd
-msgid "Go back to `index <index.html>`__ | Go to `next <2.1_samplewordlogger.html>`__"
+msgid "Go back to `index <top.html>`__ | Go to `next <2.1_samplewordlogger.html>`__ |"
+msgstr ""
+
+#: ../../1.5_modifystate_seatsat.rst:116
+# b28479c7804043d29c7b1fdf359c4cb1
+msgid "Choose `Other language <index.html>`__"
 msgstr ""
 

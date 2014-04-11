@@ -536,7 +536,7 @@ msgstr ""
 "Your current directory is assumed to be the home of the USB unless "
 "specified."
 
-#: ../../2.1_samplewordlogger.rst:405
+#: ../../2.1_samplewordlogger.rst:409
 msgid ""
 "では実行してみましょう． `SampleWordLogger` は単体だと何も行わないので，先に紹介された `MotionByVoiceDemo` "
 "と組合せて発話を記録してみましょう．"
@@ -544,7 +544,7 @@ msgstr ""
 "Let's run/play the game! `SampleWordLogger` by itself doesn't do anything. "
 "Run together `MotionByVoiceDemo` that we saw earlier to record what you say."
 
-#: ../../2.1_samplewordlogger.rst:408
+#: ../../2.1_samplewordlogger.rst:412
 msgid ""
 "上記二つのフォルダからそれぞれに格納される RTC を呼ぶための .bat ファイルを既に "
 "`./demo/MotionByVoiceLoggerDemo` として用意してあります．"
@@ -552,11 +552,11 @@ msgstr ""
 "`.bat` files to call involved RTCs are already made for you in "
 "`./demo/MotionByVoiceLoggerDemo`."
 
-#: ../../2.1_samplewordlogger.rst:410
+#: ../../2.1_samplewordlogger.rst:414
 msgid "MotionByVoiceLoggerDemo"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:412
+#: ../../2.1_samplewordlogger.rst:416
 msgid ""
 "`./demo/MotionByVoiceLoggerDemo` から "
 "\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" "
@@ -566,7 +566,7 @@ msgstr ""
 "\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\", respectively"
 " by clicking the link below. If it doesn't work then do so from  `Explorer`."
 
-#: ../../2.1_samplewordlogger.rst:428
+#: ../../2.1_samplewordlogger.rst:432
 msgid ""
 "`MotionByVoiceDemo のチュートリアル <1.4_callmotion_byvoice.html#HowToRun>`__ "
 "に従い，発話デモを実行．"
@@ -574,7 +574,7 @@ msgstr ""
 "Run demo as the same you did in `MotionByVoiceDemo tutorial "
 "<1.4_callmotion_byvoice.html#HowToRun>`__ "
 
-#: ../../2.1_samplewordlogger.rst:430
+#: ../../2.1_samplewordlogger.rst:434
 msgid ""
 "\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" "
 "の順に実行し，RT システムを停止．"
@@ -582,7 +582,7 @@ msgstr ""
 "Click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\", "
 "respectively."
 
-#: ../../2.1_samplewordlogger.rst:440
+#: ../../2.1_samplewordlogger.rst:444
 msgid ""
 "`./demo/SampleWordLogger/build/Debug/SampleWord.log` "
 "をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．"
@@ -590,20 +590,24 @@ msgstr ""
 "You'll see the timestamp and the word spoken in "
 "`./demo/SampleWordLogger/build/Debug/SampleWord.log`."
 
-#: ../../2.1_samplewordlogger.rst:442
+#: ../../2.1_samplewordlogger.rst:446
 msgid ""
 "2014/03/13 08:56:31 左 さげて 2014/03/13 08:56:44 右 あげて 2014/03/13 08:57:08 左 "
 "よろしく 2014/03/13 08:58:23 左 あげて 2014/03/13 08:58:39 左 あげない"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:462
+#: ../../2.1_samplewordlogger.rst:466
 msgid ""
 "Go back to `index <top.html>`__ | Go to `next "
 "<2.2_samplemotionselector.html>`__ |"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:464
+#: ../../2.1_samplewordlogger.rst:468
 msgid "Choose `Other language <index.html>`__"
+msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:407
+msgid "For starting necessary services, quickly go [2_] and come back."
 msgstr ""
 
 #~ msgid ""
