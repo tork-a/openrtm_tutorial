@@ -37,17 +37,23 @@ Ubuntu or other platform where the following software is available is assumed:
  * `git`
  * `sphinx-intl` (via `pip install sphinx-intl`)
 
+git repository branch
+---------------------
+To keep the released version and development version, let's use following two branches:
+
+- `devel`: Default. All developers and maintainers use this branch for the work.
+- `master`: Released version. `SELFUPDATE.bat` only accesses this branch.
+
+Discussion about this is found at [5_].
 
 To Create USB
 -------------
 You can freely create a USB thumbdrive using data maintained on the github repository [1_].
 
-On a computer where `git` is available, do:
+On a computer where `git` is available, do::
 
-```
-$ cd %YOUR_USBDRIVE%
-$ git clone https://github.com/tork-a/openrtm_tutorial.git
-```
+    $ cd %YOUR_USBDRIVE%
+    $ git clone https://github.com/tork-a/openrtm_tutorial.git
 
 That's it.
 
@@ -96,4 +102,4 @@ Project funded by New Energy and Industrial Technology Development Organization 
 .. _2: https://github.com/tork-a/openrtm_tutorial/issues?direction=desc&sort=updated&state=open
 .. _3: http://sphinx-doc.org/latest/intl.html
 .. _4: https://github.com/tork-a/openrtm_tutorial/issues/20
-
+.. _5: https://github.com/tork-a/openrtm_tutorial/issues/29
