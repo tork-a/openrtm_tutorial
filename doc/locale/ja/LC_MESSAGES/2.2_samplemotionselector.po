@@ -216,14 +216,19 @@ msgid ""
 "の順に実行し，RT システムを停止．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:218
+#: ../../2.2_samplemotionselector.rst:219
 msgid ""
 "Go back to `index <top.html>`__ | Choose `Other language <index.html>`__"
 msgstr ""
 
 #: ../../2.2_samplemotionselector.rst:177
-msgid "For starting necessary services, quickly go [2_] and come back."
+msgid ""
+"For starting necessary services, quickly go [run-common-tools_] and come "
+"back."
 msgstr ""
+
+#~ msgid "For starting necessary services, quickly go [2_] and come back."
+#~ msgstr ""
 
 #~ msgid "Go back to `index <index.html>`__"
 #~ msgstr ""

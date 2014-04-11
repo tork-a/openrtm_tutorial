@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-11 23:00\n"
+"POT-Creation-Date: 2014-04-11 23:13\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../1.5_modifystate_seatsat.rst:31
 # c8941723e79f4dbab9213c6c79bf83df
-msgid "For starting necessary services, quickly go [2_] and come back."
+msgid "For starting necessary services, quickly go [run-common-tools_] and come back."
 msgstr ""
 
 #: ../../1.5_modifystate_seatsat.rst:33

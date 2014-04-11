@@ -115,8 +115,13 @@ msgid "Choose `Other language <index.html>`__"
 msgstr ""
 
 #: ../../1.5_modifystate_seatsat.rst:31
-msgid "For starting necessary services, quickly go [2_] and come back."
+msgid ""
+"For starting necessary services, quickly go [run-common-tools_] and come "
+"back."
 msgstr ""
+
+#~ msgid "For starting necessary services, quickly go [2_] and come back."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Go back to `index <index.html>`__ | Go to `next "

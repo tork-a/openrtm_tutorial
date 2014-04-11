@@ -28,7 +28,7 @@
 
 ..
 
-  For starting necessary services, quickly go [2_] and come back.
+  For starting necessary services, quickly go [run-common-tools_] and come back.
 
 まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル <1.4_callmotion_byvoice.html#SystemEnvironment>`__ を再び利用します．
 
@@ -107,7 +107,7 @@
 .. _DeactivateRTC.bat: ../demo/MotionByVoiceDemo/3_DeactivateRTC.bat
 .. _DisconnectRTC.bat: ../demo/MotionByVoiceDemo/4_DisconnectRTC.bat
 .. _DemoExit.bat: ../demo/MotionByVoiceDemo/5_DemoExit.bat
-.. _2: ./1.4_callmotion_byvoice.html#run-common-tools
+.. _run-common-tools: ./1.4_callmotion_byvoice.html#run-common-tools
 
 ----
 

@@ -174,7 +174,7 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 
 ..
 
-  For starting necessary services, quickly go [2_] and come back.
+  For starting necessary services, quickly go [run-common-tools_] and come back.
 
 では実行してみましょう．
 `Choreonoid` 上で `GRobot` を走らせ，`SampleMotionCaller` から指示を送ってみましょう．
@@ -212,6 +212,7 @@ RT System Editor で見てみると，`SampleMotionCaller` の RTC も実行さ�
 .. _DeactivateRTC.bat: ../demo/SampleMotionCaller/3_DeactivateRTC.bat
 .. _DisconnectRTC.bat: ../demo/SampleMotionCaller/4_DisconnectRTC.bat
 .. _DemoExit.bat: ../demo/SampleMotionCaller/5_DemoExit.bat
+.. _run-common-tools: ./1.4_callmotion_byvoice.html#run-common-tools
 
 ----
 

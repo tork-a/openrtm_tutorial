@@ -404,7 +404,7 @@ Visual C++ 2010 のコンソールにエラーが起きたと表示されなけ�
 
 ..
 
-  For starting necessary services, quickly go [2_] and come back.
+  For starting necessary services, quickly go [run-common-tools_] and come back.
 
 では実行してみましょう．
 `SampleWordLogger` は単体だと何も行わないので，先に紹介された `MotionByVoiceDemo` と組合せて発話を記録してみましょう．
@@ -460,6 +460,7 @@ MotionByVoiceLoggerDemo
 .. _DeactivateRTC.bat: ../demo/MotionByVoiceLoggerDemo/3_DeactivateRTC.bat
 .. _DisconnectRTC.bat: ../demo/MotionByVoiceLoggerDemo/4_DisconnectRTC.bat
 .. _DemoExit.bat: ../demo/MotionByVoiceLoggerDemo/5_DemoExit.bat
+.. _run-common-tools: ./1.4_callmotion_byvoice.html#run-common-tools
 
 ----
 

@@ -250,14 +250,19 @@ msgid ""
 "`./demo/`SampleMotionCaller` に用意してあります．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:218
+#: ../../2.2_samplemotionselector.rst:219
 msgid ""
 "Go back to `index <top.html>`__ | Choose `Other language <index.html>`__"
 msgstr ""
 
 #: ../../2.2_samplemotionselector.rst:177
-msgid "For starting necessary services, quickly go [2_] and come back."
+msgid ""
+"For starting necessary services, quickly go [run-common-tools_] and come "
+"back."
 msgstr ""
+
+#~ msgid "For starting necessary services, quickly go [2_] and come back."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "`.bat` files to call involved RTCs are already made for you in "

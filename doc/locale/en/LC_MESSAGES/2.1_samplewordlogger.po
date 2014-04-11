@@ -596,19 +596,24 @@ msgid ""
 "よろしく 2014/03/13 08:58:23 左 あげて 2014/03/13 08:58:39 左 あげない"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:466
+#: ../../2.1_samplewordlogger.rst:467
 msgid ""
 "Go back to `index <top.html>`__ | Go to `next "
 "<2.2_samplemotionselector.html>`__ |"
 msgstr ""
 
-#: ../../2.1_samplewordlogger.rst:468
+#: ../../2.1_samplewordlogger.rst:469
 msgid "Choose `Other language <index.html>`__"
 msgstr ""
 
 #: ../../2.1_samplewordlogger.rst:407
-msgid "For starting necessary services, quickly go [2_] and come back."
+msgid ""
+"For starting necessary services, quickly go [run-common-tools_] and come "
+"back."
 msgstr ""
+
+#~ msgid "For starting necessary services, quickly go [2_] and come back."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "Go back to `index <index.html>`__ | Go to `next "
