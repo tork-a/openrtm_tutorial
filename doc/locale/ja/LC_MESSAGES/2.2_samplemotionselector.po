@@ -217,5 +217,9 @@ msgid ""
 msgstr ""
 
 #: ../../2.2_samplemotionselector.rst:214
-msgid "Go back to `index <index.html>`__"
+msgid ""
+"Go back to `index <top.html>`__ | Choose `Other language <index.html>`__"
 msgstr ""
+
+#~ msgid "Go back to `index <index.html>`__"
+#~ msgstr ""

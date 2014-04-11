@@ -471,6 +471,15 @@ msgstr ""
 
 #: ../../2.1_samplewordlogger.rst:462
 msgid ""
-"Go back to `index <index.html>`__ | Go to `next "
-"<2.2_samplemotionselector.html>`__"
+"Go back to `index <top.html>`__ | Go to `next "
+"<2.2_samplemotionselector.html>`__ |"
 msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:464
+msgid "Choose `Other language <index.html>`__"
+msgstr ""
+
+#~ msgid ""
+#~ "Go back to `index <index.html>`__ | Go to `next "
+#~ "<2.2_samplemotionselector.html>`__"
+#~ msgstr ""

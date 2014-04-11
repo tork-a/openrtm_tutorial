@@ -67,19 +67,12 @@ msgstr "Start CORBA nameserver (common throughout all tutorials)"
 
 #: ../../1.1_demo_imageprocessing.rst:34
 msgid "基本的に `OpenRTM` の nameserver は一度起動すると，起動したままでもすべてのチュートリアルは動作すると思われます．"
-msgstr "Once you start, nameserver can be kept running throught all tutorials."
+msgstr ""
+"Once you start, nameserver can be kept running throught all tutorials."
 
 #: ../../1.1_demo_imageprocessing.rst:36
 msgid "次のリンクをクリックして nameserver を起動．"
 msgstr "Click the link to start nameserver."
-
-#: ../../1.1_demo_imageprocessing.rst:44
-msgid ""
-"(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ "
-"をダブルクリックして実行．"
-msgstr ""
-"(Only when the link above didn't work) Open `demo` folder on `Explorer` then"
-" start rtm-naming.bat_ by double clicking the file."
 
 #: ../../1.1_demo_imageprocessing.rst:47
 msgid "Starting omniNames for the first time. : Checkpointing completed."
@@ -207,12 +200,6 @@ msgstr ""
 "Just this time we've walked through behind-the-scenes of `OpenRTM` manually "
 "to get an idea."
 
-#: ../../1.1_demo_imageprocessing.rst:122
-msgid ""
-"Go back to `index <index.html>`__ | Go to `next "
-"<1.2_demo_mediaplaybyvoice.html>`__"
-msgstr ""
-
 #: ../../1.1_demo_imageprocessing.rst:21
 msgid "`RT System Editor` の初歩的な利用法"
 msgstr ""
@@ -220,6 +207,34 @@ msgstr ""
 #: ../../1.1_demo_imageprocessing.rst:24
 msgid "動作環境"
 msgstr "System Envirionment"
+
+#: ../../1.1_demo_imageprocessing.rst:44
+msgid ""
+"(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，`rtm-naming.bat` "
+"をダブルクリックして実行．"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:122
+msgid ""
+"Go back to `index <top.html>`__ | Go to `next "
+"<1.2_demo_mediaplaybyvoice.html>`__ |"
+msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:124
+msgid "Choose `Other language <index.html>`__"
+msgstr ""
+
+#~ msgid ""
+#~ "(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ "
+#~ "をダブルクリックして実行．"
+#~ msgstr ""
+#~ "(Only when the link above didn't work) Open `demo` folder on `Explorer` then"
+#~ " start rtm-naming.bat_ by double clicking the file."
+
+#~ msgid ""
+#~ "Go back to `index <index.html>`__ | Go to `next "
+#~ "<1.2_demo_mediaplaybyvoice.html>`__"
+#~ msgstr ""
 
 #~ msgid "Very basic usage for `RT System Editor`"
 #~ msgstr ""

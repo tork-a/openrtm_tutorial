@@ -30,8 +30,8 @@ msgid ""
 "`OpenHRI` の RTC と接続することで，音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する "
 "`SampleWordLogger RTC` の開発"
 msgstr ""
-"`Develop a Logger RTC that connects an RTC in `OpenHRI`and saves the voice-recognized, "
-"timestamped Keywords."
+"`Develop a Logger RTC that connects an RTC in `OpenHRI`and saves the voice-"
+"recognized, timestamped Keywords."
 
 #: ../../2.1_samplewordlogger.rst:20
 msgid "関連するチュートリアル"
@@ -43,8 +43,9 @@ msgid ""
 " 上での GUI を利用した開発が説明されています． - "
 "なお本チュートリアル内で，[1_]内の多くの画像を参照しています．参照元はその都度記載しています．"
 msgstr ""
-"General detailed instruction on making `RTC` is available (in Japanese though) in "
-"`SampleWordLogger` RTC tutorial[1_], where especially the usage of graphical tool on `Eclipse` is included."
+"General detailed instruction on making `RTC` is available (in Japanese "
+"though) in `SampleWordLogger` RTC tutorial[1_], where especially the usage "
+"of graphical tool on `Eclipse` is included."
 
 #: ../../2.1_samplewordlogger.rst:25
 msgid "SystemEnvironment"
@@ -62,7 +63,8 @@ msgstr ""
 msgid ""
 "`CMake` 2.8 (インストーラが同梱されています ./misc/installer/cmake-2.8.8-win32-x86.exe)"
 msgstr ""
-"`CMake` 2.8 (its installer is bundled in ./misc/installer/cmake-2.8.8-win32-x86.exe)"
+"`CMake` 2.8 (its installer is bundled in "
+"./misc/installer/cmake-2.8.8-win32-x86.exe)"
 
 #: ../../2.1_samplewordlogger.rst:29
 msgid "`RTCBuilder` 1.1 (bundled in Eclipse [5_])"
@@ -74,19 +76,23 @@ msgstr "RTC spec (I/O, Configuration)"
 
 #: ../../2.1_samplewordlogger.rst:35
 msgid "これから作成するコンポーネントを SampleWordLogger RTC と呼ぶことにします．"
-msgstr "Let's call the RT component we're about to create \"SampleWordLogger RTC\"."
+msgstr ""
+"Let's call the RT component we're about to create \"SampleWordLogger RTC\"."
 
 #: ../../2.1_samplewordlogger.rst:37
 msgid ""
 "このコンポーネントは `TimedString` 型の入力ポート (`InPort`) を持ちます．今回はログをファイルへ出力するのみとし，`RTC` "
 "として出力ポート (`OutPort`) は持たないｋとにします．`InPort` 名を `result` とします．"
 msgstr ""
-"This RTC has an `InPort` (input port) of `TimedString` data type. We only want to save the log into "
-"a file and thus the RTC does not have output port (`OutPort`), and name `InPort` as `result`."
+"This RTC has an `InPort` (input port) of `TimedString` data type. We only "
+"want to save the log into a file and thus the RTC does not have output port "
+"(`OutPort`), and name `InPort` as `result`."
 
 #: ../../2.1_samplewordlogger.rst:39
 msgid "ログファイルの場所は今回はハードコードします (お好みに変えて下さい)．"
-msgstr "This time we embed the log file path in the source (you can modify it if you want)."
+msgstr ""
+"This time we embed the log file path in the source (you can modify it if you"
+" want)."
 
 #: ../../2.1_samplewordlogger.rst:41
 msgid "上から RTC の仕様を次のようにまとめます．"
@@ -152,15 +158,17 @@ msgid ""
 "本章では `Eclipse` ベースのツール `OpenRTP (Open RT Platform)` に同梱される `RTBuilder` "
 "を利用するので，[2_]からダウンロード・インストールして下さい．"
 msgstr ""
-"In this tutorial, we'll use `RTBuilder`, an  `Eclipse`-based tool that's bundled in "
-"`OpenRTP (Open RT Platform)`. So download and install it from here[2_]."
+"In this tutorial, we'll use `RTBuilder`, an  `Eclipse`-based tool that's "
+"bundled in `OpenRTP (Open RT Platform)`. So download and install it from "
+"here[2_]."
 
 #: ../../2.1_samplewordlogger.rst:72
 msgid ""
 "新規ワークスペースを指定して Eclipse を起動すると，以下のような Welcome ページが表示されます (`画像引用元 "
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png>`__)．"
 msgstr ""
-"Run `Eclipse` with workspace set, you'll see a welcome page like below (`image source "
+"Run `Eclipse` with workspace set, you'll see a welcome page like below "
+"(`image source "
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/fig1-1EclipseInit.png>`__)．"
 
 #: ../../2.1_samplewordlogger.rst:76
@@ -168,7 +176,8 @@ msgid ""
 "Welcome ページはいまは必要ないので左上の「×」ボタンを押して閉じてください (`画像引用元 "
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png>`__)．"
 msgstr ""
-"Since we don't need a welcome page, click \"x\" button at the left top to close (`image source "
+"Since we don't need a welcome page, click \"x\" button at the left top to "
+"close (`image source "
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/fig2-2PerspectiveSwitch.png>`__)．"
 
 #: ../../2.1_samplewordlogger.rst:80
@@ -176,7 +185,8 @@ msgid ""
 "右上の「Open Perspective」ボタンを押下し，プルダウンの「Other…」 ボタンを押下します(`画像引用元 "
 "<http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png>`__)．"
 msgstr ""
-"Push \"Open Perspective\" button at the right top, then click \"Other...\" in the pulldown(`image source "
+"Push \"Open Perspective\" button at the right top, then click \"Other...\" "
+"in the pulldown(`image source "
 "<http://www.openrtm.org/openrtm/sites/default/files/208/fig2-3PerspectiveSelection.png>`__)．"
 
 #: ../../2.1_samplewordlogger.rst:84
@@ -204,16 +214,17 @@ msgid ""
 "表示された ｢新規プロジェクト｣ 画面において，｢その他｣－｢RTCビルダ｣ を選択し，｢次へ｣ "
 "をクリックします．｢プロジェクト名｣欄に作成するプロジェクト名 (ここでは SampleWordLogger) を入力して｢終了｣をクリックします．"
 msgstr ""
-"In \"New Project\" window, ｢New｣-｢RTC Builder｣ then ｢Next｣. "
-"In ｢Project Name｣ field, type in `SampleWordLogger` then ｢Finish｣."
+"In \"New Project\" window, ｢New｣-｢RTC Builder｣ then ｢Next｣. In ｢Project "
+"Name｣ field, type in `SampleWordLogger` then ｢Finish｣."
 
 #: ../../2.1_samplewordlogger.rst:100
 msgid ""
 "指定した名称のプロジェクトが生成され，パッケージエクスプローラ内に追加されます． 生成したプロジェクト内には，デフォルト値が設定された RTC プロファ"
 " イル XML(RTC.xml) が自動的に生成されるのがわかると思います．"
 msgstr ""
-"The project is now generated and added to `Eclipse' Package Explorer`. You'll see in the new project "
-"that RTC.xml, an `RTC profile` that contains default values, is automatically generated."
+"The project is now generated and added to `Eclipse' Package Explorer`. "
+"You'll see in the new project that RTC.xml, an `RTC profile` that contains "
+"default values, is automatically generated."
 
 #: ../../2.1_samplewordlogger.rst:104
 msgid ""
@@ -221,9 +232,10 @@ msgid ""
 "のエディタが開くはずです．もし開かない場合は，ツールバーの｢Open New RtcBuilder Editor｣ボタンを押下するか，メニューバーの "
 "[file]-[Open New Builder Editor] を選択します．"
 msgstr ""
-"At the time of `RTC.xml` being generated, the `RTCBuilder` editor that's associated with the project 
-"should open. If not, open it manually from toolbar ｢Open New RtcBuilder Editor｣, or on menu bar "
-"[file]-[Open New Builder Editor]."
+"At the time of `RTC.xml` being generated, the `RTCBuilder` editor that's "
+"associated with the projecshould open. If not, open it manually from toolbar"
+" ｢Open New RtcBuilder Editor｣, or on menu bar [file]-[Open New Builder "
+"Editor]."
 
 #: ../../2.1_samplewordlogger.rst:108
 msgid ""
@@ -250,8 +262,9 @@ msgid ""
 "まず，いちばん左の「基本」タブを選択し，基本情報を入力します．先ほ ど決めた SampleWordLogger "
 "コンポーネントの仕様(名前)の他に，概要やバージョン等を入力してください．ラベルが赤字の項目は必須項目です．その他はデフォルトで構いません．"
 msgstr ""
-"First, open the tab 「Basic」 at the far left and fill in description, version number "
-"in addition to RTC name. Labels in red are required (others can be default values)."
+"First, open the tab 「Basic」 at the far left and fill in description, version"
+" number in addition to RTC name. Labels in red are required (others can be "
+"default values)."
 
 #: ../../2.1_samplewordlogger.rst:123
 msgid ""
@@ -261,28 +274,28 @@ msgid ""
 "についても同様の手順を行います(`画像引用元 "
 "<http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png>`__)．"
 msgstr ""
-"Then choose the action callback in the tab 「Activity」. In `SampleWordLogger RTC`, "
-"we use `onActivated()`, `onDeactivated()`, and `onExecute()` callbacks. "
-"As the image below, (1) check `onAtivated`, then select \"on\" in the radio button (2). "
-"Do so too for onDeactivated, onExecute (`image source "
-"<http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png>`__)."
+"Then choose the action callback in the tab 「Activity」. In `SampleWordLogger "
+"RTC`, we use `onActivated()`, `onDeactivated()`, and `onExecute()` "
+"callbacks. As the image below, (1) check `onAtivated`, then select \"on\" in"
+" the radio button (2). Do so too for onDeactivated, onExecute (`image source"
+" <http://www.openrtm.org/openrtm/sites/default/files/1431/Activity.png>`__)."
 
 #: ../../2.1_samplewordlogger.rst:128
 msgid ""
 "さらに，\"Data Ports\" タブを選択し，データポートの情報を入力します． "
 "先ほど決めた仕様を元に以下のように入力します．なお，変数名や表示位置はオプションで，そのままで結構です．"
 msgstr ""
-"Select \"Data Ports\" tab and input data port info as we defined earlier. You can leave "
-"variable name, location."
+"Select \"Data Ports\" tab and input data port info as we defined earlier. "
+"You can leave variable name, location."
 
 #: ../../2.1_samplewordlogger.rst:132
 msgid ""
 "次に，「言語・環境」タブを選択し，プログラミング言語を選択します． ここでは，`C++` を選択します．なお，言語・環境はデフォルト等が "
 "設定されておらず，指定し忘れるとコード生成時にエラーになりますので， 必ず言語の指定を行うようにしてください．"
 msgstr ""
-"Next go to tab 「Language and Environment」 to choose programming language. Here choose `C++`. "
-"Note that in this tab no default values are set, and errors occur if you don't set anything. "
-"So be sure to work on."
+"Next go to tab 「Language and Environment」 to choose programming language. "
+"Here choose `C++`. Note that in this tab no default values are set, and "
+"errors occur if you don't set anything. So be sure to work on."
 
 #: ../../2.1_samplewordlogger.rst:134
 msgid ""
@@ -290,21 +303,23 @@ msgid ""
 "のプロジェクトやソリューションを直接 `RTCBuilder` が 生成する方法を利用したい場合は `Use old build "
 "environment` を チェックしてください．"
 msgstr ""
-"Also, when using `C++` you are to build with `CMake`. However, if you prefer to using "
-"an older `VC` `project`, or to generating a `solution` directly by `RTCBuilder`, "
-"check `Use old build environment`."
+"Also, when using `C++` you are to build with `CMake`. However, if you prefer"
+" to using an older `VC` `project`, or to generating a `solution` directly by"
+" `RTCBuilder`, check `Use old build environment`."
 
 #: ../../2.1_samplewordlogger.rst:136
 msgid "最後に，「基本」タブにある\"コード生成\"ボタンをクリックし，コンポー ネントの雛型を生成します．"
-msgstr "At last, in the tab 「Basic」 click \"Code Generatioin\" to generate the template of your RTC."
+msgstr ""
+"At last, in the tab 「Basic」 click \"Code Generatioin\" to generate the "
+"template of your RTC."
 
 #: ../../2.1_samplewordlogger.rst:138
 msgid ""
 "※ 生成されるコード群は，eclipse 起動時に指定したワークスペースフォルダの中に生成されます．現在のワークスペースは，「ファイル(F)」 > "
 "「ワークスペースの切り替え(W)...」で確認することができます．"
 msgstr ""
-"NOTE; codes are generated into the folder in the workspace you specified when `Eclipse` launched. "
-"You can check it by 「File(F)」 > 「Workspace(W)...」."
+"NOTE; codes are generated into the folder in the workspace you specified "
+"when `Eclipse` launched. You can check it by 「File(F)」 > 「Workspace(W)...」."
 
 #: ../../2.1_samplewordlogger.rst:141
 msgid "仮ビルド"
@@ -315,20 +330,23 @@ msgid ""
 "さて，ここまでで SampleWordLogger コンポーネントのソースコードが生成されました． 処理の中身は実装されていないので，`InPort` "
 "に他の `RTC` を接続しても何も出力されませんが，生成直後のソースコードだけでもコンパイルおよび実行はできます．"
 msgstr ""
-"Well, you've generated kind-of skeletal source code of `SampleWordLogger RTC` so far. "
-"Nothing will be output even when you connect anything to the `InPort` of your `RTC`, but you can build it."
+"Well, you've generated kind-of skeletal source code of `SampleWordLogger "
+"RTC` so far. Nothing will be output even when you connect anything to the "
+"`InPort` of your `RTC`, but you can build it."
 
 #: ../../2.1_samplewordlogger.rst:145
 msgid "※サービスポートとプロバイダを持つコンポーネントの場合，実装を行わないとビルドが通らないものもあります．"
-msgstr "NOTE; With an RTC that has `service port` and `provider`, build might not pass without concrete code."
+msgstr ""
+"NOTE; With an RTC that has `service port` and `provider`, build might not "
+"pass without concrete code."
 
 #: ../../2.1_samplewordlogger.rst:147
 msgid ""
 "では，まず `CMake` を利用してビルド環境の `Configure` を行います．Linuxで あれば，SampleWordLogger "
 "コンポーネントのソースが生成されたディレクトリで::"
 msgstr ""
-"Ok, then do `Configure` the build environment by using `CMake`. Suppose on Linux, "
-"in the directory where the source of SampleWordLogger was generated::"
+"Ok, then do `Configure` the build environment by using `CMake`. Suppose on "
+"Linux, in the directory where the source of SampleWordLogger was generated::"
 
 #: ../../2.1_samplewordlogger.rst:152
 msgid ""
@@ -336,8 +354,9 @@ msgid ""
 "スタートメニューなどから `CMake (cmake-gui)` を起動します(`画像引用元 "
 "<http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png>`__)．"
 msgstr ""
-"at this point, `Configure` and `build` should be done. On `Windows`, we use GUI tool to run `Configure`. "
-"From `Start` menu or else on Windows, run `CMake (cmake-gui)`(`image source "
+"at this point, `Configure` and `build` should be done. On `Windows`, we use "
+"GUI tool to run `Configure`. From `Start` menu or else on Windows, run "
+"`CMake (cmake-gui)`(`image source "
 "<http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI0.png>`__)．"
 
 #: ../../2.1_samplewordlogger.rst:156
@@ -357,8 +376,9 @@ msgid ""
 "ソースコードの場所は SampleWordLogger コンポーネントのソースが生成された場所で `CMakeList.txt` "
 "が存在するディレクトリです．デフォルトでは <ワークス ペースディレクトリ>/SampleWordLogger になります．"
 msgstr ""
-"Source location is where the source code of `SampleWordLogger RTC` is generated into "
-"and where `CMakeList.txt` resides. It's `<%WORKSPACE%>/SampleWordLogger` by default."
+"Source location is where the source code of `SampleWordLogger RTC` is "
+"generated into and where `CMakeList.txt` resides. It's "
+"`<%WORKSPACE%>/SampleWordLogger` by default."
 
 #: ../../2.1_samplewordlogger.rst:162
 msgid ""
@@ -366,8 +386,9 @@ msgid ""
 "<ワークスペースディレクトリ>/SampleWordLogger/build のように分かりやすい名前をつけた SampleWordLogger "
 "のサブディレクトリを指定することをお勧めします．"
 msgstr ""
-"`Build directory` is where project/object/binary files that are used for building the project are kept. "
-"While it's arbitrary, we recommend understandable name e.g. <%WORKSPACE%>/SampleWordLogger/build."
+"`Build directory` is where project/object/binary files that are used for "
+"building the project are kept. While it's arbitrary, we recommend "
+"understandable name e.g. <%WORKSPACE%>/SampleWordLogger/build."
 
 #: ../../2.1_samplewordlogger.rst:166
 msgid ""
@@ -376,8 +397,8 @@ msgid ""
 " とします(`画像引用元 "
 "<http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png>`__)．"
 msgstr ""
-"Then hit `Configure`, so a dialog appears. Choose a type of project you like to make. "
-"Let's go for `Visual Studio 10` this time(`image source "
+"Then hit `Configure`, so a dialog appears. Choose a type of project you like"
+" to make. Let's go for `Visual Studio 10` this time(`image source "
 "<http://www.openrtm.org/openrtm/sites/default/files/4625/CMakeGUI1.png>`__)．"
 
 #: ../../2.1_samplewordlogger.rst:170
@@ -386,32 +407,33 @@ msgid ""
 "と出力されますので，続けて Generate ボタンを押します．Generating done "
 "と出ればプロジェクトファイル・ソリューションファイル等の出力が完了します．"
 msgstr ""
-"`Finish` on the dialog window then `Configure` begins. Without an issue you'll see \"Configuring done\" "
-"in the console on the CMake window, so hit `Generate` button. When you see \"Generating done\", "
-"project/solution file is now ready."
+"`Finish` on the dialog window then `Configure` begins. Without an issue "
+"you'll see \"Configuring done\" in the console on the CMake window, so hit "
+"`Generate` button. When you see \"Generating done\", project/solution file "
+"is now ready."
 
 #: ../../2.1_samplewordlogger.rst:172
 msgid ""
 "なお，`CMake` は Configure の段階でキャッシュファイルを生成しますので，トラブルなどで設定を変更したり環境を変更した場合は "
 "[File]-[Delete Cache] でキャッシュを削除して `Configure` からやり直してください．"
 msgstr ""
-"By the way, `CMake` generates cache during `Configure`. Delete them when you re-run `Configure` after "
-"making change or stuck at issues, by [File]-[Delete Cache]."
+"By the way, `CMake` generates cache during `Configure`. Delete them when you"
+" re-run `Configure` after making change or stuck at issues, by "
+"[File]-[Delete Cache]."
 
 #: ../../2.1_samplewordlogger.rst:174
 msgid ""
 "次に先ほど指定した `build` ディレクトリの中の SampleWordLogger.sln をダブルクリックして `Visual Studio "
 "2010` を起動します．"
 msgstr ""
-"In the `build` directory you just specified, open `SampleWordLogger.sln` by double-clicking it, "
-"to start `Visual Studio 2010`."
+"In the `build` directory you just specified, open `SampleWordLogger.sln` by "
+"double-clicking it, to start `Visual Studio 2010`."
 
 #: ../../2.1_samplewordlogger.rst:176
 msgid ""
 "起動後，ソリューションエクスプローラーの `ALL_BUILD` "
 "を右クリックしビルドを選択してビルドします．特に問題がなければ正常にビルドが終了します．"
-msgstr ""
-"On `Solution Explorer`, right-click `ALL_BUILD` and choose `Build`."
+msgstr "On `Solution Explorer`, right-click `ALL_BUILD` and choose `Build`."
 
 #: ../../2.1_samplewordlogger.rst:180
 msgid "ここで `VC++ 2010` は閉じても構いません．"
@@ -427,8 +449,9 @@ msgstr "Implement Activity"
 
 #: ../../2.1_samplewordlogger.rst:187
 msgid "SampleWordLogger RTC では，InPort から語を受け取った時刻とその語をファイルストリームに流します．"
-msgstr "SampleWordLogger RTC passes words received via `InPort` and the timestamp recorded at the "
-"reception event to file stream."
+msgstr ""
+"SampleWordLogger RTC passes words received via `InPort` and the timestamp "
+"recorded at the reception event to file stream."
 
 #: ../../2.1_samplewordlogger.rst:189
 msgid ""
@@ -437,8 +460,9 @@ msgid ""
 "<https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit>`__"
 " 必要であれば編集権を同ページ内から申請して下さい)．"
 msgstr ""
-"Actions in `onActivated()`, `onExecute()`, `onDeactivated()` are illustrated "
-"(`you can edit this figure <https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit>`__"
+"Actions in `onActivated()`, `onExecute()`, `onDeactivated()` are illustrated"
+" (`you can edit this figure "
+"<https://docs.google.com/drawings/d/19KHmLRoOhHJVumNMwcO7CrPV7lWUwmFB3CD5OfT6mIo/edit>`__"
 " if you with. Ask the edit privilege)．"
 
 #: ../../2.1_samplewordlogger.rst:194
@@ -447,7 +471,9 @@ msgstr "Edit .cpp file"
 
 #: ../../2.1_samplewordlogger.rst:196
 msgid "下記のように，`onActivated()`, `onDeactivated()`, `onExecute()` を実装します．::"
-msgstr "Write code for `onActivated()`, `onDeactivated()`, `onExecute()` as follows::"
+msgstr ""
+"Write code for `onActivated()`, `onDeactivated()`, `onExecute()` as "
+"follows::"
 
 #: ../../2.1_samplewordlogger.rst:366
 msgid "CMakeList.txt の編集"
@@ -459,23 +485,25 @@ msgid ""
 "ので，`RTCBuilder` が生成した `CMakeLists.txt` にその旨を追記します．"
 msgstr ""
 "In this `RTC`, an external library `xmllib` is used to handle log in file "
-"(although we're not putting the content into `xml` in this sample)."
-"Therefore we add it to `CMakeLists.txt`."
+"(although we're not putting the content into `xml` in this sample).Therefore"
+" we add it to `CMakeLists.txt`."
 
 #: ../../2.1_samplewordlogger.rst:370
 msgid ""
 "適当なエディタ (`VC++ 2010, Emacs` 等) 上で，`SampleWordLogger/CMakeLists.txt` "
 "を開いて下さい．::"
 msgstr ""
-"Open `SampleWordLogger/CMakeLists.txt` in a text editor (`VC++ 2010, Emacs` etc)::"
+"Open `SampleWordLogger/CMakeLists.txt` in a text editor (`VC++ 2010, Emacs` "
+"etc)::"
 
 #: ../../2.1_samplewordlogger.rst:374
 msgid ""
 "とあり，`src` フォルダの情報は移譲されていることが分かるので，`SampleWordLogger/src/CMakeLists.txt` "
 "を開きます．このファイル中を例えば以下の様に変更します::"
 msgstr ""
-"This indicates that definition for `src` directory is delegated to the `CMakeLists.txt` in that directory. "
-"So open `SampleWordLogger/src/CMakeLists.txt` and change like::"
+"This indicates that definition for `src` directory is delegated to the "
+"`CMakeLists.txt` in that directory. So open "
+"`SampleWordLogger/src/CMakeLists.txt` and change like::"
 
 #: ../../2.1_samplewordlogger.rst:393
 msgid "VC++ によるビルド"
@@ -488,13 +516,15 @@ msgid ""
 "の起動後，下図のようにし，コンポーネントのビルドを行います(`画像引用元 "
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`__)．"
 msgstr ""
-"Back to `Visual C++ 2010` (if already closed, open again `SampleWordLogger.sln`). "
-"Then build RTC by doing as follows (`image source "
+"Back to `Visual C++ 2010` (if already closed, open again "
+"`SampleWordLogger.sln`). Then build RTC by doing as follows (`image source "
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`__)．"
 
 #: ../../2.1_samplewordlogger.rst:398
 msgid "Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．"
-msgstr "If you don't see any error on `Visual C++ 2010` console, you're done finally!"
+msgstr ""
+"If you don't see any error on `Visual C++ 2010` console, you're done "
+"finally!"
 
 #: ../../2.1_samplewordlogger.rst:402
 msgid "実行方法"
@@ -502,15 +532,17 @@ msgstr "HowToRun"
 
 #: ../../2.1_samplewordlogger.rst:403
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
-msgstr "Your current directory is assumed to be the home of the USB unless specified."
+msgstr ""
+"Your current directory is assumed to be the home of the USB unless "
+"specified."
 
 #: ../../2.1_samplewordlogger.rst:405
 msgid ""
 "では実行してみましょう． `SampleWordLogger` は単体だと何も行わないので，先に紹介された `MotionByVoiceDemo` "
 "と組合せて発話を記録してみましょう．"
 msgstr ""
-"Let's run/play the game! `SampleWordLogger` by itself doesn't do anything. Run together "
-"`MotionByVoiceDemo` that we saw earlier to record what you say."
+"Let's run/play the game! `SampleWordLogger` by itself doesn't do anything. "
+"Run together `MotionByVoiceDemo` that we saw earlier to record what you say."
 
 #: ../../2.1_samplewordlogger.rst:408
 msgid ""
@@ -531,28 +563,32 @@ msgid ""
 "の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．"
 msgstr ""
 "From `./demo/MotionByVoiceLoggerDemo`, run "
-"\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\", respectively by clicking the link below. "
-"If it doesn't work then do so from  `Explorer`."
+"\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\", respectively"
+" by clicking the link below. If it doesn't work then do so from  `Explorer`."
 
 #: ../../2.1_samplewordlogger.rst:428
 msgid ""
 "`MotionByVoiceDemo のチュートリアル <1.4_callmotion_byvoice.html#HowToRun>`__ "
 "に従い，発話デモを実行．"
 msgstr ""
-"Run demo as the same you did in `MotionByVoiceDemo tutorial <1.4_callmotion_byvoice.html#HowToRun>`__ "
+"Run demo as the same you did in `MotionByVoiceDemo tutorial "
+"<1.4_callmotion_byvoice.html#HowToRun>`__ "
 
 #: ../../2.1_samplewordlogger.rst:430
 msgid ""
 "\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" "
 "の順に実行し，RT システムを停止．"
-msgstr "Click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\", respectively."
+msgstr ""
+"Click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\", "
+"respectively."
 
 #: ../../2.1_samplewordlogger.rst:440
 msgid ""
 "`./demo/SampleWordLogger/build/Debug/SampleWord.log` "
 "をテキストエディタで開くと，下の例のように，時刻と発話内容が記録されている．"
 msgstr ""
-"You'll see the timestamp and the word spoken in `./demo/SampleWordLogger/build/Debug/SampleWord.log`."
+"You'll see the timestamp and the word spoken in "
+"`./demo/SampleWordLogger/build/Debug/SampleWord.log`."
 
 #: ../../2.1_samplewordlogger.rst:442
 msgid ""
@@ -562,6 +598,15 @@ msgstr ""
 
 #: ../../2.1_samplewordlogger.rst:462
 msgid ""
-"Go back to `index <index.html>`__ | Go to `next "
-"<2.2_samplemotionselector.html>`__"
+"Go back to `index <top.html>`__ | Go to `next "
+"<2.2_samplemotionselector.html>`__ |"
 msgstr ""
+
+#: ../../2.1_samplewordlogger.rst:464
+msgid "Choose `Other language <index.html>`__"
+msgstr ""
+
+#~ msgid ""
+#~ "Go back to `index <index.html>`__ | Go to `next "
+#~ "<2.2_samplemotionselector.html>`__"
+#~ msgstr ""

@@ -13,7 +13,9 @@ msgstr ""
 
 #: ../../2.2_samplemotionselector.rst:1
 msgid "**(RTC 作成 2) Choreonoid のモーションを選択する RTC の開発**"
-msgstr "`(Dev 2) Motion RTC that Calls Motions on Choreonoid from Keyboard Input <2.2_samplemotionselector.html>`_"
+msgstr ""
+"`(Dev 2) Motion RTC that Calls Motions on Choreonoid from Keyboard Input "
+"<2.2_samplemotionselector.html>`_"
 
 #: ../../2.2_samplemotionselector.rst:12
 msgid "Introduction"
@@ -26,7 +28,8 @@ msgstr "What you'll experience"
 #: ../../2.2_samplemotionselector.rst:17
 msgid ""
 "キーボードからの入力によって， Choreonoidのモーションを呼び出すことが出来る `SampleMotionCaller RTC` の開発"
-msgstr "Making Motion RTC that Calls Motions on Choreonoid from Keyboard Input"
+msgstr ""
+"Making Motion RTC that Calls Motions on Choreonoid from Keyboard Input"
 
 #: ../../2.2_samplemotionselector.rst:20
 msgid "関連するチュートリアル"
@@ -34,8 +37,9 @@ msgstr "Related Tutorials"
 
 #: ../../2.2_samplemotionselector.rst:21
 msgid "前章 (Logger RTC 開発)[1_]を終了し，`RTC` のスクラッチからの作成方法を習得していることを前提としています．"
-msgstr "Assumed that you finished previous tutorial (Logger RTC development)[1_] "
-" and understand how to create `RTC` from scratch."
+msgstr ""
+"Assumed that you finished previous tutorial (Logger RTC development)[1_]  "
+"and understand how to create `RTC` from scratch."
 
 #: ../../2.2_samplemotionselector.rst:24
 msgid "SystemEnvironment"
@@ -58,8 +62,9 @@ msgid ""
 "このコンポーネントは，キーボードからの入力を受け付けるので `InPort` は未指定です．入力を解釈した結果を `TimedString` で "
 "`OutPort` へ出力します．"
 msgstr ""
-"No `InPort` is defined since this RTC receives input from keyboard and that's it. "
-"Output the result of the input into `OutPort` as `TimedString` type."
+"No `InPort` is defined since this RTC receives input from keyboard and "
+"that's it. Output the result of the input into `OutPort` as `TimedString` "
+"type."
 
 #: ../../2.2_samplemotionselector.rst:36
 msgid "RTC I/O Spec"
@@ -122,7 +127,9 @@ msgstr ""
 
 #: ../../2.2_samplemotionselector.rst:67
 msgid "`RTC Builder` を用いた初期設定は省略します．前章[1_]で習得したことを用い，上記設計を実装して下さい．"
-msgstr "We'll skip how to do intial setting on `RTC Builder`; Please refer to the previous tutorial[1_] and implement the design above."
+msgstr ""
+"We'll skip how to do intial setting on `RTC Builder`; Please refer to the "
+"previous tutorial[1_] and implement the design above."
 
 #: ../../2.2_samplemotionselector.rst:69
 msgid "ここで `VC++ 2010` は閉じても構いません．"
@@ -141,7 +148,8 @@ msgid ""
 "`.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h` "
 "に次のように追加します::"
 msgstr ""
-"Add to `.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h`::"
+"Add to "
+"`.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h`::"
 
 #: ../../2.2_samplemotionselector.rst:84
 msgid "下記のように `onExecute()` を実装します．::"
@@ -152,7 +160,8 @@ msgid ""
 "ファイル全体はこちらで閲覧可能: - `.demo/SampleMotionCaller/src/SampleMotionCaller.cpp` - "
 "`demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h`"
 msgstr ""
-"Entire source files can be seen at `.demo/SampleMotionCaller/src/SampleMotionCaller.cpp` - "
+"Entire source files can be seen at "
+"`.demo/SampleMotionCaller/src/SampleMotionCaller.cpp` - "
 "`demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h`"
 
 #: ../../2.2_samplemotionselector.rst:158
@@ -161,7 +170,9 @@ msgstr "Edit CMakeLists.txt"
 
 #: ../../2.2_samplemotionselector.rst:160
 msgid "この RTC では Windows 標準ライブラリのみ使用するので，`CMakeLists.txt` の編集は不要です．"
-msgstr "No need to edit `CMakeLists.txt` since this `RTC` only uses standard Windows library."
+msgstr ""
+"No need to edit `CMakeLists.txt` since this `RTC` only uses standard Windows"
+" library."
 
 #: ../../2.2_samplemotionselector.rst:163
 msgid "VC++ によるビルド"
@@ -174,13 +185,16 @@ msgid ""
 "2010の起動後，下図のようにし，コンポーネントのビルドを行います(`画像引用元 "
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`_)．"
 msgstr ""
-"Back to `Visual C++ 2010` (if already closed, open again `SampleMotionCaller.sln`). "
-"Then build RTC by doing as follows (`image source "
+"Back to `Visual C++ 2010` (if already closed, open again "
+"`SampleMotionCaller.sln`). Then build RTC by doing as follows (`image source"
+" "
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`__)．"
 
 #: ../../2.2_samplemotionselector.rst:168
 msgid "Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．"
-msgstr "If you don't see any error on `Visual C++ 2010` console, you're done finally!"
+msgstr ""
+"If you don't see any error on `Visual C++ 2010` console, you're done "
+"finally!"
 
 #: ../../2.2_samplemotionselector.rst:172
 msgid "実行方法"
@@ -188,20 +202,17 @@ msgstr "HowToRun"
 
 #: ../../2.2_samplemotionselector.rst:173
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
-msgstr "Your current directory is assumed to be the home of the USB unless specified."
+msgstr ""
+"Your current directory is assumed to be the home of the USB unless "
+"specified."
 
 #: ../../2.2_samplemotionselector.rst:175
 msgid ""
 "では実行してみましょう． `Choreonoid` 上で `GRobot` を走らせ，`SampleMotionCaller` "
 "から指示を送ってみましょう．"
 msgstr ""
-"Let's run/play the game! Run `GRobot` on `Choreonoid`, then send commands from `SampleMotionCaller`."
-
-#: ../../2.2_samplemotionselector.rst:178
-msgid ""
-"`.bat` files to call involved RTCs are already made for you in "
-"`./demo/`SampleMotionCaller`."
-msgstr ""
+"Let's run/play the game! Run `GRobot` on `Choreonoid`, then send commands "
+"from `SampleMotionCaller`."
 
 #: ../../2.2_samplemotionselector.rst:180
 msgid ""
@@ -210,8 +221,8 @@ msgid ""
 "の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．"
 msgstr ""
 "From `./demo/SampleMotionCaller`, run "
-"\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\", respectively by clicking the link below. "
-"If it doesn't work then do so from  `Explorer`."
+"\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\", respectively"
+" by clicking the link below. If it doesn't work then do so from  `Explorer`."
 
 #: ../../2.2_samplemotionselector.rst:190
 msgid ""
@@ -229,8 +240,25 @@ msgstr "type in a command, then robot moves on `Choreonoid` accordingly."
 msgid ""
 "\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" "
 "の順に実行し，RT システムを停止．"
-msgstr "Click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\", respectively."
+msgstr ""
+"Click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\", "
+"respectively."
+
+#: ../../2.2_samplemotionselector.rst:178
+msgid ""
+"`Choreonoid` と `SampleMotionCaller` を簡便に呼び出すための .bat ファイルを既に "
+"`./demo/`SampleMotionCaller` に用意してあります．"
+msgstr ""
 
 #: ../../2.2_samplemotionselector.rst:214
-msgid "Go back to `index <index.html>`__"
+msgid ""
+"Go back to `index <top.html>`__ | Choose `Other language <index.html>`__"
 msgstr ""
+
+#~ msgid ""
+#~ "`.bat` files to call involved RTCs are already made for you in "
+#~ "`./demo/`SampleMotionCaller`."
+#~ msgstr ""
+
+#~ msgid "Go back to `index <index.html>`__"
+#~ msgstr ""

@@ -85,6 +85,15 @@ msgstr ""
 
 #: ../../1.2_demo_mediaplaybyvoice.rst:67
 msgid ""
-"Go back to `index <index.html>`__ | Go to `next "
-"<1.3_choreonoid_createmotion.html>`__"
+"Go back to `index <top.html>`__ | Go to `next "
+"<1.3_choreonoid_createmotion.html>`__ |"
 msgstr ""
+
+#: ../../1.2_demo_mediaplaybyvoice.rst:69
+msgid "Choose `Other language <index.html>`__"
+msgstr ""
+
+#~ msgid ""
+#~ "Go back to `index <index.html>`__ | Go to `next "
+#~ "<1.3_choreonoid_createmotion.html>`__"
+#~ msgstr ""

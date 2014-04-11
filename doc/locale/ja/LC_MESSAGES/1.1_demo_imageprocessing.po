@@ -75,12 +75,6 @@ msgstr ""
 msgid "次のリンクをクリックして nameserver を起動．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:44
-msgid ""
-"(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ "
-"をダブルクリックして実行．"
-msgstr ""
-
 #: ../../1.1_demo_imageprocessing.rst:47
 msgid "Starting omniNames for the first time. : Checkpointing completed."
 msgstr ""
@@ -179,11 +173,31 @@ msgid ""
 " のプログラム実行に必要な手順を体験して頂きました．"
 msgstr ""
 
+#: ../../1.1_demo_imageprocessing.rst:44
+msgid ""
+"(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，`rtm-naming.bat` "
+"をダブルクリックして実行．"
+msgstr ""
+
 #: ../../1.1_demo_imageprocessing.rst:122
 msgid ""
-"Go back to `index <index.html>`__ | Go to `next "
-"<1.2_demo_mediaplaybyvoice.html>`__"
+"Go back to `index <top.html>`__ | Go to `next "
+"<1.2_demo_mediaplaybyvoice.html>`__ |"
 msgstr ""
+
+#: ../../1.1_demo_imageprocessing.rst:124
+msgid "Choose `Other language <index.html>`__"
+msgstr ""
+
+#~ msgid ""
+#~ "(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ "
+#~ "をダブルクリックして実行．"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Go back to `index <index.html>`__ | Go to `next "
+#~ "<1.2_demo_mediaplaybyvoice.html>`__"
+#~ msgstr ""
 
 #~ msgid "`cmd.exe` (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::"
 #~ msgstr ""

@@ -112,6 +112,15 @@ msgstr ""
 
 #: ../../1.3_choreonoid_createmotion.rst:68
 msgid ""
-"Go back to `index <index.html>`__ | Go to `next "
-"<1.4_callmotion_byvoice.html>`__"
+"Go back to `index <top.html>`__ | Go to `next "
+"<1.4_callmotion_byvoice.html>`__ |"
 msgstr ""
+
+#: ../../1.3_choreonoid_createmotion.rst:70
+msgid "Choose `Other language <index.html>`__"
+msgstr ""
+
+#~ msgid ""
+#~ "Go back to `index <index.html>`__ | Go to `next "
+#~ "<1.4_callmotion_byvoice.html>`__"
+#~ msgstr ""
