@@ -41,7 +41,7 @@ nameserver 起動 (全チュートリアル共通)
      <li><a class="reference external"  href="javascript:void(0)" onclick="call_rtmnamerserver(); return false;">rtm-naming.bat</a></li>
     </ul>
 
-1) (上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ をダブルクリックして実行．
+1) (上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，`rtm-naming.bat` をダブルクリックして実行．
 
 - `cmd.exe` (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::
     Starting omniNames for the first time.
@@ -119,5 +119,6 @@ RT System Editor が下図のように起動する．
 
 ----
 
-Go back to `index <index.html>`__ | Go to `next <1.2_demo_mediaplaybyvoice.html>`__
+Go back to `index <top.html>`__ | Go to `next <1.2_demo_mediaplaybyvoice.html>`__ |
 
+Choose `Other language <index.html>`__

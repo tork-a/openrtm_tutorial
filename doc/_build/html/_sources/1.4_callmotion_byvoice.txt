@@ -33,6 +33,21 @@ HowToRun
 ========
 以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．
 
+Run Common Tools
+----------------
+In case they are not running.
+
+.. raw:: html
+
+    <ul>
+     <li><a class="reference external"  href="javascript:void(0)" onclick="call_rtmnamerserver(); return false;">CORBA Nameserver (rtm-naming.bat)</a></li>
+     <li><a class="reference external"  href="javascript:void(0)" onclick="call_rtseditor(); return false;">./demo/RTSE.bat</a></li>
+    </ul>
+
+
+Run This Tutorial
+-----------------
+
 1) "0_StartDemo.bat"，"1_ConnectRTC.bat"，"2_ActivateRTC.bat" の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で "./demo/0 SpeechDemo" を開いてそれぞれ実行．
 
 .. raw:: html
@@ -88,4 +103,6 @@ HowToRun
 
 ----
 
-Go back to `index <index.html>`__ | Go to `next <1.5_modifystate_seatsat.html>`__
+Go back to `index <top.html>`__ | Go to `next <1.5_modifystate_seatsat.html>`__ |
+
+Choose `Other language <index.html>`__

@@ -64,4 +64,7 @@ RTC の deactivation は，コンポーネントがロードした実行時の�
 
 ----
 
-Go back to `index <index.html>`__ | Go to `next <1.3_choreonoid_createmotion.html>`__
+Go back to `index <top.html>`__ | Go to `next <1.3_choreonoid_createmotion.html>`__ |
+
+Choose `Other language <index.html>`__
+
