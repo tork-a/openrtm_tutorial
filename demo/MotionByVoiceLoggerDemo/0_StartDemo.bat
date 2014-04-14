@@ -4,7 +4,7 @@ REM '''
 
 set usbdrive=%1
 %usbdrive%
-cd demo\MotionByVoiceLoggerDemo
+cd openrtm_tutorial\demo\MotionByVoiceLoggerDemo
 echo Moved to DIR=%cd%
 
 rem setup MotionByVoiceDemo first.

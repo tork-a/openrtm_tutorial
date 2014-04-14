@@ -4,7 +4,7 @@ REM '''
 
 set usbdrive=%1
 %usbdrive%
-cd demo\MotionByVoiceDemo
+cd openrtm_tutorial\demo\MotionByVoiceDemo
 echo Moved to DIR=%cd%
 
 tasklist |findstr "SEAT.exe" > nul
