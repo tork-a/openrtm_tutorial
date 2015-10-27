@@ -202,7 +202,7 @@ msgstr ""
 
 #: ../../1.1_demo_imageprocessing.rst:21
 msgid "`RT System Editor` の初歩的な利用法"
-msgstr ""
+msgstr "Usage of `RT System Editor`"
 
 #: ../../1.1_demo_imageprocessing.rst:24
 msgid "動作環境"
