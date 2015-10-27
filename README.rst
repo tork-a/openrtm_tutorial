@@ -84,8 +84,8 @@ Both `ja` and `en` .html files are generated from `.rst` files by using `sphinx-
     $ cd %OPENRTM_TUTORIAL%/doc            (in case you're away)
     $ sphinx-intl build
     $ make -e SPHINXOPTS="-D language='ja'" html   (not ideal, but "make"-ing `en` directly just skips for some reasons)
-    $ make -e SPHINXOPTS="-D language='en'" html
     $ cp -R _build/html/* locale/ja   (Copy translation .html files to manually created folder `locale`)
+    $ make -e SPHINXOPTS="-D language='en'" html
     $ cp -R _build/html/* locale/en   (Copy translation .html files to manually created folder `locale`)
 
 
