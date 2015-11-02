@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>openrtm_tutorial</name>
+  <version>1.0.0</version>
+  <description>Compilation of existing OpenRTM tutorial contents, with some extra features that allow you to run all tutorials via InternetExplorer. Project funded by New Energy and Industrial Technology Development Organization (NEDO).</description>
+
+  <maintainer email="dev@opensource-robotics.tokyo.jp">TORK</maintainer>
+  <license>BSD</license>
+  <author>Isao Hara</author>
+  <author email="dev@opensource-robotics.tokyo.jp">TORK</author>
+  <url type="repository">https://github.com/tork-a/openrtm_tutorial</url>
+  <url type="bugtracker">https://github.com/tork-a/openrtm_tutorial/issues/</url>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export />
+</package>
