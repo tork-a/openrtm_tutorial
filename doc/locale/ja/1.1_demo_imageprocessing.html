@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -8,14 +6,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>1   Introduction &mdash; openrtm_tutorial 0.4 documentation</title>
+    <title>1   Introduction &mdash; openrtm_tutorial 0.4 ドキュメント</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -26,23 +24,23 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <link rel="top" title="openrtm_tutorial 0.4 documentation" href="index.html" /> 
+    <link rel="top" title="openrtm_tutorial 0.4 ドキュメント" href="top.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="総合索引"
              accesskey="I">索引</a></li>
-        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="top.html">openrtm_tutorial 0.4 ドキュメント</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <p><strong>(デモ 1) 画像処理 (OpenRTM-aist，OpenCV)</strong></p>
 <div class="contents topic" id="contents">
@@ -97,7 +95,7 @@
 <ul>
  <li><a class="reference external"  href="javascript:void(0)" onclick="call_rtmnamerserver(); return false;">rtm-naming.bat</a></li>
 </ul><ol class="arabic simple">
-<li>(上記方法でうまく行かなかった場合のみ以降実施) <cite>Explorer</cite> で <cite>demo</cite> フォルダを開き，`rtm-naming.bat` をダブルクリックして実行．</li>
+<li>(上記方法でうまく行かなかった場合のみ以降実施) <cite>Explorer</cite> で <cite>demo</cite> フォルダを開き，<cite>rtm-naming.bat</cite> をダブルクリックして実行．</li>
 </ol>
 <ul>
 <li><dl class="first docutils">
@@ -110,17 +108,18 @@ Checkpointing completed.</p>
 </li>
 </ul>
 <ol class="arabic simple" start="2">
-<li>上記手順で <cite>cmd.exe</cite> が消えてしまう場合は，`nameserver` がうまく起動していないので次の手順で原因を発見：</li>
+<li>上記手順で <cite>cmd.exe</cite> が消えてしまう場合は，<cite>nameserver</cite> がうまく起動していないので次の手順で原因を発見：</li>
 </ol>
 <blockquote>
 <div><p>2.1) <cite>Explorer</cite> 上で，USB のドライヴ名を確認 (D/E/F etc. ここでは <cite>F</cite> と仮定)</p>
 <p>2.2) <cite>cmd.exe</cite> を手動起動 (Win 7: [<a class="reference external" href="http://pcsupport.about.com/od/windows7/a/command-prompt-windows-7.htm">4</a>], Win 8: [<a class="reference external" href="http://pcsupport.about.com/od/windows-8/a/command-prompt-windows-8.htm">5</a>])</p>
 <p>2.3) 以下コマンドでフォルダ移動・コマンド実行:</p>
-<div class="highlight-python"><pre>prompt&gt; F:
+<div class="highlight-python"><div class="highlight"><pre>prompt&gt; F:
 prompt&gt; cd demo
-prompt&gt; rtm-naming.bat</pre>
+prompt&gt; rtm-naming.bat
+</pre></div>
 </div>
-<p>エラー等発生していればここで表示されるのでその内容を診断．`OpenRTM` の <cite>nameserver</cite> の問題は WEB で検索して対処してみてください．</p>
+<p>エラー等発生していればここで表示されるのでその内容を診断．<cite>OpenRTM</cite> の <cite>nameserver</cite> の問題は WEB で検索して対処してみてください．</p>
 </div></blockquote>
 </div>
 <div class="section" id="id5">
@@ -134,8 +133,8 @@ prompt&gt; rtm-naming.bat</pre>
 <a class="reference external"  href="javascript:void(0)" onclick="call_rtseditor(); return false;">./demo/RTSE.bat</a><p>RT System Editor が下図のように起動する．</p>
 <img alt="_images/rtse_nocomponents.png" src="_images/rtse_nocomponents.png" />
 <ol class="arabic simple" start="3">
-<li>左側のペインで 127.0.0.1 を選択し直上の右矢印をクリックすると，起動中の RT Component が同ペイン上に表示される．ここでは <cite>DirectShowCamComp`，`FlipComp`，`CameraViewerComp</cite> となるはず．</li>
-<li>File &#8211;&gt; Open New System Editor を選ぶと，`System Diagram` が真ん中のペインに開かれる．左側のペインから各 RTC を System Diagram にドラッグすると下図のように表示される．</li>
+<li>左側のペインで 127.0.0.1 を選択し直上の右矢印をクリックすると，起動中の RT Component が同ペイン上に表示される．ここでは <cite>DirectShowCamComp</cite>，<cite>FlipComp</cite>，<cite>CameraViewerComp</cite> となるはず．</li>
+<li>File &#8211;&gt; Open New System Editor を選ぶと，<cite>System Diagram</cite> が真ん中のペインに開かれる．左側のペインから各 RTC を System Diagram にドラッグすると下図のように表示される．</li>
 </ol>
 <img alt="_images/rtse_opencvflip_launched.png" src="_images/rtse_opencvflip_launched.png" />
 <ol class="arabic simple" start="5">
@@ -148,7 +147,7 @@ prompt&gt; rtm-naming.bat</pre>
 </ol>
 <img alt="_images/1.1_framerate.png" src="_images/1.1_framerate.png" />
 <ol class="arabic simple" start="10">
-<li><cite>RTSystemEditor</cite> 上で flip_mode の値を 1 &#8211;&gt; 0 &#8211;&gt; -1 と変える (Apply を忘れずに) とカメラ画像も変わることを確認できる．`flip_mode` の値と対応する挙動は次のようになる (画像引用元 <a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png">2</a>)</li>
+<li><cite>RTSystemEditor</cite> 上で flip_mode の値を 1 &#8211;&gt; 0 &#8211;&gt; -1 と変える (Apply を忘れずに) とカメラ画像も変わることを確認できる．<cite>flip_mode</cite> の値と対応する挙動は次のようになる (画像引用元 <a class="reference external" href="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png">2</a>)</li>
 </ol>
 <img alt="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png" src="http://www.openrtm.org/openrtm/sites/default/files/1337/cvFlip_and_FlipRTC.png" />
 <ol class="arabic simple" start="11">
@@ -165,7 +164,7 @@ prompt&gt; rtm-naming.bat</pre>
 </ol>
 </li>
 </ul>
-<p>ここで挙げた終了手順はやや煩雑ですが，御心配なく．次のチュートリアルからはこれらを一括して行うスクリプトを用意してあります．今回は初回なのでほぼすべてを手動で行い，`OpenRTM` のプログラム実行に必要な手順を体験して頂きました．</p>
+<p>ここで挙げた終了手順はやや煩雑ですが，御心配なく．次のチュートリアルからはこれらを一括して行うスクリプトを用意してあります．今回は初回なのでほぼすべてを手動で行い，<cite>OpenRTM</cite> のプログラム実行に必要な手順を体験して頂きました．</p>
 <hr class="docutils" />
 <p>Go back to <a class="reference external" href="top.html">index</a> | Go to <a class="reference external" href="1.2_demo_mediaplaybyvoice.html">next</a> |</p>
 <p>Choose <a class="reference external" href="index.html">Other language</a></p>
@@ -176,7 +175,7 @@ prompt&gt; rtm-naming.bat</pre>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="top.html">目次</a></h3>
   <ul>
@@ -193,12 +192,14 @@ prompt&gt; rtm-naming.bat</pre>
 </li>
 </ul>
 
-  <h3>このページ</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/1.1_demo_imageprocessing.txt"
-           rel="nofollow">ソースコードを表示</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/1.1_demo_imageprocessing.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>クイック検索</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -215,18 +216,18 @@ prompt&gt; rtm-naming.bat</pre>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="総合索引"
              >索引</a></li>
-        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="top.html">openrtm_tutorial 0.4 ドキュメント</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2014, NEDO, TORK.
-      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1 で生成しました。
     </div>
   </body>
 </html>

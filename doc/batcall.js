@@ -30,4 +30,21 @@ function call_OpencvRtmDemo_0() {
     callbat_relativepath("OpencvRtmDemo\\0_StartDemo.bat");
 }
 
+/* added */
+
+function call_ScaraRobotDemo_1() {
+    callbat_relativepath("ScaraRobotDemo\\1_StartDemo.bat");
+}
+
+function call_ScaraRobotDemo_2() {
+    callbat_relativepath("ScaraRobotDemo\\2_CallCsv.bat");
+}
+
+function call_ScaraRobotDemo_8() {
+    callbat_relativepath("ScaraRobotDemo\\8_ConnectRTC.bat");
+}
+
+function call_ScaraRobotDemo_11() {
+    callbat_relativepath("ScaraRobotDemo\\11_DemoExit.bat");
+}
 

@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
@@ -11,182 +11,186 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../1.1_demo_imageprocessing.rst:1
+#: ..\..\1.1_demo_imageprocessing.rst:1
 msgid "**(デモ 1) 画像処理 (OpenRTM-aist，OpenCV)**"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:11
+#: ..\..\1.1_demo_imageprocessing.rst:11
 msgid "Introduction"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:14
+#: ..\..\1.1_demo_imageprocessing.rst:14
 msgid "関連するチュートリアル"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:15
+#: ..\..\1.1_demo_imageprocessing.rst:15
 msgid ""
 "http://www.openrtm.org/openrtm/ja/node/4625 - ネット接続不可の場合は "
 "./doc/tutorial_openrtm_opencv_cmake_imgprocessing.pdf"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:19
+#: ..\..\1.1_demo_imageprocessing.rst:19
 msgid "このページで体験すること"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:20
+#: ..\..\1.1_demo_imageprocessing.rst:20
 msgid "カメラで認識する動画像を反転 (OpenRTM-aist，OpenCV による)"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:21
+#: ..\..\1.1_demo_imageprocessing.rst:21
 msgid "`RT System Editor` の初歩的な利用法"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:24
+#: ..\..\1.1_demo_imageprocessing.rst:24
 msgid "動作環境"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:25
+#: ..\..\1.1_demo_imageprocessing.rst:25
 msgid "Windows 7／ 8"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:26
+#: ..\..\1.1_demo_imageprocessing.rst:26
 msgid ""
 "Java Runtime Environment (JRE) 7 "
 "(`../misc/openjdk_1.7.0_u45_2.4.3_installed` として同梱，インストール不要)"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:29
+#: ..\..\1.1_demo_imageprocessing.rst:29
 msgid "実行方法"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:30
+#: ..\..\1.1_demo_imageprocessing.rst:30
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:33
+#: ..\..\1.1_demo_imageprocessing.rst:33
 msgid "nameserver 起動 (全チュートリアル共通)"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:34
+#: ..\..\1.1_demo_imageprocessing.rst:34
 msgid "基本的に `OpenRTM` の nameserver は一度起動すると，起動したままでもすべてのチュートリアルは動作すると思われます．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:36
+#: ..\..\1.1_demo_imageprocessing.rst:36
 msgid "次のリンクをクリックして nameserver を起動．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:47
+#: ..\..\1.1_demo_imageprocessing.rst:47
 msgid "Starting omniNames for the first time. : Checkpointing completed."
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:51
+#: ..\..\1.1_demo_imageprocessing.rst:51
 msgid "上記手順で `cmd.exe` が消えてしまう場合は，`nameserver` がうまく起動していないので次の手順で原因を発見："
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:53
+#: ..\..\1.1_demo_imageprocessing.rst:53
 msgid "2.1) `Explorer` 上で，USB のドライヴ名を確認 (D/E/F etc. ここでは `F` と仮定)"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:55
+#: ..\..\1.1_demo_imageprocessing.rst:55
 msgid "2.2) `cmd.exe` を手動起動 (Win 7: [4_], Win 8: [5_])"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:57
+#: ..\..\1.1_demo_imageprocessing.rst:57
 msgid "2.3) 以下コマンドでフォルダ移動・コマンド実行::"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:63
+#: ..\..\1.1_demo_imageprocessing.rst:63
 msgid ""
 "エラー等発生していればここで表示されるのでその内容を診断．`OpenRTM` の `nameserver` の問題は WEB "
 "で検索して対処してみてください．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:66
+#: ..\..\1.1_demo_imageprocessing.rst:66
 msgid "チュートリアルのプログラム実行"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:68
+#: ..\..\1.1_demo_imageprocessing.rst:68
 msgid ""
 "`./demo/OpencvRtmDemo/0_StartDemo.bat` を実行．次のリンクから起動できなければ，手動で `Explorer` "
 "から実行．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:74
+#: ..\..\1.1_demo_imageprocessing.rst:74
 msgid "./demo/RTSE.bat を実行．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:80
+#: ..\..\1.1_demo_imageprocessing.rst:80
 msgid "RT System Editor が下図のように起動する．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:84
+#: ..\..\1.1_demo_imageprocessing.rst:84
 msgid ""
 "左側のペインで 127.0.0.1 を選択し直上の右矢印をクリックすると，起動中の RT Component が同ペイン上に表示される．ここでは "
 "`DirectShowCamComp`，`FlipComp`，`CameraViewerComp` となるはず．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:86
+#: ..\..\1.1_demo_imageprocessing.rst:86
 msgid ""
 "File --> Open New System Editor を選ぶと，`System Diagram` "
 "が真ん中のペインに開かれる．左側のペインから各 RTC を System Diagram にドラッグすると下図のように表示される．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:90
+#: ..\..\1.1_demo_imageprocessing.rst:90
 msgid "同ペイン上で各 RTC を接続．上に挙げた三つの RTC を左から接続する．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:92
+#: ..\..\1.1_demo_imageprocessing.rst:92
 msgid "同ペイン上で直上左にある \"ALL\" というアイコンをクリック，すべての RTC を activate (参考リンク 1_)"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:96
+#: ..\..\1.1_demo_imageprocessing.rst:96
 msgid ""
 "`CaptureImage` というウィンドウにカメラ画像が表示されれば入出力・接続が成功．同時に `DirectShowCamComp` "
 "のコマンドプロンプトにも `frame rate` が定期的に追加表示される．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:100
+#: ..\..\1.1_demo_imageprocessing.rst:100
 msgid ""
 "`RTSystemEditor` 上で flip_mode の値を 1 --> 0 --> -1 と変える (Apply を忘れずに) "
 "とカメラ画像も変わることを確認できる．`flip_mode` の値と対応する挙動は次のようになる (画像引用元 2_)"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:104
+#: ..\..\1.1_demo_imageprocessing.rst:104
 msgid "終了するには，次の手順で \"RTC を inactivate\" --> \"RTC 間のリンクを切り離し\" --> \"各 RTC を停止\" を行う．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:106
+#: ..\..\1.1_demo_imageprocessing.rst:106
 msgid "同ペイン上で直上左にある \"All Deactivate\" というアイコンをクリック"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:107
+#: ..\..\1.1_demo_imageprocessing.rst:107
 msgid "で行ったのと逆を行う -- つまり，各接続線上で右クリックし\"切断\"を選択"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:108
+#: ..\..\1.1_demo_imageprocessing.rst:108
 msgid "で起動されたコマンドプロンプト群を手動で終了．ただし `rtm-naming.bat` のそれは停止せずとも良い．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:110
+#: ..\..\1.1_demo_imageprocessing.rst:110
 msgid ""
 "ここで挙げた終了手順はやや煩雑ですが，御心配なく．次のチュートリアルからはこれらを一括して行うスクリプトを用意してあります．今回は初回なのでほぼすべてを手動で行い，`OpenRTM`"
 " のプログラム実行に必要な手順を体験して頂きました．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:44
+#: ..\..\1.1_demo_imageprocessing.rst:44
 msgid ""
 "(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，`rtm-naming.bat` "
 "をダブルクリックして実行．"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:122
+#: ..\..\1.1_demo_imageprocessing.rst:122
 msgid ""
 "Go back to `index <top.html>`__ | Go to `next "
 "<1.2_demo_mediaplaybyvoice.html>`__ |"
 msgstr ""
 
-#: ../../1.1_demo_imageprocessing.rst:124
+#: ..\..\1.1_demo_imageprocessing.rst:124
 msgid "Choose `Other language <index.html>`__"
+msgstr ""
+
+#: ..\..\1.1_demo_imageprocessing.rst:49
+msgid "`cmd.exe` (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::"
 msgstr ""
 
 #~ msgid ""
@@ -197,7 +201,4 @@ msgstr ""
 #~ msgid ""
 #~ "Go back to `index <index.html>`__ | Go to `next "
 #~ "<1.2_demo_mediaplaybyvoice.html>`__"
-#~ msgstr ""
-
-#~ msgid "`cmd.exe` (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::"
 #~ msgstr ""

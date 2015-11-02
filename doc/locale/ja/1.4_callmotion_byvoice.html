@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -8,14 +6,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>1   このページで体験すること &mdash; openrtm_tutorial 0.4 documentation</title>
+    <title>1   このページで体験すること &mdash; openrtm_tutorial 0.4 ドキュメント</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -26,23 +24,23 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <link rel="top" title="openrtm_tutorial 0.4 documentation" href="index.html" /> 
+    <link rel="top" title="openrtm_tutorial 0.4 ドキュメント" href="top.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="総合索引"
              accesskey="I">索引</a></li>
-        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="top.html">openrtm_tutorial 0.4 ドキュメント</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <p><strong>(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid)</strong></p>
 <div class="contents topic" id="contents">
@@ -69,7 +67,7 @@
 </div>
 <div class="section" id="id2">
 <h1><a class="toc-backref" href="#id10">2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a><a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>当ページでは最低限の操作方法のみ紹介します．`Choreonoid` や関連する <cite>RTC</cite> に関する詳細は下記リンクを参照ください．</p>
+<p>当ページでは最低限の操作方法のみ紹介します．<cite>Choreonoid</cite> や関連する <cite>RTC</cite> に関する詳細は下記リンクを参照ください．</p>
 <ul class="simple">
 <li><cite>Choreonoid</cite> 上のロボットの腕を音声で上下する &#8220;腕上げロボット&#8221; サンプルについては[<a class="reference external" href="http://openrtc.org/OpenHRI/systems/FlagGame.html">3</a>]</li>
 <li><cite>Choreonoid</cite> 上のロボットを <cite>OpenRTM</cite> 経由で操作するための RTC <cite>RobotMotionRtc</cite> に関しては[<a class="reference external" href="http://www.openrtp.jp/wiki/_default/ja/Software/ChoreonodRtcManager.html">1</a>]</li>
@@ -103,10 +101,10 @@
 <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\1_ConnectRTC.bat'); return false;">./demo/MotionByVoiceDemo/1_ConnectRTC.bat</a></li>
 <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\2_ActivateRTC.bat'); return false;">./demo/MotionByVoiceDemo/2_ActivateRTC.bat</a></li>
 </ul><ol class="arabic simple" start="2">
-<li>(Optional) デバッグ用途として，`./demo/SampleWordLogger` 内の 0 から 2 までの <cite>.bat</cite> ファイルを実行しても良い．発話内容を記録する RTC である．</li>
+<li>(Optional) デバッグ用途として，<cite>./demo/SampleWordLogger</cite> 内の 0 から 2 までの <cite>.bat</cite> ファイルを実行しても良い．発話内容を記録する RTC である．</li>
 </ol>
 <blockquote>
-<div>このときの RTC の連結状況を <cite>RT System Editor</cite> で表示 (SampleWordLogger を実行しなかった場合は，`SampleWordLogger0` RTC が無くなるのみ):</div></blockquote>
+<div>このときの RTC の連結状況を <cite>RT System Editor</cite> で表示 (SampleWordLogger を実行しなかった場合は，<cite>SampleWordLogger0</cite> RTC が無くなるのみ):</div></blockquote>
 <img alt="_images/rtse_motionvoice_logger_activated.png" src="_images/rtse_motionvoice_logger_activated.png" />
 <ol class="arabic simple" start="3">
 <li>マイクに向かって &#8220;みぎ あげて&#8221; (スペースは0.5秒程度間を空ける) と発話．うまく認識されると，ロボットが右手を上げる．</li>
@@ -129,7 +127,7 @@
 </div>
 <div class="section" id="id4">
 <h1><a class="toc-backref" href="#id15">4&nbsp;&nbsp;&nbsp;管理されているロボット状態</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>(次のチュートリアル[<a class="reference external" href="1.5_modifystate_seatsat.htm">4</a>]のトピックですが) 当デモは <cite>SEAT</cite> というモジュールを用いて状態を管理しています．当デモが管理する状態は，`./demo/MotionByVoiceDemo/motion_cnoid.seatml` で定義されているように，`both_down`, <cite>both_up</cite>, <cite>left_up</cite>, <cite>right_up</cite> といった，各腕の位置の組合せによる四種類です．</p>
+<p>(次のチュートリアル[<a class="reference external" href="1.5_modifystate_seatsat.htm">4</a>]のトピックですが) 当デモは <cite>SEAT</cite> というモジュールを用いて状態を管理しています．当デモが管理する状態は，<cite>./demo/MotionByVoiceDemo/motion_cnoid.seatml</cite> で定義されているように，<cite>both_down</cite>, <cite>both_up</cite>, <cite>left_up</cite>, <cite>right_up</cite> といった，各腕の位置の組合せによる四種類です．</p>
 <hr class="docutils" />
 <p>Go back to <a class="reference external" href="top.html">index</a> | Go to <a class="reference external" href="1.5_modifystate_seatsat.html">next</a> |</p>
 <p>Choose <a class="reference external" href="index.html">Other language</a></p>
@@ -139,7 +137,7 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="top.html">目次</a></h3>
   <ul>
@@ -156,12 +154,14 @@
 <li><a class="reference internal" href="#id4">4&nbsp;&nbsp;&nbsp;管理されているロボット状態</a></li>
 </ul>
 
-  <h3>このページ</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/1.4_callmotion_byvoice.txt"
-           rel="nofollow">ソースコードを表示</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/1.4_callmotion_byvoice.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>クイック検索</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -178,18 +178,18 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="総合索引"
              >索引</a></li>
-        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="top.html">openrtm_tutorial 0.4 ドキュメント</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2014, NEDO, TORK.
-      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1 で生成しました。
     </div>
   </body>
 </html>
