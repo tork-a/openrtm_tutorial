@@ -2,6 +2,10 @@
 OpenRTM Tutorial
 ====================
 
+.. contents:: Table of Contents
+   :depth: 2
+.. sectnum::
+
 Project Introduction
 ====================
 Compilation of existing tutorial contents, with a few new tutorials being added. Contents are originally intended to be distributed packaged in USB drive.
