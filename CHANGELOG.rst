@@ -2,8 +2,8 @@
 Changelog for package openrtm_tutorial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.1 (2015-11-02)
+------------------
 * [feat] Add scara robot tutorial
 * [fix][OpencvRtmDemo/0_StartDemo.bat] Fix wrong path
 * [fix] Adding a dll to omniorb dir. Lack of this file causes error on some platform as reported by Saitama University
