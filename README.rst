@@ -61,7 +61,7 @@ On a computer where `git` is available, do::
 
 That's it.
 
-NOTE: Above said, the folder structure in USB must maintain `openrtm_tutorial` at the top folder like this:
+NOTE: Above said, the folder structure in USB must maintain `openrtm_tutorial` at the top folder like this::
 
     %USBDRIVE%:\openrtm_tutorial
     F:\openrtm_tutorial          (e.g. If the USB is recognized as F drive)
