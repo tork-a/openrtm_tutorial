@@ -9,7 +9,7 @@ set OMNI_ROOT=%TUTORIAL_ROOT%\misc\OpenRTM-aist\1.1\omniORB\4.1.5
 set RTM_ROOT=%TUTORIAL_ROOT%\misc\OpenRTM-aist\1.1
 set OPENCV_ROOT=%TUTORIAL_ROOT%\demo\Rtc_CvMonitor
 rem set PATH=%PATH%;%OMNI_ROOT%\bin\x86_win32;%TUTORIAL_ROOT%\misc\OpenRTM-aist\1.1\examples\C++\opencv-rtcs
-set PATH=%PATH%;%RTM_ROOT%\runtime;%OPENCV_ROOT%;%OMNI_ROOT%\bin\x86_win32;%usbdrive%\misc\OpenRTM-aist\1.1\examples\C++\opencv-rtcs
+set PATH=%PATH%;%RTM_ROOT%\runtime;%OPENCV_ROOT%;%OMNI_ROOT%\bin\x86_win32;%TUTORIAL_ROOT%\misc\OpenRTM-aist\1.1\examples\C++\opencv-rtcs
 
 echo CURRENT DIR=%cd%
 echo PATH=%PATH%
