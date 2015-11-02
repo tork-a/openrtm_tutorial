@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
@@ -11,17 +11,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../1.5_modifystate_seatsat.rst:1
+#: ..\..\1.5_modifystate_seatsat.rst:1
 msgid "**(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT)**"
 msgstr ""
 "`(Demo 5) Running New Motions Along with State Transion (SEATSAT) "
 "<1.5_modifystate_seatsat.html>`_"
 
-#: ../../1.5_modifystate_seatsat.rst:11
+#: ..\..\1.5_modifystate_seatsat.rst:11
 msgid "このページで体験すること"
 msgstr "What you'll experience"
 
-#: ../../1.5_modifystate_seatsat.rst:13
+#: ..\..\1.5_modifystate_seatsat.rst:13
 msgid ""
 "SEATSAT が管理するロボットの状態遷移に新たな状態を追加し，音声命令によりその状態へ遷移して `Choreonoid` "
 "上のロボットのモーションを再生する．"
@@ -29,11 +29,11 @@ msgstr ""
 "Add new state to `SEATSAT`-managed robot, traverse to that state by voice "
 "operation and play the motion on `Choreonoid`"
 
-#: ../../1.5_modifystate_seatsat.rst:16
+#: ..\..\1.5_modifystate_seatsat.rst:16
 msgid "関連するチュートリアル"
 msgstr "Related Tutorials"
 
-#: ../../1.5_modifystate_seatsat.rst:17
+#: ..\..\1.5_modifystate_seatsat.rst:17
 msgid ""
 "当ページでは最低限の操作方法のみ紹介します．`SEAT (Speech Event Action Transfer)` "
 "の一般的情報については下記リンクを参照ください．"
@@ -41,32 +41,32 @@ msgstr ""
 "You'll see very basic operation for `SEAT (Speech Event Action Transfer)` in"
 " this tutorial. See the following links for more details."
 
-#: ../../1.5_modifystate_seatsat.rst:19
+#: ..\..\1.5_modifystate_seatsat.rst:19
 msgid "`SEAT` 含む対話マネージャの書式について[1_]"
 msgstr "Format for the interactive state manager `SEAT`[1_]"
 
-#: ../../1.5_modifystate_seatsat.rst:22
+#: ..\..\1.5_modifystate_seatsat.rst:22
 msgid "動作環境"
 msgstr "SystemEnvironment"
 
-#: ../../1.5_modifystate_seatsat.rst:23
+#: ..\..\1.5_modifystate_seatsat.rst:23
 msgid ""
 "`前チュートリアルの動作環境 <1.4_callmotion_byvoice.html#SystemEnvironment>`__ を満たす．"
 msgstr ""
 "Satisfy `the environment defined in the previous tutorial "
 "<1.4_callmotion_byvoice.html#SystemEnvironment>`__ "
 
-#: ../../1.5_modifystate_seatsat.rst:26
+#: ..\..\1.5_modifystate_seatsat.rst:26
 msgid "実行方法"
 msgstr "HowToRun"
 
-#: ../../1.5_modifystate_seatsat.rst:27
+#: ..\..\1.5_modifystate_seatsat.rst:27
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 "Your current directory is assumed to be the home of the USB unless "
 "specified."
 
-#: ../../1.5_modifystate_seatsat.rst:33
+#: ..\..\1.5_modifystate_seatsat.rst:33
 msgid ""
 "まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル "
 "<1.4_callmotion_byvoice.html#SystemEnvironment>`__ を再び利用します．"
@@ -74,7 +74,7 @@ msgstr ""
 "First, let's run the robot status in the existing demo. Use the `previsous "
 "demo <1.4_callmotion_byvoice.html#SystemEnvironment>`__ again."
 
-#: ../../1.5_modifystate_seatsat.rst:35
+#: ..\..\1.5_modifystate_seatsat.rst:35
 msgid ""
 "`./demo/MotionByVoiceDemo` の \"0_StartDemo2.bat\" (前回使った \"0_StartDemo.bat\""
 " ではなく) を実行．"
@@ -82,11 +82,11 @@ msgstr ""
 "Run \"0_StartDemo2.bat\" in `./demo/MotionByVoiceDemo` (note that this isn't"
 "  \"0_StartDemo.bat\" we used previously)."
 
-#: ../../1.5_modifystate_seatsat.rst:43
+#: ..\..\1.5_modifystate_seatsat.rst:43
 msgid "\"1 ConnectRTC.bat\", \"2 ActivateRTC.bat\" を実行．"
 msgstr "Run \"1 ConnectRTC.bat\", \"2 ActivateRTC.bat\", respectively"
 
-#: ../../1.5_modifystate_seatsat.rst:52
+#: ..\..\1.5_modifystate_seatsat.rst:52
 msgid ""
 "\"さいせい よろしく\" と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお `Choreonoid` "
 "画面上では見えないが，`SEAT` の管理するロボットの状態は `dance_ready` という新たな状態に移っている．"
@@ -95,13 +95,13 @@ msgstr ""
 "down and put arms down. By the way it's not visible on `Choreonoid`, but the"
 " state managed by `SEAT` is now `dance_ready`."
 
-#: ../../1.5_modifystate_seatsat.rst:54
+#: ..\..\1.5_modifystate_seatsat.rst:54
 msgid "\"さいせい よろしく\" コマンドは，既存のどのロボット状態からでも有効です; (例．右手だけ上がった状態)"
 msgstr ""
 "Command \"sa-sei yoro-shiku\" is valid from any robot state (eg. when only "
 "the right hand is up)."
 
-#: ../../1.5_modifystate_seatsat.rst:56
+#: ..\..\1.5_modifystate_seatsat.rst:56
 msgid ""
 "\"あくしょん よろしく\" と発話．ロボットは前回のチュートリアルで見せたのと同じダンスをする．その後 `both_down` 状態 (初期の状態) "
 "に戻る．"
@@ -109,41 +109,45 @@ msgstr ""
 "Say \"action yoro-shiku\". Robot starts the same dance from the previous "
 "tutorial, then goes back to the initial `both_down` state."
 
-#: ../../1.5_modifystate_seatsat.rst:58
+#: ..\..\1.5_modifystate_seatsat.rst:58
 msgid "終了時は，\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" の順に実行．"
 msgstr ""
 "Click \"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\", "
 "respectively."
 
-#: ../../1.5_modifystate_seatsat.rst:69
+#: ..\..\1.5_modifystate_seatsat.rst:69
 msgid "新規状態の追加方法"
 msgstr "Add new state"
 
-#: ../../1.5_modifystate_seatsat.rst:70
+#: ..\..\1.5_modifystate_seatsat.rst:70
 msgid "状態を追加するために今回追加したのは次の箇所::"
 msgstr "This portion represents the added state::"
 
-#: ../../1.5_modifystate_seatsat.rst:92
+#: ..\..\1.5_modifystate_seatsat.rst:92
 msgid "また，`あくしょん` という新たな語を音声認識させるために，`Julius` の設定ファイルも次のように更新::"
 msgstr ""
 "Also, edit the config file in `Julius` to enable a new term `action` in the "
 "voice recognition::"
 
-#: ../../1.5_modifystate_seatsat.rst:114
-msgid ""
-"Go back to `index <top.html>`__ | Go to `next <2.1_samplewordlogger.html>`__"
-" |"
-msgstr ""
-
-#: ../../1.5_modifystate_seatsat.rst:116
+#: ..\..\1.5_modifystate_seatsat.rst:116
 msgid "Choose `Other language <index.html>`__"
 msgstr ""
 
-#: ../../1.5_modifystate_seatsat.rst:31
+#: ..\..\1.5_modifystate_seatsat.rst:31
 msgid ""
 "For starting necessary services, quickly go [run-common-tools_] and come "
 "back."
 msgstr ""
+
+#: ..\..\1.5_modifystate_seatsat.rst:114
+msgid ""
+"Go back to `index <top.html>`__ | Go to `next <1.6_scararobot_control>`__ |"
+msgstr ""
+
+#~ msgid ""
+#~ "Go back to `index <top.html>`__ | Go to `next <2.1_samplewordlogger.html>`__"
+#~ " |"
+#~ msgstr ""
 
 #~ msgid "For starting necessary services, quickly go [2_] and come back."
 #~ msgstr ""

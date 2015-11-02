@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -8,14 +6,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>1   このページで体験すること &mdash; openrtm_tutorial 0.4 documentation</title>
+    <title>1   このページで体験すること &mdash; openrtm_tutorial 0.4 ドキュメント</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
+        URL_ROOT:    './',
         VERSION:     '0.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
@@ -26,23 +24,23 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <link rel="top" title="openrtm_tutorial 0.4 documentation" href="index.html" /> 
+    <link rel="top" title="openrtm_tutorial 0.4 ドキュメント" href="top.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="総合索引"
              accesskey="I">索引</a></li>
-        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="top.html">openrtm_tutorial 0.4 ドキュメント</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <p><strong>(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT)</strong></p>
 <div class="contents topic" id="contents">
@@ -65,7 +63,7 @@
 </div>
 <div class="section" id="id2">
 <h1><a class="toc-backref" href="#id8">2&nbsp;&nbsp;&nbsp;関連するチュートリアル</a><a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<p>当ページでは最低限の操作方法のみ紹介します．`SEAT (Speech Event Action Transfer)` の一般的情報については下記リンクを参照ください．</p>
+<p>当ページでは最低限の操作方法のみ紹介します．<cite>SEAT (Speech Event Action Transfer)</cite> の一般的情報については下記リンクを参照ください．</p>
 <ul class="simple">
 <li><cite>SEAT</cite> 含む対話マネージャの書式について[<a class="reference external" href="http://openhri.net/doc/scriptingdialogmanager-ja.html">1</a>]</li>
 </ul>
@@ -81,7 +79,7 @@
 <p>以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．</p>
 <blockquote>
 <div>For starting necessary services, quickly go [<a class="reference external" href="./1.4_callmotion_byvoice.html#run-common-tools">run-common-tools</a>] and come back.</div></blockquote>
-<p>まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．`前チュートリアル &lt;1.4_callmotion_byvoice.html#SystemEnvironment&gt;`__ を再び利用します．</p>
+<p>まず，新たなロボットの状態を既に用意してあり，デモで体験しましょう．<a class="reference external" href="1.4_callmotion_byvoice.html#SystemEnvironment">前チュートリアル</a> を再び利用します．</p>
 <ol class="arabic simple">
 <li><cite>./demo/MotionByVoiceDemo</cite> の &#8220;0_StartDemo2.bat&#8221; (前回使った &#8220;0_StartDemo.bat&#8221; ではなく) を実行．</li>
 </ol>
@@ -94,7 +92,7 @@
 <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\1_ConnectRTC.bat'); return false;">./demo/MotionByVoiceDemo/1_ConnectRTC.bat</a></li>
 <li><a class="reference external"  href="javascript:void(0)" onclick="callbat_relativepath('MotionByVoiceDemo\\2_ActivateRTC.bat'); return false;">./demo/MotionByVoiceDemo/2_ActivateRTC.bat</a></li>
 </ul><ol class="arabic simple" start="3">
-<li>&#8220;さいせい よろしく&#8221; と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお <cite>Choreonoid</cite> 画面上では見えないが，`SEAT` の管理するロボットの状態は <cite>dance_ready</cite> という新たな状態に移っている．</li>
+<li>&#8220;さいせい よろしく&#8221; と発話．前回と違い今回は，ロボットはおじぎをして手を下げる．なお <cite>Choreonoid</cite> 画面上では見えないが，<cite>SEAT</cite> の管理するロボットの状態は <cite>dance_ready</cite> という新たな状態に移っている．</li>
 </ol>
 <blockquote>
 <div>&#8220;さいせい よろしく&#8221; コマンドは，既存のどのロボット状態からでも有効です; (例．右手だけ上がった状態)</div></blockquote>
@@ -112,38 +110,40 @@
 <div class="section" id="id5">
 <h1><a class="toc-backref" href="#id11">4&nbsp;&nbsp;&nbsp;新規状態の追加方法</a><a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>状態を追加するために今回追加したのは次の箇所:</p>
-<div class="highlight-python"><pre>In ./demo/MotionByVoiceDemo/motion_cnoid2.seatml
+<div class="highlight-python"><div class="highlight"><pre>In ./demo/MotionByVoiceDemo/motion_cnoid2.seatml
 
-  &lt;state name="both_down"&gt;
+  &lt;state name=&quot;both_down&quot;&gt;
     &lt;rule&gt;
   :
 +    &lt;rule&gt;
 +      &lt;key&gt;さいせい よろしく&lt;/key&gt;
-+      &lt;command host="command"&gt;bow&lt;/command&gt;
++      &lt;command host=&quot;command&quot;&gt;bow&lt;/command&gt;
 +      &lt;statetransition&gt;dance_ready&lt;/statetransition&gt;
 +    &lt;/rule&gt;
   &lt;/state&gt;
   :
-+  &lt;state name="dance_ready"&gt;
++  &lt;state name=&quot;dance_ready&quot;&gt;
 +    &lt;rule&gt;
 +      &lt;key&gt;あくしょん よろしく&lt;/key&gt;
-+      &lt;command host="command"&gt;SampleMotion1&lt;/command&gt;
++      &lt;command host=&quot;command&quot;&gt;SampleMotion1&lt;/command&gt;
 +      &lt;statetransition&gt;both_down&lt;/statetransition&gt;
 +    &lt;/rule&gt;
-+  &lt;/state&gt;</pre>
++  &lt;/state&gt;
+</pre></div>
 </div>
-<p>また，`あくしょん` という新たな語を音声認識させるために，`Julius` の設定ファイルも次のように更新:</p>
-<div class="highlight-python"><pre>In ./demo/MotionByVoiceDemo/motion2.grxml
+<p>また，<cite>あくしょん</cite> という新たな語を音声認識させるために，<cite>Julius</cite> の設定ファイルも次のように更新:</p>
+<div class="highlight-python"><div class="highlight"><pre>In ./demo/MotionByVoiceDemo/motion2.grxml
 
 +      &lt;item&gt;あくしょん&lt;/item&gt;
 :
 +    &lt;/one-of&gt;
 +    &lt;one-of&gt;
 :
-+      &lt;item&gt;よろしく&lt;/item&gt;</pre>
++      &lt;item&gt;よろしく&lt;/item&gt;
+</pre></div>
 </div>
 <hr class="docutils" />
-<p>Go back to <a class="reference external" href="top.html">index</a> | Go to <a class="reference external" href="2.1_samplewordlogger.html">next</a> |</p>
+<p>Go back to <a class="reference external" href="top.html">index</a> | Go to <a class="reference external" href="1.6_scararobot_control">next</a> |</p>
 <p>Choose <a class="reference external" href="index.html">Other language</a></p>
 </div>
 
@@ -151,7 +151,7 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="top.html">目次</a></h3>
   <ul>
@@ -164,12 +164,14 @@
 <li><a class="reference internal" href="#id5">4&nbsp;&nbsp;&nbsp;新規状態の追加方法</a></li>
 </ul>
 
-  <h3>このページ</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/1.5_modifystate_seatsat.txt"
-           rel="nofollow">ソースコードを表示</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/1.5_modifystate_seatsat.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
   <h3>クイック検索</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -186,18 +188,18 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="総合索引"
              >索引</a></li>
-        <li><a href="top.html">openrtm_tutorial 0.4 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="top.html">openrtm_tutorial 0.4 ドキュメント</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2014, NEDO, TORK.
-      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 で生成しました。
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1 で生成しました。
     </div>
   </body>
 </html>
