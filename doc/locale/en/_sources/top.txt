@@ -10,6 +10,7 @@ RT Middleware 体験用チュートリアル用 USB
 - `(デモ 3) ロボットモーションの新規作成 (Choreonoid) <1.3_choreonoid_createmotion.html>`_
 - `(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid) <1.4_callmotion_byvoice.html>`_
 - `(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT) <1.5_modifystate_seatsat.html>`_
+- `(デモ 6) アカデミック スカラロボットの制御 <1.6_scararobot_control.html>`_
 
 RTC 開発の体験
 ==============

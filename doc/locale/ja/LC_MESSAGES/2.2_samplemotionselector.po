@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: openrtm_tutorial 0.4\n"
@@ -11,157 +11,157 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../2.2_samplemotionselector.rst:1
+#: ..\..\2.2_samplemotionselector.rst:1
 msgid "**(RTC 作成 2) Choreonoid のモーションを選択する RTC の開発**"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:12
+#: ..\..\2.2_samplemotionselector.rst:12
 msgid "Introduction"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:15
+#: ..\..\2.2_samplemotionselector.rst:15
 msgid "このページで体験すること"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:17
+#: ..\..\2.2_samplemotionselector.rst:17
 msgid ""
 "キーボードからの入力によって， Choreonoidのモーションを呼び出すことが出来る `SampleMotionCaller RTC` の開発"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:20
+#: ..\..\2.2_samplemotionselector.rst:20
 msgid "関連するチュートリアル"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:21
+#: ..\..\2.2_samplemotionselector.rst:21
 msgid "前章 (Logger RTC 開発)[1_]を終了し，`RTC` のスクラッチからの作成方法を習得していることを前提としています．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:24
+#: ..\..\2.2_samplemotionselector.rst:24
 msgid "SystemEnvironment"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:25
+#: ..\..\2.2_samplemotionselector.rst:25
 msgid "前章 (Logger RTC 開発)[1_]に同じ．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:29
+#: ..\..\2.2_samplemotionselector.rst:29
 msgid "RTC の仕様 (I/O, Configuration)"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:31
+#: ..\..\2.2_samplemotionselector.rst:31
 msgid "これから作成するコンポーネントを `SampleMotionCaller` RTC と呼ぶことにします．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:33
+#: ..\..\2.2_samplemotionselector.rst:33
 msgid ""
 "このコンポーネントは，キーボードからの入力を受け付けるので `InPort` は未指定です．入力を解釈した結果を `TimedString` で "
 "`OutPort` へ出力します．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:36
+#: ..\..\2.2_samplemotionselector.rst:36
 msgid "RTC I/O Spec"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:39
+#: ..\..\2.2_samplemotionselector.rst:39
 msgid "Component Name"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:39
+#: ..\..\2.2_samplemotionselector.rst:39
 msgid "SampleMotionCaller"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:41
+#: ..\..\2.2_samplemotionselector.rst:41
 msgid "InPort"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:43 ../../2.2_samplemotionselector.rst:49
+#: ..\..\2.2_samplemotionselector.rst:43 ..\..\2.2_samplemotionselector.rst:49
 msgid "Port Name"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:43 ../../2.2_samplemotionselector.rst:45
-#: ../../2.2_samplemotionselector.rst:49 ../../2.2_samplemotionselector.rst:55
-#: ../../2.2_samplemotionselector.rst:57 ../../2.2_samplemotionselector.rst:59
+#: ..\..\2.2_samplemotionselector.rst:43 ..\..\2.2_samplemotionselector.rst:45
+#: ..\..\2.2_samplemotionselector.rst:49 ..\..\2.2_samplemotionselector.rst:55
+#: ..\..\2.2_samplemotionselector.rst:57 ..\..\2.2_samplemotionselector.rst:59
 msgid "(None)"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:45 ../../2.2_samplemotionselector.rst:51
-#: ../../2.2_samplemotionselector.rst:57
+#: ..\..\2.2_samplemotionselector.rst:45 ..\..\2.2_samplemotionselector.rst:51
+#: ..\..\2.2_samplemotionselector.rst:57
 msgid "Data Type"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:47
+#: ..\..\2.2_samplemotionselector.rst:47
 msgid "OutPort"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:51
+#: ..\..\2.2_samplemotionselector.rst:51
 msgid "TimedString"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:53
+#: ..\..\2.2_samplemotionselector.rst:53
 msgid "Configuration"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:55
+#: ..\..\2.2_samplemotionselector.rst:55
 msgid "Parameter Name"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:59
+#: ..\..\2.2_samplemotionselector.rst:59
 msgid "Values"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:62
+#: ..\..\2.2_samplemotionselector.rst:62
 msgid "SampleMotionCaller RTC では、onExecute() コールバックのみ使用します。"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:66
+#: ..\..\2.2_samplemotionselector.rst:66
 msgid "How to make RTC"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:67
+#: ..\..\2.2_samplemotionselector.rst:67
 msgid "`RTC Builder` を用いた初期設定は省略します．前章[1_]で習得したことを用い，上記設計を実装して下さい．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:69
+#: ..\..\2.2_samplemotionselector.rst:69
 msgid "ここで `VC++ 2010` は閉じても構いません．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:72
+#: ..\..\2.2_samplemotionselector.rst:72
 msgid "ヘッダ，ソースの編集"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:75
+#: ..\..\2.2_samplemotionselector.rst:75
 msgid ".h, .cpp ファイル編集"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:77
+#: ..\..\2.2_samplemotionselector.rst:77
 msgid ""
 "`.demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h` "
 "に次のように追加します::"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:84
+#: ..\..\2.2_samplemotionselector.rst:84
 msgid "下記のように `onExecute()` を実装します．::"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:153
+#: ..\..\2.2_samplemotionselector.rst:153
 msgid ""
 "ファイル全体はこちらで閲覧可能: - `.demo/SampleMotionCaller/src/SampleMotionCaller.cpp` - "
 "`demo/SampleMotionCaller/include/SampleMotionCaller/SampleMotionCaller.h`"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:158
+#: ..\..\2.2_samplemotionselector.rst:158
 msgid "CMakeList.txt の編集"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:160
+#: ..\..\2.2_samplemotionselector.rst:160
 msgid "この RTC では Windows 標準ライブラリのみ使用するので，`CMakeLists.txt` の編集は不要です．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:163
+#: ..\..\2.2_samplemotionselector.rst:163
 msgid "VC++ によるビルド"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:164
+#: ..\..\2.2_samplemotionselector.rst:164
 msgid ""
 "Visual C++ 2010 に戻ります．もし既に閉じていれば，再度 `SampleMotionCaller.sln` "
 "ファイルをダブルクリックし，Visual C++ 2010 を起動します．Visual C++ "
@@ -169,59 +169,59 @@ msgid ""
 "<http://www.openrtm.org/openrtm/sites/default/files/1028/VC++_build.png>`_)．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:168
+#: ..\..\2.2_samplemotionselector.rst:168
 msgid "Visual C++ 2010 のコンソールにエラーが起きたと表示されなければ，以上で RTC 作成が終了です．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:172
+#: ..\..\2.2_samplemotionselector.rst:172
 msgid "実行方法"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:173
+#: ..\..\2.2_samplemotionselector.rst:173
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:179
+#: ..\..\2.2_samplemotionselector.rst:179
 msgid ""
 "では実行してみましょう． `Choreonoid` 上で `GRobot` を走らせ，`SampleMotionCaller` "
 "から指示を送ってみましょう．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:182
+#: ..\..\2.2_samplemotionselector.rst:182
 msgid ""
 "`Choreonoid` と `SampleMotionCaller` を簡便に呼び出すための .bat ファイルを既に "
 "`./demo/`SampleMotionCaller` に用意してあります．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:184
+#: ..\..\2.2_samplemotionselector.rst:184
 msgid ""
 "`./demo/SampleMotionCaller` から "
 "\"0_StartDemo.bat\"，\"1_ConnectRTC.bat\"，\"2_ActivateRTC.bat\" "
 "の順に，下記リンクをクリックして実行．クリックして動作していなそうな場合，Explorer で当該フォルダを開いてそれぞれ実行．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:194
+#: ..\..\2.2_samplemotionselector.rst:194
 msgid ""
 "RT System Editor で見てみると，`SampleMotionCaller` の RTC "
 "も実行されているのが確認可能．立ち上がるプロンプト内にコマンド情報が表示される．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:196
+#: ..\..\2.2_samplemotionselector.rst:196
 msgid "のプロンプト上で表示されたコマンドをキーボードから入力．`Choreonoid` 上でロボットが指示に従い動作する"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:198
+#: ..\..\2.2_samplemotionselector.rst:198
 msgid ""
 "\"3_DeactivateRTC.bat\", \"4_DisconnectRTC.bat\"，\"5_DemoExit.bat\" "
 "の順に実行し，RT システムを停止．"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:219
+#: ..\..\2.2_samplemotionselector.rst:219
 msgid ""
 "Go back to `index <top.html>`__ | Choose `Other language <index.html>`__"
 msgstr ""
 
-#: ../../2.2_samplemotionselector.rst:177
+#: ..\..\2.2_samplemotionselector.rst:177
 msgid ""
 "For starting necessary services, quickly go [run-common-tools_] and come "
 "back."

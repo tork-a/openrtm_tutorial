@@ -111,6 +111,6 @@
 
 ----
 
-Go back to `index <top.html>`__ | Go to `next <2.1_samplewordlogger.html>`__ |
+Go back to `index <top.html>`__ | Go to `next <1.6_scararobot_control.html>`__ |
 
 Choose `Other language <index.html>`__
