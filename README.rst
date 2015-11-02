@@ -2,6 +2,10 @@
 OpenRTM Tutorial
 ====================
 
+.. contents:: Table of Contents
+   :depth: 2
+.. sectnum::
+
 Project Introduction
 ====================
 Compilation of existing tutorial contents, with a few new tutorials being added. Contents are originally intended to be distributed packaged in USB drive.
@@ -10,6 +14,7 @@ System Environment Requirement
 ==============================
  * Internet access
  * Windows 7 / 8
+   * For WEB Browser, `Internet Explorer` is intended. For other browser some useful features (that are based on ActiveX) are not enabled.
  * A microphone
 
 To Start Tutorial
@@ -57,7 +62,7 @@ On a computer where `git` is available, do::
 
 That's it.
 
-NOTE: Above said, the folder structure in USB must maintain `openrtm_tutorial` at the top folder like this:
+NOTE: Above said, the folder structure in USB must maintain `openrtm_tutorial` at the top folder like this::
 
     %USBDRIVE%:\openrtm_tutorial
     F:\openrtm_tutorial          (e.g. If the USB is recognized as F drive)
