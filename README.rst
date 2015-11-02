@@ -14,6 +14,7 @@ System Environment Requirement
 ==============================
  * Internet access
  * Windows 7 / 8
+   * For WEB Browser, `Internet Explorer` is intended. For other browser some useful features (that are based on ActiveX) are not enabled.
  * A microphone
 
 To Start Tutorial
