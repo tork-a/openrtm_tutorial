@@ -2,8 +2,8 @@
 Changelog for package openrtm_tutorial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.2 (2015-11-02)
+------------------
 * [fix] Add yet missing msvcp100.dll to another directory. On some machines tutorial won't work without this, as reported by Saitama U.
 * Contributors: Isaac I.Y. Saito, s15mh218 (Saitama University)
 

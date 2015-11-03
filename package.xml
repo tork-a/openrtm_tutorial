@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>openrtm_tutorial</name>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <description>Compilation of existing OpenRTM tutorial contents, with some extra features that allow you to run all tutorials via InternetExplorer. Project funded by New Energy and Industrial Technology Development Organization (NEDO).</description>
 
   <maintainer email="dev@opensource-robotics.tokyo.jp">TORK</maintainer>
