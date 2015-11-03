@@ -2,6 +2,11 @@
 Changelog for package openrtm_tutorial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* [fix] Add yet missing msvcp100.dll to another directory. On some machines tutorial won't work without this, as reported by Saitama U.
+* Contributors: Isaac I.Y. Saito, s15mh218 (Saitama University)
+
 1.0.1 (2015-11-02)
 ------------------
 * [feat] Add scara robot tutorial
