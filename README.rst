@@ -8,7 +8,7 @@ OpenRTM Tutorial
 
 Project Introduction
 ====================
-Compilation of existing tutorial contents, with a few new tutorials being added. Contents are originally intended to be distributed packaged in USB drive.
+A set of OpenRTM tutorials for Windows users. Contents here are particularly intended to be packaged in a USB thumbdrive (so that users can run the tutorials from the thumbdrive on their machines with minimal installation beforehand).
 
 System Environment Requirement
 ==============================
@@ -23,7 +23,7 @@ Open `%TUTORIAL_HOME%/index.htm` (Tutorial documents are placed in `%TUTORIAL_HO
 
 Online Update
 =============
-While almost all the tutorial material included herein is hosted and maintained online on a github repository [1_], you can update your USB drive easily by a normal "git-way". To do so:
+If you own a packaged USB that contains the contents here, you can update your USB drive easily by a normal "git-way" (almost all the tutorial material included herein is hosted and maintained online on a github repository [1_]). To do so:
 
  * Double-click `%TUTORIAL_HOME%/SELFUPDATE.bat`; this runs `git pull` command and synchronizes data in the drive with the repository.
  * It's possible that conflict occurs if you've added change to your USB drive. In this case, conflict may occur and currently no pre/post caution measure is implemented. Please take care of it in "git-way" by yourself.
@@ -62,7 +62,7 @@ On a computer where `git` is available, do::
 
 That's it.
 
-NOTE: Above said, the folder structure in USB must maintain `openrtm_tutorial` at the top folder like this::
+NOTE: The folder structure in USB is assumed to maintain `openrtm_tutorial` at the top folder like this::
 
     %USBDRIVE%:\openrtm_tutorial
     F:\openrtm_tutorial          (e.g. If the USB is recognized as F drive)
@@ -71,7 +71,7 @@ Notice for updating tutorial html files
 -----------------------------------------
 Please do NOT modify `.html` (that you find under doc/_build, doc/locale) files directly. Instead, add changes to `doc/*.rst` files. 
 
-Those `.rst` files are currently written in Japanese only, but English is available too for the generated `.html`. That said, currently there's no way to update the document BY typing in English.
+Those `.rst` files are currently written in Japanese only, but English is available too for the generated `.html`. Please follow the instruction below for how to update the English document.
 
 To update tutorial html
 -------------------------
