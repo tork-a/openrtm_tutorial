@@ -11,52 +11,52 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\..\top.rst:3
+#: ../../top.rst:3
 msgid "RT Middleware 体験用チュートリアル用 USB"
 msgstr "RT Middleware tutorial USB"
 
-#: ..\..\top.rst:6
+#: ../../top.rst:6
 msgid "デモの体験"
 msgstr "Experience Demos"
 
-#: ..\..\top.rst:16
+#: ../../top.rst:16
 msgid "RTC 開発の体験"
 msgstr "Let's Make RTCs"
 
-#: ..\..\top.rst:8
+#: ../../top.rst:8
 msgid "`(デモ 1) 画像処理 (OpenRTM-aist，OpenCV) <1.1_demo_imageprocessing.html>`_"
 msgstr ""
 "`(Demo 1) Image Processing (OpenRTM-aist，OpenCV) "
 "<1.1_demo_imageprocessing.html>`_"
 
-#: ..\..\top.rst:9
+#: ../../top.rst:9
 msgid "`(デモ 2) 音声命令による動画再生 (OpenHRI) <1.2_demo_mediaplaybyvoice.html>`_"
 msgstr ""
 "`(Demo 2) Playing Movie via Voice (OpenHRI) "
 "<1.2_demo_mediaplaybyvoice.html>`_"
 
-#: ..\..\top.rst:10
+#: ../../top.rst:10
 msgid ""
 "`(デモ 3) ロボットモーションの新規作成 (Choreonoid) <1.3_choreonoid_createmotion.html>`_"
 msgstr ""
 "`(Demo 3) Create Robot Motions (Choreonoid) "
 "<1.3_choreonoid_createmotion.html>`_"
 
-#: ..\..\top.rst:11
+#: ../../top.rst:11
 msgid ""
 "`(デモ 4) 音声命令によるモーションの再生 (OpenHRI，Choreonoid) <1.4_callmotion_byvoice.html>`_"
 msgstr ""
 "`(Demo 4) Playing Motions via Voice (OpenHRI，Choreonoid) "
 "<1.4_callmotion_byvoice.html>`_"
 
-#: ..\..\top.rst:12
+#: ../../top.rst:12
 msgid ""
 "`(デモ 5) 状態遷移モデル変更による，新たなモーション実行 (SEATSAT) <1.5_modifystate_seatsat.html>`_"
 msgstr ""
 "`(Demo 5) Running New Motions Along with State Transion (SEATSAT) "
 "<1.5_modifystate_seatsat.html>`_"
 
-#: ..\..\top.rst:18
+#: ../../top.rst:18
 msgid ""
 "`(開発 1) 音声認識されたキーワードのログを取得し，時刻とともにファイルに保存する ロガー RTC の開発 "
 "<2.1_samplewordlogger.html>`_"
@@ -64,7 +64,7 @@ msgstr ""
 "`(Dev 1) Logger RTC that Saves the Voice-recognized Time-stamped Keywords "
 "<2.1_samplewordlogger.html>`_"
 
-#: ..\..\top.rst:19
+#: ../../top.rst:19
 msgid ""
 "`(開発 2) キーボードからの入力によって Choreonoid のモーションを呼び出すことが出来る RTC の開発 "
 "<2.2_samplemotionselector.html>`_"
@@ -72,7 +72,7 @@ msgstr ""
 "`(Dev 2) Motion RTC that Calls Motions on Choreonoid from Keyboard Input "
 "<2.2_samplemotionselector.html>`_"
 
-#: ..\..\top.rst:13
+#: ../../top.rst:13
 msgid "`(デモ 6) アカデミック スカラロボットの制御 <1.6_scararobot_control.html>`_"
 msgstr ""
 "`(Demo 6) Academic SCARA Robot Control <1.6_scararobot_control.html>`_"

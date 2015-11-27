@@ -11,54 +11,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\..\1.6_scararobot_control.rst:1
+#: ../../1.6_scararobot_control.rst:1
 msgid "**(デモ 6) アカデミック スカラロボットの制御 **"
 msgstr "**(Demo 6) Academic SCARA Robot Control **"
 
-#: ..\..\1.6_scararobot_control.rst:11
+#: ../../1.6_scararobot_control.rst:11
 msgid "Introduction"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:14
+#: ../../1.6_scararobot_control.rst:14
 msgid "このページで体験すること"
 msgstr "What you'll experience"
 
-#: ..\..\1.6_scararobot_control.rst:15
+#: ../../1.6_scararobot_control.rst:15
 msgid "アカデミック スカラロボットの制御　ver.1.1"
 msgstr "Academic SCARA Robot Control (ver.1.1)"
 
-#: ..\..\1.6_scararobot_control.rst:18
+#: ../../1.6_scararobot_control.rst:18
 msgid "動作環境"
 msgstr "System Environment"
 
-#: ..\..\1.6_scararobot_control.rst:21
+#: ../../1.6_scararobot_control.rst:21
 msgid "ヴイストン株式会社製 アカデミック スカラロボット（VS-ASR） [1_]"
 msgstr "Academic SCARA Robot (VS-ASR) made by VSTONE Co., Ltd. [1_]"
 
-#: ..\..\1.6_scararobot_control.rst:24
+#: ../../1.6_scararobot_control.rst:24
 msgid "実行方法"
 msgstr "Run the tutorial"
 
-#: ..\..\1.6_scararobot_control.rst:25
+#: ../../1.6_scararobot_control.rst:25
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 "Your current directory is assumed to be the home of the USB unless "
 "specified."
 
-#: ..\..\1.6_scararobot_control.rst:28
+#: ../../1.6_scararobot_control.rst:28
 msgid "nameserver 起動 (全チュートリアル共通)"
 msgstr "Start CORBA nameserver (common throughout all tutorials)"
 
-#: ..\..\1.6_scararobot_control.rst:29
+#: ../../1.6_scararobot_control.rst:29
 msgid "基本的に `OpenRTM` の `nameserver` は一度起動すると，起動したままでもすべてのチュートリアルは動作すると思われます．"
 msgstr ""
 "Once you start, nameserver can be kept running throught all tutorials."
 
-#: ..\..\1.6_scararobot_control.rst:31
+#: ../../1.6_scararobot_control.rst:31
 msgid "次のリンクをクリックして `nameserver` を起動．"
 msgstr "Click the link to start nameserver."
 
-#: ..\..\1.6_scararobot_control.rst:39
+#: ../../1.6_scararobot_control.rst:39
 msgid ""
 "（上記方法でうまく行かなかった場合のみ以降実施） `Explorer` で `demo` フォルダを開き，`rtm-naming.bat` "
 "をダブルクリックして実行．"
@@ -66,43 +66,43 @@ msgstr ""
 "(Only when the link above didn't work) Open `demo` folder on `Explorer` then"
 " start rtm-naming.bat_ by double clicking the file."
 
-#: ..\..\1.6_scararobot_control.rst:41
+#: ../../1.6_scararobot_control.rst:41
 msgid "`cmd.exe` (Command prompt) が開きっぱなしになり，次のような文言が表示されれば成功．::"
 msgstr ""
 "Now `cmd.exe` (Command prompt) is kept open and you'll see following texts "
 "::"
 
-#: ..\..\1.6_scararobot_control.rst:47
+#: ../../1.6_scararobot_control.rst:47
 msgid "上記手順で `cmd.exe` が消えてしまう場合は，`nameserver` がうまく起動していないので次の手順で原因を発見："
 msgstr ""
 "If `cmd.exe` doesn't stay, you're somehow failing to run `nameserver` so try"
 " to find the cause by the following:"
 
-#: ..\..\1.6_scararobot_control.rst:49
+#: ../../1.6_scararobot_control.rst:49
 msgid "3.1) `Explorer` 上で，USB のドライブ名を確認 (D/E/F etc. ここでは `F` と仮定)"
 msgstr ""
 "3.1) On `Explorer`, check the drive letter of the tutorial USB (usually "
 "either D/E/F. Here we assume as `F`)"
 
-#: ..\..\1.6_scararobot_control.rst:51
+#: ../../1.6_scararobot_control.rst:51
 msgid "3.2) `cmd.exe` を手動起動 (Win 7: [2_], Win 8: [3_])"
 msgstr "2.2) Manually start `cmd.exe` (Win 7: [2_], Win 8: [3_])"
 
-#: ..\..\1.6_scararobot_control.rst:53
+#: ../../1.6_scararobot_control.rst:53
 msgid "3.3) 以下コマンドでフォルダ移動・コマンド実行::"
 msgstr "3.3) Run the following commands to move to the folder::"
 
-#: ..\..\1.6_scararobot_control.rst:59
+#: ../../1.6_scararobot_control.rst:59
 msgid ""
 "エラー等発生していればここで表示されるのでその内容を診断．`OpenRTM` の `nameserver` の問題は WEB "
 "で検索して対処してみてください．"
 msgstr "Diagnose errors. Many errors with `CORBA` can be found on the WEB."
 
-#: ..\..\1.6_scararobot_control.rst:62
+#: ../../1.6_scararobot_control.rst:62
 msgid "チュートリアルのプログラム実行"
 msgstr "Run programs in the tutorial"
 
-#: ..\..\1.6_scararobot_control.rst:64
+#: ../../1.6_scararobot_control.rst:64
 msgid ""
 "次のリンクをクリックして `./demo/ScaraRobotDemo/0_StartDemo.bat` を実行する．起動できない場合は，手動で "
 "`Explorer` から実行する．"
@@ -110,174 +110,174 @@ msgstr ""
 "Run `./demo/OpencvRtmDemo/0_StartDemo.bat` by clicking on the link below. If"
 " it doesn't work, run it manually from `Explorer`."
 
-#: ..\..\1.6_scararobot_control.rst:70
+#: ../../1.6_scararobot_control.rst:70
 msgid "なお，スカラロボットの座標系は図1に示す通りである．"
 msgstr "The coordinate system of the SCARA robot is shown in Fig. 1."
 
-#: ..\..\1.6_scararobot_control.rst:74
+#: ../../1.6_scararobot_control.rst:74
 msgid "図1　スカラロボットの座標系"
 msgstr "Fig. 1  Coordinate system of SCARA robot"
 
-#: ..\..\1.6_scararobot_control.rst:76
+#: ../../1.6_scararobot_control.rst:76
 msgid "次のリンクをクリックして `./misc/VstoneScaraRobotRTC/Sample.csv` を編集する．"
 msgstr ""
 "Edit `./misc/VstoneScaraRobotRTC/Sample.csv` by clicking on the link below."
 
-#: ..\..\1.6_scararobot_control.rst:82
+#: ../../1.6_scararobot_control.rst:82
 msgid "なお，スカラロボットで使用可能なコマンドは表1に示す通りである．"
 msgstr "The enable commands in the SCARA robot is shown in Table 1."
 
-#: ..\..\1.6_scararobot_control.rst:84
+#: ../../1.6_scararobot_control.rst:84
 msgid "表1　スカラロボットで使用可能なコマンド"
 msgstr "Table 1  Commads in SCARA robots"
 
-#: ..\..\1.6_scararobot_control.rst:87
+#: ../../1.6_scararobot_control.rst:87
 msgid "No."
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:87
+#: ../../1.6_scararobot_control.rst:87
 msgid "コマンド"
 msgstr "Commands"
 
-#: ..\..\1.6_scararobot_control.rst:87
+#: ../../1.6_scararobot_control.rst:87
 msgid "書式"
 msgstr "Formats"
 
-#: ..\..\1.6_scararobot_control.rst:87 ..\..\1.6_scararobot_control.rst:133
+#: ../../1.6_scararobot_control.rst:87 ../../1.6_scararobot_control.rst:133
 msgid "説明"
 msgstr "Details"
 
-#: ..\..\1.6_scararobot_control.rst:89
+#: ../../1.6_scararobot_control.rst:89
 msgid "1"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:89 ..\..\1.6_scararobot_control.rst:89
+#: ../../1.6_scararobot_control.rst:89 ../../1.6_scararobot_control.rst:89
 msgid "SERVO_OFF"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:89
+#: ../../1.6_scararobot_control.rst:89
 msgid "全軸サーボをOFFにする．"
 msgstr "Turn off all servomotors."
 
-#: ..\..\1.6_scararobot_control.rst:91
+#: ../../1.6_scararobot_control.rst:91
 msgid "2"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:91 ..\..\1.6_scararobot_control.rst:91
+#: ../../1.6_scararobot_control.rst:91 ../../1.6_scararobot_control.rst:91
 msgid "SERVO_ON"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:91
+#: ../../1.6_scararobot_control.rst:91
 msgid "全軸サーボをONにする．"
 msgstr "Trun on all servomotors."
 
-#: ..\..\1.6_scararobot_control.rst:93
+#: ../../1.6_scararobot_control.rst:93
 msgid "3"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:93 ..\..\1.6_scararobot_control.rst:93
+#: ../../1.6_scararobot_control.rst:93 ../../1.6_scararobot_control.rst:93
 msgid "HAND_CLOSE"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:93
+#: ../../1.6_scararobot_control.rst:93
 msgid "ハンドを完全に閉じる．"
 msgstr "Completely close hands."
 
-#: ..\..\1.6_scararobot_control.rst:95
+#: ../../1.6_scararobot_control.rst:95
 msgid "4"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:95 ..\..\1.6_scararobot_control.rst:95
+#: ../../1.6_scararobot_control.rst:95 ../../1.6_scararobot_control.rst:95
 msgid "HAND_OPEN"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:95
+#: ../../1.6_scararobot_control.rst:95
 msgid "ハンドを完全に開く．"
 msgstr "Completely open hands."
 
-#: ..\..\1.6_scararobot_control.rst:97
+#: ../../1.6_scararobot_control.rst:97
 msgid "5"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:97
+#: ../../1.6_scararobot_control.rst:97
 msgid "HAND_MOV"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:97
+#: ../../1.6_scararobot_control.rst:97
 msgid "HAND_MOV，Rate（単位：Rate [%]）"
 msgstr "HAND_MOV, Rate (Measure: Rate [%])"
 
-#: ..\..\1.6_scararobot_control.rst:97
+#: ../../1.6_scararobot_control.rst:97
 msgid "ハンドを指定した開閉角度に動作させる．"
 msgstr "Open/close the finger to the specified width."
 
-#: ..\..\1.6_scararobot_control.rst:99
+#: ../../1.6_scararobot_control.rst:99
 msgid "6"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:99
+#: ../../1.6_scararobot_control.rst:99
 msgid "CMVS"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:99
+#: ../../1.6_scararobot_control.rst:99
 msgid "CMVS，X，Y，Z，Rz（単位：X，Y，Z [m]，Rz [rad]）"
 msgstr "CMVS, X, Y, Z, Rz (Measure: X, Y, Z [m], Rz [rad])"
 
-#: ..\..\1.6_scararobot_control.rst:99
+#: ../../1.6_scararobot_control.rst:99
 msgid "ロボット座標系の絶対値で指定された目標位置に対し，直交空間における直線補間で動作させる．"
 msgstr ""
 "Move hands using the linear interpolation in the orthogonal space up to the "
 "target position in the robot coordinate system"
 
-#: ..\..\1.6_scararobot_control.rst:101
+#: ../../1.6_scararobot_control.rst:101
 msgid "7"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:101
+#: ../../1.6_scararobot_control.rst:101
 msgid "CMOV"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:101
+#: ../../1.6_scararobot_control.rst:101
 msgid "CMOV，X，Y，Z，Rz（単位：X，Y，Z [m]，Rz [rad]）"
 msgstr "CMOV, X, Y, Z, Rz (Measure: X, Y, Z [m], Rz [rad])"
 
-#: ..\..\1.6_scararobot_control.rst:101
+#: ../../1.6_scararobot_control.rst:101
 msgid "ロボット座標系の絶対値で指定された目標位置に対し，関節空間における直線補間で動作させる．"
 msgstr ""
 "Move hands using the linear interpolation in the joint space up to the "
 "target position in the robot coordinate system"
 
-#: ..\..\1.6_scararobot_control.rst:103
+#: ../../1.6_scararobot_control.rst:103
 msgid "8"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:103
+#: ../../1.6_scararobot_control.rst:103
 msgid "JMOV"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:103
+#: ../../1.6_scararobot_control.rst:103
 msgid "JMOV，J1，J2，J3，J4（単位：J1，J2，J4 [rad]，J3 [m]）"
 msgstr "JMOV, J1, J2, J3, J4 (Measure: J1, J2, J4 [rad], J3 [m])"
 
-#: ..\..\1.6_scararobot_control.rst:103
+#: ../../1.6_scararobot_control.rst:103
 msgid "関節座標系の絶対値で指定された目標位置に対し，関節空間における直線補間で動作させる．"
 msgstr ""
 "Move hands using the linear interpolation in the joint space up to the "
 "target position in the joint coordinate system"
 
-#: ..\..\1.6_scararobot_control.rst:106
+#: ../../1.6_scararobot_control.rst:106
 msgid "次のリンクをクリックして `./demo/RTSE.bat` を実行する．"
 msgstr "Run `./demo/RTSE.bat` by clicking on the link below."
 
-#: ..\..\1.6_scararobot_control.rst:112
+#: ../../1.6_scararobot_control.rst:112
 msgid "RT System Editor が図2のように起動する．"
 msgstr "RT System Editor should look like Fig. 2."
 
-#: ..\..\1.6_scararobot_control.rst:116
+#: ../../1.6_scararobot_control.rst:116
 msgid "図2　RT System Editor"
 msgstr "Fig. 2  RT System Editor"
 
-#: ..\..\1.6_scararobot_control.rst:118
+#: ../../1.6_scararobot_control.rst:118
 msgid ""
 "左側のペインで 127.0.0.1 を選択し，直上の右矢印をクリックすると，起動中の RT Component が同ペイン上に表示される．ここでは "
 "`ScaraRobotControlRTC` ， `VS_ASR_RTC` となるはず．"
@@ -286,7 +286,7 @@ msgstr ""
 "above will show the RT Components that are running. Here you should see "
 "`ScaraRobotControlRTC`, `VS_ASR_RTC`."
 
-#: ..\..\1.6_scararobot_control.rst:120
+#: ../../1.6_scararobot_control.rst:120
 msgid ""
 "File --> Open New System Editor を選ぶと， `System Diagram` "
 "が真ん中のペインに開かれる．左側のペインから各 RTC を System Diagram にドラッグすると図3のように表示される．"
@@ -295,17 +295,17 @@ msgstr ""
 " pane at the center. Drag RTCs from left pane onto System Diagram and you'll"
 " see:"
 
-#: ..\..\1.6_scararobot_control.rst:124
+#: ../../1.6_scararobot_control.rst:124
 msgid "図3　RTC を配置した RT System Editor"
 msgstr "Fig. 3  RTC onto the RT System Editor"
 
-#: ..\..\1.6_scararobot_control.rst:126
+#: ../../1.6_scararobot_control.rst:126
 msgid "同ペイン上で各 RTC を接続する．上に挙げた2つの RTC を接続する．"
 msgstr ""
 "Connect RTCs on the same pane. Connect them from left in the order listed "
 "above."
 
-#: ..\..\1.6_scararobot_control.rst:128
+#: ../../1.6_scararobot_control.rst:128
 msgid ""
 "同ペイン内の`ScaraRobotControlRTC`をクリックし，直下にある“Configuration” というタブ内の "
 "Configuration 値を編集する．各 Configuration 値の詳細は表2に示す通りである．"
@@ -313,142 +313,142 @@ msgstr ""
 "Click `ScaraRobotControlRTC` on the same pane. Edit configuration values in "
 "the configuration tab just below the pain."
 
-#: ..\..\1.6_scararobot_control.rst:130
+#: ../../1.6_scararobot_control.rst:130
 msgid "表2　ScaraRobotControlRTCのコンフィギュレーション"
 msgstr "Table 2  Configuration of ScaraRobotControlRTC"
 
-#: ..\..\1.6_scararobot_control.rst:133
+#: ../../1.6_scararobot_control.rst:133
 msgid "名前"
 msgstr "Names"
 
-#: ..\..\1.6_scararobot_control.rst:133
+#: ../../1.6_scararobot_control.rst:133
 msgid "デフォルト値"
 msgstr "Default values"
 
-#: ..\..\1.6_scararobot_control.rst:135
+#: ../../1.6_scararobot_control.rst:135
 msgid "BaseOffsetX"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:135 ..\..\1.6_scararobot_control.rst:137
+#: ../../1.6_scararobot_control.rst:135 ../../1.6_scararobot_control.rst:137
 msgid "0.0"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:135
+#: ../../1.6_scararobot_control.rst:135
 msgid "ベースオフセットのX軸方向の値を[m]で指定．"
 msgstr "Specify BaseOffset in X axial direction."
 
-#: ..\..\1.6_scararobot_control.rst:137
+#: ../../1.6_scararobot_control.rst:137
 msgid "BaseOffsetY"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:137
+#: ../../1.6_scararobot_control.rst:137
 msgid "ベースオフセットのY軸方向の値を[m]で指定．"
 msgstr "Specify BaseOffset in Y axial direction."
 
-#: ..\..\1.6_scararobot_control.rst:139
+#: ../../1.6_scararobot_control.rst:139
 msgid "FilePass"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:139
+#: ../../1.6_scararobot_control.rst:139
 msgid "Sample.csv"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:139
+#: ../../1.6_scararobot_control.rst:139
 msgid "読み込むcsvファイルが保存されている場所までのパスを指定．"
 msgstr "Specify the path where the csv file exists."
 
-#: ..\..\1.6_scararobot_control.rst:141
+#: ../../1.6_scararobot_control.rst:141
 msgid "Speed"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:141
+#: ../../1.6_scararobot_control.rst:141
 msgid "30"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:141
+#: ../../1.6_scararobot_control.rst:141
 msgid "ロボットの動作速度を1[%]～100[%]の整数値で指定．"
 msgstr ""
 "Specify the working speed of the robot from 1 to 100[%] in an integer value."
 
-#: ..\..\1.6_scararobot_control.rst:144
+#: ../../1.6_scararobot_control.rst:144
 msgid "同ペイン上で直上左にある“ALL”というアイコンをクリック，すべての RTC を activate (参考リンク 1_)．"
 msgstr "Click \"ALL\" above, activate all RTCs."
 
-#: ..\..\1.6_scararobot_control.rst:148
+#: ../../1.6_scararobot_control.rst:148
 msgid "図4　RT System Editor における RTC の Activate"
 msgstr "Fig. 4  Activate RTC in RTC System Editor"
 
-#: ..\..\1.6_scararobot_control.rst:150
+#: ../../1.6_scararobot_control.rst:150
 msgid ""
 "手順5～8を一括して行うスクリプト `./demo/ScaraRobotDemo/8_ConnectRTC.bat` は以下に用意してあります．"
 msgstr ""
 "Script that runs step 5 to 8 in groups is provied by clicking on the link "
 "below."
 
-#: ..\..\1.6_scararobot_control.rst:156
+#: ../../1.6_scararobot_control.rst:156
 msgid "`ScaraRobotControlRTC` のコマンドプロンプトで `s` キーを入力すると，ロボットが動作を開始する．"
 msgstr ""
 "Input `s` by keyboard in the command prompt of `ScaraRobotControlRTC`, then "
 "the robot starts operations."
 
-#: ..\..\1.6_scararobot_control.rst:160
+#: ../../1.6_scararobot_control.rst:160
 msgid "図5 ScaraRobotControlRTC"
 msgstr "Fig. 5  Scara Robot Control RTC"
 
-#: ..\..\1.6_scararobot_control.rst:162
+#: ../../1.6_scararobot_control.rst:162
 msgid ""
 "`VS_ASR_RTC0` のコマンドプロンプトには，実行しているコマンドのステータスが表示されます（例：関節角リミットオーバーでエラー停止した状態）．"
 msgstr ""
 "Command prompt of `ScaraRobotControlRTC` shows the status of executing "
 "commands. (For example, the robot go over the angle limit, and you'll see:)"
 
-#: ..\..\1.6_scararobot_control.rst:166
+#: ../../1.6_scararobot_control.rst:166
 msgid "図6　関節角リミットオーバーでエラー停止した状態"
 msgstr "Fig. 6  The robot went over the angle limit, then has stopped"
 
-#: ..\..\1.6_scararobot_control.rst:168
+#: ../../1.6_scararobot_control.rst:168
 msgid "終了するには，次の手順で \"RTC を inactivate\" --> \"RTC 間のリンクを切り離し\" --> \"各 RTC を停止\" を行う．"
 msgstr "To end, \"inactivate RTC\" --> \"disconnect RTCs\" --> \"stop each RTC\""
 
-#: ..\..\1.6_scararobot_control.rst:170
+#: ../../1.6_scararobot_control.rst:170
 msgid "同ペイン上で直上左にある \"All Deactivate\" というアイコンをクリック"
 msgstr "Click \"All Deactivate\" at above left."
 
-#: ..\..\1.6_scararobot_control.rst:171
+#: ../../1.6_scararobot_control.rst:171
 msgid "手順6で行ったのと逆を行う．つまり，各接続線上で右クリックし\"切断\"を選択．"
 msgstr ""
 "Do the oposite. That is, right-click on each connection line and "
 "\"Disconnect\""
 
-#: ..\..\1.6_scararobot_control.rst:172
+#: ../../1.6_scararobot_control.rst:172
 msgid "手順1で起動したコマンドプロンプト群を手動で終了．ただし `rtm-naming.bat` のそれは停止せずとも良い．"
 msgstr ""
 "manually end the command prompts. You can keep `rtm-naming.bat` running as "
 "mentioned earlier."
 
-#: ..\..\1.6_scararobot_control.rst:174
+#: ../../1.6_scararobot_control.rst:174
 msgid "※手順11を一括して行うスクリプトは以下に用意してある．"
 msgstr ""
 "Note: Script that runs step 11 in groups is provied by clicking on the link "
 "below."
 
-#: ..\..\1.6_scararobot_control.rst:180
+#: ../../1.6_scararobot_control.rst:180
 msgid "関節角リミットオーバーでエラー停止した状態からの復帰方法"
 msgstr ""
-"Method for recovery when the robot went over the angle limit or get "
-"illegal command, then has stopped."
+"Method for recovery when the robot went over the angle limit or get illegal "
+"command, then has stopped."
 
-#: ..\..\1.6_scararobot_control.rst:182
+#: ../../1.6_scararobot_control.rst:182
 msgid "12.1) 関節角リミットオーバーでエラーを出力して停止している状態である．"
 msgstr ""
 "12.1) The robot went over the angle limit, read out the error, then has "
 "stopped. "
 
-#: ..\..\1.6_scararobot_control.rst:186
+#: ../../1.6_scararobot_control.rst:186
 msgid "図7　復帰方法 1"
 msgstr "Fig. 7  1st step of method for recovery"
 
-#: ..\..\1.6_scararobot_control.rst:188
+#: ../../1.6_scararobot_control.rst:188
 msgid ""
 "12.2) "
 "まず，ScaraRobotControlRTCの上にカーソルを持っていき，右クリックでプルダウンメニューを出し，その中のResetを選択する．"
@@ -456,19 +456,19 @@ msgstr ""
 "12.2) Move the cursor to the `ScaraRobotControlRTC`, then right click to "
 "open pull-down menu and choose Reset."
 
-#: ..\..\1.6_scararobot_control.rst:192
+#: ../../1.6_scararobot_control.rst:192
 msgid "図8　復帰方法 2"
 msgstr "Fig. 8  2nd step of method for recovery"
 
-#: ..\..\1.6_scararobot_control.rst:194
+#: ../../1.6_scararobot_control.rst:194
 msgid "12.3) Reset後は下図のような状態になる．"
 msgstr "12.3) After reset, you'll see:"
 
-#: ..\..\1.6_scararobot_control.rst:198
+#: ../../1.6_scararobot_control.rst:198
 msgid "図9　復帰方法 3"
 msgstr "Fig. 9  3rd step of method for recovery"
 
-#: ..\..\1.6_scararobot_control.rst:200
+#: ../../1.6_scararobot_control.rst:200
 msgid ""
 "12.4) RTC 以外の System Diagram 上で右クリックによりプルダウンメニューを出し，All Activate "
 "を選択する．これで最初の状態に戻る．"
@@ -476,25 +476,25 @@ msgstr ""
 "12.4) Right click on the space where no RTCs in system diagram to open pull-"
 "down menu and choose All Activate. This returns to the initial state."
 
-#: ..\..\1.6_scararobot_control.rst:204
+#: ../../1.6_scararobot_control.rst:204
 msgid "図10　復帰方法 4"
 msgstr "Fig. 10 4th step of method for recovery"
 
-#: ..\..\1.6_scararobot_control.rst:214
+#: ../../1.6_scararobot_control.rst:214
 msgid ""
 "Go back to `index <top.html>`__ | Go to `next <2.1_samplewordlogger.html>`__"
 " |"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:216
+#: ../../1.6_scararobot_control.rst:216
 msgid "Choose `Other language <index.html>`__"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:19
+#: ../../1.6_scararobot_control.rst:19
 msgid "Windows 7 / 8"
 msgstr ""
 
-#: ..\..\1.6_scararobot_control.rst:20
+#: ../../1.6_scararobot_control.rst:20
 msgid "Internet Explorer (IE) 8 / 10"
 msgstr ""
 

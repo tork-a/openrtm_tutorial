@@ -11,11 +11,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\..\index.rst:8
+#: ../../index.rst:8
 msgid "RT Middleware Tutorial USB"
 msgstr ""
 
-#: ..\..\index.rst:10
+#: ../../index.rst:10
 msgid ""
 "`日本語 <../../locale/ja/top.html>`_ | `English <../../locale/en/top.html>`_"
 msgstr ""
