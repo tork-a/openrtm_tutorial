@@ -11,112 +11,112 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ..\..\1.3_choreonoid_createmotion.rst:1
+#: ../../1.3_choreonoid_createmotion.rst:1
 msgid "**(デモ 3) ロボットモーションの新規作成 (Choreonoid)**"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:11
+#: ../../1.3_choreonoid_createmotion.rst:11
 msgid "このページで体験すること"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:13
+#: ../../1.3_choreonoid_createmotion.rst:13
 msgid "`Choreonoid` 上で，既存のロボットモーションサンプルに自作のモーションを追加する．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:16
+#: ../../1.3_choreonoid_createmotion.rst:16
 msgid "関連するチュートリアル"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:17
+#: ../../1.3_choreonoid_createmotion.rst:17
 msgid "当ページでは最低限の操作方法のみ紹介します．`Choreonoid` に関する詳細は下記リンクを参照ください．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:19
+#: ../../1.3_choreonoid_createmotion.rst:19
 msgid "概要，詳細な使用法に関しては[1_]"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:20
+#: ../../1.3_choreonoid_createmotion.rst:20
 msgid "モーション変更に関する詳細は[2_]"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:23
+#: ../../1.3_choreonoid_createmotion.rst:23
 msgid "動作環境"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:24
+#: ../../1.3_choreonoid_createmotion.rst:24
 msgid "Windows 7／ 8"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:27
+#: ../../1.3_choreonoid_createmotion.rst:27
 msgid "実行方法"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:28
+#: ../../1.3_choreonoid_createmotion.rst:28
 msgid "以下，特に指定ない限り，配布 USB のホームディレクトリに居ることを前提とします．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:30
+#: ../../1.3_choreonoid_createmotion.rst:30
 msgid ".demo/BatchFiles/Choreonoid-GRobot.bat を実行．`Choreonoid` の GUI が起動する．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:36
+#: ../../1.3_choreonoid_createmotion.rst:36
 msgid "`Choreonoid` の GUI 上で，次の手順で既存モーションを読み込む．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:38
+#: ../../1.3_choreonoid_createmotion.rst:38
 msgid ""
 "(英語版) \"File\" --> \"Open\" --> \"Pose Sequence\" --> Choose "
 "GR001SampleMotion1.pseq"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:40
+#: ../../1.3_choreonoid_createmotion.rst:40
 msgid "(日本語版) \"ファイル\" --> \"読み込み\" --> \"ポーズ列\" --> Choose GR001SampleMotion1.pseq"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:42
+#: ../../1.3_choreonoid_createmotion.rst:42
 msgid ""
 "もし上記手順でファイルが見えない場合，ファイルは以下に在る． "
 "`./demo/Choreonoid-1.1/share/projects/GR001SampleMotion1.pseq`"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:44
+#: ../../1.3_choreonoid_createmotion.rst:44
 msgid ""
 "選択したファイルに記述されるモーションが，`Choreonoid` 上の左側のペインに表示されるはずなのでそれをクリックして選択 (下図参照)．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:48
+#: ../../1.3_choreonoid_createmotion.rst:48
 msgid ""
 "`Choreonoid` 上の \"PoseRoll\" ペイン上でカーソル (時間軸上に細い縦線で表示される) "
 "を，今回動作を追加する時点に移動．例えば既存のモーションの最後とする．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:50
+#: ../../1.3_choreonoid_createmotion.rst:50
 msgid "ロボットのペインを右クリックし，\"Edit Mode\"／\"編集モード\" に変更．これによりロボットのパーツを動かすことができるようになる．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:52
+#: ../../1.3_choreonoid_createmotion.rst:52
 msgid "ロボットのパーツを好きなように動かす．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:54
+#: ../../1.3_choreonoid_createmotion.rst:54
 msgid "\"PoseRoll\" ペインの \"Insert\"／\"現在姿勢の記憶\" をクリック．新たに追加された動作部分が赤く表示される．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:56
+#: ../../1.3_choreonoid_createmotion.rst:56
 msgid "保存を忘れずに．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:60
+#: ../../1.3_choreonoid_createmotion.rst:60
 msgid "ファイルを保存し，作業を終えたら，`Choreonoid` は終了して良い．"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:68
+#: ../../1.3_choreonoid_createmotion.rst:68
 msgid ""
 "Go back to `index <top.html>`__ | Go to `next "
 "<1.4_callmotion_byvoice.html>`__ |"
 msgstr ""
 
-#: ..\..\1.3_choreonoid_createmotion.rst:70
+#: ../../1.3_choreonoid_createmotion.rst:70
 msgid "Choose `Other language <index.html>`__"
 msgstr ""
 
