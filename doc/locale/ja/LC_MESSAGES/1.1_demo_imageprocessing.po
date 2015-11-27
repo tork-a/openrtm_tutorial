@@ -194,8 +194,11 @@ msgid "`cmd.exe` (Command prompt) が開きっぱなしになり，次のよう�
 msgstr ""
 
 #: ../../1.1_demo_imageprocessing.rst:27
-msgid "Internet Explorer (IE 以外のブラウザでは正常に動作しません)"
+msgid "Internet Explorer (IE 以外のブラウザでは正常に動作しません). ActiveX 起動が必要"
 msgstr ""
+
+#~ msgid "Internet Explorer (IE 以外のブラウザでは正常に動作しません)"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ "

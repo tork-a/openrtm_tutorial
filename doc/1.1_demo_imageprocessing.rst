@@ -24,7 +24,7 @@ Introduction
 --------
 - Windows 7／ 8
 - Java Runtime Environment (JRE) 7 (`../misc/openjdk_1.7.0_u45_2.4.3_installed` として同梱，インストール不要)
-- Internet Explorer (IE 以外のブラウザでは正常に動作しません) 
+- Internet Explorer (IE 以外のブラウザでは正常に動作しません). ActiveX 起動が必要
 
 実行方法
 ========

@@ -234,8 +234,14 @@ msgstr ""
 "::"
 
 #: ../../1.1_demo_imageprocessing.rst:27
-msgid "Internet Explorer (IE 以外のブラウザでは正常に動作しません)"
-msgstr "Internet Explorer (with browsers other than IE contents might not function as intended)"
+#, fuzzy
+msgid "Internet Explorer (IE 以外のブラウザでは正常に動作しません). ActiveX 起動が必要"
+msgstr "Internet Explorer (with browsers other than IE contents might not function as intended). Also ActiveX needs enabled."
+
+#~ msgid "Internet Explorer (IE 以外のブラウザでは正常に動作しません)"
+#~ msgstr ""
+#~ "Internet Explorer (with browsers other than IE contents might not function "
+#~ "as intended)"
 
 #~ msgid ""
 #~ "(上記方法でうまく行かなかった場合のみ以降実施) `Explorer` で `demo` フォルダを開き，rtm-naming.bat_ "
